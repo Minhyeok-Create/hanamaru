@@ -223,6 +223,7 @@ function renderHome() {
       <button class="btn" data-today>오늘 공부한 내용</button><button class="btn" data-gowrong>오답 노트</button>
       <button class="btn" data-share>결과 카드</button><button class="btn" data-help>사용 안내</button>
     </section>
+    ${donateHomeHTML()}
     ${isStandalone() ? '' : `<button class="install-tip" data-settings="install"><b>아이폰 홈 화면에 추가하기</b><span>Safari 공유 버튼 → '홈 화면에 추가'. 앱처럼 바로 열려요 →</span></button>`}
   </div>`;
   view.onclick = e => {

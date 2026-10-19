@@ -56,6 +56,7 @@ function settingsHTML() {
         : `<section id="set-install"><h2 class="sec-title">아이폰 홈 화면에 추가</h2><div class="panel" style="padding:14px">
       <ol class="steps"><li>Safari에서 이 앱 주소를 엽니다.</li><li>아래쪽 공유 버튼(네모에 위쪽 화살표)을 누릅니다.</li><li>'홈 화면에 추가'를 누르면 앱 아이콘이 생깁니다.</li></ol></div></section>`
     }
+    <div id="set-donate">${donateHTML()}</div>
     <section><h2 class="sec-title">도움말</h2><div class="row"><button class="btn" data-set-help>사용 안내</button><button class="btn" data-set-tour>튜토리얼 다시 보기</button></div></section>
     <section class="danger">${confirmReset ? `<span class="note">학습 기록을 모두 지울까요?</span><button class="btn" data-reset="yes" style="color:var(--ng)">지우기</button><button class="btn quiet" data-reset="no">취소</button>` : `<button class="btn quiet" data-reset="ask">학습 기록 초기화</button>`}</section>
     <p class="note" style="text-align:center;padding:4px 0">하나마루 · 버전 ${esc(APP_VERSION.startsWith('__') ? '미리보기' : APP_VERSION.slice(0, 8))}</p>

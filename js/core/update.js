@@ -1,6 +1,6 @@
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261019152815';
+const APP_VERSION = '20261019160020';
 function checkUpdate() {
   if (APP_VERSION.startsWith('__')) return;
   try {

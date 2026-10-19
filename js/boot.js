@@ -85,4 +85,5 @@ if (!VS_IN) {
     setTimeout(whatsNew9, 500);
   }
 }
+startAnalytics();
 window.__hanamaruReady = true;
