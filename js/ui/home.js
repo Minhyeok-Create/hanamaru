@@ -206,7 +206,7 @@ function studyCardsHTML() {
       );
   const sents = ja ? SENTS : EN_SENTS;
   return `<section><h2 class="sec-title">${ja ? '일본어' : '영어'} 학습</h2><div class="mods">${mods}</div></section>
-    <section><h2 class="sec-title">상황별 회화 연습</h2><button class="btn trav-link" data-gotrav>여행 회화 카드 · 보여주기 모드 →</button><div class="chips">${Object.entries(
+    <section><h2 class="sec-title">상황별 회화 연습</h2><button class="btn trav-link" data-gotrav>여행 회화 카드 · 보여주기 모드 →</button>${tripOf(S.lang) ? '' : '<button class="btn trav-link" data-tripset>여행 날짜 정하기 · D-day 벼락치기 →</button>'}<div class="chips">${Object.entries(
       SCENES
     )
       .map(([v, l]) => `<button class="chip" data-goscene="${v}">${l} ${sents.filter(s => s.sc === v).length}</button>`)
@@ -219,6 +219,7 @@ function renderHome() {
   view.innerHTML = `<div class="home">
     ${levelHTML()}
     ${seasonBannerHTML()}
+    ${tripHomeHTML()}
     ${todayBoxHTML()}
     ${weeklyHomeHTML()}
     ${todoHTML()}
@@ -233,7 +234,7 @@ function renderHome() {
   view.onclick = e => {
     const b = e.target.closest('button');
     if (!b) return;
-    if (homeExtraClick(b) || playClick(b) || weeklyClick(b) || backupClick(b)) return;
+    if (homeExtraClick(b) || playClick(b) || weeklyClick(b) || backupClick(b) || tripClick(b)) return;
     if ('today' in b.dataset) startMod('today');
     else if ('gowrong' in b.dataset) startMod('wrongs');
     else if ('gotrav' in b.dataset) startMod(S.lang === 'ja' ? 'jtrav' : 'etrav');

@@ -85,11 +85,17 @@ checkUpdate();
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {
   if (!S.seen.tour) setTimeout(openTour, 400);
-  else if (!S.seen.v11) {
-    const sawV10 = !!S.seen.v10;
-    S.seen.v11 = S.seen.v10 = S.seen.v9 = S.seen.v8 = 1;
+  else if (!S.seen['v' + WN_LATEST]) {
+    // the newest list this person has already seen (v8/v9 lists were before WHATS_NEW)
+    let since = 9;
+    for (let v = WN_LATEST - 1; v >= 10; v--)
+      if (S.seen['v' + v]) {
+        since = v;
+        break;
+      }
+    for (let v = 8; v <= WN_LATEST; v++) S.seen['v' + v] = 1;
     save();
-    setTimeout(() => whatsNew10(sawV10), 500);
+    setTimeout(() => whatsNew10(since), 500);
   }
 }
 startAnalytics();
