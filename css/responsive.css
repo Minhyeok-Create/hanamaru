@@ -1,0 +1,26 @@
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition: none !important;
+  }
+  .mark path,
+  .sum-score svg path,
+  .t-mark path {
+    stroke-dashoffset: 0;
+  }
+}
+@media (max-width: 360px) {
+  .glyph {
+    font-size: 92px;
+  }
+  .tz {
+    width: 132px;
+    height: 132px;
+  }
+  .pad-grid {
+    grid-template-rows: repeat(5, 38px);
+  }
+  .k {
+    font-size: 17px;
+  }
+}

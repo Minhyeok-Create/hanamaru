@@ -1,0 +1,160 @@
+/* home */
+.home {
+  display: grid;
+  gap: 22px;
+}
+.h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 6px 0 2px;
+  letter-spacing: -0.02em;
+}
+.date {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+.kpi {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+}
+.kpi b {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.kpi span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.sec-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+.mods {
+  display: grid;
+  gap: 10px;
+}
+.modc {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+.modc-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.modc-ico {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--ai-soft);
+  display: grid;
+  place-items: center;
+  font-family: var(--f-jp);
+  font-size: 22px;
+  color: var(--ai);
+  flex: none;
+}
+.modc h3 {
+  margin: 0;
+  font-size: 17px;
+}
+.modc p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.meter {
+  height: 6px;
+  background: var(--sunk);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.meter i {
+  display: block;
+  height: 100%;
+  background: var(--ok);
+}
+.meter-l {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--muted);
+}
+.weak {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.weak span {
+  font-family: var(--f-jp);
+  font-size: 18px;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 8px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--ng-soft);
+  color: var(--ng);
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 4px 14px;
+}
+.set-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.set-row:last-child {
+  border-bottom: 0;
+}
+.set-row div {
+  min-width: 0;
+}
+.set-row b {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+}
+.set-row small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.steps {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+.danger {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
