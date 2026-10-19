@@ -49,19 +49,26 @@ const TABS = {
   ]
 };
 const TAB_MODES = {
-  kana: ['kana', 'kconf', 'kanji', 'kspeed'],
-  word: ['word', 'loan', 'conj', 'cnt', 'wspeed'],
+  kana: ['kana', 'kwrite', 'kconf', 'kanji', 'kspeed'],
+  word: ['word', 'flash', 'loan', 'wasei', 'conj', 'cnt', 'wspeed'],
   sent: ['sent', 'jb', 'part', 'gram', 'pol'],
-  listen: ['jdlg', 'jl', 'jd', 'jsh', 'jn', 'jlen', 'jauto'],
+  listen: ['jdlg', 'jtrav', 'jl', 'jd', 'jsh', 'jn', 'jlen', 'jauto'],
   play: ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'],
   ref: ['today', 'wrongs', 'course', 'chart', 'jlist', 'gnote', 'stats', 'badges'],
-  eword: ['ew', 'irr', 'espeed'],
+  eword: ['ew', 'eflash', 'irr', 'kong', 'espeed'],
   esent: ['es', 'eb', 'eprep', 'etense', 'ephr'],
-  elisten: ['edlg', 'el', 'ed', 'esh', 'enn', 'mp', 'eauto'],
+  elisten: ['edlg', 'etrav', 'el', 'ed', 'esh', 'enn', 'mp', 'eauto'],
   eplay: ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'],
   eref: ['today', 'wrongs', 'course', 'elist', 'stats', 'badges']
 };
 const MODE_LABEL = {
+  kwrite: '따라 쓰기',
+  flash: '플래시카드',
+  eflash: '플래시카드',
+  wasei: '일본식 영어',
+  kong: '콩글리시',
+  jtrav: '여행 카드',
+  etrav: '여행 카드',
   wrongs: '오답 노트',
   jauto: '연속 듣기',
   eauto: '연속 듣기',
@@ -109,6 +116,8 @@ const MODE_LABEL = {
   elist: '단어장'
 };
 const DUE_LABEL = {
+  wasei: '일본식 영어',
+  kong: '콩글리시',
   eprep: '전치사',
   etense: '시제',
   ephr: '구동사',
@@ -144,6 +153,10 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'kwrite',
+  'flash',
+  'wasei',
+  'jtrav',
   'kana',
   'kconf',
   'kspeed',
@@ -176,8 +189,8 @@ const modLang = m =>
       ? S.lang
       : 'en';
 const SRS_MODS = {
-  ja: ['kana', 'word', 'kanji', 'loan', 'conj', 'cnt', 'sent', 'jb', 'part', 'gram', 'pol', 'jl', 'jd', 'jlen'],
-  en: ['ew', 'irr', 'es', 'eb', 'eprep', 'etense', 'ephr', 'el', 'ed', 'mp']
+  ja: ['kana', 'word', 'kanji', 'loan', 'wasei', 'conj', 'cnt', 'sent', 'jb', 'part', 'gram', 'pol', 'jl', 'jd', 'jlen'],
+  en: ['ew', 'irr', 'kong', 'es', 'eb', 'eprep', 'etense', 'ephr', 'el', 'ed', 'mp']
 };
 const srsMods = () => SRS_MODS[S.lang].filter(m => hasTTS || !NEEDS_TTS.has(m));
 const tabModes = t => TAB_MODES[t].filter(m => hasTTS || !NEEDS_TTS.has(m));

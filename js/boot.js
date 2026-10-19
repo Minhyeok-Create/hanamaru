@@ -2,7 +2,7 @@
 /* keyboard (desktop) */
 document.addEventListener('keydown', e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
-  if (document.getElementById('sheet')) return;
+  if (document.getElementById('sheet') || document.getElementById('tvShow')) return;
   if (curTab() === 'home') return;
   const mod = activeMod();
   if (SPEED.has(mod)) {
@@ -74,15 +74,21 @@ if (VS_IN) {
   S.tabs[S.lang] = S.lang === 'ja' ? 'play' : 'eplay';
   save();
 }
+const WL_IN = parseWordShare(location.hash);
+if (WL_IN) {
+  try {
+    history.replaceState(null, '', location.href.split('#')[0]);
+  } catch (e) {}
+}
 go(curTab());
 checkUpdate();
-if (!VS_IN) {
+if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
+else if (!VS_IN) {
   if (!S.seen.tour) setTimeout(openTour, 400);
-  else if (!S.seen.v9) {
-    S.seen.v9 = 1;
-    S.seen.v8 = 1;
+  else if (!S.seen.v10) {
+    S.seen.v10 = S.seen.v9 = S.seen.v8 = 1;
     save();
-    setTimeout(whatsNew9, 500);
+    setTimeout(whatsNew10, 500);
   }
 }
 startAnalytics();

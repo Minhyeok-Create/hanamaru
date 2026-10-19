@@ -96,6 +96,8 @@ function todoHTML() {
         right: '시작'
       })
     );
+  const bkRow = backupTodoHTML();
+  if (bkRow) rows.push(bkRow);
   rows.push(courseTodo(lang));
   const dl = dueList(),
     dueN = dl.reduce((a, x) => a + x[1], 0);
@@ -204,7 +206,9 @@ function studyCardsHTML() {
       );
   const sents = ja ? SENTS : EN_SENTS;
   return `<section><h2 class="sec-title">${ja ? '일본어' : '영어'} 학습</h2><div class="mods">${mods}</div></section>
-    <section><h2 class="sec-title">상황별 회화 연습</h2><div class="chips">${Object.entries(SCENES)
+    <section><h2 class="sec-title">상황별 회화 연습</h2><button class="btn trav-link" data-gotrav>여행 회화 카드 · 보여주기 모드 →</button><div class="chips">${Object.entries(
+      SCENES
+    )
       .map(([v, l]) => `<button class="chip" data-goscene="${v}">${l} ${sents.filter(s => s.sc === v).length}</button>`)
       .join('')}</div></section>`;
 }
@@ -229,9 +233,10 @@ function renderHome() {
   view.onclick = e => {
     const b = e.target.closest('button');
     if (!b) return;
-    if (homeExtraClick(b) || playClick(b) || weeklyClick(b)) return;
+    if (homeExtraClick(b) || playClick(b) || weeklyClick(b) || backupClick(b)) return;
     if ('today' in b.dataset) startMod('today');
     else if ('gowrong' in b.dataset) startMod('wrongs');
+    else if ('gotrav' in b.dataset) startMod(S.lang === 'ja' ? 'jtrav' : 'etrav');
     else if ('ltest' in b.dataset) startLevelTest();
     else if (b.dataset.settings) openSettings(b.dataset.settings);
     else if (b.dataset.gotab) {

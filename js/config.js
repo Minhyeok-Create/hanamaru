@@ -13,6 +13,15 @@ const APP_CONFIG = {
     message: '하나마루가 공부에 도움이 됐다면 커피 한 잔으로 응원해 주세요.'
   },
 
+  // 문제 신고 구글 폼 링크
+  //   - 그냥 폼 링크: 신고 내용을 복사한 뒤 폼을 열어 줘요 (붙여넣기 한 번 필요)
+  //   - '미리 채워진 링크'(답 칸에 ABC 라고 적어서 만든 링크): 신고 내용이 폼에 자동으로 채워져요
+  //     예) 'https://docs.google.com/forms/d/e/xxxx/viewform?usp=pp_url&entry.123456789=ABC'
+  //   비워 두면 신고 내용만 복사돼요.
+  report: {
+    form: 'https://docs.google.com/forms/d/e/1FAIpQLSelpOZ-HQykU8yYBBFxLaG342e9jsN2c7uOz5S8kUleeUdRsw/viewform'
+  },
+
   // 방문 통계: 둘 중 하나만 채우면 돼요. (쿠키·개인정보 없이 방문 수만 세요)
   analytics: {
     cloudflareToken: 'ba92846e027c40c18bccca13e9a5ebf2', // Cloudflare Web Analytics 토큰  예) '0123456789abcdef0123456789abcdef'

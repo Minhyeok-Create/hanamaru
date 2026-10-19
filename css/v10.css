@@ -1,0 +1,456 @@
+/* ================= v10: writing, travel cards, flashcards, reminders ================= */
+
+/* ---- kana writing ---- */
+.wr {
+  display: grid;
+  gap: 12px;
+}
+.wr-top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wr-strip {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wr-c {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-size: 24px;
+  color: var(--ink);
+}
+.wr-c.on {
+  border-color: var(--ai);
+  background: var(--ai-soft);
+  box-shadow: inset 0 0 0 1px var(--ai);
+}
+.wr-c i {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ok);
+}
+.wr-pad {
+  position: relative;
+  width: min(100%, 340px);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  touch-action: none;
+}
+.wr-model {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.wr-model .grid {
+  stroke: var(--line);
+  stroke-width: 0.6;
+  stroke-dasharray: 2 2;
+}
+.wr-model .stk {
+  fill: none;
+  stroke: var(--ink);
+  stroke-opacity: 0.16;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.wr-model.off .stk,
+.wr-model.off .num {
+  opacity: 0;
+}
+.wr-model .stk.draw {
+  stroke: var(--shu);
+  stroke-opacity: 0.85;
+  stroke-dasharray: var(--len);
+  stroke-dashoffset: var(--len);
+  animation: wrDraw 0.6s ease-out forwards;
+}
+@keyframes wrDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.wr-model .num circle {
+  fill: var(--ai);
+}
+.wr-model .num text {
+  fill: var(--on-ai);
+  font: 600 5.4px var(--f-ui);
+}
+#wrCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+.wr-act,
+.wr-nav {
+  justify-content: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wr-model .stk.draw {
+    animation-duration: 0.01s;
+  }
+}
+
+/* ---- travel cards ---- */
+.tv-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+.tv-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: grid;
+  gap: 4px;
+}
+.tv-ko {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.tv-t {
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.tv-t.en {
+  font-family: var(--f-en);
+  font-size: 21px;
+}
+.tv-r {
+  font-size: 14px;
+  color: var(--muted);
+}
+.tv-n {
+  font-size: 12.5px;
+  color: var(--muted);
+  background: var(--sunk);
+  border-radius: 8px;
+  padding: 5px 9px;
+  margin-top: 2px;
+}
+.tv-act {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.tv-act .star {
+  margin-left: auto;
+}
+.tv-show {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: var(--surface);
+  color: var(--ink);
+  display: flex;
+  padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+}
+.tv-show-in {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tv-show-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  font-size: 17px;
+}
+.tv-show-top span {
+  font-family: var(--f-jp);
+}
+.tv-big {
+  margin: auto 0 0;
+  line-height: 1.35;
+  font-weight: 700;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.tv-big.en {
+  font-family: var(--f-en);
+}
+.tv-big-r {
+  margin: 0;
+  font-size: 20px;
+  color: var(--muted);
+}
+.tv-big-ko {
+  margin: 0 0 auto;
+  font-size: 17px;
+  color: var(--muted);
+}
+.tv-show-ctl {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 8px;
+}
+.tv-show-ctl .btn {
+  min-height: 54px;
+  font-size: 16px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.tv-show-ctl svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+.trav-link {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* ---- flashcards ---- */
+.fc {
+  perspective: 1200px;
+  margin: 14px auto 12px;
+  width: min(100%, 420px);
+  aspect-ratio: 4 / 3;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+.fc-in {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.45s;
+  transform-style: preserve-3d;
+}
+.fc.flip .fc-in {
+  transform: rotateY(180deg);
+}
+.fc-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 18px;
+  text-align: center;
+}
+.fc-back {
+  transform: rotateY(180deg);
+}
+.fc-face b {
+  line-height: 1.2;
+}
+.fc-face small {
+  color: var(--muted);
+  font-size: 12px;
+  position: absolute;
+  bottom: 12px;
+}
+.fc-st {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 99px;
+  background: var(--sunk);
+  color: var(--muted);
+}
+.fc-st.weak {
+  background: var(--ng-soft);
+  color: var(--ng);
+}
+.fc-st.done {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.fc-st.new {
+  background: var(--ai-soft);
+  color: var(--ai);
+}
+.fc-m {
+  margin: 6px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.fc-ex {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--ink);
+}
+.fc-exk {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.fc-btns {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  align-items: center;
+}
+.fc-btns .btn {
+  min-height: 52px;
+}
+.fc-no {
+  color: var(--ng);
+}
+.fc-yes {
+  color: var(--ok);
+}
+
+/* ---- word list tools ---- */
+.wl-tools {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ---- backup reminder ---- */
+.todo-i.backup .ck {
+  background: var(--warn);
+}
+.todo-i.backup .badge-n {
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+.todo-snooze {
+  text-align: right;
+  padding: 0 14px 6px;
+}
+.todo-snooze .link {
+  font-size: 12.5px;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  padding: 4px 0;
+}
+
+/* ---- iPhone shortcut guide ---- */
+.ios-steps {
+  display: grid;
+  gap: 12px;
+  margin: 10px 0;
+}
+.ios-step {
+  display: grid;
+  grid-template-columns: 26px 118px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.ios-step .n {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ai);
+  color: var(--on-ai);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+.ios-step p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.ios-mock {
+  background: #f2f2f7;
+  color: #1c1c1e;
+  border-radius: 14px;
+  border: 2px solid #1c1c1e;
+  padding: 6px;
+  font-size: 10.5px;
+  display: grid;
+  gap: 4px;
+  min-height: 84px;
+  align-content: start;
+}
+.ios-bar {
+  font-weight: 700;
+  font-size: 11.5px;
+  text-align: center;
+  padding-bottom: 2px;
+}
+.ios-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+  border-top: 1px solid #d1d1d6;
+  padding-top: 4px;
+}
+.ios-tabs i {
+  font-style: normal;
+  color: #8e8e93;
+}
+.ios-tabs i.on {
+  color: #007aff;
+  font-weight: 700;
+}
+.ios-row {
+  background: #fff;
+  border-radius: 7px;
+  padding: 4px 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.ios-row.on {
+  outline: 2px solid #007aff;
+}
+.ios-row b {
+  color: #007aff;
+  font-weight: 600;
+}
+.ios-note {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 380px) {
+  .ios-step {
+    grid-template-columns: 24px 96px 1fr;
+  }
+}

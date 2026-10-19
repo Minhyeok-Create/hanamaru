@@ -43,3 +43,53 @@ function startAnalytics() {
   document.head.appendChild(s);
 }
 const analyticsOn = () => !!(APP_CONFIG.analytics && (APP_CONFIG.analytics.cloudflareToken || APP_CONFIG.analytics.goatcounter));
+
+// "문제가 이상해요" → Google Form (link set in js/config.js)
+//   - pre-filled link (answer = ABC): the report text goes straight into the form
+//   - plain form link: the report text is copied, then the form opens so it can be pasted
+function openReportForm(text) {
+  const link = safeUrl((APP_CONFIG.report || {}).form);
+  if (!link || !/^https:\/\/(docs\.google\.com\/forms\/|forms\.gle\/)/.test(link)) return false;
+  const pre = /=ABC(&|$)/.test(link);
+  const url = pre ? link.replace(/=ABC(&|$)/, '=' + encodeURIComponent(text) + '$1') : link;
+  if (!pre) {
+    try {
+      navigator.clipboard.writeText(text).catch(() => {});
+    } catch (e) {}
+  }
+  const w = window.open(url, '_blank');
+  if (!w) {
+    toast('팝업이 막혔어요. 잠시 뒤 다시 눌러 주세요.');
+    return false;
+  }
+  try {
+    w.opener = null;
+  } catch (e) {}
+  toast(
+    pre ? '신고 양식이 열렸어요. 보내기를 눌러 주세요. 고마워요!' : '신고 내용을 복사했어요. 열린 양식 칸에 붙여넣고 보내 주세요. 고마워요!'
+  );
+  return true;
+}
+
+// Backup reminder: after 2 weeks without copying a backup code (only once there is something to lose)
+const BACKUP_EVERY = 14;
+function backupDue() {
+  if (totalN() < 50) return false;
+  const t = dayIdx();
+  if (S.backupSnooze && t < S.backupSnooze) return false;
+  const since = S.lastBackup === undefined ? Infinity : t - S.lastBackup;
+  return since >= BACKUP_EVERY;
+}
+function backupTodoHTML() {
+  if (!backupDue()) return '';
+  const never = S.lastBackup === undefined;
+  return `<li class="todo-i backup"><button type="button" data-settings="backup"><span class="ck" aria-hidden="true"><i class="badge-n">!</i></span><span class="tl">기록 백업할 때가 됐어요<small>${never ? '아직 백업한 적이 없어요' : `마지막 백업 후 ${dayIdx() - S.lastBackup}일 지났어요`} · 휴대폰을 바꿔도 기록을 지킬 수 있어요</small></span><span class="go">백업</span></button></li>
+    <li class="todo-snooze"><button type="button" class="link" data-bksnooze>일주일 뒤에 다시 알려 주세요</button></li>`;
+}
+function backupClick(b) {
+  if (!('bksnooze' in b.dataset)) return false;
+  S.backupSnooze = dayIdx() + 7;
+  save();
+  renderHome();
+  return true;
+}

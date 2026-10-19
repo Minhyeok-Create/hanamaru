@@ -125,6 +125,7 @@ function stageClick(mod, e) {
   } else if (act === 'override') override(mod);
   else if (act === 'report') {
     const txt = reportText(mod, q, r.res[r.res.length - 1]?.given);
+    if (openReportForm(txt)) return;
     copyText(txt, '신고 내용을 복사했어요. 카톡으로 앱 만든 사람에게 보내 주세요.', () => {
       const fb = document.getElementById('fb');
       if (fb && !fb.querySelector('#rpt')) {

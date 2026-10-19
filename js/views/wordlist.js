@@ -24,7 +24,7 @@ function renderWordList(lang) {
     <input type="search" class="wl-search" id="wlq" placeholder="${ja ? '단어, 읽기, 로마자, 뜻으로 검색' : '단어나 뜻으로 검색'}" value="${esc(ls.q)}" aria-label="단어 검색" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     <div class="chips" id="wlc">${chips.map(([k, l]) => `<button class="chip" data-wc="${k}" aria-pressed="${ls.cat === k}">${l}</button>`).join('')}</div>
     <div>
-      <button class="btn" data-addtoggle style="width:100%">${ls.add ? '닫기' : '+ 내 단어 추가'}</button>
+      <div class="row wl-tools"><button class="btn" data-addtoggle>${ls.add ? '닫기' : '+ 내 단어 추가'}</button><button class="btn" data-wlshare>단어장 공유</button></div>
       ${
         ls.add
           ? `<form class="add-form" id="addForm" style="margin-top:8px" autocomplete="off">
@@ -132,6 +132,10 @@ function renderWordList(lang) {
       ls.cat = b.dataset.wc;
       vb.querySelectorAll('[data-wc]').forEach(x => x.setAttribute('aria-pressed', x === b));
       draw();
+      return;
+    }
+    if ('wlshare' in b.dataset) {
+      openWordShare(lang);
       return;
     }
     if ('addtoggle' in b.dataset) {
