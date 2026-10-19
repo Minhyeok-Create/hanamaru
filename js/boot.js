@@ -80,7 +80,8 @@ if (WL_IN) {
     history.replaceState(null, '', location.href.split('#')[0]);
   } catch (e) {}
 }
-go(curTab());
+if (VS_IN) startMod('vs');
+else go(curTab());
 checkUpdate();
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {

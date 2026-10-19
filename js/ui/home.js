@@ -96,8 +96,6 @@ function todoHTML() {
         right: '시작'
       })
     );
-  const bkRow = backupTodoHTML();
-  if (bkRow) rows.push(bkRow);
   rows.push(courseTodo(lang));
   const dl = dueList(),
     dueN = dl.reduce((a, x) => a + x[1], 0);
@@ -138,92 +136,21 @@ function todoHTML() {
         right: '뽑기'
       })
     );
-  return `<section><h2 class="sec-title">오늘 할 일</h2><ul class="todo">${rows.join('')}</ul></section>`;
+  return `<section><ul class="todo">${rows.join('')}</ul></section>`;
 }
 
-function studyCardsHTML() {
-  const ja = S.lang === 'ja';
-  const card = (tab, ico, name, sub, primary, keys) => {
-    const st = modStats(keys);
-    return `<div class="modc">
-      <div class="modc-head"><div class="modc-ico">${ico}</div><div><h3>${name}</h3><p>${sub}</p></div></div>
-      <div><div class="meter"><i style="width:${st.total ? (st.done / st.total) * 100 : 0}%"></i></div><div class="meter-l num"><span>익힘 ${st.done} / ${st.total}</span><span>${st.weak ? `복습 필요 ${st.weak}` : ''}</span></div></div>
-      <div class="row"><button class="btn primary" data-gotab="${tab}">연습하기</button><button class="btn" data-review="${primary}" ${st.weak ? '' : 'disabled'}>오답 복습${st.weak ? ` ${st.weak}` : ''}</button></div></div>`;
-  };
-  const sub = t =>
-    tabModes(t)
-      .map(m => modeLabel(m))
-      .join(' · ');
-  const mods = ja
-    ? card('kana', '<span lang="ja">あ</span>', '문자', sub('kana'), 'kana', kanaKeys()) +
-      card(
-        'word',
-        '<span lang="ja">語</span>',
-        `단어 ${WORDS.length}`,
-        sub('word'),
-        'word',
-        WORDS.map(w => w.key)
-      ) +
-      card(
-        'sent',
-        '<span lang="ja">話</span>',
-        `문장 ${SENTS.length}`,
-        sub('sent'),
-        'sent',
-        SENTS.map(s => s.key)
-      ) +
-      card(
-        'listen',
-        ICO.talk,
-        `회화 · 대화 ${DLG.jdlg.length}개`,
-        sub('listen'),
-        'jl',
-        DLG.jdlg.map(d => d.key)
-      )
-    : card(
-        'eword',
-        '<span class="en" lang="en">Aa</span>',
-        `단어 ${EN_WORDS.length}`,
-        sub('eword'),
-        'ew',
-        EN_WORDS.map(w => w.key)
-      ) +
-      card(
-        'esent',
-        '<span class="en" lang="en">“ ”</span>',
-        `문장 ${EN_SENTS.length}`,
-        sub('esent'),
-        'es',
-        EN_SENTS.map(s => s.key)
-      ) +
-      card(
-        'elisten',
-        ICO.talk,
-        `회화 · 대화 ${DLG.edlg.length}개`,
-        sub('elisten'),
-        'el',
-        DLG.edlg.map(d => d.key)
-      );
-  const sents = ja ? SENTS : EN_SENTS;
-  return `<section><h2 class="sec-title">${ja ? '일본어' : '영어'} 학습</h2><div class="mods">${mods}</div></section>
-    <section><h2 class="sec-title">상황별 회화 연습</h2><button class="btn trav-link" data-gotrav>여행 회화 카드 · 보여주기 모드 →</button>${tripOf(S.lang) ? '' : '<button class="btn trav-link" data-tripset>여행 날짜 정하기 · D-day 벼락치기 →</button>'}<div class="chips">${Object.entries(
-      SCENES
-    )
-      .map(([v, l]) => `<button class="chip" data-goscene="${v}">${l} ${sents.filter(s => s.sc === v).length}</button>`)
-      .join('')}</div></section>`;
-}
-
-/* ---------- screen ---------- */
 function renderHome() {
   const ja = S.lang === 'ja';
+  const bk = backupTodoHTML();
   view.innerHTML = `<div class="home">
-    ${levelHTML()}
-    ${seasonBannerHTML()}
     ${tripHomeHTML()}
     ${todayBoxHTML()}
-    ${weeklyHomeHTML()}
-    ${todoHTML()}
-    ${studyCardsHTML()}
+    ${heroHTML()}
+    ${bk ? `<ul class="todo">${bk}</ul>` : ''}
+    ${courseLineHTML()}
+    ${pinsHomeHTML()}
+    <details class="home-more"><summary>오늘 할 일 · 복습 · 미션 자세히</summary>${todoHTML(true)}</details>
+    <details class="home-more"><summary>레벨 · 이벤트 · 주간 리포트</summary>${levelHTML()}${seasonBannerHTML()}${weeklyHomeHTML()}</details>
     <section class="home-links">
       <button class="btn" data-today>오늘 공부한 내용</button><button class="btn" data-gowrong>오답 노트</button>
       <button class="btn" data-share>결과 카드</button><button class="btn" data-help>사용 안내</button>
@@ -234,7 +161,7 @@ function renderHome() {
   view.onclick = e => {
     const b = e.target.closest('button');
     if (!b) return;
-    if (homeExtraClick(b) || playClick(b) || weeklyClick(b) || backupClick(b) || tripClick(b)) return;
+    if (dailyClick(b) || homeExtraClick(b) || playClick(b) || weeklyClick(b) || backupClick(b) || tripClick(b)) return;
     if ('today' in b.dataset) startMod('today');
     else if ('gowrong' in b.dataset) startMod('wrongs');
     else if ('gotrav' in b.dataset) startMod(S.lang === 'ja' ? 'jtrav' : 'etrav');
@@ -259,7 +186,7 @@ function renderHome() {
         if (modLang(m) === S.lang && S.filt[m] !== 'all') S.filt[m] = 'all';
       }
       save();
-      go(ja ? 'sent' : 'esent');
+      startMod(ja ? 'sent' : 'es');
     }
   };
 }

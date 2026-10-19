@@ -40,6 +40,8 @@ function settingsHTML() {
         [1.2, '아주 크게']
       ])}
     </div></section>
+    <section id="set-menu"><h2 class="sec-title">메뉴 편집</h2><div class="panel" style="padding:14px;display:grid;gap:12px">
+      <p class="note" style="margin:0">켜진 연습만 메뉴에 보여요. 안 쓰는 건 눌러서 끄세요. (기록은 지워지지 않아요)</p>${menuEditHTML()}</div></section>
     <section><h2 class="sec-title">레벨 테스트</h2><div class="panel" style="padding:14px;display:grid;gap:10px">
       <p class="note">20문제로 실력을 확인하고 코스를 어디서부터 할지 추천받아요.${S.ltest && S.ltest[S.lang] ? ` 지난 결과: ${S.ltest[S.lang].c}/${S.ltest[S.lang].n} · ${S.ltest[S.lang].day}일차 추천` : ''}</p>
       <button class="btn" data-set-ltest>${S.lang === 'ja' ? '일본어' : '영어'} 레벨 테스트 하기</button></div></section>

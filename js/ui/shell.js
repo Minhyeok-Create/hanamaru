@@ -28,39 +28,67 @@ ICO.eref = ICO.ref;
 ICO.play =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M7.5 7.5h9a4.5 4.5 0 0 1 4.4 5.5l-.9 4a2.3 2.3 0 0 1-4 .9L14 16h-4l-2 1.9a2.3 2.3 0 0 1-4-.9l-.9-4a4.5 4.5 0 0 1 4.4-5.5z"/><path d="M8 10.5v3M6.5 12h3"/><circle cx="15.5" cy="11" r=".6" fill="currentColor"/><circle cx="17" cy="13" r=".6" fill="currentColor"/></svg>';
 ICO.eplay = ICO.play;
-const TAB_ICON = { listen: 'talk' };
+ICO.learn =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 6.5C6.5 5 9.5 5 12 6.5v13C9.5 18 6.5 18 4 19.5z"/><path d="M20 6.5C17.5 5 14.5 5 12 6.5v13c2.5-1.5 5.5-1.5 8 0z"/></svg>';
+ICO.talk2 =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3.5 5h11v8H8l-3 2.5V13H3.5z"/><path d="M17 9h3.5v8H19v2.5L16 17h-5.5v-2"/></svg>';
+const TAB_ICON = { listen: 'talk', elearn: 'learn', talk: 'talk2', etalk: 'talk2' };
 const TABS = {
   ja: [
     ['home', '홈'],
-    ['kana', '문자'],
-    ['word', '단어'],
-    ['sent', '문장'],
-    ['listen', '회화'],
+    ['learn', '배우기'],
+    ['talk', '회화·여행'],
     ['play', '놀이'],
     ['ref', '자료']
   ],
   en: [
     ['home', '홈'],
-    ['eword', '단어'],
-    ['esent', '문장'],
-    ['elisten', '회화'],
+    ['elearn', '배우기'],
+    ['etalk', '회화·여행'],
     ['eplay', '놀이'],
     ['eref', '자료']
   ]
 };
-const TAB_MODES = {
-  kana: ['kana', 'kwrite', 'kconf', 'kanji', 'hj', 'hjr', 'sign', 'kspeed'],
-  word: ['word', 'flash', 'hjw', 'loan', 'wasei', 'conj', 'cnt', 'wspeed'],
-  sent: ['sent', 'jb', 'part', 'kpart', 'gram', 'pol'],
-  listen: ['jdlg', 'jtrav', 'trip', 'jl', 'jd', 'jsh', 'jn', 'jlen', 'jauto'],
-  play: ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'],
-  ref: ['today', 'wrongs', 'course', 'chart', 'jlist', 'gnote', 'koexp', 'stats', 'badges'],
-  eword: ['ew', 'eflash', 'irr', 'kong', 'espeed'],
-  esent: ['es', 'eb', 'eprep', 'etense', 'ephr'],
-  elisten: ['edlg', 'etrav', 'etrip', 'el', 'ed', 'esh', 'enn', 'mp', 'eauto'],
-  eplay: ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'],
-  eref: ['today', 'wrongs', 'course', 'elist', 'stats', 'badges']
+// tab names from older versions (and older code paths) → where those modes live now
+const OLD_TAB = { kana: 'learn', word: 'learn', sent: 'learn', listen: 'talk', eword: 'elearn', esent: 'elearn', elisten: 'etalk' };
+// Each tab shows a menu of cards in these groups; the flat TAB_MODES list is derived from it.
+const MENU = {
+  learn: [
+    ['문자', ['kana', 'kwrite', 'kconf', 'kanji']],
+    ['단어', ['word', 'flash', 'conj', 'cnt', 'loan']],
+    ['문장', ['sent', 'jb', 'part', 'gram', 'pol']],
+    ['한국인 맞춤', ['hj', 'hjw', 'hjr', 'kpart', 'wasei']],
+    ['도전', ['kspeed', 'wspeed']]
+  ],
+  talk: [
+    ['여행', ['jtrav', 'trip', 'sign', 'koexp']],
+    ['대화·듣기', ['jdlg', 'jl', 'jd', 'jsh', 'jn']],
+    ['발음', ['jlen', 'jauto']]
+  ],
+  play: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
+  ref: [
+    ['복습', ['wrongs', 'today']],
+    ['자료', ['course', 'chart', 'jlist', 'gnote']],
+    ['기록', ['stats', 'badges']]
+  ],
+  elearn: [
+    ['단어', ['ew', 'eflash', 'irr', 'kong']],
+    ['문장', ['es', 'eb', 'eprep', 'etense', 'ephr']],
+    ['도전', ['espeed']]
+  ],
+  etalk: [
+    ['여행', ['etrav', 'etrip']],
+    ['대화·듣기', ['edlg', 'el', 'ed', 'esh', 'enn']],
+    ['발음', ['mp', 'eauto']]
+  ],
+  eplay: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
+  eref: [
+    ['복습', ['wrongs', 'today']],
+    ['자료', ['course', 'elist']],
+    ['기록', ['stats', 'badges']]
+  ]
 };
+const TAB_MODES = Object.fromEntries(Object.entries(MENU).map(([t, gs]) => [t, gs.flatMap(g => g[1])]));
 const MODE_LABEL = {
   kpart: '조사 함정',
   koexp: '한국어 표현',
@@ -232,18 +260,17 @@ const SRS_MODS = {
   en: ['ew', 'irr', 'kong', 'es', 'eb', 'eprep', 'etense', 'ephr', 'el', 'ed', 'mp']
 };
 const srsMods = () => SRS_MODS[S.lang].filter(m => hasTTS || !NEEDS_TTS.has(m));
-const tabModes = t => TAB_MODES[t].filter(m => hasTTS || !NEEDS_TTS.has(m));
+const tabModes = t => (TAB_MODES[OLD_TAB[t] || t] || []).filter(m => hasTTS || !NEEDS_TTS.has(m));
+// modes the person chose to hide (settings → 메뉴 편집) are left out of menus
+const menuModes = t => tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m));
 const tabList = () => TABS[S.lang].filter(([t]) => t === 'home' || tabModes(t).length);
 function curTab() {
-  const t = S.tabs[S.lang];
+  const t = OLD_TAB[S.tabs[S.lang]] || S.tabs[S.lang];
   return tabList().some(x => x[0] === t) ? t : 'home';
 }
+let CUR_MOD = null; // the mode on screen, or null when a tab menu (or home) is showing
 function activeMod() {
-  const t = curTab();
-  if (t === 'home') return null;
-  const ms = tabModes(t);
-  const m = S.smode[S.lang][t];
-  return ms.includes(m) ? m : ms[0];
+  return curTab() === 'home' ? null : CUR_MOD;
 }
 const modTab = m =>
   tabList()
@@ -268,27 +295,44 @@ function stopAll() {
     } catch (e) {}
   }
 }
-function go(tab) {
-  stopAll();
-  S.tabs[S.lang] = tab;
-  save();
+function markTab(tab) {
   for (const b of tabsEl.children) {
     if (b.dataset.tab === tab) b.setAttribute('aria-current', 'page');
     else b.removeAttribute('aria-current');
   }
+}
+// a tab shows its menu; startMod opens one practice inside it
+function go(tab) {
+  tab = OLD_TAB[tab] || tab;
+  if (tab !== 'home' && !tabList().some(x => x[0] === tab)) tab = 'home';
+  stopAll();
+  CUR_MOD = null;
+  S.tabs[S.lang] = tab;
+  save();
+  markTab(tab);
   if (tab === 'home') renderHome();
-  else renderMod(activeMod());
+  else renderMenu(tab);
+  dailyBar();
   window.scrollTo(0, 0);
 }
 function startMod(mod) {
   const t = modTab(mod);
   if (!t) return;
+  stopAll();
+  S.tabs[S.lang] = t;
   S.smode[S.lang][t] = mod;
-  go(t);
+  if (!S.seenMod[mod]) S.seenMod[mod] = 1;
+  save();
+  markTab(t);
+  CUR_MOD = mod;
+  renderMod(mod);
+  dailyBar();
+  window.scrollTo(0, 0);
 }
 const CUSTOM = {}; // modes that draw their own screen (registered by feature files)
 function renderMod(mod) {
   view.onclick = null;
+  CUR_MOD = mod;
   if (VIEWS.has(mod)) renderView(mod);
   else if (SPEED.has(mod)) renderSpeed(mod);
   else if (DLGM.has(mod)) renderDialogue(mod);
@@ -297,28 +341,52 @@ function renderMod(mod) {
   else renderModule(mod);
   addTip(mod);
 }
+// Header of a practice screen: ← back to the tab menu, the title, and a ☆ to pin it.
+// (keeps the old name: every screen calls modeSeg/bindModes)
 function modeSeg(mod) {
   const t = modTab(mod);
-  const ms = tabModes(t);
-  if (ms.length < 2) return '';
-  return `<div class="seg modes" role="group" aria-label="연습 방식">${ms.map(m => `<button data-mode="${m}" aria-pressed="${m === mod}">${modeLabel(m)}</button>`).join('')}</div>`;
+  const tl = (tabList().find(x => x[0] === t) || [, ''])[1];
+  return `<div class="mhead modes"><button type="button" class="mback" data-back aria-label="${tl} 메뉴로">${BACK_ICO}<span>${tl}</span></button><b class="mtitle">${esc(modeLabel(mod))}</b>${pinBtn(mod)}</div>`;
 }
-function bindModes() {
-  const el = view.querySelector('.modes');
-  if (!el) return;
-  el.addEventListener('click', e => {
-    const b = e.target.closest('[data-mode]');
-    if (!b || b.getAttribute('aria-pressed') === 'true') return;
-    stopAll();
-    S.smode[S.lang][curTab()] = b.dataset.mode;
-    save();
-    renderMod(b.dataset.mode);
-    window.scrollTo(0, 0);
-  });
+const BACK_ICO =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
+const isPinned = m => (S.pins[S.lang] || []).includes(m);
+const pinBtn = m =>
+  `<button type="button" class="pin" data-pin="${m}" aria-pressed="${isPinned(m)}" aria-label="${isPinned(m) ? '고정 풀기' : '자주 쓰는 연습으로 고정'}">${isPinned(m) ? '★' : '☆'}</button>`;
+function togglePin(m) {
+  const l = S.pins[S.lang] || (S.pins[S.lang] = []);
+  if (l.includes(m)) l.splice(l.indexOf(m), 1);
+  else l.unshift(m);
+  save();
+  toast(isPinned(m) ? `'${modeLabel(m)}'을 홈과 메뉴 맨 위에 고정했어요` : '고정을 풀었어요');
+  document.querySelectorAll(`[data-pin="${m}"]`).forEach(b => (b.outerHTML = pinBtn(m)));
+  if (!CUR_MOD && curTab() !== 'home' && !document.getElementById('sheet')) renderMenu(curTab());
 }
+function bindModes() {}
+document.addEventListener(
+  'click',
+  e => {
+    const p = e.target.closest('[data-pin]');
+    if (p) {
+      e.stopPropagation();
+      togglePin(p.dataset.pin);
+      return;
+    }
+    if (e.target.closest('[data-back]')) {
+      e.stopPropagation();
+      go(curTab());
+    }
+  },
+  true
+);
 tabsEl.addEventListener('click', e => {
   const b = e.target.closest('.tab');
   if (b) go(b.dataset.tab);
+});
+// any [data-mode] button (menu cards, home shortcuts, search results) opens that practice
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-mode]');
+  if (b && !e.defaultPrevented) startMod(b.dataset.mode);
 });
 document.getElementById('langSeg').addEventListener('click', e => {
   const b = e.target.closest('[data-lang]');

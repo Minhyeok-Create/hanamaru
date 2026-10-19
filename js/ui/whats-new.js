@@ -2,6 +2,13 @@
 /* ================= "what's new" sheet, shown once to people who already used the app ================= */
 // v: the version that added the item; people only see items newer than the last list they saw
 const WHATS_NEW = [
+  {
+    v: 13,
+    t: '화면을 정리했어요',
+    d: '아래 탭이 5개로 줄었어요. 탭을 누르면 연습 목록이 설명과 함께 카드로 나와요. ☆를 누르면 홈과 목록 맨 위에 고정돼요.'
+  },
+  { v: 13, t: '오늘 공부 시작', d: '홈의 큰 버튼 하나로 복습 → 코스 → 단어 카드를 이어서 해요. 아래 막대에서 다음 단계로 넘어가요.' },
+  { v: 13, t: '검색', d: '맨 위 돋보기로 단어·문법·표현·간판·한자·연습을 한 번에 찾아요.' },
   { v: 12, ja: true, t: '여행 D-day', d: '회화 탭. 출발 날짜를 넣으면 여행 문장과 메뉴판 한자를 하루치씩 나눠 줘요. 홈에 D-day가 떠요.' },
   { v: 12, ja: true, t: '메뉴판·간판 읽기', d: '문자 탭. 定食, 税込, 改札口처럼 일본에서 실제로 보는 글자를 간판 모양 그대로 읽어요.' },
   { v: 12, ja: true, t: '조사 함정', d: "문장 탭. '친구를 만나다'는 友達に会う! 한국어 조사를 그대로 옮기면 틀리는 곳만 모았어요." },
@@ -19,7 +26,7 @@ const WHATS_NEW = [
   { v: 10, t: '플래시카드', d: '단어 탭. 넘기면서 알아요 / 몰라요만 눌러요.' },
   { v: 10, t: '단어장 공유', d: '자료 탭 단어장에서 링크로 친구에게 보내요.' }
 ];
-const WN_LATEST = 12;
+const WN_LATEST = 13;
 
 function whatsNew10(since) {
   const ja = S.lang === 'ja';
