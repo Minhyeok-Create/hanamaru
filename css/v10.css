@@ -454,3 +454,188 @@
     grid-template-columns: 24px 96px 1fr;
   }
 }
+
+/* ---- 한국음 한자 ---- */
+.hj-hun {
+  margin: 4px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.hj-kan {
+  margin: 2px 0 0;
+  font-size: 22px;
+  color: var(--muted);
+  text-align: center;
+}
+.hj-arrow {
+  color: var(--muted);
+  font-size: 0.7em;
+}
+.hj-rule {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 99px;
+  padding: 2px 9px;
+  margin-right: 6px;
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.hj-rule.ex {
+  background: var(--sunk);
+  color: var(--warn);
+}
+.hj-chg {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 99px;
+  padding: 2px 9px;
+  background: var(--ai-soft);
+  color: var(--ai);
+}
+.hj-split {
+  border-collapse: collapse;
+  margin: 6px 0 8px;
+  font-size: 15px;
+}
+.hj-split td {
+  padding: 4px 10px 4px 0;
+  vertical-align: middle;
+}
+.hj-split td.jp:first-child {
+  font-size: 22px;
+}
+.hj-ex {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  background: var(--sunk);
+  border-radius: 8px;
+  padding: 3px 8px;
+  margin: 3px 6px 0 0;
+  font-size: 13.5px;
+}
+.hj-ex b.jp {
+  font-size: 17px;
+}
+.hj-ex small {
+  color: var(--muted);
+  font-size: 11.5px;
+}
+.hjr-lead {
+  font-size: 15.5px;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+.hjr-go {
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.hjr-h {
+  font-size: 16px;
+  margin: 22px 0 6px;
+}
+.hjr-rules,
+.hjr-cho,
+.hjr-diff {
+  display: grid;
+  gap: 8px;
+}
+.hjr-rule,
+.hjr-c,
+.hjr-d,
+.hjr-hit,
+.hjr-snd {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+.hjr-top {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.hjr-to {
+  flex: 1;
+}
+.hjr-p {
+  font-weight: 700;
+  color: var(--ok);
+}
+.hjr-bar {
+  height: 6px;
+  border-radius: 99px;
+  background: var(--sunk);
+  margin: 6px 0 4px;
+  overflow: hidden;
+}
+.hjr-bar i {
+  display: block;
+  height: 100%;
+  background: var(--ok);
+  border-radius: inherit;
+}
+.hjr-c {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 2px 10px;
+  align-items: baseline;
+}
+.hjr-c .hjr-ex {
+  grid-column: 1 / -1;
+}
+.hjr-c.hot {
+  border-color: var(--shu);
+}
+.hjr-c em {
+  grid-column: 1 / -1;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--shu);
+  font-weight: 600;
+}
+.hjr-chg {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 14.5px;
+}
+#hjrOut {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+.hjr-snd > b {
+  margin-right: 6px;
+  font-size: 17px;
+}
+.hjr-hit b.jp {
+  font-size: 20px;
+  margin-right: 6px;
+}
+.hjr-hit.guess {
+  border-style: dashed;
+}
+.hjr-d p {
+  margin: 4px 0 0;
+}
+.hjr-d b.jp {
+  font-size: 20px;
+}
+.hjr-credit {
+  margin-top: 18px;
+}
+
+.hjr-more {
+  margin-top: 8px;
+}
+.hjr-more summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ai);
+  padding: 8px 2px;
+}

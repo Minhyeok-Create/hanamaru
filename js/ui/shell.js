@@ -49,8 +49,8 @@ const TABS = {
   ]
 };
 const TAB_MODES = {
-  kana: ['kana', 'kwrite', 'kconf', 'kanji', 'kspeed'],
-  word: ['word', 'flash', 'loan', 'wasei', 'conj', 'cnt', 'wspeed'],
+  kana: ['kana', 'kwrite', 'kconf', 'kanji', 'hj', 'hjr', 'kspeed'],
+  word: ['word', 'flash', 'hjw', 'loan', 'wasei', 'conj', 'cnt', 'wspeed'],
   sent: ['sent', 'jb', 'part', 'gram', 'pol'],
   listen: ['jdlg', 'jtrav', 'jl', 'jd', 'jsh', 'jn', 'jlen', 'jauto'],
   play: ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'],
@@ -62,6 +62,9 @@ const TAB_MODES = {
   eref: ['today', 'wrongs', 'course', 'elist', 'stats', 'badges']
 };
 const MODE_LABEL = {
+  hj: '한국음 한자',
+  hjw: '한자어',
+  hjr: '한국음 규칙',
   kwrite: '따라 쓰기',
   flash: '플래시카드',
   eflash: '플래시카드',
@@ -116,6 +119,8 @@ const MODE_LABEL = {
   elist: '단어장'
 };
 const DUE_LABEL = {
+  hj: '한국음 한자',
+  hjw: '한자어',
   wasei: '일본식 영어',
   kong: '콩글리시',
   eprep: '전치사',
@@ -153,6 +158,9 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'hj',
+  'hjw',
+  'hjr',
   'kwrite',
   'flash',
   'wasei',
@@ -189,7 +197,7 @@ const modLang = m =>
       ? S.lang
       : 'en';
 const SRS_MODS = {
-  ja: ['kana', 'word', 'kanji', 'loan', 'wasei', 'conj', 'cnt', 'sent', 'jb', 'part', 'gram', 'pol', 'jl', 'jd', 'jlen'],
+  ja: ['kana', 'word', 'kanji', 'hj', 'hjw', 'loan', 'wasei', 'conj', 'cnt', 'sent', 'jb', 'part', 'gram', 'pol', 'jl', 'jd', 'jlen'],
   en: ['ew', 'irr', 'kong', 'es', 'eb', 'eprep', 'etense', 'ephr', 'el', 'ed', 'mp']
 };
 const srsMods = () => SRS_MODS[S.lang].filter(m => hasTTS || !NEEDS_TTS.has(m));

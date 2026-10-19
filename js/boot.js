@@ -85,10 +85,11 @@ checkUpdate();
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {
   if (!S.seen.tour) setTimeout(openTour, 400);
-  else if (!S.seen.v10) {
-    S.seen.v10 = S.seen.v9 = S.seen.v8 = 1;
+  else if (!S.seen.v11) {
+    const sawV10 = !!S.seen.v10;
+    S.seen.v11 = S.seen.v10 = S.seen.v9 = S.seen.v8 = 1;
     save();
-    setTimeout(whatsNew10, 500);
+    setTimeout(() => whatsNew10(sawV10), 500);
   }
 }
 startAnalytics();

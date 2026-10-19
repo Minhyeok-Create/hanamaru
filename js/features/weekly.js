@@ -4,9 +4,9 @@
 // Which study area a stats key belongs to (counted per day in S.days[day].m)
 const KEY_GROUPS = [
   [/^k:/, '문자'],
-  [/^kj:/, '한자'],
+  [/^(kj|hj|hw):/, '한자'],
   [/^(w|ew):/, '단어'],
-  [/^lw:/, '외래어'],
+  [/^(lw|wa|kg):/, '외래어'],
   [/^cj:/, '동사 활용'],
   [/^ct:/, '조수사·날짜'],
   [/^(s|es|jb|eb):/, '문장'],
