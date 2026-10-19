@@ -1,0 +1,486 @@
+/* ================= v13 navigation: tab menus, practice header, home hero, daily bar, search ================= */
+
+/* ---- practice header: ‹ back · title · ☆ ---- */
+.mhead.modes {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+.mhead.modes button {
+  flex: none;
+  min-width: 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.mback {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: none;
+  border: 0;
+  color: var(--ai);
+  padding: 8px 8px 8px 0 !important;
+  font-weight: 600;
+  min-height: 40px;
+}
+.mback svg {
+  width: 20px;
+  height: 20px;
+}
+.mtitle {
+  text-align: center;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pin {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 20px !important;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0 !important;
+}
+.pin[aria-pressed='true'] {
+  color: var(--warn);
+}
+
+/* ---- tab menu ---- */
+.menu {
+  display: grid;
+  gap: 6px;
+}
+.menu-h h1 {
+  font-size: 24px;
+  margin: 4px 0 2px;
+}
+.menu-h p {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.menu-g {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  margin: 14px 2px 2px;
+  letter-spacing: 0.02em;
+}
+.mcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: 8px;
+}
+.mcard {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  min-width: 0;
+}
+.mcard:active {
+  transform: scale(0.99);
+}
+.mc-go {
+  display: grid;
+  gap: 3px;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 13px 4px 13px 16px;
+  color: var(--ink);
+  min-width: 0;
+  min-height: 64px;
+}
+.mc-go b {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.mc-go small {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.mcard .pin {
+  margin-right: 6px;
+}
+.mc-new,
+.mc-due {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 99px;
+  padding: 2px 7px;
+}
+.mc-new {
+  background: var(--shu);
+  color: #fff;
+}
+.mc-due {
+  background: var(--ai-soft);
+  color: var(--ai);
+}
+.menu-foot {
+  margin-top: 14px;
+}
+.menu-foot .link,
+.hero-sub {
+  background: none;
+  border: 0;
+  color: var(--ai);
+  text-decoration: underline;
+  padding: 0;
+  font: inherit;
+}
+.me-tab {
+  display: grid;
+  gap: 6px;
+}
+.me-tab b {
+  font-size: 14px;
+}
+.me-tab .chip[aria-pressed='false'] {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* ---- home ---- */
+.hero {
+  display: grid;
+  gap: 8px;
+}
+.hero-go {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 20px;
+  padding: 18px 20px;
+  background: var(--ai);
+  color: var(--on-ai);
+  box-shadow: 0 6px 18px rgba(42, 74, 124, 0.25);
+}
+.hero-t {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.hero-t b {
+  font-size: 20px;
+}
+.hero-t small {
+  font-size: 13px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+.hero-m {
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 99px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+.hero-sub {
+  justify-self: center;
+  font-size: 13px;
+}
+.course-line {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 10px;
+  align-items: center;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 16px;
+  color: var(--ink);
+}
+.course-line > span:first-child {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.course-line small {
+  color: var(--muted);
+  font-size: 12px;
+}
+.course-line b {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cl-bar {
+  grid-column: 1;
+  height: 6px;
+  border-radius: 99px;
+  background: var(--sunk);
+  overflow: hidden;
+}
+.cl-bar i {
+  display: block;
+  height: 100%;
+  background: var(--ok);
+  border-radius: inherit;
+}
+.cl-n {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  font-size: 13px;
+  color: var(--muted);
+}
+.pin-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pin-go {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 99px;
+  padding: 9px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.pin-go::before {
+  content: '★ ';
+  color: var(--warn);
+}
+.home-more {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0 4px;
+}
+.home-more > summary {
+  cursor: pointer;
+  padding: 14px 12px;
+  font-weight: 600;
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.home-more > summary::-webkit-details-marker {
+  display: none;
+}
+.home-more > summary::after {
+  content: '⌄';
+  color: var(--muted);
+}
+.home-more[open] > summary::after {
+  content: '⌃';
+}
+.home-more > *:not(summary) {
+  margin: 0 4px 12px;
+}
+
+/* ---- daily session bar ---- */
+.daily-bar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(66px + env(safe-area-inset-bottom, 0px));
+  z-index: 30;
+  width: min(calc(100% - 20px), 540px);
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 10px;
+  align-items: center;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 18px;
+  padding: 8px 8px 8px 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.db-steps {
+  display: flex;
+  gap: 4px;
+}
+.db-steps i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.db-steps i.done {
+  background: var(--ok);
+}
+.db-steps i.on {
+  background: #fff;
+}
+.db-t {
+  display: grid;
+  min-width: 0;
+}
+.db-t b {
+  font-size: 13px;
+}
+.db-t small {
+  font-size: 12px;
+  opacity: 0.75;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.daily-bar .btn {
+  min-height: 38px;
+  padding: 6px 14px;
+}
+.daily-bar .icon-btn {
+  background: transparent;
+  color: var(--paper);
+  width: 34px;
+  height: 34px;
+}
+body.has-daily main {
+  padding-bottom: 150px;
+}
+body.has-daily .upd {
+  bottom: calc(132px + env(safe-area-inset-bottom, 0px));
+}
+
+/* ---- search ---- */
+.sr-out {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+.sr-h {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 10px 2px 2px;
+}
+.sr-h .num {
+  font-weight: 400;
+}
+.sr-list {
+  display: grid;
+  gap: 6px;
+}
+.sr-i {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 10px;
+  align-items: center;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--ink);
+  width: 100%;
+  min-width: 0;
+}
+.sr-i b {
+  font-size: 16px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.sr-i small {
+  grid-column: 1;
+  color: var(--muted);
+  font-size: 13px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.sr-go {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  color: var(--ai);
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+}
+.sr-go svg {
+  width: 20px;
+  height: 20px;
+}
+.search .wl-search {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---- compact header (search · settings · help · language) ---- */
+.top-r {
+  gap: 6px;
+}
+.top-r .help-btn {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+}
+.top-r .help-btn svg {
+  width: 18px;
+  height: 18px;
+}
+.seg.lang {
+  flex-wrap: nowrap;
+}
+.seg.lang button {
+  padding: 5px 9px;
+  white-space: nowrap;
+  min-height: 30px;
+}
+@media (max-width: 374px) {
+  .brand span {
+    display: none;
+  }
+}
+
+/* ---- menu cards: two columns on phones ---- */
+.mcards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 640px) {
+  .mcards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.mcard {
+  display: block;
+}
+.mc-go {
+  width: 100%;
+  height: 100%;
+  align-content: start;
+  padding: 12px 34px 12px 14px;
+  min-height: 84px;
+}
+.mc-go b {
+  font-size: 15px;
+  line-height: 1.3;
+}
+.mc-go small {
+  font-size: 12.5px;
+}
+.mcard .pin {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  width: 34px;
+  height: 34px;
+  font-size: 17px !important;
+  margin: 0;
+}
