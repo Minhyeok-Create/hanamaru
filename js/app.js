@@ -4786,7 +4786,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020092913';
+const APP_VERSION = '20261020101929';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -11302,7 +11302,7 @@ CUSTOM.weak = renderWeak;
 
 const aiCfg = () => (typeof APP_CONFIG !== 'undefined' && APP_CONFIG.ai) || {};
 const aiOn = () => /^https:\/\/[^\s"'<>]+$/.test(aiCfg().endpoint || '');
-const aiLimit = () => Math.max(5, +aiCfg().dailyLimit || 60);
+const aiLimit = () => Math.max(5, +aiCfg().dailyLimit || 30);
 function aiUsed() {
   if (!S.aiUse || S.aiUse.d !== today()) S.aiUse = { d: today(), n: 0 };
   return S.aiUse.n;
@@ -11510,7 +11510,7 @@ const AI_SCENES = {
     }
   ]
 };
-const AIC_MAX = 12; // learner turns per conversation
+const AIC_MAX = 8; // learner turns per conversation
 let AIC = null; // { lang, sc, msgs: [{ who: 'ai'|'me', t, ko }], busy, hint, review, err }
 
 function renderAIChat(mod) {
@@ -11598,7 +11598,7 @@ const aicHistory = () => AIC.msgs.map(m => ({ role: m.who === 'ai' ? 'assistant'
 const aicScene = () => ({ title: AIC.sc.title, partner: AIC.sc.partner, role: AIC.sc.role, setting: AIC.sc.setting });
 async function aicSend(lang) {
   const inp = document.getElementById('aiIn');
-  const v = inp ? inp.value.trim().slice(0, 300) : '';
+  const v = inp ? inp.value.trim().slice(0, 200) : '';
   if (!v || AIC.busy) return;
   AIC.msgs.push({ who: 'me', t: v });
   AIC.busy = true;

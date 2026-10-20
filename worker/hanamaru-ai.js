@@ -5,10 +5,27 @@
 //   - Bindings → Workers AI 추가, 변수 이름: AI
 //   - Variables → ALLOWED_ORIGINS = https://minhyeok-create.github.io   (앱 주소. 여러 개면 쉼표로)
 //   - (선택) Variables → MODEL = 사용할 모델 이름 (비우면 아래 기본값)
+//   - (선택) Variables → IP_DAILY_LIMIT = 한 접속 주소(IP)가 하루에 보낼 수 있는 횟수 (기본 30)
+//   - (선택) Variables → DAILY_CAP = 서버 전체 하루 최대 횟수 (기본 600, 무료 사용량 안쪽으로 잡은 값)
+//   - (선택) Variables → AI_OFF = 1  → AI를 잠시 끄기 (급할 때 비상 스위치)
 
 const MODELS = ['@cf/google/gemma-4-26b-a4b-it', '@cf/qwen/qwen3-30b-a3b-fp8', '@cf/meta/llama-3.1-8b-instruct-fp8'];
-const MAX_MSGS = 26; // 대화에서 최근 몇 줄까지 보낼지
-const MAX_LEN = 400; // 한 줄 최대 글자 수
+const MAX_MSGS = 16; // 대화에서 최근 몇 줄까지 보낼지 (길수록 AI 사용량이 늘어요)
+const MAX_LEN = 240; // 한 줄 최대 글자 수
+
+// ---- 하루 횟수 세기 ----
+// Cloudflare의 무료 캐시 저장소에 '오늘 몇 번 썼는지'를 적어 둬요. 데이터센터마다 따로 세는 근사치지만,
+// 한국 사용자는 대부분 같은 곳(서울)으로 들어오니 충분히 막아 줘요. 하루 무료 사용량을 넘어도 요금은 없고 멈추기만 해요.
+const kstDay = () => new Date().toISOString().slice(0, 10); // UTC 날짜 = 한국 오전 9시에 바뀜 (무료 사용량 초기화 시각과 같아요)
+async function bump(key, limit) {
+  const cache = caches.default;
+  const url = 'https://hanamaru-ai.counter/' + encodeURIComponent(key);
+  const hit = await cache.match(url);
+  const n = hit ? parseInt(await hit.text(), 10) || 0 : 0;
+  if (n >= limit) return { ok: false, n };
+  await cache.put(url, new Response(String(n + 1), { headers: { 'Cache-Control': 'max-age=90000' } }));
+  return { ok: true, n: n + 1 };
+}
 
 const clip = (s, n) => String(s || '').slice(0, n);
 function prompts(task, lang, scene, text) {
@@ -64,6 +81,7 @@ export default {
     if (req.method !== 'POST' || url.pathname !== '/ai') return reply({ error: 'not found' }, 404, c.headers);
     if (!c.ok) return reply({ error: '허용되지 않은 주소에서 온 요청이에요.' }, 403, c.headers);
     if (!env.AI) return reply({ error: 'Worker에 Workers AI(AI) 연결이 아직 없어요.' }, 500, c.headers);
+    if (String(env.AI_OFF || '') === '1') return reply({ error: 'AI 회화는 잠시 쉬는 중이에요. 나중에 다시 와 주세요!' }, 503, c.headers);
 
     let body;
     try {
@@ -76,8 +94,16 @@ export default {
     const system = prompts(task, lang, body.scene, body.text);
     if (!system) return reply({ error: 'unknown task' }, 400, c.headers);
 
+    // 하루 한도: 접속 주소(IP)마다, 그리고 서버 전체
+    const day = kstDay();
+    const ip = req.headers.get('CF-Connecting-IP') || 'unknown';
+    const perIp = await bump(`ip:${day}:${ip}`, Math.max(1, parseInt(env.IP_DAILY_LIMIT, 10) || 30));
+    if (!perIp.ok) return reply({ error: '오늘 사용할 수 있는 AI 횟수를 다 썼어요. 내일 다시 만나요!' }, 429, c.headers);
+    const all = await bump(`all:${day}`, Math.max(1, parseInt(env.DAILY_CAP, 10) || 600));
+    if (!all.ok) return reply({ error: '오늘은 AI를 찾는 사람이 많아서 무료 사용량이 다 찼어요. 내일 다시 해 보세요.' }, 429, c.headers);
+
     const messages = [{ role: 'system', content: system }];
-    if (task === 'translate') messages.push({ role: 'user', content: clip(body.text, 600) });
+    if (task === 'translate') messages.push({ role: 'user', content: clip(body.text, 400) });
     else {
       const hist = (Array.isArray(body.messages) ? body.messages : []).slice(-MAX_MSGS).map(m => ({
         role: m.role === 'assistant' ? 'assistant' : 'user',
@@ -99,7 +125,7 @@ export default {
           content: 'Conversation:\n' + hist.map(m => `${m.role === 'assistant' ? 'partner' : 'learner'}: ${m.content}`).join('\n')
         });
     }
-    const maxTokens = task === 'review' ? 900 : task === 'translate' ? 500 : task === 'hint' ? 350 : 220;
+    const maxTokens = task === 'review' ? 700 : task === 'translate' ? 400 : task === 'hint' ? 260 : 160;
     const models = env.MODEL ? [env.MODEL, ...MODELS] : MODELS;
     let lastErr = '';
     for (const model of models) {
