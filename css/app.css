@@ -7089,6 +7089,316 @@ body.has-daily .upd {
   word-break: keep-all;
 }
 
+/* ================= v19: AI 전화, 친구 리그, 자동 백업, 단어 저장 ================= */
+.cl,
+.lg {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr);
+}
+.cl-list {
+  display: grid;
+  gap: 8px;
+}
+.cl-sc {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  text-align: left;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.cl-sc span {
+  grid-row: 1 / 3;
+  font-size: 28px;
+  text-align: center;
+}
+.cl-sc b {
+  font-size: 16px;
+}
+.cl-sc small {
+  color: var(--muted);
+}
+.cl-sc:disabled {
+  opacity: 0.5;
+}
+.cl-phone {
+  background: #142033;
+  color: #eef2f8;
+  border-radius: 24px;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+.cl-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cl-ico {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #24344d;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+}
+.cl-top b {
+  display: block;
+  font-size: 17px;
+}
+.cl-top small {
+  color: #9fb1cc;
+}
+.cl-goal {
+  margin: 0;
+  font-size: 13px;
+  color: #b9c6da;
+}
+.cl-log {
+  display: grid;
+  gap: 8px;
+  max-height: 46vh;
+  overflow-y: auto;
+  padding: 2px;
+}
+.cl-m {
+  max-width: 85%;
+  padding: 10px 12px;
+  border-radius: 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  display: grid;
+  gap: 4px;
+}
+.cl-m.ai {
+  background: #24344d;
+  justify-self: start;
+  border-bottom-left-radius: 4px;
+}
+.cl-m.me {
+  background: #3a6fd8;
+  justify-self: end;
+  border-bottom-right-radius: 4px;
+}
+.cl-m small {
+  color: #c3cfe2;
+  font-size: 13px;
+}
+.cl-hid {
+  font-style: normal;
+  color: #9fb1cc;
+}
+.cl-ctl {
+  display: grid;
+  gap: 10px;
+}
+.cl-mic {
+  min-height: 64px;
+  border-radius: 999px;
+  border: 0;
+  background: #2fa86b;
+  color: #fff;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cl-mic.on {
+  background: #d24b3e;
+  animation: pron-blink 1s infinite;
+}
+.cl-mic:disabled:not(.on) {
+  background: #3d4d66;
+  color: #c3cfe2;
+}
+.cl-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+.cl-row .chip {
+  background: #24344d;
+  color: #eef2f8;
+  border-color: #3d4d66;
+}
+.cl-row .chip[aria-pressed='true'] {
+  background: #eef2f8;
+  color: #142033;
+}
+.cl-hang {
+  background: #d24b3e !important;
+  border-color: #d24b3e !important;
+}
+.cl-hint {
+  background: #24344d;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.cl-hint p {
+  margin: 6px 0 0;
+}
+.cl-hint small {
+  color: #b9c6da;
+}
+.cl-end {
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+.cl-end p {
+  margin: 0;
+}
+.cl .aic-in input {
+  color: var(--ink);
+}
+
+/* 친구 리그 */
+.lg-f {
+  display: grid;
+  gap: 4px;
+}
+.lg-f span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.lg input,
+.sync-box input {
+  font: inherit;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  width: 100%;
+  box-sizing: border-box;
+}
+.lg-cards {
+  display: grid;
+  gap: 8px;
+}
+.lg-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: grid;
+  gap: 8px;
+}
+.lg-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.lg-head b {
+  font-size: 20px;
+  display: block;
+}
+.lg-head small {
+  color: var(--muted);
+}
+.lg-board {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.lg-board li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.lg-board li.me {
+  border-color: var(--ai);
+  box-shadow: 0 0 0 1px var(--ai);
+}
+.lg-rank {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.lg-board small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* 자동 백업 */
+.sync-box {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--sunk);
+}
+.sync-code {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sync-code span {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.sync-restore summary {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--ai);
+}
+.sync-restore[open] {
+  display: grid;
+  gap: 8px;
+}
+
+/* 단어 저장 */
+.ym-add {
+  margin-left: 6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ai);
+  font-weight: 700;
+  cursor: pointer;
+}
+.ym-add:disabled {
+  color: var(--ok);
+}
+.ym-words b small {
+  font-weight: 400;
+  color: var(--muted);
+}
+.lg-head .btn {
+  white-space: nowrap;
+  flex: none;
+}
+.sync-code span {
+  font-size: 19px;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+
 /* ---- responsive.css ---- */
 @media (prefers-reduced-motion: reduce) {
   * {

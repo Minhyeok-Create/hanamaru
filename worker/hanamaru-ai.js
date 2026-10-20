@@ -106,7 +106,12 @@ async function db(env) {
       env.DB.prepare(
         'CREATE TABLE IF NOT EXISTS subs (id TEXT PRIMARY KEY, endpoint TEXT, p256dh TEXT, auth TEXT, hour INTEGER, lang TEXT, streak INTEGER, last_done TEXT, sent_day TEXT, created TEXT)'
       ),
-      env.DB.prepare('CREATE TABLE IF NOT EXISTS stats (day TEXT, k TEXT, n INTEGER, PRIMARY KEY (day, k))')
+      env.DB.prepare('CREATE TABLE IF NOT EXISTS stats (day TEXT, k TEXT, n INTEGER, PRIMARY KEY (day, k))'),
+      env.DB.prepare('CREATE TABLE IF NOT EXISTS backups (id TEXT PRIMARY KEY, data TEXT, size INTEGER, updated TEXT)'),
+      env.DB.prepare('CREATE TABLE IF NOT EXISTS groups (code TEXT PRIMARY KEY, name TEXT, created TEXT)'),
+      env.DB.prepare(
+        'CREATE TABLE IF NOT EXISTS members (code TEXT, mid TEXT, nick TEXT, week TEXT, xp INTEGER, updated TEXT, PRIMARY KEY (code, mid))'
+      )
     ]);
     DB_READY = true;
   }
@@ -352,6 +357,162 @@ async function handlePush(req, env, path, c, ip) {
   return reply({ error: 'not found' }, 404, c.headers);
 }
 
+// ================= 기록 자동 백업: 백업 코드(HANA-XXXX-XXXX-XXXX) 하나로 저장·복원. 서버에는 코드의 해시만 열쇠로 남아요 =================
+const SYNC_CODE = /^[A-Z2-9]{4}-[A-Z2-9]{4}-[A-Z2-9]{4}$/;
+const syncId = async code =>
+  [...new Uint8Array(await crypto.subtle.digest('SHA-256', enc.encode('hm-sync:' + code)))]
+    .map(b => b.toString(16).padStart(2, '0'))
+    .join('');
+async function handleSync(req, env, url, c, ip) {
+  const d = await db(env);
+  if (!d) return reply({ error: 'no-db' }, 404, c.headers);
+  if (!c.ok || !req.headers.get('Origin')) return reply({ error: 'forbidden' }, 403, c.headers);
+  const day = kstDay();
+  if (req.method === 'GET' && url.pathname === '/sync/load') {
+    const code = String(url.searchParams.get('code') || '').toUpperCase();
+    if (!SYNC_CODE.test(code)) return reply({ error: '백업 코드 형식이 달라요. HANA 뒤의 12자리를 확인해 주세요.' }, 400, c.headers);
+    if (!(await bump(`syncload:${day}:${ip}`, 30)).ok)
+      return reply({ error: '오늘은 더 불러올 수 없어요. 내일 다시 해 보세요.' }, 429, c.headers);
+    const row = await d
+      .prepare('SELECT data, updated FROM backups WHERE id = ?')
+      .bind(await syncId(code))
+      .first();
+    if (!row) return reply({ error: '이 코드로 저장된 백업이 없어요. 코드를 다시 확인해 주세요.' }, 404, c.headers);
+    return reply({ data: row.data, at: row.updated }, 200, c.headers);
+  }
+  if (req.method !== 'POST') return reply({ error: 'not found' }, 404, c.headers);
+  let b;
+  try {
+    b = JSON.parse(await req.text());
+  } catch (e) {
+    return reply({ error: 'bad request' }, 400, c.headers);
+  }
+  const code = String(b.code || '').toUpperCase();
+  if (!SYNC_CODE.test(code)) return reply({ error: 'bad code' }, 400, c.headers);
+  const id = await syncId(code);
+  if (url.pathname === '/sync/save') {
+    const data = String(b.data || '');
+    if (!data || data.length > 1500000) return reply({ error: '기록이 너무 커서 저장하지 못했어요.' }, 413, c.headers);
+    if (!(await bump(`syncsave:${day}:${ip}`, 40)).ok) return reply({ error: 'too many' }, 429, c.headers);
+    const at = new Date().toISOString();
+    await d
+      .prepare(
+        'INSERT INTO backups (id, data, size, updated) VALUES (?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET data = excluded.data, size = excluded.size, updated = excluded.updated'
+      )
+      .bind(id, data, data.length, at)
+      .run();
+    return reply({ ok: true, at }, 200, c.headers);
+  }
+  if (url.pathname === '/sync/delete') {
+    await d.prepare('DELETE FROM backups WHERE id = ?').bind(id).run();
+    return reply({ ok: true }, 200, c.headers);
+  }
+  return reply({ error: 'not found' }, 404, c.headers);
+}
+
+// ================= 친구 리그: 그룹 코드로 모여 이번 주 공부량(XP) 순위 보기. 닉네임과 주간 점수만 저장 =================
+const GRP_CODE = /^[A-Z2-9]{6}$/;
+const MAX_MEMBERS = 30;
+const cleanName = (s, n) =>
+  String(s || '')
+    .replace(/[<>&"'`\\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, n);
+// this week's Monday in Korea (YYYY-MM-DD)
+function koreaWeek() {
+  const k = koreaNow();
+  const dow = (k.getUTCDay() + 6) % 7;
+  return new Date(k.getTime() - dow * 86400000).toISOString().slice(0, 10);
+}
+async function handleGroup(req, env, url, c, ip) {
+  const d = await db(env);
+  if (!d) return reply({ error: 'no-db' }, 404, c.headers);
+  if (!c.ok || !req.headers.get('Origin')) return reply({ error: 'forbidden' }, 403, c.headers);
+  const day = kstDay(),
+    week = koreaWeek();
+  if (req.method === 'GET' && url.pathname === '/grp/board') {
+    const code = String(url.searchParams.get('code') || '').toUpperCase(),
+      mid = String(url.searchParams.get('mid') || '');
+    if (!(await bump(`grpb:${day}:${ip}`, 300)).ok) return reply({ error: 'too many' }, 429, c.headers);
+    const g = GRP_CODE.test(code) && (await d.prepare('SELECT name FROM groups WHERE code = ?').bind(code).first());
+    if (!g) return reply({ error: '그룹을 찾을 수 없어요.' }, 404, c.headers);
+    const { results } = await d.prepare('SELECT mid, nick, week, xp FROM members WHERE code = ?').bind(code).all();
+    const members = (results || [])
+      .map(m => ({ nick: m.nick, xp: m.week === week ? m.xp || 0 : 0, me: m.mid === mid }))
+      .sort((a, b) => b.xp - a.xp);
+    return reply({ name: g.name, code, week, members }, 200, c.headers);
+  }
+  if (req.method !== 'POST') return reply({ error: 'not found' }, 404, c.headers);
+  let b;
+  try {
+    b = JSON.parse((await req.text()).slice(0, 2000));
+  } catch (e) {
+    return reply({ error: 'bad request' }, 400, c.headers);
+  }
+  const mid = String(b.mid || '');
+  if (!/^[a-z0-9]{12,32}$/.test(mid)) return reply({ error: 'bad id' }, 400, c.headers);
+  const nick = cleanName(b.nick, 12);
+  const at = new Date().toISOString();
+  if (url.pathname === '/grp/create') {
+    const name = cleanName(b.name, 16);
+    if (!name || !nick) return reply({ error: '그룹 이름과 닉네임을 써 주세요.' }, 400, c.headers);
+    if (!(await bump(`grpc:${day}:${ip}`, 5)).ok) return reply({ error: '그룹은 하루 5개까지 만들 수 있어요.' }, 429, c.headers);
+    const A = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    let code = '';
+    for (let t = 0; t < 5 && !code; t++) {
+      const r = crypto.getRandomValues(new Uint8Array(6));
+      const cand = [...r].map(x => A[x % A.length]).join('');
+      if (!(await d.prepare('SELECT 1 FROM groups WHERE code = ?').bind(cand).first())) code = cand;
+    }
+    if (!code) return reply({ error: '잠시 뒤 다시 해 보세요.' }, 503, c.headers);
+    await d.batch([
+      d.prepare('INSERT INTO groups (code, name, created) VALUES (?, ?, ?)').bind(code, name, at),
+      d
+        .prepare('INSERT INTO members (code, mid, nick, week, xp, updated) VALUES (?, ?, ?, ?, ?, ?)')
+        .bind(code, mid, nick, week, Math.max(0, Math.min(100000, parseInt(b.xp, 10) || 0)), at)
+    ]);
+    return reply({ ok: true, code, name }, 200, c.headers);
+  }
+  const code = String(b.code || '').toUpperCase();
+  if (!GRP_CODE.test(code)) return reply({ error: '그룹 코드는 6자리예요.' }, 400, c.headers);
+  const g = await d.prepare('SELECT name FROM groups WHERE code = ?').bind(code).first();
+  if (!g) return reply({ error: '그 코드의 그룹이 없어요. 코드를 다시 확인해 주세요.' }, 404, c.headers);
+  const mine = await d.prepare('SELECT 1 FROM members WHERE code = ? AND mid = ?').bind(code, mid).first();
+  if (url.pathname === '/grp/join') {
+    if (!nick) return reply({ error: '닉네임을 써 주세요.' }, 400, c.headers);
+    if (!(await bump(`grpj:${day}:${ip}`, 20)).ok) return reply({ error: 'too many' }, 429, c.headers);
+    if (!mine) {
+      const n = await d.prepare('SELECT COUNT(*) AS n FROM members WHERE code = ?').bind(code).first();
+      if (n && n.n >= MAX_MEMBERS) return reply({ error: `그룹이 가득 찼어요 (최대 ${MAX_MEMBERS}명).` }, 409, c.headers);
+    }
+    await d
+      .prepare(
+        'INSERT INTO members (code, mid, nick, week, xp, updated) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(code, mid) DO UPDATE SET nick = excluded.nick, updated = excluded.updated'
+      )
+      .bind(code, mid, nick, week, Math.max(0, Math.min(100000, parseInt(b.xp, 10) || 0)), at)
+      .run();
+    return reply({ ok: true, code, name: g.name }, 200, c.headers);
+  }
+  if (!mine) return reply({ error: '이 그룹의 멤버가 아니에요.' }, 403, c.headers);
+  if (url.pathname === '/grp/score') {
+    if (!(await bump(`grps:${day}:${ip}`, 120)).ok) return reply({ ok: true }, 200, c.headers);
+    if (b.week !== week) return reply({ ok: true, week }, 200, c.headers); // only this week's score counts
+    await d
+      .prepare("UPDATE members SET xp = ?, week = ?, nick = COALESCE(NULLIF(?, ''), nick), updated = ? WHERE code = ? AND mid = ?")
+      .bind(Math.max(0, Math.min(100000, parseInt(b.xp, 10) || 0)), week, nick, at, code, mid)
+      .run();
+    return reply({ ok: true, week }, 200, c.headers);
+  }
+  if (url.pathname === '/grp/leave') {
+    await d.prepare('DELETE FROM members WHERE code = ? AND mid = ?').bind(code, mid).run();
+    const left = await d.prepare('SELECT COUNT(*) AS n FROM members WHERE code = ?').bind(code).first();
+    if (!left || !left.n) await d.prepare('DELETE FROM groups WHERE code = ?').bind(code).run();
+    return reply({ ok: true }, 200, c.headers);
+  }
+  return reply({ error: 'not found' }, 404, c.headers);
+}
+
 // ================= 익명 사용 통계 =================
 // 앱이 보내는 것: [종류, 연습 이름] 묶음뿐. 종류 o=열기 f=끝까지 u=👍 d=👎(이유) v=방문 t=첫 체험 p=알림 켜기/끄기 x=기타
 const STAT_KEY = /^[a-z]:[a-z0-9_:.-]{1,40}$/;
@@ -568,6 +729,8 @@ export default {
     const url = new URL(req.url);
     const ip = req.headers.get('CF-Connecting-IP') || 'unknown';
     if (url.pathname.startsWith('/push/')) return handlePush(req, env, url.pathname, c, ip);
+    if (url.pathname.startsWith('/sync/')) return handleSync(req, env, url, c, ip);
+    if (url.pathname.startsWith('/grp/')) return handleGroup(req, env, url, c, ip);
     if (url.pathname === '/stats' && req.method === 'GET') return statsPage(env, url);
     if (url.pathname === '/tts' && req.method === 'GET') return handleTTS(req, env, url, c, ip, ctx);
     if (url.pathname === '/stat' && req.method === 'POST') return handleStat(req, env, c, ip);

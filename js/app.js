@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [66, "core/stats.js"], [158, "lib/conjugate.js"], [370, "lib/numbers.js"], [535, "lib/dictation.js"], [625, "content/kana.js"], [678, "content/items.js"], [732, "lib/romaji.js"], [822, "content/items-extra.js"], [869, "core/storage.js"], [1036, "core/srs.js"], [1196, "core/badges.js"], [1284, "core/backup.js"], [1375, "core/speech.js"], [1510, "core/hqvoice.js"], [1603, "ui/shell.js"], [2046, "ui/menu.js"], [2239, "ui/home.js"], [2433, "quiz/engine.js"], [2991, "quiz/input.js"], [3111, "quiz/kana.js"], [3215, "quiz/words.js"], [3405, "quiz/loan-conj.js"], [3480, "quiz/sentences.js"], [3612, "quiz/dictation-numbers.js"], [3737, "quiz/flow.js"], [4036, "quiz/speed.js"], [4204, "views/reference.js"], [4291, "views/wordlist.js"], [4498, "views/stats.js"], [4622, "quiz/modes-extra.js"], [4741, "features/shadowing.js"], [5005, "features/dialogue.js"], [5185, "views/grammar-notes.js"], [5241, "views/today.js"], [5356, "core/update.js"], [5416, "quiz/counters.js"], [5767, "quiz/polite.js"], [5816, "quiz/jp-pairs.js"], [5866, "quiz/english-grammar.js"], [5943, "quiz/made-english.js"], [5987, "quiz/hanja.js"], [6235, "quiz/ko-traps.js"], [6345, "quiz/en-traps.js"], [6414, "quiz/kansai.js"], [6455, "features/course.js"], [7399, "ui/sheet.js"], [7431, "features/share-card.js"], [7750, "ui/help.js"], [8063, "play/setup.js"], [8092, "features/sound.js"], [8153, "features/levels.js"], [8278, "play/cards.js"], [8421, "play/stamps.js"], [8615, "play/omikuji.js"], [8751, "play/rain.js"], [8965, "play/match.js"], [9093, "play/vs.js"], [9335, "play/play.js"], [9468, "features/missions.js"], [9564, "features/seasons.js"], [9619, "features/weekly.js"], [9855, "features/level-test.js"], [10103, "features/autoplay.js"], [10301, "views/wrong-notes.js"], [10374, "features/support.js"], [10471, "ui/settings.js"], [10713, "features/travel.js"], [10855, "features/writing.js"], [11022, "features/flashcards.js"], [11164, "features/share-words.js"], [11304, "views/hanja-rules.js"], [11428, "features/signs.js"], [11509, "features/trip.js"], [11669, "features/daily.js"], [11790, "features/share-more.js"], [11956, "views/weak.js"], [12080, "features/ai.js"], [12141, "features/aichat.js"], [12479, "features/diary.js"], [12618, "features/push.js"], [12761, "features/photo.js"], [12904, "features/trial.js"], [13070, "features/gcomp.js"], [13185, "features/yomu.js"], [13325, "features/mycard.js"], [13579, "features/reader.js"], [13750, "ui/welcome.js"], [13854, "ui/search.js"], [13985, "ui/whats-new.js"], [14114, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "lib/conjugate.js"], [371, "lib/numbers.js"], [536, "lib/dictation.js"], [626, "content/kana.js"], [679, "content/items.js"], [733, "lib/romaji.js"], [823, "content/items-extra.js"], [870, "core/storage.js"], [1037, "core/srs.js"], [1197, "core/badges.js"], [1285, "core/backup.js"], [1376, "core/speech.js"], [1511, "core/hqvoice.js"], [1604, "ui/shell.js"], [2075, "ui/menu.js"], [2274, "ui/home.js"], [2468, "quiz/engine.js"], [3026, "quiz/input.js"], [3146, "quiz/kana.js"], [3250, "quiz/words.js"], [3440, "quiz/loan-conj.js"], [3515, "quiz/sentences.js"], [3647, "quiz/dictation-numbers.js"], [3772, "quiz/flow.js"], [4071, "quiz/speed.js"], [4239, "views/reference.js"], [4326, "views/wordlist.js"], [4533, "views/stats.js"], [4657, "quiz/modes-extra.js"], [4776, "features/shadowing.js"], [5040, "features/dialogue.js"], [5220, "views/grammar-notes.js"], [5276, "views/today.js"], [5391, "core/update.js"], [5451, "quiz/counters.js"], [5802, "quiz/polite.js"], [5851, "quiz/jp-pairs.js"], [5901, "quiz/english-grammar.js"], [5978, "quiz/made-english.js"], [6022, "quiz/hanja.js"], [6270, "quiz/ko-traps.js"], [6380, "quiz/en-traps.js"], [6449, "quiz/kansai.js"], [6490, "features/course.js"], [7434, "ui/sheet.js"], [7466, "features/share-card.js"], [7785, "ui/help.js"], [8101, "play/setup.js"], [8130, "features/sound.js"], [8191, "features/levels.js"], [8316, "play/cards.js"], [8459, "play/stamps.js"], [8653, "play/omikuji.js"], [8789, "play/rain.js"], [9003, "play/match.js"], [9131, "play/vs.js"], [9373, "play/play.js"], [9506, "features/missions.js"], [9602, "features/seasons.js"], [9657, "features/weekly.js"], [9893, "features/level-test.js"], [10141, "features/autoplay.js"], [10339, "views/wrong-notes.js"], [10412, "features/support.js"], [10509, "ui/settings.js"], [10760, "features/travel.js"], [10902, "features/writing.js"], [11069, "features/flashcards.js"], [11211, "features/share-words.js"], [11347, "views/hanja-rules.js"], [11471, "features/signs.js"], [11552, "features/trip.js"], [11712, "features/daily.js"], [11833, "features/share-more.js"], [11999, "views/weak.js"], [12123, "features/ai.js"], [12184, "features/aichat.js"], [12522, "features/diary.js"], [12661, "features/push.js"], [12804, "features/photo.js"], [12951, "features/trial.js"], [13117, "features/gcomp.js"], [13232, "features/yomu.js"], [13412, "features/call.js"], [13783, "features/sync.js"], [13945, "features/league.js"], [14110, "features/mycard.js"], [14364, "features/reader.js"], [14535, "ui/welcome.js"], [14638, "ui/search.js"], [14769, "ui/whats-new.js"], [14908, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -11,6 +11,7 @@ function reportError(msg, src, stack) {
     msg = String(msg || '').slice(0, 200);
     if (
       !msg ||
+      /hm-reload/.test(msg) ||
       /^Script error\.?$/i.test(msg.trim()) ||
       /ResizeObserver loop|extension:\/\/|chrome-extension|safari-extension|moz-extension/i.test(msg + ' ' + src)
     )
@@ -1665,10 +1666,13 @@ const MENU = {
   ],
   talk: [
     ['여행', ['jtrav', 'mycard', 'trip', 'sign', 'photo', 'reader', 'koexp', 'kansai']],
-    ['대화·듣기', ['aichat', 'diary', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
+    ['대화·듣기', ['aichat', 'call', 'diary', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
     ['발음', ['jlen', 'jauto']]
   ],
-  play: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
+  play: [
+    ['친구와 함께', ['league', 'vs']],
+    ['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match']]
+  ],
   ref: [
     ['복습', ['weak', 'wrongs', 'today']],
     ['자료', ['course', 'chart', 'jlist', 'gnote']],
@@ -1682,10 +1686,13 @@ const MENU = {
   ],
   etalk: [
     ['여행', ['etrav', 'emycard', 'etrip', 'ephoto']],
-    ['대화·듣기', ['eaichat', 'ediary', 'edlg', 'el', 'ed', 'esh', 'enn']],
+    ['대화·듣기', ['eaichat', 'ecall', 'ediary', 'edlg', 'el', 'ed', 'esh', 'enn']],
     ['발음', ['mp', 'eauto']]
   ],
-  eplay: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
+  eplay: [
+    ['친구와 함께', ['league', 'vs']],
+    ['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match']]
+  ],
   eref: [
     ['복습', ['weak', 'wrongs', 'today']],
     ['자료', ['course', 'elist']],
@@ -1702,6 +1709,9 @@ const MODE_LABEL = {
   diary: 'AI 한 줄 일기',
   photo: '메뉴판 사진 읽기',
   yomu: '읽기 연습',
+  call: 'AI 전화 연습',
+  ecall: 'AI 전화 연습',
+  league: '친구 리그',
   gcomp: '문법 비교 노트',
   egcomp: '문법 비교 노트',
   ephoto: '메뉴판 사진 읽기',
@@ -1814,6 +1824,7 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'call',
   'yomu',
   'gcomp',
   'diary',
@@ -1861,7 +1872,7 @@ const JA_MODS = new Set([
 const modLang = m =>
   JA_MODS.has(m)
     ? 'ja'
-    : ['stats', 'badges', 'today', 'course', 'wrongs', 'weak', 'omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'].includes(m)
+    : ['stats', 'badges', 'today', 'course', 'wrongs', 'weak', 'omikuji', 'cards', 'stamps', 'rain', 'match', 'vs', 'league'].includes(m)
       ? S.lang
       : 'en';
 const SRS_MODS = {
@@ -1892,7 +1903,8 @@ const SRS_MODS = {
 const srsMods = () => SRS_MODS[S.lang].filter(m => hasTTS || !NEEDS_TTS.has(m));
 const tabModes = t => (TAB_MODES[OLD_TAB[t] || t] || []).filter(m => hasTTS || !NEEDS_TTS.has(m));
 // modes the person chose to hide (settings → 메뉴 편집) are left out of menus
-const menuModes = t => tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m) && (!/aichat$|diary$|photo$/.test(m) || aiOn()));
+const menuModes = t =>
+  tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m) && (!/aichat$|diary$|photo$|call$|^league$/.test(m) || aiOn()));
 const tabList = () => TABS[S.lang].filter(([t]) => t === 'home' || tabModes(t).length);
 function curTab() {
   const t = OLD_TAB[S.tabs[S.lang]] || S.tabs[S.lang];
@@ -2020,13 +2032,30 @@ document.addEventListener('click', e => {
   const b = e.target.closest('[data-mode]');
   if (b && !e.defaultPrevented) startMod(b.dataset.mode);
 });
+// The page loads only the data of the language being studied (js/data-ja.js or data-en.js).
+// Switching to the other language reloads the page with that pack; `after` = what to open once it's back.
+const packHas = l => typeof HM_PACK === 'undefined' || HM_PACK === 'all' || HM_PACK === l;
+function switchLang(l, after) {
+  const same = S.lang === l;
+  S.lang = l;
+  save();
+  if (packHas(l)) {
+    if (!same) renderTabs();
+    return true;
+  }
+  try {
+    if (after) sessionStorage.setItem('hm-after', after);
+  } catch (e) {}
+  stopAll();
+  view.innerHTML = '<div class="splash" role="status"><span>' + (l === 'en' ? '영어' : '일본어') + ' 불러오는 중…</span></div>';
+  hmReload();
+  return false;
+}
+let hmReload = () => location.reload();
 document.getElementById('langSeg').addEventListener('click', e => {
   const b = e.target.closest('[data-lang]');
   if (!b || b.dataset.lang === S.lang) return;
-  S.lang = b.dataset.lang;
-  save();
-  renderTabs();
-  go(curTab());
+  if (switchLang(b.dataset.lang)) go(curTab());
 });
 document.addEventListener('focusin', e => {
   if (e.target.matches('input[type=text],input[type=search],textarea')) document.body.classList.add('typing');
@@ -2080,6 +2109,9 @@ const MENU_DESC = {
   diary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   photo: '찍으면 AI가 읽는 법·뜻·가격 정리',
   yomu: '짧은 글 읽고 내용 확인 (N5~N3)',
+  call: '말로만 하는 실전 전화 (식당 예약·택시)',
+  ecall: '말로만 하는 실전 전화 (예약·고객센터)',
+  league: '친구들과 이번 주 공부량 겨루기',
   gcomp: 'は vs が, に vs で 헷갈리는 짝 비교',
   egcomp: 'for vs since, make vs do 헷갈리는 짝 비교',
   ephoto: '찍으면 AI가 뜻·가격 정리',
@@ -2131,6 +2163,9 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'call',
+  'ecall',
+  'league',
   'yomu',
   'gcomp',
   'egcomp',
@@ -5355,7 +5390,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020122019';
+const APP_VERSION = '20261020132912';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -7753,6 +7788,9 @@ const MODE_HELP = {
   mycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   emycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   reader: '아이폰 텍스트 인식으로 복사한 일본어를 붙여넣으면 후리가나·단어 뜻·한국음을 달아 줘요.',
+  call: '🎤를 누르고 말하면 AI가 목소리로 대답하는 전화 연습이에요. 자막은 꺼져 있으니 귀로 들어 보고, 막히면 자막이나 힌트를 켜요. 끝나면 첨삭을 받을 수 있어요.',
+  ecall: '🎤를 누르고 말하면 AI가 목소리로 대답하는 영어 전화 연습이에요. 자막은 꺼져 있으니 귀로 들어 보고, 막히면 자막이나 힌트를 켜요.',
+  league: '친구끼리 그룹을 만들고 초대 링크를 보내요. 이번 주(월~일) 공부해서 얻은 XP로 순위를 겨뤄요.',
   yomu: '짧은 글을 읽고 문제 3개로 이해했는지 확인해요. 후리가나는 켜고 끌 수 있고, 문장을 누르면 뜻이 나오고 읽어 줘요.',
   gcomp: '한국인이 헷갈리는 문법 짝(は/が, に/で, から/ので…)을 나란히 비교하고, 6문제로 확인해요.',
   egcomp: '한국인이 헷갈리는 영어 짝(for/since, say/tell, used to…)을 나란히 비교하고, 6문제로 확인해요.',
@@ -10543,7 +10581,8 @@ function settingsHTML() {
       <p class="note">20문제로 실력을 확인하고 코스를 어디서부터 할지 추천받아요.${S.ltest && S.ltest[S.lang] ? ` 지난 결과: ${S.ltest[S.lang].c}/${S.ltest[S.lang].n} · ${S.ltest[S.lang].day}일차 추천` : ''}</p>
       <button class="btn" data-set-ltest>${S.lang === 'ja' ? '일본어' : '영어'} 레벨 테스트 하기</button></div></section>
     <section id="set-backup"><h2 class="sec-title">기록 백업</h2><div class="panel backup" style="padding:14px;display:grid;gap:10px">
-      <p class="note">학습 기록은 이 기기에만 저장돼요. 휴대폰을 바꾸거나 Safari 데이터를 지우기 전에 백업 코드를 복사해서 메모 앱이나 '카톡 나에게 보내기'에 보관하세요. 레벨·카드·코스 기록도 함께 저장돼요.</p>
+      ${syncHTML()}
+      <p class="note"><b>직접 백업</b> · 자동 백업을 안 쓰면 기록은 이 기기에만 있어요. 휴대폰을 바꾸거나 Safari 데이터를 지우기 전에 백업 코드를 복사해서 메모 앱이나 '카톡 나에게 보내기'에 보관하세요. 레벨·카드·코스 기록도 함께 저장돼요.</p>
       <div class="row"><button class="btn" data-bk="copy">백업 코드 복사</button><button class="btn" data-bk="open">코드로 복원</button></div>
       ${bk.mode === 'show' ? `<textarea id="bkOut" readonly aria-label="백업 코드">${esc(bk.code)}</textarea>` : ''}
       ${bk.mode === 'import' ? `<textarea id="bkIn" placeholder="HM2. 으로 시작하는 백업 코드를 붙여 넣으세요" aria-label="백업 코드 입력">${esc(bk.input)}</textarea><button class="btn primary" data-bk="restore">복원하기</button><p class="note">지금 기록과 합쳐져요. 같은 문제는 더 많이 푼 쪽 기록을 남겨요.</p>` : ''}
@@ -10566,6 +10605,14 @@ function settingsHTML() {
 function openSettings(section) {
   const el = openSheet(settingsHTML(), 'help settings');
   if (!PUSH.checked && pushBase()) pushKey().then(pushRedraw);
+  if (SYNC.server === null && syncBase())
+    fetch(syncBase() + '/')
+      .then(r => r.json())
+      .then(j => {
+        SYNC.server = !!(j && j.db);
+        syncRedraw();
+      })
+      .catch(() => {});
   const rerender = () => {
     el.innerHTML = settingsHTML();
     if (curTab() === 'home') renderHome();
@@ -11291,11 +11338,7 @@ function offerWordShare(o) {
     save();
     closeSheet();
     toast(added ? `단어 ${added}개를 추가했어요` : '이미 다 가지고 있는 단어예요');
-    if (S.lang !== lang) {
-      S.lang = lang;
-      save();
-      renderTabs();
-    }
+    if (!switchLang(lang, lang === 'ja' ? 'jlist' : 'elist')) return;
     startMod(lang === 'ja' ? 'jlist' : 'elist');
   });
 }
@@ -12790,6 +12833,10 @@ function renderPhoto(mod) {
         ],
         0
       );
+    } else if (b.dataset.ph === 'save' && x) {
+      addMyWord(lang, x.t, x.r, x.ko);
+      b.disabled = true;
+      b.textContent = '✓ 저장됨';
     } else if (b.dataset.ph === 'again') {
       PH = { busy: false, err: '', res: null, img: '' };
       phDraw(lang);
@@ -12828,7 +12875,7 @@ function phDraw(lang) {
                   i
                 ) => `<div class="ph-i"><div class="ph-t"><b class="${ja ? 'jp' : 'en'}" lang="${lang}">${esc(x.t)}</b>${x.p ? `<span class="ph-p num">${esc(x.p)}</span>` : ''}</div>
           ${ja && x.r && x.r !== x.t ? `<p class="ph-r jp" lang="ja">${esc(x.r)}</p>` : ''}<p class="ph-ko">${esc(x.ko || '')}${x.n ? ` <small>· ${esc(x.n)}</small>` : ''}</p>
-          <div class="row"><button type="button" class="spk" data-ph="say" data-phi="${i}">${SPK_ICON} 듣기</button><button type="button" class="btn" data-ph="order" data-phi="${i}">이거 주세요</button></div></div>`
+          <div class="row"><button type="button" class="spk" data-ph="say" data-phi="${i}">${SPK_ICON} 듣기</button><button type="button" class="btn" data-ph="order" data-phi="${i}">이거 주세요</button><button type="button" class="btn quiet" data-ph="save" data-phi="${i}">＋ 단어장</button></div></div>`
               )
               .join('')}</div>`
           : ''
@@ -13203,6 +13250,40 @@ function rubyTok(t, r) {
   return `${esc(t.slice(0, a))}<ruby>${esc(core)}<rt>${esc(rc)}</rt></ruby>${esc(t.slice(t.length - b))}`;
 }
 const ymSent = s => s.t.split(' ').join('');
+// save a word met while reading (reading practice, menu photos) → 내 단어장 (and its quizzes/reviews). Known words get a ★ instead.
+function addMyWord(lang, w, r, m) {
+  w = String(w || '').trim();
+  m = String(m || '')
+    .replace(/\(.*?\)/g, '')
+    .split(/[,，/·]/)
+    .map(x => x.trim())
+    .filter(Boolean)
+    .slice(0, 3)
+    .join('/');
+  if (!w || !m) return toast('저장할 수 없는 단어예요');
+  if (lang === 'ja') {
+    r = toHira(String(r || w).replace(/\s/g, ''));
+    if (!/^[ぁ-ゖー]+$/.test(r)) return toast('읽는 법을 알 수 없어서 저장하지 못했어요');
+    const have = WORDS.find(x => x.w === w && x.r === r);
+    if (have) {
+      S.fav[have.key] = 1;
+      save();
+      return toast(`이미 있는 단어라 ★ 즐겨찾기에 넣었어요: ${w}`);
+    }
+    S.custom.ja.push({ w, r, m });
+  } else {
+    const have = EN_WORDS.find(x => x.w.toLowerCase() === w.toLowerCase());
+    if (have) {
+      S.fav[have.key] = 1;
+      save();
+      return toast(`이미 있는 단어라 ★ 즐겨찾기에 넣었어요: ${w}`);
+    }
+    S.custom.en.push({ w, m });
+  }
+  rebuildWords();
+  save();
+  toast(`내 단어장에 저장했어요: ${w}`);
+}
 const ymText = y => y.sents.map(ymSent).join('');
 
 function renderYomu(mod) {
@@ -13242,6 +13323,12 @@ function renderYomu(mod) {
       YM.open[i] = !YM.open[i];
       speak(ymSent(y.sents[i]), 'ja');
       ymDraw();
+    } else if (d.ymw !== undefined) {
+      const y = YOMU.find(x => x.id === YM.id),
+        w = y.words[+d.ymw];
+      addMyWord('ja', w[0], w[1], w[2]);
+      b.disabled = true;
+      b.textContent = '✓';
     } else if (d.ymq !== undefined && YM.ans[d.ymq] === undefined) {
       const y = YOMU.find(x => x.id === YM.id),
         qi = +d.ymq,
@@ -13315,11 +13402,709 @@ function ymDraw() {
     <div class="ym-head"><span class="ym-k">${esc(y.kind || '')} · N${y.lvl}</span><h2 class="jp" lang="ja">${esc(y.title)}</h2><p>${esc(y.ko_title || '')}</p></div>
     <div class="ym-tools"><button type="button" class="chip" data-ym="furi" aria-pressed="${furi}">후리가나</button><button type="button" class="chip" data-ym="ko" aria-pressed="${y.sents.every((_, i) => YM.open[i])}">번역 전부</button><button type="button" class="spk" data-ym="all">${SPK_ICON} 전체 듣기</button></div>
     <div class="ym-text">${sents}</div>
-    ${y.words && y.words.length ? `<div class="ym-words"><b>낱말</b>${y.words.map(w => `<span><span class="jp" lang="ja">${esc(w[0])}</span> <small class="jp" lang="ja">${w[0] !== w[1] ? esc(w[1]) : ''}</small> ${esc(w[2])}</span>`).join('')}</div>` : ''}
+    ${y.words && y.words.length ? `<div class="ym-words"><b>낱말 <small>＋를 누르면 내 단어장에 저장돼요</small></b>${y.words.map((w, i) => `<span><span class="jp" lang="ja">${esc(w[0])}</span> <small class="jp" lang="ja">${w[0] !== w[1] ? esc(w[1]) : ''}</small> ${esc(w[2])}<button type="button" class="ym-add" data-ymw="${i}" aria-label="${esc(w[0])} 단어장에 저장">＋</button></span>`).join('')}</div>` : ''}
     <h3 class="hjr-h">내용 확인</h3>${qs}
     ${answered === y.q.length ? `<p class="ym-done"><b class="num">${c} / ${y.q.length}</b> ${c === y.q.length ? '다 이해했어요! 하나마루' : '틀린 문제는 본문에서 근거를 다시 찾아보세요.'}</p>${fbHTML('yomu')}` : ''}`;
 }
 CUSTOM.yomu = renderYomu;
+
+// ---- features/call.js ----
+'use strict';
+/* ================= AI 전화 연습: a phone call with an AI (speak → it answers out loud). Push-to-talk, subtitles off by default ================= */
+const CALL_SCENES = {
+  ja: [
+    {
+      id: 'resv',
+      ico: '🍽️',
+      title: '식당 전화 예약',
+      partner: 'レストランの電話受付の店員（丁寧語）',
+      role: '予約したい客',
+      setting:
+        '電話での会話。小さな和食レストランに夕食の予約の電話がかかってきた。電話らしく、短く一つずつ質問する（日にち、時間、人数、名前、電話番号）。',
+      goal: ['날짜와 시간', '인원', '이름'],
+      open: ['お電話ありがとうございます。和食さくらでございます。', '전화 감사합니다. 와쇼쿠 사쿠라입니다.']
+    },
+    {
+      id: 'hotel',
+      ico: '🏨',
+      title: '호텔에 전화 문의',
+      partner: 'ホテルのフロント係（丁寧語）',
+      role: '来週泊まる予定の客',
+      setting:
+        '電話での会話。ホテルのフロントに、予約している客から質問の電話。チェックイン時間、荷物預かり、空港からの行き方などに答える。',
+      goal: ['예약했다고 말하기', '궁금한 것 두 가지 묻기'],
+      open: ['お電話ありがとうございます。ホテル青空、フロントでございます。', '전화 감사합니다. 호텔 아오조라 프런트입니다.']
+    },
+    {
+      id: 'taxi',
+      ico: '🚕',
+      title: '택시 부르기',
+      partner: 'タクシー会社の配車係',
+      role: 'タクシーを呼びたい旅行者',
+      setting: '電話での会話。タクシー会社に配車の電話。今いる場所、行き先、人数、名前を確認する。',
+      goal: ['지금 있는 곳', '가는 곳', '이름'],
+      open: ['はい、みどりタクシーです。', '네, 미도리 택시입니다.']
+    },
+    {
+      id: 'clinic',
+      ico: '🏥',
+      title: '병원 진료 예약',
+      partner: 'クリニックの受付',
+      role: '体調が悪い旅行者',
+      setting: '電話での会話。内科クリニックの受付に、診察の予約の電話。症状、いつから、来られる時間、名前を聞く。',
+      goal: ['증상 말하기', '갈 수 있는 시간', '이름'],
+      open: ['はい、さくら内科クリニックです。', '네, 사쿠라 내과 클리닉입니다.']
+    },
+    {
+      id: 'lost',
+      ico: '👜',
+      title: '분실물 문의',
+      partner: '駅の忘れ物センターの係員',
+      role: '電車に忘れ物をした旅行者',
+      setting: '電話での会話。駅の忘れ物センターに、電車にかばんを忘れた人から電話。乗った電車、時間、かばんの色や中身を聞く。',
+      goal: ['잃어버린 물건', '탄 전철과 시간', '물건 특징'],
+      open: ['はい、忘れ物センターです。どうなさいましたか。', '네, 분실물 센터입니다. 무슨 일이세요?']
+    }
+  ],
+  en: [
+    {
+      id: 'resv',
+      ico: '🍽️',
+      title: '식당 전화 예약',
+      partner: 'a friendly host at a restaurant answering the phone',
+      role: 'a customer who wants to book a table',
+      setting: 'A phone call. The host asks one short question at a time: date, time, party size, name, phone number.',
+      goal: ['날짜와 시간', '인원', '이름'],
+      open: ['Thanks for calling Bella Cucina. How can I help you?', '벨라 쿠치나에 전화 주셔서 감사합니다. 무엇을 도와드릴까요?']
+    },
+    {
+      id: 'hotel',
+      ico: '🏨',
+      title: '호텔에 전화 문의',
+      partner: 'a hotel front desk agent',
+      role: 'a guest who has a reservation next week',
+      setting:
+        'A phone call to the front desk. Answer questions about check-in time, luggage storage, parking, getting there from the airport.',
+      goal: ['예약했다고 말하기', '궁금한 것 두 가지 묻기'],
+      open: [
+        'Good afternoon, Harbor View Hotel, front desk. How may I help you?',
+        '안녕하세요, 하버뷰 호텔 프런트입니다. 무엇을 도와드릴까요?'
+      ]
+    },
+    {
+      id: 'doctor',
+      ico: '🏥',
+      title: '병원 진료 예약',
+      partner: "a receptionist at a doctor's office",
+      role: 'a traveler who feels sick',
+      setting: 'A phone call to book an appointment. Ask about symptoms, since when, available time, name and date of birth.',
+      goal: ['증상 말하기', '갈 수 있는 시간', '이름'],
+      open: ['Good morning, Westside Medical. How can I help you?', '안녕하세요, 웨스트사이드 의원입니다. 무엇을 도와드릴까요?']
+    },
+    {
+      id: 'delivery',
+      ico: '📦',
+      title: '택배 분실 문의',
+      partner: 'a customer service agent at an online store',
+      role: 'a customer whose package never arrived',
+      setting: 'A customer service phone call. Ask for the order number, what happened, and offer a refund or a new delivery.',
+      goal: ['문제 설명하기', '주문 번호', '원하는 해결 방법'],
+      open: [
+        'Thank you for calling customer service. This is Jamie. How can I help?',
+        '고객센터에 전화 주셔서 감사합니다. 제이미입니다. 무엇을 도와드릴까요?'
+      ]
+    },
+    {
+      id: 'taxi',
+      ico: '🚕',
+      title: '택시 부르기',
+      partner: 'a taxi company dispatcher',
+      role: 'a traveler who needs a taxi',
+      setting: 'A phone call to a taxi company. Ask for the pickup address, destination, number of people and a name.',
+      goal: ['지금 있는 곳', '가는 곳', '이름'],
+      open: ['City Cabs, where can we pick you up?', '시티 캡스입니다. 어디로 모시러 갈까요?']
+    }
+  ]
+};
+const CALL_TURNS = 6; // the learner speaks at most this many times per call
+const CALL_DAILY = 3;
+let CALL = null; // { sc, msgs, busy, listening, sub, t0, ended, review, err, typing }
+function callUsed() {
+  if (!S.callUse || S.callUse.d !== today()) S.callUse = { d: today(), n: 0 };
+  return S.callUse.n;
+}
+const callLang = mod => (mod === 'call' ? 'ja' : 'en');
+const callMine = () => CALL.msgs.filter(m => m.who === 'me').length;
+const callHistory = () => CALL.msgs.map(m => ({ role: m.who === 'ai' ? 'assistant' : 'user', content: m.t }));
+const callScene = () => ({ title: CALL.sc.title, partner: CALL.sc.partner, role: CALL.sc.role, setting: CALL.sc.setting });
+
+function renderCall(mod) {
+  const lang = callLang(mod);
+  CALL = null;
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart cl" id="clBody"></div></section>`;
+  callDraw(lang);
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes')) return;
+    const a = b.dataset.cl;
+    if (b.dataset.clsc) callStart(lang, b.dataset.clsc);
+    else if (a === 'talk') callListen(lang);
+    else if (a === 'type') {
+      CALL.typing = !CALL.typing;
+      callDraw(lang);
+      document.getElementById('clIn')?.focus();
+    } else if (a === 'send') callSendTyped(lang);
+    else if (a === 'sub') {
+      CALL.sub = !CALL.sub;
+      callDraw(lang);
+    } else if (a === 'again') {
+      const last = [...CALL.msgs].reverse().find(m => m.who === 'ai');
+      if (last) speak(last.t, lang);
+    } else if (a === 'hint') callHint(lang);
+    else if (a === 'end') callEnd(lang);
+    else if (a === 'review') callReview(lang);
+    else if (a === 'list') {
+      CALL = null;
+      callDraw(lang);
+    }
+  };
+}
+function callDraw(lang) {
+  const box = document.getElementById('clBody');
+  if (!box) return;
+  const ja = lang === 'ja',
+    cls = ja ? 'jp' : 'en';
+  if (!aiOn()) {
+    box.innerHTML = '<div class="empty"><p style="margin:0;font-weight:600">AI 전화 연습은 아직 준비 중이에요</p></div>';
+    return;
+  }
+  if (!CALL) {
+    const left = Math.max(0, CALL_DAILY - callUsed());
+    box.innerHTML = `<p class="note">진짜 전화처럼 말로만 주고받아요. 🎤 버튼을 누르고 말하면 AI가 목소리로 대답해요. 자막은 꺼져 있어요(막히면 켜세요). 한 통에 내 말 ${CALL_TURNS}번까지, 오늘 남은 통화 <b class="num">${left}</b>번.</p>
+      ${hasSR() ? '' : '<p class="note" style="color:var(--ng)">이 브라우저는 음성 인식이 안 돼서 글자로 입력해요. 아이폰은 Safari에서 열면 말로 할 수 있어요.</p>'}
+      <div class="cl-list">${CALL_SCENES[lang]
+        .map(
+          s =>
+            `<button type="button" class="cl-sc" data-clsc="${s.id}" ${left ? '' : 'disabled'}><span>${s.ico}</span><b>${esc(s.title)}</b><small>${esc(s.goal.join(' · '))}</small></button>`
+        )
+        .join('')}</div>`;
+    return;
+  }
+  const c = CALL,
+    mine = callMine();
+  const sec = Math.floor(((c.ended || Date.now()) - c.t0) / 1000);
+  const log = c.msgs
+    .map(
+      m =>
+        `<div class="cl-m ${m.who}"><span class="${cls}" lang="${lang}">${m.who === 'ai' && !c.sub && !c.ended ? '<i class="cl-hid">🔊 들어 보세요</i>' : esc(m.t)}</span>${m.ko && (c.sub || c.ended) ? `<small>${esc(m.ko)}</small>` : ''}</div>`
+    )
+    .join('');
+  const ctl = c.ended
+    ? `<div class="cl-end"><p><b>통화 끝</b> · ${Math.floor(sec / 60)}분 ${sec % 60}초 · 내가 ${mine}번 말했어요</p>
+        ${c.review ? c.review : `<button type="button" class="btn primary" data-cl="review" ${c.busy || mine === 0 ? 'disabled' : ''}>${c.busy ? '첨삭 중…' : 'AI 첨삭 받기'}</button>`}
+        <div class="row"><button type="button" class="btn" data-cl="list">다른 전화</button></div>${fbHTML(ja ? 'call' : 'ecall')}</div>`
+    : `<div class="cl-ctl">
+        ${c.typing || !hasSR() ? `<div class="aic-in"><input id="clIn" type="text" lang="${lang}" placeholder="${ja ? '日本語で話す内容を入力' : 'Type what you would say'}" ${c.busy ? 'disabled' : ''}><button type="button" class="btn primary" data-cl="send" ${c.busy ? 'disabled' : ''}>보내기</button></div>` : ''}
+        ${hasSR() ? `<button type="button" class="cl-mic ${c.listening ? 'on' : ''}" data-cl="talk" ${c.busy || c.listening ? 'disabled' : ''} aria-label="말하기">${c.listening ? '듣는 중…' : c.busy ? '상대가 말하는 중…' : '🎤 누르고 말하기'}</button>` : ''}
+        <div class="cl-row"><button type="button" class="chip" data-cl="sub" aria-pressed="${!!c.sub}">자막</button><button type="button" class="chip" data-cl="again">다시 듣기</button><button type="button" class="chip" data-cl="hint" ${c.busy ? 'disabled' : ''}>💡 힌트</button>${hasSR() ? `<button type="button" class="chip" data-cl="type" aria-pressed="${!!c.typing}">⌨️ 글자로</button>` : ''}<button type="button" class="chip cl-hang" data-cl="end">📞 끊기</button></div>
+        ${c.hint ? `<div class="cl-hint">${c.hint}</div>` : ''}
+        ${c.err ? `<p class="note" style="color:var(--ng);margin:0">${esc(c.err)}</p>` : ''}</div>`;
+  box.innerHTML = `<div class="cl-phone">
+    <div class="cl-top"><span class="cl-ico">${c.sc.ico}</span><div><b>${esc(c.sc.title)}</b><small class="num" id="clTime">${c.ended ? '통화 종료' : '통화 중 ' + String(Math.floor(sec / 60)).padStart(2, '0') + ':' + String(sec % 60).padStart(2, '0')}</small></div></div>
+    <p class="cl-goal">할 일: ${esc(c.sc.goal.join(' · '))} <span class="num">(${mine}/${CALL_TURNS})</span></p>
+    <div class="cl-log" id="clLog">${log}</div>${ctl}</div>`;
+  const l = document.getElementById('clLog');
+  if (l) l.scrollTop = l.scrollHeight;
+  const inp = document.getElementById('clIn');
+  if (inp)
+    inp.onkeydown = e => {
+      if (e.key === 'Enter' && !e.isComposing) {
+        e.preventDefault();
+        callSendTyped(lang);
+      }
+    };
+}
+const hasSR = () => !!(typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition));
+let CALL_TICK = null;
+function callStart(lang, id) {
+  if (callUsed() >= CALL_DAILY) return;
+  if (aiLeft() < 4) {
+    toast('오늘 AI 사용 횟수가 거의 남지 않았어요. 내일 다시 걸어 봐요!');
+    return;
+  }
+  const sc = CALL_SCENES[lang].find(s => s.id === id);
+  S.callUse.n++;
+  save();
+  CALL = {
+    sc,
+    msgs: [{ who: 'ai', t: sc.open[0], ko: sc.open[1] }],
+    busy: false,
+    listening: false,
+    sub: false,
+    t0: Date.now(),
+    ended: 0,
+    review: '',
+    err: '',
+    hint: ''
+  };
+  statEv('o:call-' + id);
+  callDraw(lang);
+  speak(sc.open[0], lang);
+  clearInterval(CALL_TICK);
+  CALL_TICK = setInterval(() => {
+    const t = document.getElementById('clTime');
+    if (!t || !CALL || CALL.ended) return clearInterval(CALL_TICK);
+    const s = Math.floor((Date.now() - CALL.t0) / 1000);
+    t.textContent = '통화 중 ' + String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0');
+  }, 1000);
+}
+function callListen(lang) {
+  const R0 = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!R0 || !CALL || CALL.busy || CALL.listening) return;
+  try {
+    speechSynthesis.cancel();
+  } catch (e) {}
+  hqStop();
+  try {
+    const rec = new R0();
+    rec.lang = lang === 'ja' ? 'ja-JP' : 'en-US';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+    let heard = '';
+    rec.onresult = e => {
+      heard = e.results[0][0].transcript;
+    };
+    rec.onerror = ev => {
+      CALL.err =
+        ev && ev.error === 'not-allowed'
+          ? '마이크 권한이 없어요. 설정에서 마이크·음성 인식을 허용하거나 ⌨️ 글자로 해 보세요.'
+          : '잘 안 들렸어요. 다시 눌러서 말해 보세요.';
+    };
+    rec.onend = () => {
+      CALL.listening = false;
+      if (heard.trim()) callSay(lang, heard.trim());
+      else callDraw(lang);
+    };
+    CALL.listening = true;
+    CALL.err = '';
+    rec.start();
+  } catch (e) {
+    CALL.listening = false;
+    CALL.err = '이 기기에서는 음성 인식을 쓸 수 없어요. ⌨️ 글자로 해 보세요.';
+  }
+  callDraw(lang);
+}
+function callSendTyped(lang) {
+  const inp = document.getElementById('clIn');
+  const v = inp ? inp.value.trim().slice(0, 200) : '';
+  if (v) callSay(lang, v);
+}
+async function callSay(lang, text) {
+  if (!CALL || CALL.busy || CALL.ended) return;
+  CALL.msgs.push({ who: 'me', t: text });
+  CALL.busy = true;
+  CALL.hint = '';
+  CALL.err = '';
+  callDraw(lang);
+  try {
+    const txt = await aiCall('chat', { lang, scene: callScene(), messages: callHistory() });
+    const j = aiJSON(txt);
+    const t = (j && (j.reply || j.ja || j.en)) || txt.replace(/[{}"]/g, '').trim();
+    CALL.msgs.push({ who: 'ai', t, ko: (j && j.ko) || '' });
+    speak(t, lang);
+  } catch (e) {
+    CALL.err = e.message;
+  }
+  CALL.busy = false;
+  if (callMine() >= CALL_TURNS && !CALL.err) {
+    setTimeout(() => CALL && !CALL.ended && callEnd(lang), 2500);
+  }
+  callDraw(lang);
+}
+async function callHint(lang) {
+  if (!CALL || CALL.busy) return;
+  CALL.busy = true;
+  callDraw(lang);
+  try {
+    const j = aiJSON(await aiCall('hint', { lang, scene: callScene(), messages: callHistory() }));
+    const opts = (j && Array.isArray(j.options) ? j.options : []).slice(0, 3);
+    CALL.hint = opts.length
+      ? `<b>이렇게 말해 보세요</b>${opts.map(o => `<p><span class="${lang === 'ja' ? 'jp' : 'en'}" lang="${lang}">${esc(o.reply || '')}</span> <small>${esc(o.ko || '')}</small></p>`).join('')}`
+      : '힌트를 만들지 못했어요.';
+  } catch (e) {
+    CALL.err = e.message;
+  }
+  CALL.busy = false;
+  callDraw(lang);
+}
+function callEnd(lang) {
+  if (!CALL || CALL.ended) return;
+  CALL.ended = Date.now();
+  clearInterval(CALL_TICK);
+  try {
+    speechSynthesis.cancel();
+  } catch (e) {}
+  hqStop();
+  if (callMine()) {
+    statDone(lang === 'ja' ? 'call' : 'ecall');
+    gainXP(5 + callMine() * 3, lang);
+  }
+  callDraw(lang);
+}
+async function callReview(lang) {
+  if (!CALL || CALL.busy) return;
+  CALL.busy = true;
+  callDraw(lang);
+  try {
+    const r = aiJSON(await aiCall('review', { lang, scene: callScene(), messages: callHistory() }));
+    const cls = lang === 'ja' ? 'jp' : 'en';
+    const items = (r && Array.isArray(r.items) ? r.items : []).slice(0, 6);
+    CALL.review = `<div class="aic-review">${
+      items.length
+        ? items
+            .map(
+              x =>
+                `<div class="aic-fix"><p><s class="${cls}" lang="${lang}">${esc(x.you || '')}</s></p><p><b class="${cls}" lang="${lang}">${esc(x.fix || '')}</b> ${spkBtn(x.fix || '', '', lang)}</p><small>${esc(x.why || '')}</small></div>`
+            )
+            .join('')
+        : '<p class="dy-ok">고칠 곳이 없었어요! 👏</p>'
+    }${r && r.tip ? `<p class="aic-tip">💡 ${esc(r.tip)}</p>` : ''}<p class="note">AI 첨삭은 틀릴 수도 있어요.</p></div>`;
+  } catch (e) {
+    CALL.err = e.message;
+    CALL.review = `<p class="note" style="color:var(--ng)">${esc(e.message)}</p>`;
+  }
+  CALL.busy = false;
+  callDraw(lang);
+}
+CUSTOM.call = renderCall;
+CUSTOM.ecall = renderCall;
+
+// ---- features/sync.js ----
+'use strict';
+/* ================= 기록 자동 백업: one backup code (XXXX-XXXX-XXXX) keeps a copy of the records on the server (D1);
+   enter the code on a new phone to bring everything back. Only switched on by the person; the server keeps a hash of the code. ================= */
+const SYNC = { busy: false, msg: '', input: '', server: null };
+if (!S.sync || typeof S.sync !== 'object') S.sync = { on: false };
+const syncBase = () => (aiOn() ? aiCfg().endpoint.replace(/\/$/, '') : '');
+function syncNewCode() {
+  const A = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const r = crypto.getRandomValues(new Uint8Array(12));
+  const s = [...r].map(x => A[x % A.length]).join('');
+  return s.slice(0, 4) + '-' + s.slice(4, 8) + '-' + s.slice(8);
+}
+const syncNorm = s =>
+  String(s || '')
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, '')
+    .replace(/^(.{4})(.{4})(.{4})$/, '$1-$2-$3');
+async function gz(str, back) {
+  const bytes = back ? Uint8Array.from(atob(str), c => c.charCodeAt(0)) : new TextEncoder().encode(str);
+  const cs = back ? new DecompressionStream('gzip') : new CompressionStream('gzip');
+  const out = new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(cs)).arrayBuffer());
+  if (back) return new TextDecoder().decode(out);
+  let bin = '';
+  for (let i = 0; i < out.length; i += 0x8000) bin += String.fromCharCode.apply(null, out.subarray(i, i + 0x8000));
+  return btoa(bin);
+}
+async function syncPack() {
+  const o = { ...S };
+  delete o.sync; // the code itself never goes into the backup
+  delete o.push; // alert address belongs to this phone
+  const json = JSON.stringify(o);
+  if (typeof CompressionStream !== 'undefined') return 'z1:' + (await gz(json));
+  return 'j1:' + b64enc(json);
+}
+async function syncUnpack(data) {
+  if (data.startsWith('z1:')) return JSON.parse(await gz(data.slice(3), true));
+  if (data.startsWith('j1:')) return JSON.parse(b64dec(data.slice(3)));
+  throw new Error('format');
+}
+async function syncSave(force) {
+  if (!S.sync.on || !S.sync.code || !syncBase() || SYNC.busy) return false;
+  if (!force && S.sync.at && Date.now() - Date.parse(S.sync.at) < 3 * 3600 * 1000) return false;
+  SYNC.busy = true;
+  try {
+    const r = await fetch(syncBase() + '/sync/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ code: S.sync.code, data: await syncPack() })
+    });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || '백업하지 못했어요.');
+    S.sync.at = j.at || new Date().toISOString();
+    S.sync.err = '';
+    save();
+    return true;
+  } catch (e) {
+    S.sync.err = e.message;
+    save();
+    return false;
+  } finally {
+    SYNC.busy = false;
+  }
+}
+document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && syncSave(false));
+setTimeout(() => syncSave(false), 15000);
+
+const syncWhen = iso => {
+  if (!iso) return '아직 없음';
+  const d = new Date(iso);
+  return `${d.getMonth() + 1}월 ${d.getDate()}일 ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+};
+function syncHTML() {
+  if (!syncBase() || SYNC.server === false) return '';
+  const on = S.sync.on && S.sync.code;
+  return `<div class="sync-box">
+    <b>자동 백업 (서버)</b>
+    ${
+      on
+        ? `<p class="note" style="margin:0">하루에 몇 번, 앱을 닫을 때 자동으로 서버에 저장돼요. 폰을 바꾸면 새 폰에서 이 코드를 넣으세요.</p>
+           <div class="sync-code"><span class="num">${esc(S.sync.code)}</span><button type="button" class="btn" data-sync="copy">복사</button></div>
+           <p class="note" style="margin:0">마지막 백업: ${syncWhen(S.sync.at)}${S.sync.err ? ` · <span style="color:var(--ng)">${esc(S.sync.err)}</span>` : ''}</p>
+           <div class="row"><button type="button" class="btn" data-sync="now" ${SYNC.busy ? 'disabled' : ''}>지금 백업</button><button type="button" class="btn quiet" data-sync="off">자동 백업 끄기</button></div>`
+        : `<p class="note" style="margin:0">켜면 백업 코드가 하나 생기고, 기록이 서버에 자동으로 저장돼요. 코드만 있으면 폰을 바꿔도, Safari 데이터를 지워도 되찾을 수 있어요. 로그인은 필요 없어요.</p>
+           <button type="button" class="btn primary" data-sync="on" ${SYNC.busy ? 'disabled' : ''}>자동 백업 켜기</button>`
+    }
+    <details class="sync-restore"${SYNC.input ? ' open' : ''}><summary>다른 폰의 기록 가져오기</summary>
+      <input type="text" id="syncIn" placeholder="XXXX-XXXX-XXXX" value="${esc(SYNC.input)}" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-label="백업 코드">
+      <button type="button" class="btn" data-sync="load" ${SYNC.busy ? 'disabled' : ''}>코드로 가져오기</button></details>
+    ${SYNC.msg ? `<p class="note" style="margin:0;color:var(--ink)">${SYNC.msg}</p>` : ''}</div>`;
+}
+function syncRedraw() {
+  const el = document.querySelector('.sync-box');
+  if (el) el.outerHTML = syncHTML() || '<div class="sync-box" hidden></div>';
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest('[data-sync]');
+  if (!b || SYNC.busy) return;
+  const a = b.dataset.sync;
+  SYNC.msg = '';
+  if (a === 'copy')
+    return copyText(S.sync.code, '백업 코드를 복사했어요. 카톡 나에게 보내기나 메모에 보관하세요.', () => toast(S.sync.code));
+  if (a === 'on') {
+    S.sync = { on: true, code: S.sync.code || syncNewCode() };
+    save();
+    syncRedraw();
+    const ok = await syncSave(true);
+    SYNC.msg = ok
+      ? '켰어요! 아래 백업 코드를 꼭 따로 보관하세요. 이 코드가 있어야 되찾을 수 있어요.'
+      : esc(S.sync.err || '서버에 연결하지 못했어요.');
+    if (ok) statEv('x:sync-on');
+  } else if (a === 'now') {
+    const ok = await syncSave(true);
+    SYNC.msg = ok ? '백업했어요.' : esc(S.sync.err || '백업하지 못했어요.');
+  } else if (a === 'off') {
+    try {
+      await fetch(syncBase() + '/sync/delete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ code: S.sync.code })
+      });
+    } catch (er) {}
+    S.sync = { on: false };
+    save();
+    SYNC.msg = '자동 백업을 끄고 서버에 있던 백업도 지웠어요.';
+  } else if (a === 'load') {
+    const code = syncNorm(document.getElementById('syncIn')?.value);
+    SYNC.input = code;
+    if (!/^[A-Z2-9]{4}-[A-Z2-9]{4}-[A-Z2-9]{4}$/.test(code)) {
+      SYNC.msg = '백업 코드는 XXXX-XXXX-XXXX 모양이에요.';
+      return syncRedraw();
+    }
+    SYNC.busy = true;
+    syncRedraw();
+    try {
+      const r = await fetch(syncBase() + '/sync/load?code=' + encodeURIComponent(code));
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(j.error || '가져오지 못했어요.');
+      const o = await syncUnpack(j.data);
+      const xp = ((o.xp && o.xp.ja) || 0) + ((o.xp && o.xp.en) || 0);
+      const n = Object.keys(o.stats || {}).length;
+      SYNC.busy = false;
+      if (!confirm(`${syncWhen(j.at)}에 저장된 기록이에요 (푼 문제 ${n}개 · ${xp} XP).\n이 기기의 기록을 이걸로 바꿀까요?`))
+        return syncRedraw();
+      syncRestore(o, code);
+      return;
+    } catch (er) {
+      SYNC.msg = esc(er.message === 'format' ? '백업 내용을 읽지 못했어요.' : er.message);
+    }
+    SYNC.busy = false;
+  }
+  syncRedraw();
+});
+function syncRestore(o, code) {
+  const keep = { push: S.push };
+  for (const k of Object.keys(S)) delete S[k];
+  Object.assign(S, o, keep, { sync: { on: true, code, at: new Date().toISOString() } });
+  save();
+  toast('기록을 되찾았어요!');
+  setTimeout(() => hmReload(), 600);
+}
+
+// ---- features/league.js ----
+'use strict';
+/* ================= 친구 리그: friends share a 6-letter group code and see this week's study XP ranking (Mon–Sun) ================= */
+let LG = { busy: false, err: '', board: null, invite: '' };
+if (!S.grp || typeof S.grp !== 'object') S.grp = {};
+const lgBase = () => (aiOn() ? aiCfg().endpoint.replace(/\/$/, '') : '');
+function lgMid() {
+  if (!S.grp.mid) {
+    const r = crypto.getRandomValues(new Uint8Array(16));
+    S.grp.mid = [...r].map(x => 'abcdefghijklmnopqrstuvwxyz0123456789'[x % 36]).join('');
+    save();
+  }
+  return S.grp.mid;
+}
+// this week = Monday..Sunday on this phone's calendar
+function lgWeek() {
+  const d = new Date();
+  d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+  return dayKey(d);
+}
+function lgWeekXP() {
+  const d = new Date(lgWeek() + 'T00:00:00');
+  let xp = 0;
+  for (let i = 0; i < 7; i++) {
+    const k = dayKey(d);
+    xp += (S.days[k] && S.days[k].x) || 0;
+    d.setDate(d.getDate() + 1);
+  }
+  return xp;
+}
+async function lgPost(path, body) {
+  const r = await fetch(lgBase() + path, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error === 'no-db' ? '친구 리그 서버가 아직 준비되지 않았어요.' : j.error || '서버에 연결하지 못했어요.');
+  return j;
+}
+async function lgPush() {
+  if (!S.grp.code || !lgBase()) return;
+  const xp = lgWeekXP(),
+    wk = lgWeek();
+  if (S.grp.sent === wk + ':' + xp) return;
+  try {
+    await lgPost('/grp/score', { code: S.grp.code, mid: lgMid(), nick: S.grp.nick, xp, week: wk });
+    S.grp.sent = wk + ':' + xp;
+    save();
+  } catch (e) {
+    if (/멤버가 아니|그룹이 없/.test(e.message)) {
+      S.grp = { mid: S.grp.mid, nick: S.grp.nick };
+      save();
+    }
+  }
+}
+document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && lgPush());
+
+function renderLeague(mod) {
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart lg" id="lgBody"></div></section>`;
+  lgDraw();
+  lgLoad();
+  view.onclick = async e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes') || LG.busy) return;
+    const a = b.dataset.lg;
+    const val = id => (document.getElementById(id) || {}).value || '';
+    LG.err = '';
+    try {
+      if (a === 'create' || a === 'join') {
+        const nick = val('lgNick').trim().slice(0, 12),
+          gname = val('lgName').trim(),
+          gcode = val('lgCode').trim().toUpperCase();
+        if (!nick) throw new Error('닉네임을 먼저 써 주세요.');
+        LG.busy = true;
+        lgDraw();
+        const j =
+          a === 'create'
+            ? await lgPost('/grp/create', { name: gname || nick + '의 그룹', nick, mid: lgMid(), xp: lgWeekXP() })
+            : await lgPost('/grp/join', { code: gcode, nick, mid: lgMid(), xp: lgWeekXP() });
+        S.grp = { ...S.grp, code: j.code, name: j.name, nick, sent: '' };
+        LG.invite = '';
+        save();
+        statEv('x:league-' + a);
+        LG.busy = false;
+        await lgPush();
+        await lgLoad();
+        return;
+      } else if (a === 'share') {
+        const url = (typeof siteUrl === 'function' ? siteUrl() : location.href.split('#')[0]) + '#g=' + S.grp.code;
+        const text = `하나마루 친구 리그 "${S.grp.name}"에 들어와! 이번 주 누가 제일 많이 공부하나 겨뤄 보자 📚`;
+        if (navigator.share) navigator.share({ text, url }).catch(() => {});
+        else copyText(text + ' ' + url, '초대 링크를 복사했어요. 친구에게 보내 주세요!', () => toast(url));
+      } else if (a === 'refresh') {
+        await lgPush();
+        await lgLoad();
+        return;
+      } else if (a === 'leave') {
+        if (!confirm(`"${S.grp.name}" 그룹에서 나갈까요?`)) return;
+        LG.busy = true;
+        await lgPost('/grp/leave', { code: S.grp.code, mid: lgMid() }).catch(() => {});
+        S.grp = { mid: S.grp.mid, nick: S.grp.nick };
+        LG.board = null;
+        save();
+      }
+    } catch (er) {
+      LG.err = er.message;
+    }
+    LG.busy = false;
+    lgDraw();
+  };
+}
+async function lgLoad() {
+  if (!S.grp.code || !lgBase()) return;
+  LG.busy = true;
+  try {
+    await lgPush();
+    const r = await fetch(lgBase() + '/grp/board?code=' + S.grp.code + '&mid=' + lgMid());
+    const j = await r.json().catch(() => ({}));
+    if (r.status === 404 && j.error !== 'no-db') {
+      S.grp = { mid: S.grp.mid, nick: S.grp.nick };
+      save();
+      throw new Error('그룹이 없어졌어요. 새로 만들거나 다른 그룹에 들어가세요.');
+    }
+    if (!r.ok) throw new Error(j.error === 'no-db' ? '친구 리그 서버가 아직 준비되지 않았어요.' : j.error || '순위를 불러오지 못했어요.');
+    LG.board = j;
+    LG.err = '';
+  } catch (e) {
+    LG.err = e.message;
+  }
+  LG.busy = false;
+  lgDraw();
+}
+function lgDraw() {
+  const box = document.getElementById('lgBody');
+  if (!box) return;
+  if (!lgBase()) {
+    box.innerHTML = '<div class="empty"><p style="margin:0">친구 리그는 아직 준비 중이에요.</p></div>';
+    return;
+  }
+  const err = LG.err ? `<p class="note" style="color:var(--ng)">${esc(LG.err)}</p>` : '';
+  if (!S.grp.code) {
+    box.innerHTML = `<p class="note">친구끼리 그룹을 만들고 이번 주(월~일) 공부량을 겨뤄요. 서버에는 닉네임과 이번 주 점수(XP)만 저장돼요.</p>
+      <label class="lg-f"><span>내 닉네임</span><input id="lgNick" type="text" maxlength="12" value="${esc(S.grp.nick || '')}" placeholder="예: 민혁"></label>
+      <div class="lg-cards">
+        <div class="lg-card"><b>새 그룹 만들기</b><input id="lgName" type="text" maxlength="16" placeholder="그룹 이름 (예: 오사카 여행팟)"><button type="button" class="btn primary" data-lg="create" ${LG.busy ? 'disabled' : ''}>만들기</button></div>
+        <div class="lg-card"><b>초대 코드로 들어가기</b><input id="lgCode" type="text" maxlength="6" value="${esc(LG.invite || '')}" placeholder="6자리 코드" autocapitalize="characters" spellcheck="false"><button type="button" class="btn ${LG.invite ? 'primary' : ''}" data-lg="join" ${LG.busy ? 'disabled' : ''}>들어가기</button></div>
+      </div>${err}`;
+    return;
+  }
+  const bd = LG.board;
+  const rows = bd
+    ? bd.members
+        .map(
+          (m, i) =>
+            `<li class="${m.me ? 'me' : ''}"><span class="lg-rank">${i < 3 && m.xp > 0 ? ['🥇', '🥈', '🥉'][i] : i + 1}</span><b>${esc(m.nick)}${m.me ? ' <small>(나)</small>' : ''}</b><span class="num">${m.xp} XP</span></li>`
+        )
+        .join('')
+    : '';
+  const dow = (new Date().getDay() + 6) % 7;
+  box.innerHTML = `<div class="lg-head"><div><b>${esc(S.grp.name || '')}</b><small>초대 코드 <span class="num">${esc(S.grp.code)}</span> · 이번 주 남은 기간 ${7 - dow}일</small></div><button type="button" class="btn primary" data-lg="share">친구 초대</button></div>
+    <p class="note" style="margin:0">내 이번 주 점수 <b class="num">${lgWeekXP()} XP</b> · 문제를 풀면 점수가 올라가요. 월요일에 새로 시작해요.</p>
+    ${bd ? `<ol class="lg-board">${rows}</ol>` : LG.busy ? '<p class="note">불러오는 중…</p>' : ''}
+    ${bd && bd.members.length < 2 ? '<p class="note">아직 혼자예요. 친구 초대를 눌러 링크를 보내 보세요!</p>' : ''}
+    ${err}
+    <div class="row"><button type="button" class="btn" data-lg="refresh" ${LG.busy ? 'disabled' : ''}>새로고침</button><button type="button" class="btn quiet" data-lg="leave">그룹 나가기</button></div>`;
+}
+CUSTOM.league = renderLeague;
 
 // ---- features/mycard.js ----
 'use strict';
@@ -13803,7 +14588,7 @@ function openWelcome() {
     if (!b) return;
     const a = b.dataset.wl;
     if (a === 'ja' || a === 'en') {
-      welcomeDone(a);
+      if (!welcomeDone(a, 'trial')) return;
       closeSheet();
       go('home');
       setTimeout(() => openTrial(a), 350);
@@ -13816,14 +14601,11 @@ function openWelcome() {
     else if (a === 'copy') copyText(siteUrl(), '주소를 복사했어요. Safari·Chrome 주소창에 붙여넣어 주세요.', () => toast(siteUrl()));
   });
 }
-function welcomeDone(lang) {
-  if (S.lang !== lang) {
-    S.lang = lang;
-    renderTabs();
-  }
+function welcomeDone(lang, after) {
   S.seen.tour = 1;
   for (let v = 8; v <= WN_LATEST; v++) S.seen['v' + v] = 1;
   save();
+  return switchLang(lang, after);
 }
 // privacy notice: the same text as privacy.html, shown in the app
 function privacyHTML() {
@@ -13834,6 +14616,8 @@ function privacyHTML() {
       <li><b>방문 통계</b> · 하루 몇 명이 오는지만 세요(Cloudflare Web Analytics). 쿠키를 쓰지 않고, 이름·기록·위치는 보내지 않아요.</li>
       <li><b>AI 회화 · 한 줄 일기 · AI 번역 · 메뉴판 사진</b> · 이 기능을 쓸 때만, 입력한 글·대화·사진이 답을 만들기 위해 AI 서버(Cloudflare Workers AI)로 보내져요. 앱이 저장하지는 않아요. 이름·연락처나 얼굴이 나온 사진은 보내지 마세요.</li>
       <li><b>AI 고음질 목소리</b> · 켜 두면 읽어 줄 문장(앱에 있는 일본어·영어 문장)만 음성을 만들기 위해 서버로 보내져요. 만든 음성은 내 폰과 서버 캐시에 저장돼요.</li>
+      <li><b>기록 자동 백업</b> · 직접 켠 경우에만, 공부 기록 전체가 서버(Cloudflare D1)에 저장돼요. 서버에는 백업 코드 대신 그 암호값만 남고, 코드를 가진 사람만 불러올 수 있어요. 끄면 서버의 백업도 지워져요.</li>
+      <li><b>친구 리그</b> · 그룹에 들어간 경우에만, 닉네임과 이번 주 점수(XP)가 서버에 저장돼요. 그룹을 나가면 지워져요.</li>
       <li><b>공부 알림</b> · 알림을 켠 경우에만, 알림을 받을 주소(기기의 알림 서비스가 만든 값)와 알림 시각, 연속 학습 일수, 오늘 공부했는지가 서버(Cloudflare D1)에 저장돼요. 알림을 끄면 바로 지워져요.</li>
       <li><b>익명 사용 통계</b> · 어떤 연습을 열고 끝냈는지, 👍/👎를 날짜별 숫자로만 세요. 누가 했는지는 남지 않아요. 설정 → 개인정보에서 끌 수 있어요.</li>
       <li><b>오류 알림</b> · 앱이 고장 나면 오류 내용(어느 화면에서, 어떤 오류인지)과 기기 종류만 보내요. 공부 기록이나 입력한 글은 보내지 않아요.</li>
@@ -13873,7 +14657,7 @@ function searchGroups(raw) {
     if (items.length) G.push({ title, n: items.length, html: items.slice(0, 6).map(row).join('') });
   };
   const modes = Object.keys(MENU_DESC).filter(
-    m => modTab(m) && (!/aichat$|diary$|photo$/.test(m) || aiOn()) && sHit(q, modeLabel(m), MENU_DESC[m])
+    m => modTab(m) && (!/aichat$|diary$|photo$|call$|^league$/.test(m) || aiOn()) && sHit(q, modeLabel(m), MENU_DESC[m])
   );
   add(
     '연습',
@@ -13987,6 +14771,16 @@ document.getElementById('searchBtn').addEventListener('click', openSearch);
 // v: the version that added the item; people only see items newer than the last list they saw
 const WHATS_NEW = [
   {
+    v: 19,
+    ai: true,
+    t: 'AI 전화 연습',
+    d: '회화·여행 탭 · 대화·듣기. 🎤를 누르고 말하면 AI가 목소리로 대답해요. 식당 예약, 택시 부르기를 진짜 전화처럼 연습해요.'
+  },
+  { v: 19, ai: true, t: '친구 리그', d: '놀이 탭. 친구끼리 그룹을 만들고 이번 주 공부량 순위를 겨뤄요. 초대 링크로 바로 들어와요.' },
+  { v: 19, ai: true, t: '기록 자동 백업', d: '설정 → 기록 백업. 켜 두면 서버에 자동 저장되고, 폰을 바꿔도 백업 코드로 그대로 되찾아요.' },
+  { v: 19, t: '단어 바로 저장', d: '읽기 연습의 낱말과 메뉴판 사진의 메뉴를 ＋ 한 번으로 내 단어장에 넣고 복습해요.' },
+  { v: 19, t: '더 빨라진 첫 화면', d: '공부하는 언어의 자료만 먼저 받아서 처음 열 때 훨씬 빨라졌어요.' },
+  {
     v: 18,
     t: '전체 콘텐츠 검수',
     d: '단어·예문·문법·대화 약 9천 개를 하나하나 다시 점검해서 어색한 문장, 정답이 둘인 문제, 어색한 번역 180여 곳을 고쳤어요.'
@@ -14093,7 +14887,7 @@ const WHATS_NEW = [
   { v: 10, t: '플래시카드', d: '배우기 탭. 넘기면서 알아요 / 몰라요만 눌러요.' },
   { v: 10, t: '단어장 공유', d: '자료 탭 → 단어장에서 링크로 친구에게 보내요.' }
 ];
-const WN_LATEST = 18;
+const WN_LATEST = 19;
 
 function whatsNew10(since) {
   const ja = S.lang === 'ja';
@@ -14173,6 +14967,11 @@ document.addEventListener('keydown', e => {
 applyLook();
 renderTabs();
 VS_IN = parseVS(location.hash);
+// a challenge link for the other language: reload with that language's data, keeping the link
+if (VS_IN && !packHas(['jw', 'js', 'jk'].includes(VS_IN.t) ? 'ja' : 'en')) {
+  switchLang(['jw', 'js', 'jk'].includes(VS_IN.t) ? 'ja' : 'en');
+  throw new Error('hm-reload'); // stop booting; the page is reloading
+}
 if (VS_IN) {
   try {
     history.replaceState(null, '', location.href.split('#')[0]);
@@ -14187,6 +14986,14 @@ if (VS_IN) {
   S.tabs[S.lang] = S.lang === 'ja' ? 'play' : 'eplay';
   save();
 }
+// friend league invite link (#g=CODE)
+const GRP_IN = (location.hash.match(/^#g=([A-Za-z2-9]{6})$/) || [])[1];
+if (GRP_IN) {
+  try {
+    history.replaceState(null, '', location.href.split('#')[0]);
+  } catch (e) {}
+  LG.invite = GRP_IN.toUpperCase();
+}
 const WL_IN = parseWordShare(location.hash);
 if (WL_IN) {
   try {
@@ -14194,9 +15001,19 @@ if (WL_IN) {
   } catch (e) {}
 }
 if (VS_IN) startMod('vs');
+else if (GRP_IN && aiOn()) startMod('league');
 else go(curTab());
 checkUpdate();
 statVisit();
+// something to open after a language reload (first-visit trial, a shared word list)
+try {
+  const after = sessionStorage.getItem('hm-after');
+  if (after) {
+    sessionStorage.removeItem('hm-after');
+    if (after === 'trial') setTimeout(() => openTrial(S.lang), 350);
+    else if (modTab(after)) setTimeout(() => startMod(after), 50);
+  }
+} catch (e) {}
 if (/[?&]from=push/.test(location.search)) {
   statEv('x:pushopen');
   try {
@@ -14205,7 +15022,7 @@ if (/[?&]from=push/.test(location.search)) {
 }
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {
-  if (!S.seen.tour) setTimeout(openWelcome, 300);
+  if (!S.seen.tour && !GRP_IN) setTimeout(openWelcome, 300);
   else if (!S.seen['v' + WN_LATEST]) {
     // the newest list this person has already seen (v8/v9 lists were before WHATS_NEW)
     let since = 9;
