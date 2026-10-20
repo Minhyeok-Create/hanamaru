@@ -1,0 +1,8 @@
+kuromoji.js 0.1.2 — Japanese morphological analyzer (https://github.com/takuyaa/kuromoji.js)
+Copyright 2014 Takuya Asano, Atilika Inc. — Apache License 2.0
+
+The dictionary files in dict/ are built from mecab-ipadic-2.7.0-20070801.
+Copyright 2000-2007 Nara Institute of Science and Technology (NAIST). Redistribution permitted under the IPADIC license
+(see https://github.com/taku910/mecab/blob/master/mecab-ipadic/COPYING).
+
+Used by 하나마루's 붙여넣기 해석기, loaded only when that screen is opened.

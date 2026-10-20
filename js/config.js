@@ -26,5 +26,12 @@ const APP_CONFIG = {
   analytics: {
     cloudflareToken: 'ba92846e027c40c18bccca13e9a5ebf2', // Cloudflare Web Analytics 토큰  예) '0123456789abcdef0123456789abcdef'
     goatcounter: '' //      GoatCounter 주소               예) 'https://내이름.goatcounter.com/count'
+  },
+
+  // AI 회화 상대: Cloudflare Worker 주소를 넣으면 켜져요. (만드는 법: 저장소의 AI_SETUP.md)
+  //   예) 'https://hanamaru-ai.내아이디.workers.dev'
+  ai: {
+    endpoint: '',
+    dailyLimit: 60 // 한 사람(기기)이 하루에 AI에게 보낼 수 있는 횟수
   }
 };
