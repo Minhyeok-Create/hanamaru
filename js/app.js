@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "lib/conjugate.js"], [371, "lib/numbers.js"], [536, "lib/dictation.js"], [626, "content/kana.js"], [679, "content/items.js"], [733, "lib/romaji.js"], [823, "content/items-extra.js"], [870, "core/storage.js"], [1037, "core/srs.js"], [1197, "core/badges.js"], [1285, "core/backup.js"], [1376, "core/speech.js"], [1511, "core/hqvoice.js"], [1604, "ui/shell.js"], [2075, "ui/menu.js"], [2274, "ui/home.js"], [2468, "quiz/engine.js"], [3026, "quiz/input.js"], [3146, "quiz/kana.js"], [3250, "quiz/words.js"], [3440, "quiz/loan-conj.js"], [3515, "quiz/sentences.js"], [3647, "quiz/dictation-numbers.js"], [3772, "quiz/flow.js"], [4071, "quiz/speed.js"], [4239, "views/reference.js"], [4326, "views/wordlist.js"], [4533, "views/stats.js"], [4657, "quiz/modes-extra.js"], [4776, "features/shadowing.js"], [5040, "features/dialogue.js"], [5220, "views/grammar-notes.js"], [5276, "views/today.js"], [5391, "core/update.js"], [5451, "quiz/counters.js"], [5802, "quiz/polite.js"], [5851, "quiz/jp-pairs.js"], [5901, "quiz/english-grammar.js"], [5978, "quiz/made-english.js"], [6022, "quiz/hanja.js"], [6270, "quiz/ko-traps.js"], [6380, "quiz/en-traps.js"], [6449, "quiz/kansai.js"], [6490, "features/course.js"], [7434, "ui/sheet.js"], [7466, "features/share-card.js"], [7785, "ui/help.js"], [8101, "play/setup.js"], [8130, "features/sound.js"], [8191, "features/levels.js"], [8316, "play/cards.js"], [8459, "play/stamps.js"], [8653, "play/omikuji.js"], [8789, "play/rain.js"], [9003, "play/match.js"], [9131, "play/vs.js"], [9373, "play/play.js"], [9506, "features/missions.js"], [9602, "features/seasons.js"], [9657, "features/weekly.js"], [9893, "features/level-test.js"], [10141, "features/autoplay.js"], [10339, "views/wrong-notes.js"], [10412, "features/support.js"], [10509, "ui/settings.js"], [10760, "features/travel.js"], [10902, "features/writing.js"], [11069, "features/flashcards.js"], [11211, "features/share-words.js"], [11347, "views/hanja-rules.js"], [11471, "features/signs.js"], [11552, "features/trip.js"], [11712, "features/daily.js"], [11833, "features/share-more.js"], [11999, "views/weak.js"], [12123, "features/ai.js"], [12184, "features/aichat.js"], [12522, "features/diary.js"], [12661, "features/push.js"], [12804, "features/photo.js"], [12951, "features/trial.js"], [13117, "features/gcomp.js"], [13232, "features/yomu.js"], [13412, "features/call.js"], [13783, "features/sync.js"], [13945, "features/league.js"], [14110, "features/mycard.js"], [14364, "features/reader.js"], [14535, "ui/welcome.js"], [14638, "ui/search.js"], [14769, "ui/whats-new.js"], [14908, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "lib/conjugate.js"], [371, "lib/numbers.js"], [536, "lib/dictation.js"], [626, "content/kana.js"], [679, "content/items.js"], [733, "lib/romaji.js"], [823, "lib/kanaime.js"], [999, "content/items-extra.js"], [1046, "core/storage.js"], [1228, "core/srs.js"], [1389, "core/badges.js"], [1477, "core/backup.js"], [1568, "core/speech.js"], [1703, "core/hqvoice.js"], [1796, "core/listen.js"], [2005, "ui/shell.js"], [2484, "ui/menu.js"], [2691, "ui/home.js"], [2887, "quiz/engine.js"], [3445, "quiz/input.js"], [3565, "quiz/kana.js"], [3669, "quiz/words.js"], [3859, "quiz/loan-conj.js"], [3934, "quiz/sentences.js"], [4066, "quiz/dictation-numbers.js"], [4191, "quiz/flow.js"], [4492, "quiz/speed.js"], [4660, "views/reference.js"], [4747, "views/wordlist.js"], [4954, "views/stats.js"], [5078, "quiz/modes-extra.js"], [5197, "features/shadowing.js"], [5447, "features/dialogue.js"], [5627, "views/grammar-notes.js"], [5683, "views/today.js"], [5798, "core/update.js"], [5858, "quiz/counters.js"], [6209, "quiz/polite.js"], [6258, "quiz/jp-pairs.js"], [6308, "quiz/english-grammar.js"], [6385, "quiz/made-english.js"], [6429, "quiz/hanja.js"], [6677, "quiz/ko-traps.js"], [6787, "quiz/en-traps.js"], [6856, "quiz/kansai.js"], [6897, "features/course.js"], [7841, "ui/sheet.js"], [7873, "features/share-card.js"], [8192, "ui/help.js"], [8513, "play/setup.js"], [8542, "features/sound.js"], [8603, "features/levels.js"], [8728, "play/cards.js"], [8871, "play/stamps.js"], [9065, "play/omikuji.js"], [9201, "play/rain.js"], [9415, "play/match.js"], [9543, "play/vs.js"], [9785, "play/play.js"], [9918, "features/missions.js"], [10014, "features/seasons.js"], [10069, "features/weekly.js"], [10305, "features/level-test.js"], [10553, "features/autoplay.js"], [10751, "views/wrong-notes.js"], [10824, "features/support.js"], [10921, "ui/settings.js"], [11177, "features/travel.js"], [11319, "features/writing.js"], [11486, "features/flashcards.js"], [11628, "features/share-words.js"], [11764, "views/hanja-rules.js"], [11888, "features/signs.js"], [11969, "features/trip.js"], [12129, "features/daily.js"], [12250, "features/share-more.js"], [12416, "views/weak.js"], [12540, "features/ai.js"], [12601, "features/aichat.js"], [12956, "features/diary.js"], [13096, "features/push.js"], [13239, "features/photo.js"], [13386, "features/trial.js"], [13553, "features/gcomp.js"], [13668, "features/yomu.js"], [13848, "features/call.js"], [14254, "features/sync.js"], [14416, "features/league.js"], [14581, "features/habit.js"], [14729, "features/jlpt.js"], [15120, "features/offpack.js"], [15243, "play/shiritori.js"], [15389, "features/mycard.js"], [15643, "features/reader.js"], [15814, "ui/welcome.js"], [15917, "ui/search.js"], [16048, "ui/whats-new.js"], [16207, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -819,6 +819,182 @@ const stripP = s => s.replace(/[。、？！?!.,…]+$/, '').replace(/^[「"]+|[
 const stripAll = s => s.replace(/[。、？！?!.,…・「」\s]/g, '');
 let IDX = null;
 
+// ---- lib/kanaime.js ----
+'use strict';
+/* ================= 로마자 → 가나 입력기: 일본어 자판이 없어도 영어 자판으로 watashi → わたし, 대문자는 가타카나 (KO-HI- → コーヒー) ================= */
+const IME_T = (() => {
+  const t = {};
+  const row = (c, ks) => ks.split(' ').forEach((k, i) => k !== '_' && (t[c + 'aiueo'[i]] = k));
+  row('', 'あ い う え お');
+  row('k', 'か き く け こ');
+  row('g', 'が ぎ ぐ げ ご');
+  row('s', 'さ し す せ そ');
+  row('z', 'ざ じ ず ぜ ぞ');
+  row('t', 'た ち つ て と');
+  row('d', 'だ ぢ づ で ど');
+  row('n', 'な に ぬ ね の');
+  row('h', 'は ひ ふ へ ほ');
+  row('b', 'ば び ぶ べ ぼ');
+  row('p', 'ぱ ぴ ぷ ぺ ぽ');
+  row('m', 'ま み む め も');
+  row('y', 'や い ゆ いぇ よ');
+  row('r', 'ら り る れ ろ');
+  row('w', 'わ うぃ う うぇ を');
+  row('f', 'ふぁ ふぃ ふ ふぇ ふぉ');
+  row('v', 'ゔぁ ゔぃ ゔ ゔぇ ゔぉ');
+  row('j', 'じゃ じ じゅ じぇ じょ');
+  row('c', 'か し く せ こ');
+  row('q', 'くぁ くぃ く くぇ くぉ');
+  row('x', 'ぁ ぃ ぅ ぇ ぉ');
+  row('l', 'ぁ ぃ ぅ ぇ ぉ');
+  const Y = {
+    ky: 'き',
+    gy: 'ぎ',
+    sy: 'し',
+    zy: 'じ',
+    jy: 'じ',
+    ty: 'ち',
+    cy: 'ち',
+    dy: 'ぢ',
+    ny: 'に',
+    hy: 'ひ',
+    by: 'び',
+    py: 'ぴ',
+    my: 'み',
+    ry: 'り',
+    fy: 'ふ',
+    vy: 'ゔ'
+  };
+  for (const [c, k] of Object.entries(Y)) row(c, `${k}ゃ ${k}ぃ ${k}ゅ ${k}ぇ ${k}ょ`);
+  row('sh', 'しゃ し しゅ しぇ しょ');
+  row('ch', 'ちゃ ち ちゅ ちぇ ちょ');
+  row('th', 'てゃ てぃ てゅ てぇ てょ');
+  row('dh', 'でゃ でぃ でゅ でぇ でょ');
+  row('ts', 'つぁ つぃ つ つぇ つぉ');
+  row('xy', 'ゃ _ ゅ _ ょ');
+  row('ly', 'ゃ _ ゅ _ ょ');
+  Object.assign(t, { xtu: 'っ', ltu: 'っ', xtsu: 'っ', ltsu: 'っ', xwa: 'ゎ', lwa: 'ゎ', twu: 'とぅ', dwu: 'どぅ', wyi: 'ゐ', wye: 'ゑ' });
+  return t;
+})();
+const IME_KEYS = Object.keys(IME_T);
+const IME_PUNCT = { '.': '。', ',': '、', '?': '？', '!': '！', '~': '〜', '[': '「', ']': '」' };
+const IME_DBL = 'bcdfghjkmpqrstvwxyz';
+const imeVowel = c => !!c && 'aiueo'.includes(c);
+// is this unfinished romaji at the end something that can still become kana? (k, ky, sh, ts, n, nn …)
+const imePending = r => r === 'n' || r === 'nn' || r === 'tc' || IME_KEYS.some(k => k.length > r.length && k.startsWith(r));
+// final=false keeps an unfinished tail as it is (so "kan" stays かn until the next letter decides ん or な)
+function romaToKana(s, final) {
+  let out = '',
+    i = 0;
+  const put = (kana, src) => (out += src[0] >= 'A' && src[0] <= 'Z' ? toKata(kana) : kana);
+  while (i < s.length) {
+    const c = s[i];
+    if (!/[a-zA-Z]/.test(c)) {
+      if (c === '-' && /[ぁ-ゖァ-ヶー]$/.test(out)) out += 'ー';
+      else out += IME_PUNCT[c] || c;
+      i++;
+      continue;
+    }
+    const run = /^[a-zA-Z]+$/.test(s.slice(i)) ? s.slice(i) : '';
+    if (!final && run && imePending(run.toLowerCase())) {
+      out += run;
+      break;
+    }
+    const lo = s.slice(i, i + 4).toLowerCase(),
+      c0 = lo[0],
+      c1 = lo[1] || '',
+      c2 = lo[2] || '';
+    // small っ: kk, tt, ss … and tch (matcha)
+    if ((c0 === c1 && IME_DBL.includes(c0)) || (c0 === 't' && c1 === 'c' && c2 === 'h')) {
+      put('っ', s[i]);
+      i++;
+      continue;
+    }
+    if (c0 === 'n' && !imeVowel(c1) && c1 !== 'y') {
+      // ん: n before a consonant, n', nn (but "nna" → んな, so the second n starts the next kana)
+      put('ん', s[i]);
+      if (c1 === "'") i += 2;
+      else if (c1 === 'n') i += imeVowel(c2) || c2 === 'y' ? 1 : 2;
+      else i += 1;
+      continue;
+    }
+    let hit = 0;
+    for (let L = 4; L >= 1 && !hit; L--) if (lo.length >= L && IME_T[lo.slice(0, L)] && /^[a-zA-Z]+$/.test(s.slice(i, i + L))) hit = L;
+    if (hit) {
+      put(IME_T[lo.slice(0, hit)], s[i]);
+      i += hit;
+    } else {
+      out += c;
+      i++;
+    }
+  }
+  return out;
+}
+// what gets sent: everything converted, and no spaces left between Japanese words
+function imeFinal(v) {
+  if (!imeOn()) return v;
+  return romaToKana(v, true).replace(/([ぁ-ゖァ-ヶー一-龯。、])\s+(?=[ぁ-ゖァ-ヶー一-龯])/g, '$1');
+}
+const imeOn = () => S.set.ime !== false;
+// a text box with data-ime converts as you type; during Android keyboard word-composition it waits until the word is done
+function imeApply(el) {
+  if (!imeOn() || !/[a-zA-Z\-.,?!~\[\]]/.test(el.value)) return imePreview(el);
+  const v = el.value,
+    pos = typeof el.selectionStart === 'number' ? el.selectionStart : v.length;
+  const head = romaToKana(v.slice(0, pos), false),
+    nv = head + v.slice(pos);
+  if (nv !== v) {
+    el.value = nv;
+    try {
+      el.setSelectionRange(head.length, head.length);
+    } catch (e) {}
+  }
+  imePreview(el);
+}
+function imePreview(el) {
+  const pv = el && el.id && document.querySelector(`[data-pv="${el.id}"]`);
+  if (!pv) return;
+  const v = el.value.trim();
+  const fin = imeOn() && /[a-zA-Z]/.test(v) ? romaToKana(v, true) : '';
+  pv.textContent =
+    fin && fin !== v
+      ? '→ ' + fin
+      : v
+        ? ''
+        : imeOn()
+          ? '영어 자판으로 쳐도 돼요: watashi → わたし · 대문자는 가타카나 KO-HI- → コーヒー'
+          : '';
+}
+// the small bar under a Japanese text box: on/off switch + live preview
+const imeBar = id =>
+  `<div class="ime-bar"><button type="button" class="ime-tg" data-imetg aria-pressed="${imeOn()}">あ 로마자→가나 ${imeOn() ? '켜짐' : '꺼짐'}</button><span class="ime-pv" data-pv="${id}" lang="ja"></span></div>`;
+const IME_ATTR = 'data-ime autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false"';
+if (typeof document !== 'undefined') {
+  document.addEventListener('input', e => {
+    const el = e.target;
+    if (!el || !el.hasAttribute || !el.hasAttribute('data-ime')) return;
+    if (e.isComposing) return imePreview(el);
+    imeApply(el);
+  });
+  document.addEventListener('compositionend', e => {
+    const el = e.target;
+    if (el && el.hasAttribute && el.hasAttribute('data-ime')) setTimeout(() => imeApply(el), 0);
+  });
+  document.addEventListener('click', e => {
+    const b = e.target.closest && e.target.closest('[data-imetg]');
+    if (!b) return;
+    S.set.ime = !imeOn();
+    save();
+    document.querySelectorAll('[data-imetg]').forEach(x => {
+      x.setAttribute('aria-pressed', imeOn());
+      x.textContent = `あ 로마자→가나 ${imeOn() ? '켜짐' : '꺼짐'}`;
+    });
+    document.querySelectorAll('[data-ime]').forEach(el => (imeOn() ? imeApply(el) : imePreview(el)));
+  });
+}
+// call after drawing a box with imeBar, to fill its hint line
+const imeInit = () => document.querySelectorAll('[data-pv]').forEach(pv => imePreview(document.getElementById(pv.dataset.pv)));
+
 // ---- content/items-extra.js ----
 'use strict';
 /* ================= content: particles, grammar, kanji, english extras, dialogues ================= */
@@ -886,7 +1062,19 @@ const DEF = {
   smode: DEF_SMODE,
   stats: {},
   days: {},
-  set: { round: 10, autoNext: true, autoSpeak: true, slow: false, kanji: true, wans: 'type', goal: 20, theme: 'auto', zoom: 1, sfx: true },
+  set: {
+    round: 10,
+    autoNext: true,
+    autoSpeak: true,
+    slow: false,
+    kanji: true,
+    wans: 'type',
+    goal: 20,
+    theme: 'auto',
+    zoom: 1,
+    sfx: true,
+    wgoal: 5
+  },
   kana: { dir: 'k2r', script: 'h', sets: ['basic'], input: 'pad' },
   kconf: { script: 'm' },
   word: { cats: Object.keys(CATS), fav: false, lvl: 'all' },
@@ -1005,12 +1193,15 @@ rebuildWords();
 const pad2 = n => String(n).padStart(2, '0');
 const dayKey = d => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
 const today = () => dayKey(new Date());
+// consecutive study days; a day kept by a 스트릭 지킴이 (S.frozen) doesn't count but doesn't break the chain
 function streak() {
   let n = 0;
   const d = new Date();
   if (!S.days[dayKey(d)]?.n) d.setDate(d.getDate() - 1);
-  while (S.days[dayKey(d)]?.n) {
-    n++;
+  for (let guard = 0; guard < 5000; guard++) {
+    const k = dayKey(d);
+    if (S.days[k]?.n) n++;
+    else if (!(S.frozen && S.frozen[k])) break;
     d.setDate(d.getDate() - 1);
   }
   return n;
@@ -1124,6 +1315,7 @@ function record(k, ok) {
   const d = S.days[today()] || (S.days[today()] = { n: 0, c: 0 });
   d.n++;
   if (ok) d.c++;
+  if (d.n === 1 && typeof weekCheck === 'function') setTimeout(weekCheck, 0);
   const g = keyGroup(k);
   d.m = d.m || {};
   d.m[g] = (d.m[g] || 0) + 1;
@@ -1600,6 +1792,215 @@ document.addEventListener('click', e => {
   speak(VOICE_SAMPLE[S.lang] || VOICE_SAMPLE.ja, S.lang);
 });
 
+// ---- core/listen.js ----
+'use strict';
+/* ================= 말하기 인식 공통 (AI 전화·AI 회화·발음 점수)
+   눌러서 시작 → 들리는 말을 바로 보여 줌 → 다시 누르거나 잠깐 멈추면 끝 → 들은 말을 넘겨 줌.
+   아이폰 Safari는 '최종 결과'를 안 주고 끝나는 일이 많아서, 중간 결과도 모아 두었다가 씀 ================= */
+const srAPI = () => (typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition)) || null;
+const LS_SILENCE = 1600, // after you stop talking this long, it finishes by itself
+  LS_NOSOUND = 9000, // nothing heard at all → stop and say so
+  LS_MAX = 25000;
+let MIC = null;
+// Android Chrome repeats words in continuous mode, so there it listens one phrase at a time
+const lsContinuous = () => !/Android/i.test(navigator.userAgent || '');
+const lsOn = () => !!(MIC && !MIC.done);
+function lsMsg(code) {
+  const ios = typeof isIOS === 'function' && isIOS();
+  const home = ios && typeof isStandalone === 'function' && isStandalone();
+  if (code === 'not-allowed' || code === 'service-not-allowed')
+    return ios
+      ? `음성 인식이 막혀 있어요. 아이폰 설정 → 일반 → 키보드 → '받아쓰기 활성화'를 켜고, Safari 마이크 권한을 허용해 주세요.${home ? ' 홈 화면 앱에서 계속 안 되면 Safari에서 열어 보세요.' : ''} 안 되면 ⌨️ 글자로 할 수 있어요.`
+      : '마이크 권한이 꺼져 있어요. 주소창 옆 자물쇠(사이트 설정) → 마이크 → 허용으로 바꾸고 다시 눌러 주세요.';
+  if (code === 'no-speech') return '아무 말도 들리지 않았어요. 🎤를 누르고 "지금 말하세요"가 뜬 뒤 또박또박 말해 보세요.';
+  if (code === 'audio-capture') return '마이크를 쓸 수 없어요. 통화·녹음 중인 다른 앱이 있으면 닫고 다시 해 보세요.';
+  if (code === 'network') return '음성 인식은 인터넷이 필요해요. 연결을 확인하고 다시 해 보세요.';
+  if (code === 'language-not-supported') return '이 기기는 이 언어의 음성 인식을 지원하지 않아요. ⌨️ 글자로 해 보세요.';
+  if (code === 'unsupported') return `이 브라우저는 음성 인식이 안 돼요. ${ios ? 'Safari' : 'Chrome'}에서 열거나 ⌨️ 글자로 해 보세요.`;
+  return '잘 안 들렸어요. 다시 눌러서 말해 보세요.';
+}
+const lsSep = ls => (ls.lang === 'ja' ? '' : ' ');
+const lsClean = (t, ls) => (ls.lang === 'ja' ? t.replace(/\s+/g, ' ').trim() : t.replace(/\s+/g, ' ').trim());
+const lsText = ls => lsClean(ls.final.map(a => a[0]).join(lsSep(ls)) + lsSep(ls) + ls.interim, ls);
+function lsAlts(ls) {
+  const n = Math.max(1, ...ls.final.map(a => a.length));
+  const out = [];
+  for (let k = 0; k < n; k++) {
+    const t = lsClean(ls.final.map(a => a[k] || a[0]).join(lsSep(ls)) + lsSep(ls) + ls.interim, ls);
+    if (t && !out.includes(t)) out.push(t);
+  }
+  return out;
+}
+// o: { alts, onDone(text, alternatives), onFail(message, code), onState() }
+function listenStart(lang, o) {
+  const R0 = srAPI();
+  if (!R0) {
+    o.onFail && o.onFail(lsMsg('unsupported'), 'unsupported');
+    return false;
+  }
+  if (MIC) listenCancel();
+  // the app's own voice must be quiet, or the phone keeps the speaker and the mic hears nothing
+  try {
+    speechSynthesis.cancel();
+  } catch (e) {}
+  if (typeof hqStop === 'function') hqStop();
+  const ls = { lang, o, final: [], interim: '', phase: 'start', t0: Date.now(), last: 0, done: false, err: '', tries: 0 };
+  MIC = ls;
+  lsBegin(ls, R0);
+  return true;
+}
+function lsBegin(ls, R0) {
+  let rec;
+  try {
+    rec = new R0();
+    rec.lang = ls.lang === 'ja' ? 'ja-JP' : 'en-US';
+    rec.interimResults = true;
+    rec.continuous = lsContinuous();
+    rec.maxAlternatives = ls.o.alts || 1;
+  } catch (e) {
+    return lsFinish(ls, 'unsupported');
+  }
+  ls.rec = rec;
+  ls.started = Date.now();
+  ls.audio = false;
+  rec.onaudiostart = () => {
+    ls.audio = true;
+    if (ls.phase === 'start') ls.phase = 'ready';
+    lsShow(ls);
+  };
+  rec.onsoundstart = rec.onspeechstart = () => {
+    ls.audio = true;
+    if (ls.phase !== 'stop') ls.phase = 'sound';
+    lsShow(ls);
+  };
+  // rebuild from all results every time: no doubled words, and the latest guess is always shown
+  rec.onresult = e => {
+    if (ls.done || ls.rec !== rec) return;
+    const fin = [];
+    let interim = '';
+    for (let i = 0; i < e.results.length; i++) {
+      const r = e.results[i];
+      if (!r || !r[0]) continue;
+      if (r.isFinal) fin.push(Array.from(r, a => a.transcript));
+      else interim += r[0].transcript;
+    }
+    // after a restart, keep what was heard before it
+    ls.final = (ls.prevFinal || []).concat(fin);
+    ls.interim = interim;
+    ls.last = Date.now();
+    ls.audio = true;
+    if (ls.phase !== 'stop') ls.phase = 'sound';
+    lsShow(ls);
+  };
+  rec.onerror = ev => {
+    const c = (ev && ev.error) || 'unknown';
+    if (c === 'aborted') return;
+    ls.err = c;
+  };
+  rec.onend = () => {
+    if (ls.rec === rec) lsEnded(ls);
+  };
+  clearInterval(ls.tick);
+  ls.tick = setInterval(() => lsTick(ls), 200);
+  try {
+    rec.start();
+  } catch (e) {
+    lsFinish(ls, 'unsupported');
+  }
+  lsShow(ls);
+}
+function lsTick(ls) {
+  if (ls.done) return clearInterval(ls.tick);
+  const now = Date.now(),
+    has = !!lsText(ls);
+  if (ls.phase === 'stop') {
+    // some phones never send 'end' after stop(): finish with what we have
+    if (now - ls.stopAt > 1500) lsFinish(ls);
+    return;
+  }
+  if (has && ls.last && now - ls.last > LS_SILENCE) listenStop();
+  else if (!has && now - ls.t0 > LS_NOSOUND) {
+    ls.err = ls.err || 'no-speech';
+    listenStop();
+  } else if (now - ls.t0 > LS_MAX) listenStop();
+}
+function lsEnded(ls) {
+  if (ls.done) return;
+  const has = !!lsText(ls);
+  // ended by itself before we asked (phrase over, or the phone's audio hiccuped right after the app spoke): keep listening
+  if (ls.phase !== 'stop' && !has && ls.tries < 2 && (!ls.err || ls.err === 'no-speech') && Date.now() - ls.t0 < LS_NOSOUND - 1000) {
+    ls.tries++;
+    ls.err = '';
+    ls.prevFinal = ls.final;
+    setTimeout(() => !ls.done && MIC === ls && lsBegin(ls, srAPI()), 250);
+    return;
+  }
+  lsFinish(ls);
+}
+function lsFinish(ls, code) {
+  if (ls.done) return;
+  ls.done = true;
+  clearInterval(ls.tick);
+  if (MIC === ls) MIC = null;
+  try {
+    ls.rec && ls.rec.abort();
+  } catch (e) {}
+  const text = lsText(ls);
+  if (text) ls.o.onDone && ls.o.onDone(text, lsAlts(ls));
+  else {
+    const c = code || (ls.err && ls.err !== 'unknown' ? ls.err : ls.audio ? 'no-speech' : 'other');
+    ls.o.onFail && ls.o.onFail(lsMsg(c), c);
+  }
+}
+// "다 말했어요": stop and use what was heard
+function listenStop() {
+  const ls = MIC;
+  if (!ls || ls.done || ls.phase === 'stop') return;
+  ls.phase = 'stop';
+  ls.stopAt = Date.now();
+  try {
+    ls.rec.stop();
+  } catch (e) {
+    lsFinish(ls);
+  }
+  lsShow(ls);
+}
+// leave without sending anything
+function listenCancel() {
+  const ls = MIC;
+  if (!ls) return;
+  ls.done = true;
+  clearInterval(ls.tick);
+  MIC = null;
+  try {
+    ls.rec && ls.rec.abort();
+  } catch (e) {}
+}
+// the live box: shows that the mic is on, that sound is coming in, and what it has understood so far
+function lsLiveHTML(ls) {
+  ls = ls || MIC;
+  if (!ls) return '';
+  const t = lsText(ls);
+  const st =
+    ls.phase === 'stop'
+      ? '알아듣는 중…'
+      : t
+        ? '듣는 중 · 다 말했으면 버튼을 누르세요 (잠깐 멈추면 자동으로 끝나요)'
+        : ls.phase === 'sound'
+          ? '소리가 들려요… 계속 말하세요'
+          : ls.phase === 'ready'
+            ? '🎙️ 지금 말하세요'
+            : '마이크 켜는 중…';
+  return `<div class="ls-st"><span class="ls-wave ${ls.phase === 'sound' || t ? 'on' : ''}"><i></i><i></i><i></i><i></i></span>${st}</div>${t ? `<p class="ls-txt" lang="${ls.lang}">${esc(t)}</p>` : ''}`;
+}
+function lsShow(ls) {
+  if (ls.o.onState) ls.o.onState(ls);
+  const el = document.getElementById('lsLive');
+  if (el) el.innerHTML = lsLiveHTML(ls);
+}
+// is the mic on for this screen? ('call', 'aic', 'pr')
+const lsBy = who => !!(MIC && !MIC.done && MIC.o.who === who);
+
 // ---- ui/shell.js ----
 'use strict';
 /* ================= shell ================= */
@@ -1662,16 +2063,16 @@ const MENU = {
     ['문장', ['sent', 'jb', 'part', 'gram', 'pol']],
     ['읽기', ['yomu']],
     ['한국인 맞춤', ['gcomp', 'hj', 'hjw', 'hjr', 'kpart', 'wasei']],
-    ['도전', ['kspeed', 'wspeed']]
+    ['시험·도전', ['jlpt', 'kspeed', 'wspeed']]
   ],
   talk: [
-    ['여행', ['jtrav', 'mycard', 'trip', 'sign', 'photo', 'reader', 'koexp', 'kansai']],
+    ['여행', ['jtrav', 'mycard', 'trip', 'offpack', 'sign', 'photo', 'reader', 'koexp', 'kansai']],
     ['대화·듣기', ['aichat', 'call', 'diary', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
     ['발음', ['jlen', 'jauto']]
   ],
   play: [
     ['친구와 함께', ['league', 'vs']],
-    ['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match']]
+    ['놀이', ['shiri', 'omikuji', 'cards', 'stamps', 'rain', 'match']]
   ],
   ref: [
     ['복습', ['weak', 'wrongs', 'today']],
@@ -1685,7 +2086,7 @@ const MENU = {
     ['도전', ['espeed']]
   ],
   etalk: [
-    ['여행', ['etrav', 'emycard', 'etrip', 'ephoto']],
+    ['여행', ['etrav', 'emycard', 'etrip', 'eoffpack', 'ephoto']],
     ['대화·듣기', ['eaichat', 'ecall', 'ediary', 'edlg', 'el', 'ed', 'esh', 'enn']],
     ['발음', ['mp', 'eauto']]
   ],
@@ -1709,6 +2110,10 @@ const MODE_LABEL = {
   diary: 'AI 한 줄 일기',
   photo: '메뉴판 사진 읽기',
   yomu: '읽기 연습',
+  jlpt: 'JLPT 모의고사',
+  shiri: 'しりとり',
+  offpack: '여행 오프라인 팩',
+  eoffpack: '여행 오프라인 팩',
   call: 'AI 전화 연습',
   ecall: 'AI 전화 연습',
   league: '친구 리그',
@@ -1824,6 +2229,9 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'jlpt',
+  'shiri',
+  'offpack',
   'call',
   'yomu',
   'gcomp',
@@ -1931,6 +2339,7 @@ function stopAll() {
   stopAutoplay();
   LT = null;
   if (typeof recRelease === 'function') recRelease();
+  if (typeof listenCancel === 'function') listenCancel();
   if (typeof hqStop === 'function') hqStop();
   if (hasTTS) {
     try {
@@ -2109,6 +2518,10 @@ const MENU_DESC = {
   diary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   photo: '찍으면 AI가 읽는 법·뜻·가격 정리',
   yomu: '짧은 글 읽고 내용 확인 (N5~N3)',
+  jlpt: 'N5·N4·N3 실전 형식, 점수와 합격권 확인',
+  shiri: '컴퓨터와 일본어 끝말잇기',
+  offpack: '비행기 모드에서도 여행 카드 쓰기',
+  eoffpack: '비행기 모드에서도 여행 카드 쓰기',
   call: '말로만 하는 실전 전화 (식당 예약·택시)',
   ecall: '말로만 하는 실전 전화 (예약·고객센터)',
   league: '친구들과 이번 주 공부량 겨루기',
@@ -2163,6 +2576,10 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'jlpt',
+  'shiri',
+  'offpack',
+  'eoffpack',
   'call',
   'ecall',
   'league',
@@ -2419,6 +2836,8 @@ function renderHome() {
     ${tripHomeHTML()}
     ${todayBoxHTML()}
     ${heroHTML()}
+    ${streakHomeHTML()}
+    ${goalHomeHTML()}
     ${bk ? `<ul class="todo">${bk}</ul>` : ''}
     ${courseLineHTML()}
     ${pinsHomeHTML()}
@@ -3952,8 +4371,10 @@ function stageClick(mod, e) {
   else if (act === 'prstart') prStart(mod);
   else if (act === 'recstop') recStop();
   else if (act === 'recplay') recPlay();
-  else if (act === 'shok' || act === 'shno') rateShadow(mod, act === 'shok');
-  else if (act === 'bclear') {
+  else if (act === 'shok' || act === 'shno') {
+    if (lsBy('pr')) listenCancel();
+    rateShadow(mod, act === 'shok');
+  } else if (act === 'bclear') {
     if (!r.answered) {
       r.built = [];
       showBuild(mod, q, card(), zone(), r);
@@ -4789,6 +5210,7 @@ function recRelease() {
 }
 async function recStart() {
   REC.err = '';
+  listenCancel();
   try {
     REC.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     REC.chunks = [];
@@ -4917,60 +5339,45 @@ function pronScore(ja, q, heard) {
     marks: tw.map((w, i) => [w, tn[i] ? ok[i] : null])
   };
 }
-let SR = { on: false, rec: null };
+// 🎤 tap, say the sentence, tap again (or pause): the best of the phone's guesses gets scored
 function prStart(mod) {
-  const R0 = window.SpeechRecognition || window.webkitSpeechRecognition;
   const r = R[mod];
-  if (!R0 || !r || SR.on) return;
+  if (!r) return;
+  if (lsBy('pr')) return listenStop();
   const q = r.qs[r.i],
     ja = mod === 'jsh';
   recRelease();
-  try {
-    speechSynthesis.cancel();
-  } catch (e) {}
-  try {
-    const rec = new R0();
-    rec.lang = ja ? 'ja-JP' : 'en-US';
-    rec.interimResults = false;
-    rec.maxAlternatives = 5;
-    SR = { on: true, rec };
-    rec.onresult = e => {
+  r.pron = null;
+  listenStart(ja ? 'ja' : 'en', {
+    who: 'pr',
+    alts: 5,
+    onDone: (t, alts) => {
       let best = null;
-      for (const alt of e.results[0]) {
-        const sc = pronScore(ja, q, alt.transcript);
-        if (!best || sc.score > best.score) best = { ...sc, heard: alt.transcript };
+      for (const h of alts.length ? alts : [t]) {
+        const sc = pronScore(ja, q, h);
+        if (!best || sc.score > best.score) best = { ...sc, heard: h };
       }
       r.pron = best;
-      const k = q.key;
-      if (best && k) {
+      if (best && q.key) {
         S.pron = S.pron || {};
-        S.pron[k] = Math.max(S.pron[k] || 0, best.score);
+        S.pron[q.key] = Math.max(S.pron[q.key] || 0, best.score);
         save();
       }
-    };
-    rec.onerror = ev => {
-      r.pron = {
-        err:
-          ev && ev.error === 'not-allowed'
-            ? '마이크 권한이 없어요. 설정에서 마이크와 음성 인식을 허용해 주세요.'
-            : '잘 들리지 않았어요. 조용한 곳에서 다시 해 보세요.'
-      };
-    };
-    rec.onend = () => {
-      SR.on = false;
-      if (!r.pron) r.pron = { err: '잘 들리지 않았어요. 버튼을 누르고 바로 말해 보세요.' };
       refreshShadow();
-    };
-    r.pron = null;
-    rec.start();
-  } catch (e) {
-    SR.on = false;
-    r.pron = { err: '이 기기에서는 음성 인식을 쓸 수 없어요.' };
-  }
+    },
+    onFail: m => {
+      r.pron = { err: m };
+      refreshShadow();
+    },
+    onState: ls => {
+      const b = document.querySelector('[data-act=prstart]');
+      if (b) b.textContent = ls.phase === 'stop' ? '점수 매기는 중…' : '■ 다 말했어요';
+    }
+  });
   refreshShadow();
 }
 function prBox(r, ja) {
-  if (SR.on) return '<div class="pron listening"><span class="pron-dot"></span>듣고 있어요… 문장을 소리 내어 말해 보세요</div>';
+  if (lsBy('pr')) return `<div class="pron ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>`;
   const p = r.pron;
   if (!p) return '';
   if (p.err) return `<div class="pron"><p class="note" style="margin:0;color:var(--ng)">${esc(p.err)}</p></div>`;
@@ -4990,12 +5397,12 @@ function prBox(r, ja) {
 function shadowZone(r) {
   const ja = activeMod() === 'jsh';
   const sr = canSR
-    ? `<div class="row"><button type="button" class="btn ${SR.on ? 'rec-on' : 'primary'}" data-act="prstart" ${SR.on ? 'disabled' : ''}>🎤 말하고 발음 점수 받기</button></div>${prBox(r, ja)}`
+    ? `<div class="row"><button type="button" class="btn ${lsBy('pr') ? 'rec-on' : 'primary'}" data-act="prstart">${lsBy('pr') ? '■ 다 말했어요' : '🎤 말하고 발음 점수 받기'}</button></div>${prBox(r, ja)}`
     : '';
   const rec = canRec
     ? `<div class="row">${REC.on ? `<button type="button" class="btn rec-on" data-act="recstop">■ 녹음 멈추기</button>` : `<button type="button" class="btn" data-act="recstart">● 내 목소리 녹음</button>`}<button type="button" class="btn" data-act="recplay" ${REC.url && !REC.on ? '' : 'disabled'}>▶ 내 녹음 듣기</button></div>`
     : `<p class="note">이 화면에서는 녹음을 쓸 수 없어요. 원어민 발음을 듣고 소리 내어 따라 해 보세요.</p>`;
-  return `<div class="shadow"><ol class="steps"><li>재생 버튼으로 원어민 발음을 들어요.</li><li>소리 내어 따라 말해요.${canSR ? ' 🎤를 누르고 말하면 몇 % 알아듣는지 점수를 줘요.' : canRec ? ' 녹음해서 원어민 발음과 번갈아 들어 보세요.' : ''}</li><li>스스로 평가하고 다음 문장으로 넘어가요.</li></ol>${sr}${rec}${REC.err ? `<p class="note" style="color:var(--ng)">${esc(REC.err)}</p>` : ''}
+  return `<div class="shadow"><ol class="steps"><li>재생 버튼으로 원어민 발음을 들어요.</li><li>소리 내어 따라 말해요.${canSR ? ' 🎤를 누르고 말한 뒤 한 번 더 누르면(잠깐 멈춰도 돼요) 몇 % 알아듣는지 점수를 줘요.' : canRec ? ' 녹음해서 원어민 발음과 번갈아 들어 보세요.' : ''}</li><li>스스로 평가하고 다음 문장으로 넘어가요.</li></ol>${sr}${rec}${REC.err ? `<p class="note" style="color:var(--ng)">${esc(REC.err)}</p>` : ''}
     ${r.answered ? '' : `<div class="row"><button type="button" class="btn" data-act="shno">한 번 더 연습할래요</button><button type="button" class="btn primary" data-act="shok">잘 따라 했어요</button></div>`}</div>`;
 }
 function refreshShadow() {
@@ -5390,7 +5797,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020132912';
+const APP_VERSION = '20261020141925';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -7788,9 +8195,14 @@ const MODE_HELP = {
   mycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   emycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   reader: '아이폰 텍스트 인식으로 복사한 일본어를 붙여넣으면 후리가나·단어 뜻·한국음을 달아 줘요.',
-  call: '🎤를 누르고 말하면 AI가 목소리로 대답하는 전화 연습이에요. 자막은 꺼져 있으니 귀로 들어 보고, 막히면 자막이나 힌트를 켜요. 끝나면 첨삭을 받을 수 있어요.',
-  ecall: '🎤를 누르고 말하면 AI가 목소리로 대답하는 영어 전화 연습이에요. 자막은 꺼져 있으니 귀로 들어 보고, 막히면 자막이나 힌트를 켜요.',
+  call: '🎤를 한 번 누르고 말한 뒤 다시 누르면(잠깐 멈춰도 돼요) AI가 목소리로 대답하는 전화 연습이에요. 일본어 자판이 없으면 ⌨️ 글자로에서 영어 자판으로 쳐도 가나로 바뀌어요. 자막은 꺼져 있으니 귀로 들어 보고, 막히면 자막이나 힌트를 켜요. 끝나면 첨삭을 받을 수 있어요.',
+  ecall:
+    '🎤를 한 번 누르고 말한 뒤 다시 누르면(잠깐 멈춰도 돼요) AI가 목소리로 대답하는 영어 전화 연습이에요. 자막은 꺼져 있으니 귀로 들어 보고, 막히면 자막이나 힌트를 켜요.',
   league: '친구끼리 그룹을 만들고 초대 링크를 보내요. 이번 주(월~일) 공부해서 얻은 XP로 순위를 겨뤄요.',
+  jlpt: '실제 JLPT처럼 문자·어휘, 문법, 독해, 청해를 시간 재며 풀어요. 끝나면 영역별 점수와 합격권인지 보여 줘요(추정). 틀린 문제는 복습에 들어가요.',
+  shiri: '앞 단어의 마지막 글자로 시작하는 단어를 골라요. ん으로 끝나면 지고, 장음 ー는 빼고 이어요.',
+  offpack: '출발 전에 와이파이에서 저장해 두면 비행기 모드에서도 여행 카드·간판·나만의 카드와 발음을 쓸 수 있어요.',
+  eoffpack: '출발 전에 와이파이에서 저장해 두면 비행기 모드에서도 여행 카드와 나만의 카드, 발음을 쓸 수 있어요.',
   yomu: '짧은 글을 읽고 문제 3개로 이해했는지 확인해요. 후리가나는 켜고 끌 수 있고, 문장을 누르면 뜻이 나오고 읽어 줘요.',
   gcomp: '한국인이 헷갈리는 문법 짝(は/が, に/で, から/ので…)을 나란히 비교하고, 6문제로 확인해요.',
   egcomp: '한국인이 헷갈리는 영어 짝(for/since, say/tell, used to…)을 나란히 비교하고, 6문제로 확인해요.',
@@ -10552,6 +10964,11 @@ function settingsHTML() {
         [30, '30'],
         [50, '50']
       ])}
+      ${segRow('주간 목표', '일주일에 공부할 날 수', 'wgoal', [
+        [3, '3일'],
+        [5, '5일'],
+        [7, '7일']
+      ])}
       ${segRow('한 라운드 문제 수', '', 'round', [
         [10, '10'],
         [20, '20'],
@@ -12345,6 +12762,7 @@ function renderAIChat(mod) {
     const b = e.target.closest('button');
     if (!b || b.closest('.modes') || b.dataset.speak) return;
     const a = b.dataset.ai;
+    if (a !== 'mic' && a !== 'ko' && b.dataset.aiuse === undefined && lsBy('aic')) listenCancel();
     if (b.dataset.aisc) {
       const sc = AI_SCENES[lang].find(x => x.id === b.dataset.aisc);
       AIC = { lang, sc, msgs: [{ who: 'ai', t: sc.open[0], ko: sc.open[1] }], busy: false };
@@ -12369,6 +12787,8 @@ function renderAIChat(mod) {
 function aicDraw(lang) {
   const box = document.getElementById('aiBody');
   if (!box) return;
+  const old = document.getElementById('aiIn'),
+    draft = old ? old.value : '';
   const ja = lang === 'ja';
   if (!aiOn()) {
     box.innerHTML = `<div class="empty"><p style="margin:0;font-weight:600">AI 회화는 아직 준비 중이에요</p><p class="note">앱 주인이 AI 서버(무료)를 연결하면 바로 쓸 수 있어요. 연결 방법은 저장소의 AI_SETUP.md에 있어요.</p></div>`;
@@ -12401,14 +12821,19 @@ function aicDraw(lang) {
       AIC.review
         ? `<div class="row"><button class="btn primary" data-aisc="${AIC.sc.id}">같은 상황 다시</button><button class="btn" data-ai="back">다른 상황</button></div>`
         : `<div class="aic-input">
-      <textarea id="aiIn" rows="2" lang="${lang}" placeholder="${ja ? '일본어로 대답해 보세요 (한국어로 써도 알아들어요)' : '영어로 대답해 보세요'}" ${done || AIC.busy ? 'disabled' : ''}></textarea>
-      <div class="row">${hasRec() ? `<button class="btn" data-ai="mic" ${AIC.busy ? 'disabled' : ''}>🎤 말하기</button>` : ''}<button class="btn" data-ai="hint" ${AIC.busy || done ? 'disabled' : ''}>힌트</button><button class="btn primary" data-ai="send" ${AIC.busy || done ? 'disabled' : ''}>보내기</button></div>
+      ${lsBy('aic') ? `<div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>` : ''}
+      <textarea id="aiIn" rows="2" lang="${lang}" ${ja ? IME_ATTR : ''} placeholder="${ja ? '일본어로 대답해 보세요 (영어 자판 watashi → わたし, 한국어로 써도 알아들어요)' : '영어로 대답해 보세요'}" ${done || AIC.busy ? 'disabled' : ''}></textarea>
+      ${ja ? imeBar('aiIn') : ''}
+      <div class="row">${hasRec() ? `<button class="btn ${lsBy('aic') ? 'rec-on' : ''}" data-ai="mic" ${AIC.busy ? 'disabled' : ''}>${lsBy('aic') ? '■ 다 말했어요' : '🎤 말하기'}</button>` : ''}<button class="btn" data-ai="hint" ${AIC.busy || done ? 'disabled' : ''}>힌트</button><button class="btn primary" data-ai="send" ${AIC.busy || done ? 'disabled' : ''}>보내기</button></div>
       <button class="btn aic-end" data-ai="review" ${AIC.busy || !turns ? 'disabled' : ''}>대화 끝내고 첨삭 받기</button>
     </div>`
     }`;
   const log = document.getElementById('aiLog');
   if (log) log.scrollTop = log.scrollHeight;
   const inp = document.getElementById('aiIn');
+  if (inp && draft && !AIC.sent) inp.value = draft;
+  AIC.sent = false;
+  if (inp && ja) imeInit();
   if (inp)
     inp.onkeydown = e => {
       if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
@@ -12421,8 +12846,10 @@ const aicHistory = () => AIC.msgs.map(m => ({ role: m.who === 'ai' ? 'assistant'
 const aicScene = () => ({ title: AIC.sc.title, partner: AIC.sc.partner, role: AIC.sc.role, setting: AIC.sc.setting });
 async function aicSend(lang) {
   const inp = document.getElementById('aiIn');
-  const v = inp ? inp.value.trim().slice(0, 200) : '';
+  const v = inp ? (lang === 'ja' ? imeFinal(inp.value) : inp.value).trim().slice(0, 200) : '';
   if (!v || AIC.busy) return;
+  listenCancel();
+  AIC.sent = true;
   AIC.msgs.push({ who: 'me', t: v });
   AIC.busy = true;
   AIC.hint = null;
@@ -12495,25 +12922,32 @@ function aicReviewHTML(lang) {
 }
 // speech input (Safari / Chrome); fills the text box, no grading
 const hasRec = () => typeof window !== 'undefined' && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+// 🎤 tap, talk, tap again (or pause). What was heard goes into the box so you can check it before sending
 function aicMic(lang) {
-  const R0 = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!R0) return;
-  try {
-    const rec = new R0();
-    rec.lang = lang === 'ja' ? 'ja-JP' : 'en-US';
-    rec.interimResults = false;
-    rec.maxAlternatives = 1;
-    toast('듣고 있어요… 말해 보세요');
-    rec.onresult = e => {
-      const t = e.results[0][0].transcript;
+  if (!AIC || AIC.busy) return;
+  if (lsBy('aic')) return listenStop();
+  AIC.err = '';
+  listenStart(lang, {
+    who: 'aic',
+    onDone: t => {
+      aicDraw(lang);
       const inp = document.getElementById('aiIn');
-      if (inp) inp.value = (inp.value ? inp.value + ' ' : '') + t;
-    };
-    rec.onerror = () => toast('음성을 알아듣지 못했어요. 다시 해 보세요.');
-    rec.start();
-  } catch (e) {
-    toast('이 기기에서는 음성 입력을 쓸 수 없어요');
-  }
+      if (inp) {
+        inp.value = (inp.value.trim() ? inp.value.trim() + ' ' : '') + t;
+        inp.focus();
+      }
+    },
+    onFail: m => {
+      if (!AIC) return;
+      AIC.err = m;
+      aicDraw(lang);
+    },
+    onState: ls => {
+      const b = document.querySelector('[data-ai=mic]');
+      if (b) b.textContent = ls.phase === 'stop' ? '알아듣는 중…' : '■ 다 말했어요';
+    }
+  });
+  aicDraw(lang);
 }
 CUSTOM.aichat = renderAIChat;
 CUSTOM.eaichat = renderAIChat;
@@ -12588,7 +13022,7 @@ function dyDraw(lang) {
   const draft = inp ? inp.value : '';
   box.innerHTML = `<p class="note">하루 한 문장, ${ja ? '일본어' : '영어'}로 써 보세요. 모르는 단어는 한국어로 써도 AI가 고쳐 줘요. 오늘 남은 첨삭 <b class="num">${left}</b>번.</p>
     <div class="dy-topic"><span>오늘의 주제</span><b>${esc(topic)}</b><button type="button" class="link" data-dy="topic">다른 주제</button></div>
-    <textarea id="dyIn" rows="3" lang="${lang}" maxlength="200" placeholder="${esc(DIARY_EX[lang])}" ${DY.busy ? 'disabled' : ''}>${esc(draft)}</textarea>
+    <textarea id="dyIn" rows="3" lang="${lang}" ${ja ? IME_ATTR : ''} maxlength="200" placeholder="${esc(DIARY_EX[lang])}" ${DY.busy ? 'disabled' : ''}>${esc(draft)}</textarea>${ja ? imeBar('dyIn') : ''}
     <div class="row"><button class="btn primary" data-dy="go" ${DY.busy || !left ? 'disabled' : ''}>${DY.busy ? '첨삭 중…' : left ? 'AI 첨삭 받기' : '내일 또 써요'}</button></div>
     ${DY.err ? `<p class="note" style="color:var(--ng)">${esc(DY.err)}</p>` : ''}
     ${DY.last ? dyCard(DY.last, lang, true) : ''}
@@ -12604,6 +13038,7 @@ function dyDraw(lang) {
         : ''
     }
     <p class="note">AI 첨삭은 틀릴 수도 있어요. 쓴 문장은 첨삭을 위해 AI 서버로 보내지고, 일기는 내 폰에만 저장돼요.</p>`;
+  if (ja) imeInit();
 }
 function dyCard(x, lang, fresh) {
   const ja = lang === 'ja',
@@ -12620,7 +13055,7 @@ function dyCard(x, lang, fresh) {
 }
 async function dySend(lang) {
   const inp = document.getElementById('dyIn');
-  const text = inp ? inp.value.trim().slice(0, 200) : '';
+  const text = inp ? (lang === 'ja' ? imeFinal(inp.value) : inp.value).trim().slice(0, 200) : '';
   if (!text || DY.busy) return;
   if (dyToday(lang) >= DIARY_DAILY) return;
   DY.busy = true;
@@ -13089,6 +13524,7 @@ function trDraw() {
     box.innerHTML = `<div class="tr-end"><div class="tr-score"><b class="num">${TR.ok}</b><span class="num">/ ${n}</span></div>
       <h2>첫 공부 끝! 오늘 ${n}문제 했어요 🎉</h2>
       <p>${TR.ok >= 4 ? '감이 좋아요! ' : ''}이렇게 하루 10분이면 충분해요. 매일 하면 <b>연속 학습</b> 불꽃이 커져요.</p>
+      <p class="tr-gq"><b>어떤 걸 위해 배우세요?</b> 고르면 홈에 맞춤 연습이 떠요</p>${goalPickHTML(TR.lang, true)}
       <div class="tr-go"><button type="button" class="btn primary" data-tr="daily">이어서 공부하기</button><button type="button" class="btn" data-tr="home">둘러보기</button></div>
       ${installHint()}</div>`;
     return;
@@ -13547,6 +13983,12 @@ function renderCall(mod) {
     const b = e.target.closest('button');
     if (!b || b.closest('.modes')) return;
     const a = b.dataset.cl;
+    // any other button while the mic is on: drop the mic first (so it does not hear the phone's own voice)
+    if (a && a !== 'talk' && a !== 'sub' && lsBy('call')) {
+      listenCancel();
+      CALL.listening = false;
+    }
+    if (b.dataset.clput) return callPut(lang, b.dataset.clput, b.classList.contains('cl-opt'));
     if (b.dataset.clsc) callStart(lang, b.dataset.clsc);
     else if (a === 'talk') callListen(lang);
     else if (a === 'type') {
@@ -13572,6 +14014,8 @@ function renderCall(mod) {
 function callDraw(lang) {
   const box = document.getElementById('clBody');
   if (!box) return;
+  const old = document.getElementById('clIn'),
+    draft = old ? old.value : '';
   const ja = lang === 'ja',
     cls = ja ? 'jp' : 'en';
   if (!aiOn()) {
@@ -13580,7 +14024,7 @@ function callDraw(lang) {
   }
   if (!CALL) {
     const left = Math.max(0, CALL_DAILY - callUsed());
-    box.innerHTML = `<p class="note">진짜 전화처럼 말로만 주고받아요. 🎤 버튼을 누르고 말하면 AI가 목소리로 대답해요. 자막은 꺼져 있어요(막히면 켜세요). 한 통에 내 말 ${CALL_TURNS}번까지, 오늘 남은 통화 <b class="num">${left}</b>번.</p>
+    box.innerHTML = `<p class="note">진짜 전화처럼 말로만 주고받아요. 🎤를 한 번 누르고 말한 뒤, 다 말했으면 한 번 더 누르세요(잠깐 멈추면 자동으로 보내져요). 들리는 말이 화면에 바로 보여요. 자막은 꺼져 있어요(막히면 켜세요). 한 통에 내 말 ${CALL_TURNS}번까지, 오늘 남은 통화 <b class="num">${left}</b>번.</p>
       ${hasSR() ? '' : '<p class="note" style="color:var(--ng)">이 브라우저는 음성 인식이 안 돼서 글자로 입력해요. 아이폰은 Safari에서 열면 말로 할 수 있어요.</p>'}
       <div class="cl-list">${CALL_SCENES[lang]
         .map(
@@ -13604,8 +14048,16 @@ function callDraw(lang) {
         ${c.review ? c.review : `<button type="button" class="btn primary" data-cl="review" ${c.busy || mine === 0 ? 'disabled' : ''}>${c.busy ? '첨삭 중…' : 'AI 첨삭 받기'}</button>`}
         <div class="row"><button type="button" class="btn" data-cl="list">다른 전화</button></div>${fbHTML(ja ? 'call' : 'ecall')}</div>`
     : `<div class="cl-ctl">
-        ${c.typing || !hasSR() ? `<div class="aic-in"><input id="clIn" type="text" lang="${lang}" placeholder="${ja ? '日本語で話す内容を入力' : 'Type what you would say'}" ${c.busy ? 'disabled' : ''}><button type="button" class="btn primary" data-cl="send" ${c.busy ? 'disabled' : ''}>보내기</button></div>` : ''}
-        ${hasSR() ? `<button type="button" class="cl-mic ${c.listening ? 'on' : ''}" data-cl="talk" ${c.busy || c.listening ? 'disabled' : ''} aria-label="말하기">${c.listening ? '듣는 중…' : c.busy ? '상대가 말하는 중…' : '🎤 누르고 말하기'}</button>` : ''}
+        ${hasSR() ? `<button type="button" class="cl-mic ${c.listening ? 'on' : ''}" data-cl="talk" ${c.busy ? 'disabled' : ''} aria-label="${c.listening ? '다 말했어요' : '말하기'}">${c.listening ? '■ 다 말했어요' : c.busy ? '상대가 말하는 중…' : '🎤 눌러서 말하기'}</button>` : ''}
+        ${c.listening ? `<div class="ls-live cl-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>` : ''}
+        ${
+          c.typing || !hasSR()
+            ? `<div class="cl-type"><div class="aic-in"><input id="clIn" type="text" lang="${lang}" ${ja ? IME_ATTR : 'autocapitalize="sentences"'} enterkeyhint="send" placeholder="${ja ? '영어 자판으로 쳐도 돼요 (yoyaku → よやく)' : 'Type what you would say'}" ${c.busy ? 'disabled' : ''}><button type="button" class="btn primary" data-cl="send" ${c.busy ? 'disabled' : ''}>보내기</button></div>
+          ${ja ? imeBar('clIn') : ''}
+          <div class="cl-quick">${CALL_QUICK[lang].map(q => `<button type="button" class="chip" data-clput="${esc(q)}" lang="${lang}">${esc(q)}</button>`).join('')}</div>
+          <p class="cl-tnote">${ja ? '일본어 자판이 없으면 영어 자판으로 소리 나는 대로 치면 돼요. 막히면 한국어로 써도 상대가 알아들어요.' : '막히면 한국어로 써도 상대가 알아들어요.'}</p></div>`
+            : ''
+        }
         <div class="cl-row"><button type="button" class="chip" data-cl="sub" aria-pressed="${!!c.sub}">자막</button><button type="button" class="chip" data-cl="again">다시 듣기</button><button type="button" class="chip" data-cl="hint" ${c.busy ? 'disabled' : ''}>💡 힌트</button>${hasSR() ? `<button type="button" class="chip" data-cl="type" aria-pressed="${!!c.typing}">⌨️ 글자로</button>` : ''}<button type="button" class="chip cl-hang" data-cl="end">📞 끊기</button></div>
         ${c.hint ? `<div class="cl-hint">${c.hint}</div>` : ''}
         ${c.err ? `<p class="note" style="color:var(--ng);margin:0">${esc(c.err)}</p>` : ''}</div>`;
@@ -13616,6 +14068,8 @@ function callDraw(lang) {
   const l = document.getElementById('clLog');
   if (l) l.scrollTop = l.scrollHeight;
   const inp = document.getElementById('clIn');
+  if (inp && draft) inp.value = draft;
+  if (inp && ja) imeInit();
   if (inp)
     inp.onkeydown = e => {
       if (e.key === 'Enter' && !e.isComposing) {
@@ -13658,49 +14112,64 @@ function callStart(lang, id) {
     t.textContent = '통화 중 ' + String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0');
   }, 1000);
 }
+// 🎤 tap once to talk, tap again when done (or just pause). What was heard shows live, then goes to the other side
 function callListen(lang) {
-  const R0 = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!R0 || !CALL || CALL.busy || CALL.listening) return;
-  try {
-    speechSynthesis.cancel();
-  } catch (e) {}
-  hqStop();
-  try {
-    const rec = new R0();
-    rec.lang = lang === 'ja' ? 'ja-JP' : 'en-US';
-    rec.interimResults = false;
-    rec.maxAlternatives = 1;
-    let heard = '';
-    rec.onresult = e => {
-      heard = e.results[0][0].transcript;
-    };
-    rec.onerror = ev => {
-      CALL.err =
-        ev && ev.error === 'not-allowed'
-          ? '마이크 권한이 없어요. 설정에서 마이크·음성 인식을 허용하거나 ⌨️ 글자로 해 보세요.'
-          : '잘 안 들렸어요. 다시 눌러서 말해 보세요.';
-    };
-    rec.onend = () => {
-      CALL.listening = false;
-      if (heard.trim()) callSay(lang, heard.trim());
-      else callDraw(lang);
-    };
-    CALL.listening = true;
-    CALL.err = '';
-    rec.start();
-  } catch (e) {
-    CALL.listening = false;
-    CALL.err = '이 기기에서는 음성 인식을 쓸 수 없어요. ⌨️ 글자로 해 보세요.';
-  }
+  if (!CALL || CALL.busy || CALL.ended) return;
+  if (lsBy('call')) return listenStop();
+  CALL.err = '';
+  CALL.listening = true;
   callDraw(lang);
+  listenStart(lang, {
+    who: 'call',
+    onDone: t => {
+      if (!CALL) return;
+      CALL.listening = false;
+      if (!document.getElementById('clBody')) return;
+      callSay(lang, t.slice(0, 200));
+    },
+    onFail: m => {
+      if (!CALL) return;
+      CALL.listening = false;
+      CALL.err = m;
+      CALL.fails = (CALL.fails || 0) + 1;
+      // after two misses, open the text box so the call can go on
+      if (CALL.fails >= 2) CALL.typing = true;
+      callDraw(lang);
+    },
+    onState: ls => {
+      const b = document.querySelector('.cl-mic');
+      if (b) b.textContent = ls.phase === 'stop' ? '알아듣는 중…' : '■ 다 말했어요';
+    }
+  });
 }
 function callSendTyped(lang) {
   const inp = document.getElementById('clIn');
-  const v = inp ? inp.value.trim().slice(0, 200) : '';
-  if (v) callSay(lang, v);
+  const v = inp ? (lang === 'ja' ? imeFinal(inp.value) : inp.value).trim().slice(0, 200) : '';
+  if (!v || !CALL || CALL.busy) return;
+  inp.value = '';
+  callSay(lang, v);
+}
+// quick replies for when you are stuck mid-call
+const CALL_QUICK = {
+  ja: ['はい', 'いいえ', 'もう一度お願いします', 'ゆっくりお願いします', 'ちょっと待ってください', 'ありがとうございます'],
+  en: ['Yes.', 'No.', 'Sorry, could you say that again?', 'Could you speak more slowly?', 'Just a moment, please.', 'Thank you.']
+};
+function callPut(lang, t, replace) {
+  if (!CALL) return;
+  const inp = document.getElementById('clIn');
+  if (!inp) {
+    CALL.typing = true;
+    callDraw(lang);
+  }
+  const el = document.getElementById('clIn');
+  if (!el) return;
+  el.value = (el.value.trim() && !replace ? el.value.trim() + (lang === 'ja' ? '' : ' ') : '') + t;
+  if (typeof imePreview === 'function') imePreview(el);
+  el.focus();
 }
 async function callSay(lang, text) {
   if (!CALL || CALL.busy || CALL.ended) return;
+  CALL.fails = 0;
   CALL.msgs.push({ who: 'me', t: text });
   CALL.busy = true;
   CALL.hint = '';
@@ -13729,7 +14198,7 @@ async function callHint(lang) {
     const j = aiJSON(await aiCall('hint', { lang, scene: callScene(), messages: callHistory() }));
     const opts = (j && Array.isArray(j.options) ? j.options : []).slice(0, 3);
     CALL.hint = opts.length
-      ? `<b>이렇게 말해 보세요</b>${opts.map(o => `<p><span class="${lang === 'ja' ? 'jp' : 'en'}" lang="${lang}">${esc(o.reply || '')}</span> <small>${esc(o.ko || '')}</small></p>`).join('')}`
+      ? `<b>이렇게 말해 보세요</b>${opts.map(o => `<button type="button" class="cl-opt" data-clput="${esc(o.reply || '')}"><span class="${lang === 'ja' ? 'jp' : 'en'}" lang="${lang}">${esc(o.reply || '')}</span> <small>${esc(o.ko || '')}</small></button>`).join('')}<small class="cl-optn">눌러서 고친 뒤 보내거나, 보고 소리 내어 말해 보세요</small>`
       : '힌트를 만들지 못했어요.';
   } catch (e) {
     CALL.err = e.message;
@@ -13741,6 +14210,8 @@ function callEnd(lang) {
   if (!CALL || CALL.ended) return;
   CALL.ended = Date.now();
   clearInterval(CALL_TICK);
+  listenCancel();
+  CALL.listening = false;
   try {
     speechSynthesis.cancel();
   } catch (e) {}
@@ -14105,6 +14576,814 @@ function lgDraw() {
     <div class="row"><button type="button" class="btn" data-lg="refresh" ${LG.busy ? 'disabled' : ''}>새로고침</button><button type="button" class="btn quiet" data-lg="leave">그룹 나가기</button></div>`;
 }
 CUSTOM.league = renderLeague;
+
+// ---- features/habit.js ----
+'use strict';
+/* ================= 목표 맞춤 홈 · 연속 학습 지키기 · 주간 목표 ================= */
+
+// ---- learning goal → recommended practices on home ----
+const GOALS = {
+  ja: [
+    ['travel', '✈️', '여행', '여행 회화 카드와 간판 읽기부터', ['jtrav', 'trip', 'sign', 'mycard', 'jdlg']],
+    ['jlpt', '📝', 'JLPT', '코스·문법·한자로 차근차근, 모의고사로 확인', ['jlpt', 'course', 'gram', 'kanji', 'yomu']],
+    ['hobby', '🎬', '취미·드라마', '귀가 트이게 듣기와 생활 단어 위주로', ['jl', 'word', 'yomu', 'kansai', 'jsh']],
+    ['work', '💼', '일·유학', '존댓말과 문법, 읽기를 단단하게', ['pol', 'gram', 'gcomp', 'yomu', 'jdlg']]
+  ],
+  en: [
+    ['travel', '✈️', '여행', '여행 영어 카드와 상황 대화부터', ['etrav', 'etrip', 'edlg', 'el', 'mp']],
+    ['talk', '🗣️', '일상 회화', '자주 쓰는 문장과 듣기·따라 말하기', ['edlg', 'es', 'esh', 'ephr', 'etrap']],
+    ['work', '💼', '업무·시험', '단어·시제·전치사를 탄탄하게', ['ew', 'etense', 'eprep', 'egcomp', 'edlg']],
+    ['life', '🏠', '해외 생활', '듣기와 받아쓰기, 한국인이 틀리는 표현', ['el', 'ed', 'edlg', 'etrap', 'ew']]
+  ]
+};
+if (!S.goal || typeof S.goal !== 'object') S.goal = {};
+const goalOf = lang => GOALS[lang].find(g => g[0] === S.goal[lang]);
+function goalPickHTML(lang, compact) {
+  return `<div class="goal-pick">${GOALS[lang]
+    .map(
+      g =>
+        `<button type="button" class="goal-b ${S.goal[lang] === g[0] ? 'on' : ''}" data-goal="${g[0]}"><span>${g[1]}</span><b>${g[2]}</b>${compact ? '' : `<small>${g[3]}</small>`}</button>`
+    )
+    .join('')}</div>`;
+}
+function goalHomeHTML() {
+  const lang = S.lang,
+    g = goalOf(lang);
+  if (!g) {
+    if (S.goalSkip && S.goalSkip[lang]) return '';
+    return `<section class="goal-home"><h2 class="sec-title">어떤 걸 위해 배우세요?</h2><p class="note" style="margin:0 0 8px">고르면 홈에 딱 맞는 연습을 골라 보여 드려요.</p>${goalPickHTML(lang, true)}<button type="button" class="link" data-goalskip>나중에 할게요</button></section>`;
+  }
+  const ms = g[4].filter(m => modTab(m));
+  return `<section class="goal-home"><div class="goal-h"><h2 class="sec-title">${g[1]} ${g[2]} 목표 추천</h2><button type="button" class="link" data-goalchange>바꾸기</button></div>
+    <p class="note" style="margin:0 0 8px">${g[3]}</p><div class="pin-row">${ms.map(m => `<button type="button" class="pin-go" data-mode="${m}">${esc(modeLabel(m))}</button>`).join('')}</div></section>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-goal],[data-goalskip],[data-goalchange]');
+  if (!b) return;
+  if (b.dataset.goal) {
+    S.goal[S.lang] = b.dataset.goal;
+    statEv('x:goal-' + b.dataset.goal);
+    save();
+    if (b.closest('.tr')) {
+      b.parentElement.querySelectorAll('.goal-b').forEach(x => x.classList.toggle('on', x === b));
+      return;
+    }
+    toast('목표에 맞는 연습을 홈에 보여 드릴게요');
+  } else if ('goalskip' in b.dataset) {
+    S.goalSkip = { ...(S.goalSkip || {}), [S.lang]: 1 };
+    save();
+  } else if ('goalchange' in b.dataset) {
+    delete S.goal[S.lang];
+    if (S.goalSkip) delete S.goalSkip[S.lang];
+    save();
+  }
+  if (!CUR_MOD && curTab() === 'home') renderHome();
+});
+
+// ---- streak protection (스트릭 지킴이) ----
+const FREEZE_MAX = 2,
+  FREEZE_COST = 2; // 뽑기권
+if (typeof S.freeze !== 'number') S.freeze = 0;
+if (!S.frozen || typeof S.frozen !== 'object') S.frozen = {};
+// on start: if yesterday (and maybe a day or two before) was missed but the streak was alive, spend guards to keep it
+function freezeCheck() {
+  if (!S.freeze) return;
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  const gap = [];
+  for (let i = 0; i < FREEZE_MAX + 1; i++) {
+    const k = dayKey(d);
+    if (S.days[k] && S.days[k].n) break;
+    if (S.frozen[k]) return; // already handled
+    gap.push(k);
+    d.setDate(d.getDate() - 1);
+  }
+  const before = dayKey(d);
+  if (!gap.length || gap.length > S.freeze || !(S.days[before] && S.days[before].n)) return;
+  for (const k of gap) S.frozen[k] = 1;
+  S.freeze -= gap.length;
+  save();
+  setTimeout(() => toast(`❄️ 스트릭 지킴이 ${gap.length}개로 연속 기록을 지켰어요! 오늘 이어 가요`), 1200);
+}
+freezeCheck();
+function buyFreeze() {
+  const l = S.lang;
+  if (S.freeze >= FREEZE_MAX) return toast(`지킴이는 ${FREEZE_MAX}개까지 가질 수 있어요`);
+  if ((S.tickets[l] || 0) < FREEZE_COST) return toast(`뽑기권이 ${FREEZE_COST}장 필요해요. 레벨이 오르거나 목표를 채우면 생겨요`);
+  S.tickets[l] -= FREEZE_COST;
+  S.freeze++;
+  save();
+  toast('❄️ 스트릭 지킴이를 샀어요. 하루 빠져도 연속 기록이 이어져요');
+}
+
+// ---- weekly goal: study N days a week (Mon–Sun) ----
+function weekDays() {
+  const d = new Date();
+  d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+  const out = [];
+  for (let i = 0; i < 7; i++) {
+    out.push(dayKey(d));
+    d.setDate(d.getDate() + 1);
+  }
+  return out;
+}
+const wgoal = () => S.set.wgoal || 5;
+function weekCheck() {
+  const days = weekDays(),
+    n = days.filter(k => S.days[k] && S.days[k].n).length;
+  S.wgDone = S.wgDone || {};
+  if (n >= wgoal() && !S.wgDone[days[0]]) {
+    S.wgDone[days[0]] = wgoal();
+    S.tickets[S.lang] = (S.tickets[S.lang] || 0) + 1;
+    save();
+    gainXP(30);
+    toast(`🎯 이번 주 목표 ${wgoal()}일 달성! 뽑기권 1장 + 30 XP`);
+  }
+}
+function streakHomeHTML() {
+  const days = weekDays(),
+    t = today();
+  const n = days.filter(k => S.days[k] && S.days[k].n).length;
+  const st = streak();
+  const dots = days
+    .map((k, i) => {
+      const done = S.days[k] && S.days[k].n,
+        fz = S.frozen[k];
+      return `<span class="wk-d ${done ? 'on' : fz ? 'fz' : ''} ${k === t ? 'today' : ''}"><i>${done ? '✓' : fz ? '❄' : ''}</i><small>${'월화수목금토일'[i]}</small></span>`;
+    })
+    .join('');
+  const reached = n >= wgoal();
+  return `<section class="streak-box">
+    <div class="sb-top"><b>🔥 ${st}일 연속</b><span class="sb-fz">❄️ 지킴이 ${S.freeze}/${FREEZE_MAX}${S.freeze < FREEZE_MAX ? ` <button type="button" class="link" data-buyfreeze>뽑기권 ${FREEZE_COST}장으로 사기</button>` : ''}</span></div>
+    <div class="wk">${dots}</div>
+    <p class="note" style="margin:0">${reached ? `이번 주 목표 ${wgoal()}일 달성! 🎯` : `이번 주 목표 <b class="num">${n}/${wgoal()}</b>일 · 채우면 뽑기권 1장`}</p></section>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-buyfreeze]');
+  if (!b) return;
+  buyFreeze();
+  if (!CUR_MOD && curTab() === 'home') renderHome();
+});
+
+// ---- features/jlpt.js ----
+'use strict';
+/* ================= JLPT 모의고사: an N5/N4/N3-style test built from the app's own words, grammar, readings and sentences.
+   문자·어휘(漢字読み・表記・文脈規定) · 문법(문장 고르기・★ 문장 만들기) · 독해 · 청해, with a JLPT-like scaled score (estimate). ================= */
+const JLPT_PLAN = {
+  5: { yomi: 7, hyoki: 5, bunmyaku: 5, gram: 6, star: 4, dokkai: 1, chokai: 6, min: 30 },
+  4: { yomi: 7, hyoki: 5, bunmyaku: 6, gram: 7, star: 4, dokkai: 1, chokai: 6, min: 40 },
+  3: { yomi: 7, hyoki: 5, bunmyaku: 6, gram: 8, star: 5, dokkai: 1, chokai: 6, min: 50 }
+};
+const JLPT_TYPE = {
+  yomi: ['漢字読み', '밑줄 친 한자의 읽는 법'],
+  hyoki: ['表記', '밑줄 친 말을 한자로'],
+  bunmyaku: ['文脈規定', '빈칸에 맞는 말'],
+  gram: ['文法', '한국어 뜻에 맞는 문장'],
+  star: ['文の組み立て', '★에 들어갈 말'],
+  dokkai: ['読解', '글을 읽고 답하기'],
+  chokai: ['聴解', '듣고 뜻 고르기']
+};
+// JLPT pass lines (total / section minimums); N5·N4 combine 언어지식+독해 into one 120-point section
+const JLPT_PASS = {
+  5: { total: 80, max: [120, 60], min: [38, 19] },
+  4: { total: 90, max: [120, 60], min: [38, 19] },
+  3: { total: 95, max: [60, 60, 60], min: [19, 19, 19] }
+};
+let JX = null; // running test { lvl, qs, i, ans, t0 }
+if (!S.jlpt || typeof S.jlpt !== 'object') S.jlpt = {};
+
+const jxKanji = s => /[一-鿿々]/.test(s);
+const jxSmall = { ぁ: 'あ', ぃ: 'い', ぅ: 'う', ぇ: 'え', ぉ: 'お', ゃ: 'や', ゅ: 'ゆ', ょ: 'よ' };
+const VOICE_PAIRS = 'かがきぎくぐけげこごさざしじすずせぜそぞただてでとどはばひびふぶへべほぼ';
+const HANDAKU = 'はぱひぴふぷへぺほぽばぱびぴぶぷべぺぼぽ';
+// plausible wrong readings — the classic JLPT traps: long vowel on/off, small っ on/off, voiced/unvoiced, ゃゅょ.
+// Only the part of the reading that belongs to the kanji is changed (okurigana like ました stays as it is).
+function jxWrongReadings(r, w) {
+  let pre = 0,
+    suf = 0;
+  if (w) {
+    while (pre < w.length && pre < r.length && w[pre] === r[pre] && !jxKanji(w[pre])) pre++;
+    while (suf < w.length - pre && suf < r.length - pre && w[w.length - 1 - suf] === r[r.length - 1 - suf] && !jxKanji(w[w.length - 1 - suf])) suf++;
+  }
+  const A = pre,
+    B = r.length - suf; // editable range [A, B)
+  const out = new Set();
+  const add = x => x && x !== r && /^[ぁ-ゖー]+$/.test(x) && !/^[っゃゅょ]/.test(x) && out.add(x);
+  const at = (i, del, ins) => r.slice(0, i) + ins + r.slice(i + del);
+  for (let i = Math.max(A, 1); i < B; i++) {
+    const c = r[i],
+      p = r[i - 1];
+    if (c === 'う' && /[おこそとのほもよろごぞどぼぽゅょ]/.test(p)) add(at(i, 1, '')); // こう → こ
+    if (c === 'い' && /[えけせてねへめれげぜでべぺ]/.test(p)) add(at(i, 1, '')); // せい → せ
+    if (c === 'っ') add(at(i, 1, '')); // がっこう → がこう
+  }
+  for (let i = A; i < B; i++) {
+    const c = r[i];
+    if (/[おこそとのほもよろごぞどぼぽゅょ]/.test(c) && r[i + 1] !== 'う') add(at(i + 1, 0, 'う')); // こ → こう
+    if (i + 1 < B && /[かきくけこさしすせそたちてとぱぴぷぺぽ]/.test(r[i + 1]) && /[いくちつき]/.test(c) && i > A) add(at(i, 1, 'っ')); // がくこう → がっこう
+    const k = VOICE_PAIRS.indexOf(c);
+    if (k >= 0) add(at(i, 1, VOICE_PAIRS[k % 2 ? k - 1 : k + 1]));
+    const h = HANDAKU.indexOf(c);
+    if (h >= 0) add(at(i, 1, HANDAKU[h % 2 ? h - 1 : h + 1]));
+    if (/[ゃゅょ]/.test(c)) add(at(i, 1, { ゃ: 'や', ゅ: 'ゆ', ょ: 'よ' }[c]));
+  }
+  // prefer one change per kind, then anything
+  return shuffle([...out]);
+}
+function jxWordsOf(lvl) {
+  const exact = WORDS.filter(
+    w => !w.mine && w.lvl === lvl && jxKanji(w.w) && w.ex && w.ex.includes(w.w) && /^[ぁ-ゖ]+$/.test(w.r) && w.r.length >= 2
+  );
+  return exact;
+}
+const jxUnder = (ex, w, show) => esc(ex).replace(esc(w), `<u>${esc(show)}</u>`);
+function jxMakeYomi(lvl, n, used) {
+  const qs = [];
+  for (const w of shuffle(jxWordsOf(lvl))) {
+    if (qs.length >= n) break;
+    if (used.has(w.key)) continue;
+    // the kanji part must be the main part of the word (skip things like お待たせしました)
+    if ([...w.w].filter(jxKanji).length * 2 < [...w.w].length - 1) continue;
+    const opts = jxWrongReadings(w.r, w.w).slice(0, 3);
+    if (opts.length < 3) continue;
+    used.add(w.key);
+    qs.push({
+      type: 'yomi',
+      key: w.key,
+      html: jxUnder(w.ex, w.w, w.w),
+      a: w.r,
+      o: shuffle([w.r, ...opts]),
+      ex: `${w.w} (${w.r}) · ${w.m.join(', ')}`,
+      say: w.ex
+    });
+  }
+  return qs;
+}
+function jxMakeHyoki(lvl, n, used) {
+  const qs = [];
+  const KJ = KANJI.filter(k => k.lvl >= lvl);
+  const onOf = k =>
+    (k.on || '')
+      .split('・')
+      .map(x => toHira(x.trim()))
+      .filter(Boolean);
+  // kanji → on'yomi (hiragana) for ~1000 common kanji; used to find same-sound kanji (同音), the usual 表記 trap
+  const HJ = typeof HJ_DATA !== 'undefined' ? HJ_DATA : [];
+  const onMap = new Map(HJ.map(x => [x[0], x[2]]));
+  const sameOn = ch => {
+    const mine = onMap.get(ch) || [];
+    return HJ.filter(x => x[0] !== ch && x[3] <= 4 && x[2].some(o => mine.includes(o))).map(x => ({ k: x[0] }));
+  };
+  for (const w of shuffle(jxWordsOf(lvl))) {
+    if (qs.length >= n) break;
+    if (used.has(w.key)) continue;
+    const chars = [...w.w].filter(jxKanji);
+    const cands = new Set();
+    for (const ch of chars) {
+      const me = KANJI.find(k => k.k === ch);
+      const myOn = me ? onOf(me) : [];
+      // same-sound kanji only (同音): learners have to tell 会場 from 会上 by meaning, as in the real test
+      const pool = [...shuffle(KJ.filter(k => k.k !== ch && myOn.some(o => onOf(k).includes(o)))), ...shuffle(sameOn(ch))];
+      for (const k of pool) {
+        const alt = w.w.replace(ch, k.k);
+        if (!WORDS.some(x => x.w === alt)) cands.add(alt); // never offer another real word
+        if (cands.size >= 6) break;
+      }
+    }
+    const opts = shuffle([...cands]).slice(0, 3);
+    if (opts.length < 3) continue;
+    used.add(w.key);
+    qs.push({
+      type: 'hyoki',
+      key: w.key,
+      html: jxUnder(w.ex, w.w, w.r),
+      a: w.w,
+      o: shuffle([w.w, ...opts]),
+      ex: `${w.r} → ${w.w} · ${w.m.join(', ')}`,
+      say: w.ex
+    });
+  }
+  return qs;
+}
+const NOUN_CATS = ['people', 'body', 'time', 'food', 'place', 'thing', 'nature', 'school'];
+function jxMakeBunmyaku(lvl, n, used) {
+  const qs = [];
+  const nouns = WORDS.filter(w => !w.mine && w.lvl >= lvl && NOUN_CATS.includes(w.cats[0]) && w.ex && w.ex.includes(w.w));
+  for (const w of shuffle(nouns.filter(x => x.lvl === lvl))) {
+    if (qs.length >= n) break;
+    if (used.has(w.key)) continue;
+    // distractors: nouns from other categories, so only one option fits the sentence
+    const opts = shuffle(nouns.filter(x => x.cats[0] !== w.cats[0] && !w.ex.includes(x.w) && x.w.length <= w.w.length + 2))
+      .map(x => x.w)
+      .filter((x, i, a) => a.indexOf(x) === i)
+      .slice(0, 3);
+    if (opts.length < 3) continue;
+    used.add(w.key);
+    qs.push({
+      type: 'bunmyaku',
+      key: w.key,
+      html: esc(w.ex).replace(esc(w.w), '（　　）'),
+      a: w.w,
+      o: shuffle([w.w, ...opts]),
+      ex: `${w.ex} · ${w.exko}`,
+      say: w.ex
+    });
+  }
+  return qs;
+}
+function jxMakeGram(lvl, n) {
+  return shuffle(GRAM_ITEMS.filter(x => x.g.lvl === lvl))
+    .slice(0, n)
+    .map(x => ({
+      type: 'gram',
+      key: x.key,
+      ko: x.k,
+      a: x.a[0],
+      o: shuffle([x.a[0], ...x.d.map(d => d[0])]),
+      ex: `${x.g.p} · ${x.g.name}`,
+      say: x.a[0]
+    }));
+}
+function jxMakeStar(n) {
+  const qs = [];
+  for (const s of shuffle(SENTS)) {
+    if (qs.length >= n) break;
+    const t = s.t.split(' ');
+    if (t.length < 6) continue;
+    const start = 1 + Math.floor(Math.random() * (t.length - 5));
+    const four = t.slice(start, start + 4);
+    if (new Set(four).size < 4 || four.some(x => /[。、？！]/.test(x))) continue;
+    const before = t.slice(0, start).join(''),
+      after = t.slice(start + 4).join('');
+    qs.push({
+      type: 'star',
+      key: s.key,
+      html: `${esc(before)} <span class="jx-sl">＿＿</span><span class="jx-sl">＿＿</span><span class="jx-sl star">★</span><span class="jx-sl">＿＿</span> ${esc(after)}`,
+      ko: s.k,
+      a: four[2],
+      o: shuffle(four),
+      ex: `${s.a[0]} · ${s.k}`,
+      say: s.a[0]
+    });
+  }
+  return qs;
+}
+function jxMakeDokkai(lvl) {
+  const y = shuffle(YOMU.filter(x => x.lvl === lvl))[0];
+  if (!y) return [];
+  return y.q.map((q, i) => ({ type: 'dokkai', key: `yd:${y.id}:${i}`, text: y, ko: q.q, a: q.o[q.a], o: q.o.slice(), ex: q.why || '' }));
+}
+function jxMakeChokai(n) {
+  if (!hasTTS && !(typeof hqOn === 'function' && hqOn())) return [];
+  return shuffle(SENTS.filter(s => s.d && s.d.length === 2))
+    .slice(0, n)
+    .map(s => ({
+      type: 'chokai',
+      key: 'jl:' + s.a[0],
+      say: s.a[0],
+      a: s.k,
+      o: shuffle([s.k, s.d[0][2], s.d[1][2]]),
+      ex: `${s.a[0]} · ${s.k}`
+    }));
+}
+function jxBuild(lvl) {
+  const p = JLPT_PLAN[lvl],
+    used = new Set();
+  return [
+    ...jxMakeYomi(lvl, p.yomi, used),
+    ...jxMakeHyoki(lvl, p.hyoki, used),
+    ...jxMakeBunmyaku(lvl, p.bunmyaku, used),
+    ...jxMakeGram(lvl, p.gram),
+    ...jxMakeStar(p.star),
+    ...jxMakeDokkai(lvl),
+    ...jxMakeChokai(p.chokai)
+  ];
+}
+const jxSection = (lvl, type) => (type === 'chokai' ? 'chokai' : type === 'dokkai' ? (lvl === 3 ? 'dokkai' : 'gengo') : 'gengo');
+function jxScore(lvl, qs, ans) {
+  const P = JLPT_PASS[lvl];
+  const secs = lvl === 3 ? ['gengo', 'dokkai', 'chokai'] : ['gengo', 'chokai'];
+  const names = { gengo: lvl === 3 ? '언어지식 (문자·어휘·문법)' : '언어지식·독해', dokkai: '독해', chokai: '청해' };
+  const res = secs.map((s, i) => {
+    const q = qs.filter(x => jxSection(lvl, x.type) === s);
+    const c = q.filter(x => ans[qs.indexOf(x)] === x.a).length;
+    const pts = q.length ? Math.round((c / q.length) * P.max[i]) : null;
+    return { s, name: names[s], c, n: q.length, pts, max: P.max[i], min: P.min[i], ok: pts === null || pts >= P.min[i] };
+  });
+  const scored = res.filter(r => r.pts !== null);
+  // when 청해 couldn't be played, scale the total to the sections that were taken
+  const maxTaken = scored.reduce((a, r) => a + r.max, 0),
+    got = scored.reduce((a, r) => a + r.pts, 0);
+  const total = Math.round((got / maxTaken) * 180);
+  return { res, total, pass: total >= P.total && res.every(r => r.ok), line: P.total };
+}
+
+function renderJlpt(mod) {
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart jx" id="jxBody"></div></section>`;
+  jxDraw();
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes') || b.dataset.speak) return;
+    const d = b.dataset;
+    if (d.jxstart) {
+      const lvl = +d.jxstart;
+      JX = { lvl, qs: jxBuild(lvl), i: 0, ans: {}, t0: Date.now(), done: false, plays: {} };
+      statEv('o:jlpt-n' + lvl);
+      jxDraw();
+      window.scrollTo(0, 0);
+    } else if (d.jxo !== undefined && JX && !JX.done) {
+      JX.ans[JX.i] = JX.qs[JX.i].o[+d.jxo];
+      jxDraw();
+    } else if (d.jx === 'next' || d.jx === 'skip') {
+      if (JX.i < JX.qs.length - 1) JX.i++;
+      else jxFinish();
+      jxDraw();
+      window.scrollTo(0, 0);
+    } else if (d.jx === 'prev') {
+      if (JX.i > 0) JX.i--;
+      jxDraw();
+    } else if (d.jx === 'play') {
+      const q = JX.qs[JX.i];
+      JX.plays[JX.i] = (JX.plays[JX.i] || 0) + 1;
+      speak(q.say, 'ja');
+      jxDraw();
+    } else if (d.jx === 'quit') {
+      if (confirm('시험을 그만둘까요? 지금까지 푼 것은 저장되지 않아요.')) {
+        JX = null;
+        jxDraw();
+      }
+    } else if (d.jx === 'home') {
+      JX = null;
+      jxDraw();
+    } else if (d.jx === 'review') {
+      JX.showAll = !JX.showAll;
+      jxDraw();
+    } else if (d.jxmod) startMod(d.jxmod);
+  };
+}
+function jxFinish() {
+  JX.done = true;
+  const sc = jxScore(JX.lvl, JX.qs, JX.ans);
+  JX.sc = sc;
+  JX.qs.forEach((q, i) => {
+    if (JX.ans[i] !== undefined) record(q.key, JX.ans[i] === q.a);
+  });
+  const k = 'N' + JX.lvl;
+  S.jlpt[k] = [{ d: today(), t: sc.total, pass: sc.pass, sec: sc.res.map(r => r.pts) }, ...(S.jlpt[k] || [])].slice(0, 10);
+  save();
+  statDone('jlpt');
+}
+function jxDraw() {
+  const box = document.getElementById('jxBody');
+  if (!box) return;
+  if (!JX) {
+    box.innerHTML = `<p class="note">실제 JLPT 형식으로 문자·어휘, 문법, 독해, 청해를 시간을 재며 풀어요. 앱에 있는 문제로 매번 새로 구성되고, 점수는 실제 합격선에 맞춘 <b>추정치</b>예요.</p>
+      <div class="jx-lv">${[5, 4, 3]
+        .map(l => {
+          const p = JLPT_PLAN[l],
+            n = p.yomi + p.hyoki + p.bunmyaku + p.gram + p.star + 3 + p.chokai;
+          const h = S.jlpt['N' + l] || [];
+          return `<div class="jx-card"><b>N${l}</b><small>약 ${n}문제 · ${p.min}분 권장</small>${h.length ? `<small>최근 ${h[0].t}/180점 ${h[0].pass ? '<i class="ok">합격권</i>' : '<i>조금 더</i>'} · ${h.length}회 응시</small>` : '<small>아직 안 봤어요</small>'}<button type="button" class="btn ${l === 5 ? 'primary' : ''}" data-jxstart="${l}">시작</button></div>`;
+        })
+        .join('')}</div>
+      <p class="note">청해는 소리가 나야 해요. 무음 모드를 풀고 시작하세요. 문제마다 바로 정답이 나오지 않고, 끝나고 한꺼번에 채점해요.</p>`;
+    return;
+  }
+  if (JX.done) {
+    const sc = JX.sc,
+      wrong = JX.qs.map((q, i) => ({ q, i, a: JX.ans[i] })).filter(x => x.a !== x.q.a);
+    const byType = Object.keys(JLPT_TYPE)
+      .map(t => {
+        const qs = JX.qs.filter(q => q.type === t);
+        if (!qs.length) return '';
+        const c = qs.filter(q => JX.ans[JX.qs.indexOf(q)] === q.a).length;
+        return `<li><span class="jp" lang="ja">${JLPT_TYPE[t][0]}</span><small>${JLPT_TYPE[t][1]}</small><b class="num ${c / qs.length < 0.6 ? 'bad' : ''}">${c}/${qs.length}</b></li>`;
+      })
+      .join('');
+    const sec = Math.floor((Date.now() - JX.t0) / 1000);
+    const MOD_OF = { yomi: 'kanji', hyoki: 'kanji', bunmyaku: 'word', gram: 'gram', star: 'jb', dokkai: 'yomu', chokai: 'jl' };
+    const weakT = Object.keys(JLPT_TYPE).find(t => {
+      const qs = JX.qs.filter(q => q.type === t);
+      return qs.length && qs.filter(q => JX.ans[JX.qs.indexOf(q)] === q.a).length / qs.length < 0.6;
+    });
+    box.innerHTML = `<div class="jx-res ${sc.pass ? 'pass' : ''}"><span>N${JX.lvl} 모의고사 결과 (추정)</span><b class="num">${sc.total}<small> / 180</small></b><p>${sc.pass ? '🎉 합격권이에요!' : `합격선 ${sc.line}점까지 ${Math.max(0, sc.line - sc.total)}점 남았어요`}</p><small>걸린 시간 ${Math.floor(sec / 60)}분 ${sec % 60}초</small></div>
+      <ul class="jx-sec">${sc.res
+        .map(
+          r =>
+            `<li><span>${r.name}</span>${r.pts === null ? '<small>못 봄 (소리 없음)</small>' : `<b class="num ${r.ok ? '' : 'bad'}">${r.pts}<small>/${r.max}</small></b><small>${r.c}/${r.n} 정답 · 과락 기준 ${r.min}점${r.ok ? '' : ' ✕'}</small>`}</li>`
+        )
+        .join('')}</ul>
+      <h3 class="hjr-h">문제 유형별</h3><ul class="jx-type">${byType}</ul>
+      ${weakT ? `<button type="button" class="btn primary" data-jxmod="${MOD_OF[weakT]}" style="width:100%">약한 유형 연습하러 가기: ${JLPT_TYPE[weakT][1]}</button>` : ''}
+      <h3 class="hjr-h">틀린 문제 ${wrong.length}개</h3>
+      <div class="jx-wrong">${wrong
+        .slice(0, JX.showAll ? 99 : 6)
+        .map(
+          x =>
+            `<div class="jx-w"><small>${JLPT_TYPE[x.q.type][0]}</small><p>${x.q.ko ? esc(x.q.ko) + '<br>' : ''}${x.q.html ? `<span class="jp" lang="ja">${x.q.html}</span>` : ''}</p><p><s>${esc(x.a || '안 풂')}</s> → <b class="jp" lang="ja">${esc(x.q.a)}</b></p>${x.q.ex ? `<small class="jp" lang="ja">${esc(x.q.ex)}</small>` : ''}</div>`
+        )
+        .join('')}</div>
+      ${wrong.length > 6 ? `<button type="button" class="link" data-jx="review">${JX.showAll ? '접기' : '틀린 문제 모두 보기'}</button>` : ''}
+      <p class="note">틀린 문제는 복습 목록에 들어가서 나중에 다시 나와요. 점수는 실제 시험과 다를 수 있는 추정치예요.</p>
+      <div class="row"><button type="button" class="btn" data-jx="home">다른 급수</button><button type="button" class="btn primary" data-jxstart="${JX.lvl}">다시 보기 (새 문제)</button></div>${fbHTML('jlpt')}`;
+    return;
+  }
+  const q = JX.qs[JX.i],
+    n = JX.qs.length,
+    a = JX.ans[JX.i];
+  const done = Object.keys(JX.ans).length;
+  const min = Math.floor((Date.now() - JX.t0) / 60000);
+  let body = '';
+  if (q.type === 'dokkai') {
+    const y = q.text;
+    body = `<div class="jx-text"><b class="jp" lang="ja">${esc(y.title)}</b>${y.sents.map(s => `<p class="jp" lang="ja">${s.sp ? `<small>${esc(s.sp)}</small> ` : ''}${esc(s.t.split(' ').join(''))}</p>`).join('')}</div><p class="jx-q">${esc(q.ko)}</p>`;
+  } else if (q.type === 'chokai') {
+    body = `<div class="jx-audio"><button type="button" class="btn primary" data-jx="play">${SPK_ICON} ${JX.plays[JX.i] ? '한 번 더 듣기' : '듣기'}</button><small>${JX.plays[JX.i] ? `${JX.plays[JX.i]}번 들음` : '버튼을 눌러 들어 보세요'}</small></div><p class="jx-q">들은 문장의 뜻으로 맞는 것은?</p>`;
+  } else {
+    body = `${q.ko ? `<p class="jx-ko">${esc(q.ko)}</p>` : ''}${q.html ? `<p class="jx-s jp" lang="ja">${q.html}</p>` : ''}`;
+  }
+  const isJa = q.type !== 'chokai' && q.type !== 'dokkai';
+  box.innerHTML = `<div class="jx-top"><span>N${JX.lvl} · <b class="num">${JX.i + 1}</b>/${n}</span><span class="num">${min}분 / ${JLPT_PLAN[JX.lvl].min}분</span><button type="button" class="link" data-jx="quit">그만두기</button></div>
+    <div class="jx-bar"><i style="width:${(done / n) * 100}%"></i></div>
+    <div class="jx-qbox"><span class="jx-type-l"><span class="jp" lang="ja">${JLPT_TYPE[q.type][0]}</span> · ${JLPT_TYPE[q.type][1]}</span>${body}
+    <div class="jx-opts">${q.o
+      .map(
+        (o, j) =>
+          `<button type="button" class="btn jx-o ${a === o ? 'sel' : ''}" data-jxo="${j}"><span class="num">${j + 1}</span><span class="${isJa ? 'jp' : ''}" ${isJa ? 'lang="ja"' : ''}>${esc(o)}</span></button>`
+      )
+      .join('')}</div></div>
+    <div class="row"><button type="button" class="btn" data-jx="prev" ${JX.i ? '' : 'disabled'}>이전</button><button type="button" class="btn primary" data-jx="next">${JX.i < n - 1 ? (a === undefined ? '건너뛰기' : '다음') : '제출하고 채점'}</button></div>`;
+}
+CUSTOM.jlpt = renderJlpt;
+
+// ---- features/offpack.js ----
+'use strict';
+/* ================= 여행 오프라인 팩: before the trip, save everything the travel screens need so they work in airplane mode ================= */
+let OP = { busy: false, done: 0, total: 0, st: null };
+const OP_CACHE = 'hanamaru-offpack-1';
+// the files this page itself was loaded from (app, the language data, styles, icons)
+function opAppFiles() {
+  const urls = new Set(['./', './index.html', './manifest.webmanifest', './icon-192.png']);
+  document.querySelectorAll('script[src], link[rel=stylesheet][href]').forEach(el => {
+    const u = el.src || el.href;
+    if (u && u.startsWith(location.origin)) urls.add(u);
+  });
+  return [...urls];
+}
+// what gets read aloud on the travel screens
+function opTexts(lang) {
+  const out = (TRAVEL[lang] || []).map(x => x.t);
+  if (lang === 'ja') for (const x of SIGN_ITEMS) out.push(x.r);
+  for (const c of (S.myCards && S.myCards[lang]) || []) if (c.t) out.push(c.t);
+  return [...new Set(out.filter(Boolean))];
+}
+async function opStatus(lang) {
+  const st = { app: 0, appN: 0, voice: 0, voiceN: 0 };
+  try {
+    const files = opAppFiles();
+    st.appN = files.length;
+    for (const u of files) if (await caches.match(u, { ignoreSearch: false })) st.app++;
+    if (hqOn()) {
+      const c = await caches.open(HQ.cache);
+      const texts = opTexts(lang);
+      st.voiceN = texts.length;
+      for (const t of texts) if (await c.match(hqUrl(t, lang))) st.voice++;
+    }
+  } catch (e) {}
+  return st;
+}
+async function opSave(lang) {
+  if (OP.busy) return;
+  OP.busy = true;
+  OP.err = '';
+  try {
+    const c = await caches.open(OP_CACHE);
+    await c.addAll(opAppFiles());
+  } catch (e) {
+    OP.err = '앱 파일을 저장하지 못했어요. 인터넷에 연결된 상태에서 다시 해 보세요.';
+  }
+  if (hqOn() && !OP.err) {
+    const texts = opTexts(lang);
+    OP.total = texts.length;
+    OP.done = 0;
+    let fail = 0;
+    // a few at a time so the phone stays responsive
+    for (let i = 0; i < texts.length; i += 4) {
+      const part = await Promise.all(texts.slice(i, i + 4).map(t => hqBlob(hqUrl(t, lang)).then(b => !!b)));
+      OP.done += part.filter(Boolean).length;
+      fail += part.filter(x => !x).length;
+      opDraw(lang);
+      if (fail > 12) {
+        OP.err = '발음 일부를 받지 못했어요. 와이파이에서 다시 해 보세요. 받은 것까지는 저장돼요.';
+        break;
+      }
+    }
+  }
+  S.offpack = { ...(S.offpack || {}), [lang]: today() };
+  save();
+  OP.busy = false;
+  OP.st = await opStatus(lang);
+  statEv('x:offpack-' + lang);
+  opDraw(lang);
+}
+function renderOffpack(mod) {
+  const lang = mod === 'offpack' ? 'ja' : 'en';
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart op" id="opBody"></div></section>`;
+  OP.st = null;
+  opDraw(lang);
+  opStatus(lang).then(st => {
+    OP.st = st;
+    opDraw(lang);
+  });
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes')) return;
+    if (b.dataset.op === 'save') opSave(lang);
+    else if (b.dataset.op === 'go') startMod(lang === 'ja' ? 'jtrav' : 'etrav');
+  };
+}
+function opDraw(lang) {
+  const box = document.getElementById('opBody');
+  if (!box) return;
+  const st = OP.st,
+    hq = hqOn(),
+    last = S.offpack && S.offpack[lang];
+  const row = (ok, t, d) => `<li class="${ok ? 'ok' : ''}"><span>${ok ? '✅' : '⬜'}</span><div><b>${t}</b><small>${d}</small></div></li>`;
+  const cards = ((S.myCards && S.myCards[lang]) || []).length;
+  box.innerHTML = `<p class="note">출발 전에 와이파이에서 한 번 눌러 두면, 비행기 모드나 데이터가 안 터지는 곳에서도 여행 카드·간판·나만의 카드를 그대로 쓸 수 있어요.</p>
+    <ul class="op-list">
+      ${row(st && st.app === st.appN && st.appN, '앱과 여행 문장', st ? `${st.app}/${st.appN}개 파일 저장됨 · 여행 문장 ${(TRAVEL[lang] || []).length}개${lang === 'ja' ? `, 간판 ${SIGN_ITEMS.length}개` : ''}` : '확인 중…')}
+      ${
+        hq
+          ? row(
+              st && st.voiceN && st.voice >= st.voiceN,
+              'AI 고음질 발음',
+              OP.busy && OP.total ? `받는 중 ${OP.done}/${OP.total}` : st ? `${st.voice}/${st.voiceN}개 저장됨` : '확인 중…'
+            )
+          : row(
+              true,
+              '발음',
+              isIOS()
+                ? '아이폰 기본 목소리는 인터넷 없이도 읽어 줘요.'
+                : '기기 목소리로 읽어요. 안드로이드는 설정 → 텍스트 음성 변환에서 일본어/영어 음성 데이터를 받아 두면 오프라인에서도 돼요.'
+            )
+      }
+      ${row(true, '나만의 여행 카드', cards ? `${cards}개 · 폰에 저장돼 있어요` : '아직 없어요. 호텔 주소·알레르기 카드를 만들어 두면 좋아요')}
+    </ul>
+    ${OP.busy && OP.total ? `<div class="jx-bar"><i style="width:${(OP.done / OP.total) * 100}%"></i></div>` : ''}
+    ${OP.err ? `<p class="note" style="color:var(--ng)">${esc(OP.err)}</p>` : ''}
+    <button type="button" class="btn primary" data-op="save" style="width:100%" ${OP.busy ? 'disabled' : ''}>${OP.busy ? '저장하는 중…' : last ? '다시 저장하기' : '오프라인 팩 저장하기'}</button>
+    ${last ? `<p class="note">마지막 저장: ${last.slice(5).replace('-', '월 ')}일. 저장한 뒤 비행기 모드로 바꾸고 <button type="button" class="link" data-op="go">여행 카드</button>를 열어 확인해 보세요.</p>` : ''}
+    <p class="note">AI 회화·사진 읽기처럼 서버가 필요한 기능은 인터넷이 있어야 해요.</p>`;
+}
+CUSTOM.offpack = renderOffpack;
+CUSTOM.eoffpack = renderOffpack;
+
+// ---- play/shiritori.js ----
+'use strict';
+/* ================= しりとり (끝말잇기) with the computer, using the app's Japanese nouns. Pick the word that keeps the chain going ================= */
+const SR_SMALL = { ぁ: 'あ', ぃ: 'い', ぅ: 'う', ぇ: 'え', ぉ: 'お', ゃ: 'や', ゅ: 'ゆ', ょ: 'よ', っ: 'つ', ゎ: 'わ' };
+const SR_CATS = ['people', 'body', 'time', 'food', 'place', 'thing', 'nature', 'school', 's_air', 's_hotel', 's_food', 's_shop', 's_move'];
+const SR_SEC = 15; // seconds per turn
+let SH = null;
+const srRead = w => toHira(w.r).replace(/[^ぁ-ゖー]/g, '');
+// the kana the next word must start with: ignore a final ー, small kana count as big ones
+function srTail(r) {
+  let i = r.length - 1;
+  while (i > 0 && r[i] === 'ー') i--;
+  return SR_SMALL[r[i]] || r[i];
+}
+const srHead = r => SR_SMALL[r[0]] || r[0];
+let SR_DICT = null;
+function srDict() {
+  if (SR_DICT) return SR_DICT;
+  const seen = new Set();
+  SR_DICT = WORDS.filter(w => (w.cats || []).some(c => SR_CATS.includes(c)) && !/[〜~・ ]/.test(w.w))
+    .map(w => ({ w: w.w, r: srRead(w), m: w.m[0], key: w.key }))
+    .filter(x => x.r.length >= 2 && x.r[0] !== 'ー' && !seen.has(x.r) && seen.add(x.r));
+  return SR_DICT;
+}
+const srOk = (x, need) => srHead(x.r) === need && !SH.used.has(x.r) && srTail(x.r) !== 'ん';
+
+function renderShiri(mod) {
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart sh" id="shBody"></div></section>`;
+  SH = null;
+  srDraw();
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes') || b.dataset.speak) return;
+    if (b.dataset.sh === 'start') srStart();
+    else if (b.dataset.sho !== undefined && SH && SH.turn === 'me') srPick(SH.opts[+b.dataset.sho]);
+  };
+}
+function srStart() {
+  const first = { w: 'しりとり', r: 'しりとり', m: '끝말잇기', cpu: true };
+  SH = { chain: [first], used: new Set(['しりとり']), turn: 'me', score: 0, over: '', opts: [], left: SR_SEC };
+  srOptions();
+  srDraw();
+  speak('しりとり', 'ja');
+  srTimer();
+}
+// 4 choices: 1–2 that work, plus traps (ends in ん, wrong first kana, already used)
+function srOptions() {
+  const need = srTail(SH.chain[SH.chain.length - 1].r);
+  const D = srDict();
+  const good = shuffle(D.filter(x => srOk(x, need)));
+  const trapN = shuffle(D.filter(x => srHead(x.r) === need && srTail(x.r) === 'ん' && !SH.used.has(x.r)));
+  const near = shuffle(D.filter(x => srHead(x.r) !== need && !SH.used.has(x.r) && srTail(x.r) !== 'ん'));
+  const opts = [...good.slice(0, good.length > 6 ? 2 : 1), ...trapN.slice(0, 1)];
+  for (const x of near) {
+    if (opts.length >= 4) break;
+    opts.push(x);
+  }
+  SH.need = need;
+  SH.opts = shuffle(opts.slice(0, 4));
+  SH.noMove = !good.length;
+}
+function srTimer() {
+  clearInterval(SH && SH.tick);
+  if (!SH) return;
+  SH.left = SR_SEC;
+  SH.tick = setInterval(() => {
+    if (!SH || SH.turn !== 'me' || SH.over || !document.getElementById('shBody')) return clearInterval(SH && SH.tick);
+    SH.left--;
+    const t = document.getElementById('shLeft');
+    if (t) t.textContent = SH.left;
+    if (SH.left <= 0) srEnd('시간이 다 됐어요!');
+  }, 1000);
+}
+function srPick(x) {
+  if (!x || SH.over) return;
+  const need = SH.need;
+  if (SH.used.has(x.r)) return srEnd(`「${x.r}」는 이미 나온 단어예요.`, x);
+  if (srHead(x.r) !== need) return srEnd(`「${need}」로 시작해야 해요. 「${x.r}」는 「${srHead(x.r)}」로 시작해요.`, x);
+  SH.chain.push(x);
+  SH.used.add(x.r);
+  speak(x.r, 'ja');
+  if (srTail(x.r) === 'ん') return srEnd(`「${x.r}」는 「ん」으로 끝나서 져요! 일본 끝말잇기의 규칙이에요.`);
+  SH.score++;
+  gainXP(2);
+  SH.turn = 'cpu';
+  srDraw();
+  setTimeout(srCpu, 1100);
+}
+function srCpu() {
+  if (!SH || SH.over) return;
+  const need = srTail(SH.chain[SH.chain.length - 1].r);
+  const pick = shuffle(srDict().filter(x => srOk(x, need)))[0];
+  if (!pick) return srEnd(`컴퓨터가 「${need}」로 시작하는 단어를 못 찾았어요. 이겼어요! 🎉`, null, true);
+  SH.chain.push({ ...pick, cpu: true });
+  SH.used.add(pick.r);
+  speak(pick.r, 'ja');
+  SH.turn = 'me';
+  srOptions();
+  srDraw();
+  srTimer();
+}
+function srEnd(msg, bad, win) {
+  clearInterval(SH.tick);
+  SH.over = msg;
+  SH.win = !!win;
+  SH.bad = bad || null;
+  S.gbest = S.gbest || {};
+  const best = S.gbest.shiri || 0;
+  if (SH.score > best) S.gbest.shiri = SH.score;
+  SH.newBest = SH.score > best && SH.score > 0;
+  save();
+  statDone('shiri');
+  srDraw();
+}
+function srDraw() {
+  const box = document.getElementById('shBody');
+  if (!box) return;
+  const best = (S.gbest && S.gbest.shiri) || 0;
+  if (!SH) {
+    box.innerHTML = `<div class="sh-intro"><b class="jp" lang="ja">しりとり</b><p>일본식 끝말잇기예요. 앞 단어의 마지막 글자로 시작하는 단어를 골라요.</p>
+      <ul class="note"><li>「ん」으로 끝나는 단어를 고르면 져요 (ん으로 시작하는 말이 없어서).</li><li>장음 「ー」는 빼고 그 앞 글자로 이어요 (コーヒー → ひ).</li><li>작은 글자는 큰 글자로 (しゃしん의 ゃ → や). 한 번 나온 단어는 다시 못 써요.</li><li>한 차례 ${SR_SEC}초. 컴퓨터가 막히면 이겨요.</li></ul>
+      <p>최고 기록 <b class="num">${best}</b>개</p><button type="button" class="btn primary" data-sh="start" style="width:100%">시작하기</button></div>`;
+    return;
+  }
+  const chain = SH.chain
+    .map(
+      (x, i) =>
+        `<li class="${x.cpu ? 'cpu' : 'me'}"><span class="jp" lang="ja">${esc(x.w)}</span>${x.w !== x.r ? `<small class="jp" lang="ja">${esc(x.r)}</small>` : ''}<small>${esc(x.m || '')}</small>${i < SH.chain.length - 1 ? `<i class="jp" lang="ja">→ ${srTail(x.r)}</i>` : ''}</li>`
+    )
+    .join('');
+  let ctl = '';
+  if (SH.over)
+    ctl = `<div class="sh-over ${SH.win ? 'win' : ''}"><p>${esc(SH.over)}</p><b>내가 이은 단어 <span class="num">${SH.score}</span>개${SH.newBest ? ' · 최고 기록!' : ''}</b>
+      ${SH.noMove && !SH.win ? '' : ''}<div class="row"><button type="button" class="btn primary" data-sh="start">다시 하기</button></div>${fbHTML('shiri')}</div>`;
+  else if (SH.turn === 'me')
+    ctl = `<div class="sh-turn"><p>「<b class="jp" lang="ja">${SH.need}</b>」로 시작하는 말은? <span class="sh-left num" id="shLeft">${SH.left}</span></p>
+      <div class="sh-opts">${SH.opts.map((x, i) => `<button type="button" class="btn sh-o" data-sho="${i}"><span class="jp" lang="ja">${esc(x.w)}</span>${x.w !== x.r ? `<small class="jp" lang="ja">${esc(x.r)}</small>` : ''}<small>${esc(x.m)}</small></button>`).join('')}</div>
+      ${SH.noMove ? '<p class="note">이을 수 있는 단어가 없네요… 아무거나 골라도 져요.</p>' : ''}</div>`;
+  else ctl = '<p class="note sh-wait">컴퓨터가 생각 중…</p>';
+  box.innerHTML = `<div class="sh-head"><span>이은 단어 <b class="num">${SH.score}</b></span><span>최고 <b class="num">${Math.max(best, SH.score)}</b></span></div>
+    <ol class="sh-chain" id="shChain">${chain}</ol>${ctl}`;
+  const c = document.getElementById('shChain');
+  if (c) c.scrollTop = c.scrollHeight;
+}
+CUSTOM.shiri = renderShiri;
 
 // ---- features/mycard.js ----
 'use strict';
@@ -14771,6 +16050,26 @@ document.getElementById('searchBtn').addEventListener('click', openSearch);
 // v: the version that added the item; people only see items newer than the last list they saw
 const WHATS_NEW = [
   {
+    v: 20,
+    t: '말하기 인식 개선',
+    d: 'AI 전화·AI 회화·발음 점수에서 🎤를 누르면 들리는 말이 바로 보여요. 다 말했으면 한 번 더 누르거나 잠깐 멈추면 돼요.'
+  },
+  {
+    v: 20,
+    ja: true,
+    t: '일본어 자판 없이 입력',
+    d: '영어 자판으로 watashi라고 치면 わたし로 바뀌어요. 대문자는 가타카나(KO-HI- → コーヒー).'
+  },
+  { v: 20, ja: true, t: 'JLPT 모의고사', d: '배우기 탭 · 시험·도전. N5·N4·N3를 실제 형식으로 풀고 영역별 점수와 합격권을 확인해요.' },
+  { v: 20, t: '목표 맞춤 홈', d: '여행·JLPT·취미 등 목표를 고르면 홈에 딱 맞는 연습을 골라 보여 줘요.' },
+  {
+    v: 20,
+    t: '스트릭 지킴이 · 주간 목표',
+    d: '뽑기권 2장으로 지킴이를 사 두면 하루 빠져도 연속 기록이 이어져요. 주간 목표를 채우면 뽑기권을 받아요.'
+  },
+  { v: 20, ja: true, t: 'しりとり', d: '놀이 탭. 컴퓨터와 일본어 끝말잇기! ん으로 끝나면 져요.' },
+  { v: 20, t: '여행 오프라인 팩', d: '회화·여행 탭. 출발 전에 저장해 두면 비행기 모드에서도 여행 카드와 발음을 써요.' },
+  {
     v: 19,
     ai: true,
     t: 'AI 전화 연습',
@@ -14887,7 +16186,7 @@ const WHATS_NEW = [
   { v: 10, t: '플래시카드', d: '배우기 탭. 넘기면서 알아요 / 몰라요만 눌러요.' },
   { v: 10, t: '단어장 공유', d: '자료 탭 → 단어장에서 링크로 친구에게 보내요.' }
 ];
-const WN_LATEST = 19;
+const WN_LATEST = 20;
 
 function whatsNew10(since) {
   const ja = S.lang === 'ja';
