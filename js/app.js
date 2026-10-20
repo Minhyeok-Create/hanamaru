@@ -1005,7 +1005,7 @@ function imePreview(el) {
       : v
         ? ''
         : imeOn()
-          ? '영어 자판으로 쳐도 돼요: watashi → わたし · 대문자는 가타카나 KO-HI- → コーヒー'
+          ? '대문자는 가타카나 (KO-HI- → コーヒー)'
           : '';
 }
 // the small bar under a Japanese text box: on/off switch + live preview
@@ -5960,7 +5960,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020150606';
+const APP_VERSION = '20261020152119';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
