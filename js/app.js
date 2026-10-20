@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [66, "lib/conjugate.js"], [278, "lib/numbers.js"], [443, "lib/dictation.js"], [533, "content/kana.js"], [586, "content/items.js"], [626, "lib/romaji.js"], [716, "content/items-extra.js"], [761, "core/storage.js"], [923, "core/srs.js"], [1041, "core/badges.js"], [1129, "core/backup.js"], [1220, "core/speech.js"], [1341, "ui/shell.js"], [1773, "ui/menu.js"], [1956, "ui/home.js"], [2150, "quiz/engine.js"], [2678, "quiz/input.js"], [2798, "quiz/kana.js"], [2902, "quiz/words.js"], [3092, "quiz/loan-conj.js"], [3167, "quiz/sentences.js"], [3299, "quiz/dictation-numbers.js"], [3424, "quiz/flow.js"], [3717, "quiz/speed.js"], [3885, "views/reference.js"], [3972, "views/wordlist.js"], [4165, "views/stats.js"], [4289, "quiz/modes-extra.js"], [4408, "features/shadowing.js"], [4513, "features/dialogue.js"], [4693, "views/grammar-notes.js"], [4748, "views/today.js"], [4863, "core/update.js"], [4923, "quiz/counters.js"], [5274, "quiz/polite.js"], [5323, "quiz/jp-pairs.js"], [5373, "quiz/english-grammar.js"], [5450, "quiz/made-english.js"], [5494, "quiz/hanja.js"], [5742, "quiz/ko-traps.js"], [5852, "quiz/en-traps.js"], [5921, "quiz/kansai.js"], [5962, "features/course.js"], [6839, "ui/sheet.js"], [6871, "features/share-card.js"], [7190, "ui/help.js"], [7497, "play/setup.js"], [7526, "features/sound.js"], [7587, "features/levels.js"], [7712, "play/cards.js"], [7855, "play/stamps.js"], [8049, "play/omikuji.js"], [8185, "play/rain.js"], [8399, "play/match.js"], [8527, "play/vs.js"], [8769, "play/play.js"], [8902, "features/missions.js"], [8998, "features/seasons.js"], [9053, "features/weekly.js"], [9287, "features/level-test.js"], [9535, "features/autoplay.js"], [9733, "views/wrong-notes.js"], [9806, "features/support.js"], [9903, "ui/settings.js"], [10142, "features/travel.js"], [10284, "features/writing.js"], [10451, "features/flashcards.js"], [10593, "features/share-words.js"], [10733, "views/hanja-rules.js"], [10857, "features/signs.js"], [10938, "features/trip.js"], [11098, "features/daily.js"], [11219, "features/share-more.js"], [11385, "views/weak.js"], [11509, "features/ai.js"], [11570, "features/aichat.js"], [11908, "features/diary.js"], [12047, "features/mycard.js"], [12301, "features/reader.js"], [12472, "ui/welcome.js"], [12573, "ui/search.js"], [12704, "ui/whats-new.js"], [12799, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [66, "core/stats.js"], [158, "lib/conjugate.js"], [370, "lib/numbers.js"], [535, "lib/dictation.js"], [625, "content/kana.js"], [678, "content/items.js"], [722, "lib/romaji.js"], [812, "content/items-extra.js"], [859, "core/storage.js"], [1021, "core/srs.js"], [1139, "core/badges.js"], [1227, "core/backup.js"], [1318, "core/speech.js"], [1439, "ui/shell.js"], [1875, "ui/menu.js"], [2062, "ui/home.js"], [2256, "quiz/engine.js"], [2787, "quiz/input.js"], [2907, "quiz/kana.js"], [3011, "quiz/words.js"], [3201, "quiz/loan-conj.js"], [3276, "quiz/sentences.js"], [3408, "quiz/dictation-numbers.js"], [3533, "quiz/flow.js"], [3832, "quiz/speed.js"], [4000, "views/reference.js"], [4087, "views/wordlist.js"], [4289, "views/stats.js"], [4413, "quiz/modes-extra.js"], [4532, "features/shadowing.js"], [4796, "features/dialogue.js"], [4976, "views/grammar-notes.js"], [5032, "views/today.js"], [5147, "core/update.js"], [5207, "quiz/counters.js"], [5558, "quiz/polite.js"], [5607, "quiz/jp-pairs.js"], [5657, "quiz/english-grammar.js"], [5734, "quiz/made-english.js"], [5778, "quiz/hanja.js"], [6026, "quiz/ko-traps.js"], [6136, "quiz/en-traps.js"], [6205, "quiz/kansai.js"], [6246, "features/course.js"], [7161, "ui/sheet.js"], [7193, "features/share-card.js"], [7512, "ui/help.js"], [7822, "play/setup.js"], [7851, "features/sound.js"], [7912, "features/levels.js"], [8037, "play/cards.js"], [8180, "play/stamps.js"], [8374, "play/omikuji.js"], [8510, "play/rain.js"], [8724, "play/match.js"], [8852, "play/vs.js"], [9094, "play/play.js"], [9227, "features/missions.js"], [9323, "features/seasons.js"], [9378, "features/weekly.js"], [9612, "features/level-test.js"], [9860, "features/autoplay.js"], [10058, "views/wrong-notes.js"], [10131, "features/support.js"], [10228, "ui/settings.js"], [10470, "features/travel.js"], [10612, "features/writing.js"], [10779, "features/flashcards.js"], [10921, "features/share-words.js"], [11061, "views/hanja-rules.js"], [11185, "features/signs.js"], [11266, "features/trip.js"], [11426, "features/daily.js"], [11547, "features/share-more.js"], [11713, "views/weak.js"], [11837, "features/ai.js"], [11898, "features/aichat.js"], [12236, "features/diary.js"], [12375, "features/push.js"], [12518, "features/photo.js"], [12661, "features/trial.js"], [12827, "features/mycard.js"], [13081, "features/reader.js"], [13252, "ui/welcome.js"], [13355, "ui/search.js"], [13486, "ui/whats-new.js"], [13599, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -60,6 +60,98 @@ window.addEventListener('unhandledrejection', e => {
   const r = e && e.reason;
   if (r && (r.name === 'AbortError' || /fetch|network|load failed/i.test(String(r.message || r)))) return; // offline etc. is not a bug
   reportError('promise: ' + String((r && r.message) || r), '', r && r.stack);
+});
+
+// ---- core/stats.js ----
+'use strict';
+/* ================= 익명 사용 통계: which practices are opened and finished, 👍/👎 — counts only, no records or text =================
+   Sent to the AI server's /stat (only if js/config.js has an AI endpoint). Settings → 개인정보 lets people turn it off. */
+const STAT_Q = [];
+const statOn = () => !S.noStats && typeof aiOn === 'function' && aiOn() && location.protocol.startsWith('http');
+const statSafe = s =>
+  String(s || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9_.-]/g, '')
+    .slice(0, 20);
+function statEv(k) {
+  if (!statOn()) return;
+  STAT_Q.push(k);
+  if (STAT_Q.length >= 40) statFlush();
+}
+function statFlush() {
+  if (!STAT_Q.length || !statOn()) return;
+  const body = JSON.stringify({ lang: S.lang, ev: STAT_Q.splice(0, 60) });
+  const url = aiCfg().endpoint.replace(/\/$/, '') + '/stat';
+  try {
+    if (navigator.sendBeacon && navigator.sendBeacon(url, body)) return;
+    fetch(url, { method: 'POST', body, keepalive: true }).catch(() => {});
+  } catch (e) {}
+}
+document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && statFlush());
+window.addEventListener('pagehide', statFlush);
+setInterval(statFlush, 60000);
+
+// one visit per day: new (first day ever) / back, and whether it is the home-screen app
+function statVisit() {
+  if (S.statDay === today()) return;
+  const first = !S.firstDay;
+  if (first) S.firstDay = today();
+  S.statDay = today();
+  save();
+  statEv(first || S.firstDay === today() ? 'v:new' : 'v:back');
+  if (isStandalone()) statEv('v:app');
+}
+const statOpen = mod => statEv('o:' + statSafe(mod));
+const statDone = mod => statEv('f:' + statSafe(mod));
+
+// ---- 한 줄 피드백 on the result screen (once per practice per day) ----
+const FB_WHY = [
+  ['hard', '너무 어려워요'],
+  ['easy', '너무 쉬워요'],
+  ['odd', '문제가 이상해요'],
+  ['boring', '지루해요']
+];
+function fbHTML(mod) {
+  if (!statOn()) return '';
+  S.fb = S.fb || {};
+  if (S.fb[mod] === today()) return '';
+  return `<div class="fb1" data-fbmod="${esc(mod)}"><span>이 연습 어땠어요?</span><button type="button" class="fb1-b" data-fb="u" aria-label="좋아요">👍</button><button type="button" class="fb1-b" data-fb="d" aria-label="별로예요">👎</button></div>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-fb],[data-fbw]');
+  if (!b) return;
+  const box = b.closest('.fb1');
+  if (!box) return;
+  const mod = box.dataset.fbmod;
+  S.fb = S.fb || {};
+  S.fb[mod] = today();
+  save();
+  if (b.dataset.fb === 'u') {
+    statEv('u:' + statSafe(mod));
+    box.innerHTML = '<span>고마워요! 😊</span>';
+  } else if (b.dataset.fb === 'd') {
+    box.innerHTML = `<span>뭐가 아쉬웠어요?</span><div class="chips">${FB_WHY.map(([k, l]) => `<button type="button" class="chip" data-fbw="${k}">${l}</button>`).join('')}</div>`;
+  } else if (b.dataset.fbw) {
+    statEv('d:' + statSafe(mod) + ':' + b.dataset.fbw);
+    box.innerHTML = `<span>알려 줘서 고마워요. 고쳐 볼게요!${b.dataset.fbw === 'odd' ? ' 이상한 문제는 문제 화면의 ‘문제가 이상해요’로 보내 주면 더 빨리 고쳐요.' : ''}</span>`;
+  }
+  statFlush();
+});
+
+// ---- settings: turn statistics off ----
+function statsSetHTML() {
+  if (!(typeof aiOn === 'function' && aiOn())) return '';
+  return `<section id="set-privacy"><h2 class="sec-title">개인정보</h2><div class="panel">
+    <div class="set-row"><div><b>익명 사용 통계 보내기</b><small>어떤 연습을 열고 끝냈는지 숫자만 보내요. 앱을 고치는 데 써요</small></div><button class="switch" role="switch" data-nostats aria-checked="${!S.noStats}" aria-label="익명 사용 통계 보내기"></button></div>
+    <div class="row" style="padding:0 14px 12px"><button class="btn quiet" data-privacy>개인정보 안내 보기</button></div></div></section>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-nostats],[data-privacy]');
+  if (!b) return;
+  if ('privacy' in b.dataset) return openPrivacy();
+  S.noStats = !S.noStats;
+  save();
+  b.setAttribute('aria-checked', String(!S.noStats));
 });
 
 // ---- lib/conjugate.js ----
@@ -592,7 +684,11 @@ const catName = (cats, k) => (cats[k] ? cats[k][0] : k);
 const jpWord =
   lvl =>
   ([w, r, m, n, c, ex, exr, exko]) => ({ w, r, m: m.split('/'), n, cats: c.split(','), ex, exr, exko, lvl, key: 'w:' + w + '|' + r });
-const BASE_JP = [...JP_WORDS_RAW.map(jpWord(5)), ...(typeof JP_WORDS_N4_RAW !== 'undefined' ? JP_WORDS_N4_RAW : []).map(jpWord(4))];
+const BASE_JP = [
+  ...JP_WORDS_RAW.map(jpWord(5)),
+  ...(typeof JP_WORDS_N4_RAW !== 'undefined' ? JP_WORDS_N4_RAW : []).map(jpWord(4)),
+  ...(typeof JP_WORDS_N3_RAW !== 'undefined' ? JP_WORDS_N3_RAW : []).map(jpWord(3))
+];
 const BASE_JP_N5 = BASE_JP.filter(w => w.lvl === 5); // fixed set for friend-challenge links
 const BASE_EN = EN_WORDS_RAW.map(([w, m, alt, c, ex, exko]) => ({
   w,
@@ -746,12 +842,14 @@ ITEMS.jsh = withKey(SENTS, 'sh:', s => s.a[0]);
 ITEMS.esh = withKey(EN_SENTS, 'esh:', s => s.a);
 const GRAM = [
   ...GRAM_RAW.map(g => ({ ...g, lvl: 5 })),
-  ...(typeof GRAM_N4_RAW !== 'undefined' ? GRAM_N4_RAW : []).map(g => ({ ...g, lvl: 4 }))
+  ...(typeof GRAM_N4_RAW !== 'undefined' ? GRAM_N4_RAW : []).map(g => ({ ...g, lvl: 4 })),
+  ...(typeof GRAM_N3_RAW !== 'undefined' ? GRAM_N3_RAW : []).map(g => ({ ...g, lvl: 3 }))
 ];
 const GRAM_ITEMS = GRAM.flatMap(g => g.q.map((q, qi) => ({ g, qi, k: q.k, a: [q.a, q.r], d: q.d, key: 'gp:' + g.id + ':' + qi })));
 const KANJI = [
   ...KANJI_RAW.map(x => ({ ...x, lvl: 5, key: 'kj:' + x.k })),
-  ...(typeof KANJI_N4_RAW !== 'undefined' ? KANJI_N4_RAW : []).map(x => ({ ...x, lvl: 4, key: 'kj:' + x.k }))
+  ...(typeof KANJI_N4_RAW !== 'undefined' ? KANJI_N4_RAW : []).map(x => ({ ...x, lvl: 4, key: 'kj:' + x.k })),
+  ...(typeof KANJI_N3_RAW !== 'undefined' ? KANJI_N3_RAW : []).map(x => ({ ...x, lvl: 3, key: 'kj:' + x.k }))
 ];
 const IRR = IRR_RAW.map(([b, p, pp, ko, ex, exko]) => ({ b, p, pp, ko, ex, exko, key: 'ir:' + b }));
 const MP = MP_RAW.map(([w1, k1, w2, k2, lb]) => ({ w1, k1, w2, k2, lb, key: 'mp:' + w1 + '|' + w2 }));
@@ -882,7 +980,7 @@ function rebuildWords() {
     S.custom.en.map(c => ({ w: c.w, m: c.m.split('/'), alt: [], cats: ['mine'], ex: '', exko: '', key: 'ew:' + c.w, mine: true }))
   );
   if (typeof IDX !== 'undefined') IDX = null;
-  CONJ_ITEMS = WORDS.filter(v => v.cats.includes('verb') && verbGroup(v.w, v.r))
+  CONJ_ITEMS = WORDS.filter(v => v.cats.includes('verb') && v.lvl !== 3 && verbGroup(v.w, v.r))
     .flatMap(v => Object.keys(FORMS).map(f => ({ v, form: f, right: conjugate(v, f), key: 'cj:' + v.w + '|' + f })))
     .filter(x => x.right);
 }
@@ -1401,7 +1499,7 @@ const MENU = {
     ['도전', ['kspeed', 'wspeed']]
   ],
   talk: [
-    ['여행', ['jtrav', 'mycard', 'trip', 'sign', 'reader', 'koexp', 'kansai']],
+    ['여행', ['jtrav', 'mycard', 'trip', 'sign', 'photo', 'reader', 'koexp', 'kansai']],
     ['대화·듣기', ['aichat', 'diary', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
     ['발음', ['jlen', 'jauto']]
   ],
@@ -1418,7 +1516,7 @@ const MENU = {
     ['도전', ['espeed']]
   ],
   etalk: [
-    ['여행', ['etrav', 'emycard', 'etrip']],
+    ['여행', ['etrav', 'emycard', 'etrip', 'ephoto']],
     ['대화·듣기', ['eaichat', 'ediary', 'edlg', 'el', 'ed', 'esh', 'enn']],
     ['발음', ['mp', 'eauto']]
   ],
@@ -1437,6 +1535,8 @@ const MODE_LABEL = {
   aichat: 'AI 회화',
   eaichat: 'AI 회화',
   diary: 'AI 한 줄 일기',
+  photo: '메뉴판 사진 읽기',
+  ephoto: '메뉴판 사진 읽기',
   ediary: 'AI 한 줄 일기',
   kansai: '간사이벤',
   weak: '약점 리포트',
@@ -1547,6 +1647,7 @@ const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
   'diary',
+  'photo',
   'mycard',
   'reader',
   'aichat',
@@ -1621,7 +1722,7 @@ const SRS_MODS = {
 const srsMods = () => SRS_MODS[S.lang].filter(m => hasTTS || !NEEDS_TTS.has(m));
 const tabModes = t => (TAB_MODES[OLD_TAB[t] || t] || []).filter(m => hasTTS || !NEEDS_TTS.has(m));
 // modes the person chose to hide (settings → 메뉴 편집) are left out of menus
-const menuModes = t => tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m) && (!/aichat$|diary$/.test(m) || aiOn()));
+const menuModes = t => tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m) && (!/aichat$|diary$|photo$/.test(m) || aiOn()));
 const tabList = () => TABS[S.lang].filter(([t]) => t === 'home' || tabModes(t).length);
 function curTab() {
   const t = OLD_TAB[S.tabs[S.lang]] || S.tabs[S.lang];
@@ -1684,6 +1785,7 @@ function startMod(mod) {
   save();
   markTab(t);
   CUR_MOD = mod;
+  statOpen(mod);
   renderMod(mod);
   dailyBar();
   window.scrollTo(0, 0);
@@ -1805,6 +1907,8 @@ const MENU_DESC = {
   aichat: 'AI 점원·친구와 자유롭게 대화하고 첨삭',
   eaichat: 'AI 점원·친구와 자유롭게 대화하고 첨삭',
   diary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
+  photo: '찍으면 AI가 읽는 법·뜻·가격 정리',
+  ephoto: '찍으면 AI가 뜻·가격 정리',
   ediary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   kansai: '오사카 사투리 おおきに·なんでやねん',
   jdlg: '상황별 대화를 직접 주고받기',
@@ -1853,6 +1957,8 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'photo',
+  'ephoto',
   'etrap',
   'diary',
   'ediary',
@@ -2227,13 +2333,16 @@ const lvlRow = (path, cur) =>
   `<div class="setup-row"><label>급수</label>${seg(
     path,
     [
-      ['all', '전체'],
+      ['all', 'N5·N4'],
       ['5', 'N5'],
-      ['4', 'N4']
+      ['4', 'N4'],
+      ['3', 'N3']
     ],
     cur
   )}</div>`;
-const byLvl = (arr, l) => (!l || l === 'all' ? arr : arr.filter(x => String(x.lvl || (x.g && x.g.lvl)) === l));
+// 'all' = N5 + N4 (N3 only when picked, so beginners don't meet it by accident)
+const lvlOf = x => String(x.lvl || (x.g && x.g.lvl));
+const byLvl = (arr, l) => (!l || l === 'all' ? arr.filter(x => lvlOf(x) !== '3') : arr.filter(x => lvlOf(x) === l));
 function setupHTML(mod) {
   let sum = '',
     body = '';
@@ -2453,7 +2562,7 @@ function basePool(mod, full) {
       : WORDS.filter(
           w =>
             (S.word.fav ? S.fav[w.key] : w.cats.some(c => S.word.cats.includes(c))) &&
-            (!S.word.lvl || S.word.lvl === 'all' || w.mine || String(w.lvl) === S.word.lvl)
+            (w.mine || (!S.word.lvl || S.word.lvl === 'all' ? w.lvl !== 3 : String(w.lvl) === S.word.lvl))
         );
   if (mod === 'ew') return full ? EN_WORDS : EN_WORDS.filter(w => (S.ew.fav ? S.fav[w.key] : w.cats.some(c => S.ew.cats.includes(c))));
   if (mod === 'loan') return LOANS;
@@ -3601,6 +3710,7 @@ function stageClick(mod, e) {
   } else if (act === 'duenext') startDue(b.dataset.mod);
   else if (act === 'course') go('home');
   else if (act === 'recstart') recStart();
+  else if (act === 'prstart') prStart(mod);
   else if (act === 'recstop') recStop();
   else if (act === 'recplay') recPlay();
   else if (act === 'shok' || act === 'shno') rateShadow(mod, act === 'shok');
@@ -3657,6 +3767,10 @@ function summary(mod) {
     c = r.res.filter(x => x.ok).length,
     pct = n ? Math.round((c / n) * 100) : 0;
   const missed = r.res.filter(x => !x.ok);
+  if (!r.statSent) {
+    r.statSent = true;
+    statDone(mod);
+  }
   if (pct === 100 && n >= 5 && !r.perfectSent) {
     r.perfectSent = true;
     missionEvent('perfect');
@@ -3706,6 +3820,7 @@ function summary(mod) {
     ${dueRow ? `<div class="row">${dueRow}</div>` : ''}
     ${r.course ? `<div class="row"><button class="btn primary" data-act="course">코스로 돌아가기</button></div>` : ''}
     ${missed.length ? `<div><p class="lbl" style="margin:0 0 6px">틀린 문제</p><ul class="miss">${missed.map(item).join('')}</ul></div>` : ''}
+    ${fbHTML(mod)}
     <div class="row">${missed.length ? `<button class="btn ${dueRow ? '' : 'primary'}" data-act="retry">틀린 ${uniqueMissed(mod).length}개 다시</button>` : ''}<button class="btn ${missed.length || dueRow ? '' : 'primary'}" data-act="again">새 라운드</button></div>
   </div>`;
   st.onclick = e => stageClick(mod, e);
@@ -3983,7 +4098,8 @@ function renderWordList(lang) {
     ...(ja
       ? [
           ['n5', 'N5'],
-          ['n4', 'N4']
+          ['n4', 'N4'],
+          ['n3', 'N3']
         ]
       : []),
     ...((ja ? S.custom.ja : S.custom.en).length ? [['mine', '내 단어']] : []),
@@ -4017,7 +4133,15 @@ function renderWordList(lang) {
     let list = all.filter(
       w =>
         ls.cat === 'all' ||
-        (ls.cat === 'fav' ? S.fav[w.key] : ls.cat === 'n5' ? w.lvl === 5 : ls.cat === 'n4' ? w.lvl === 4 : w.cats.includes(ls.cat))
+        (ls.cat === 'fav'
+          ? S.fav[w.key]
+          : ls.cat === 'n5'
+            ? w.lvl === 5
+            : ls.cat === 'n4'
+              ? w.lvl === 4
+              : ls.cat === 'n3'
+                ? w.lvl === 3
+                : w.cats.includes(ls.cat))
     );
     if (qq)
       list = list.filter(
@@ -4032,7 +4156,7 @@ function renderWordList(lang) {
       .slice(0, 300)
       .map(
         w => `<div class="wl-i" data-key="${esc(w.key)}" data-st="${itemStatus(w.key)}">
-      <button class="wl-main" data-open><span class="w ${ja ? 'jp' : 'en'}" lang="${lang}">${esc(w.w)}</span>${ja && w.w !== w.r ? `<span class="s jp" lang="ja">${esc(w.r)}</span>` : ''}<span class="s">${esc(w.m.join(', '))}</span>${w.lvl === 4 ? '<span class="lv-tag">N4</span>' : ''}</button>
+      <button class="wl-main" data-open><span class="w ${ja ? 'jp' : 'en'}" lang="${lang}">${esc(w.w)}</span>${ja && w.w !== w.r ? `<span class="s jp" lang="ja">${esc(w.r)}</span>` : ''}<span class="s">${esc(w.m.join(', '))}</span>${w.lvl === 4 || w.lvl === 3 ? `<span class="lv-tag">N${w.lvl}</span>` : ''}</button>
       <button class="star" data-star aria-pressed="${!!S.fav[w.key]}" aria-label="즐겨찾기">${S.fav[w.key] ? '★' : '☆'}</button>
       <div class="wl-ex" hidden>${ja ? `<span class="mono s">${romaji(w.r)}</span>` : ''}${w.ex ? (ja ? `<span class="ex-jp" lang="ja" style="font-size:16px">${markWord(w.ex, [w.w, w.r])}</span><span class="ex-rd" lang="ja">${esc(w.exr)}</span><span class="ex-ko">${esc(w.exko)}</span>` : `<span class="ex-en" lang="en" style="font-size:16px">${markWord(w.ex, [w.w, ...w.alt], true)}</span><span class="ex-ko">${esc(w.exko)}</span>`) : ''}
         <div class="row" style="margin-top:4px">${w.ex ? spkBtn(w.ex, '예문 듣기', lang) : ''}${w.mine ? `<button class="spk" data-del>삭제</button>` : ''}</div></div></div>`
@@ -4465,11 +4589,169 @@ function recPlay() {
     } catch (e) {}
   }
 }
+// ---- 발음 점수: speech recognition hears the sentence, we compare it with the target word by word ----
+const canSR = !!(typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition));
+const PR_PUNCT = /[\s、。！？!?「」『』…・,.〜~ー－-]/g;
+// the recogniser often writes these in kanji where our sentences use kana (and the other way round)
+const PR_VARIANTS = [
+  ['下さい', 'ください'],
+  ['有難う', 'ありがとう'],
+  ['有り難う', 'ありがとう'],
+  ['御願い', 'お願い'],
+  ['宜しく', 'よろしく'],
+  ['出来', 'でき'],
+  ['頂', 'いただ'],
+  ['致し', 'いたし'],
+  ['御座い', 'ござい'],
+  ['何処', 'どこ'],
+  ['此処', 'ここ'],
+  ['良い', 'いい'],
+  ['好い', 'いい']
+];
+const prNorm = s => {
+  s = String(s || '');
+  for (const [a, b] of PR_VARIANTS) s = s.split(a).join(b);
+  return s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 96)).replace(PR_PUNCT, '');
+};
+const prEnWords = s =>
+  String(s || '')
+    .toLowerCase()
+    .replace(/[’']/g, '')
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+// returns { score 0-100, marks: [[text, ok]] } for one recognised string
+function pronScore(ja, q, heard) {
+  if (ja) {
+    const toks = (q.t || q.a[0]).split(' '),
+      reads = q.a[1].split(' ');
+    const rec = prNorm(heard);
+    let p = 0,
+      got = 0,
+      all = 0;
+    const marks = toks.map((t, i) => {
+      const cands = [...new Set([prNorm(t), prNorm(reads[i])])].filter(Boolean);
+      const w = prNorm(reads[i] || t).length;
+      if (!cands.length) return [t, null];
+      all += w;
+      let best = -1,
+        len = 0;
+      for (const c of cands) {
+        const at = rec.indexOf(c, p);
+        if (at >= 0 && (best < 0 || at < best)) {
+          best = at;
+          len = c.length;
+        }
+      }
+      if (best < 0) return [t, false];
+      p = best + len;
+      got += w;
+      return [t, true];
+    });
+    return { score: all ? Math.round((got / all) * 100) : 0, marks };
+  }
+  const tw = q.a.split(/\s+/),
+    tn = tw.map(w => prEnWords(w).join('')),
+    hn = prEnWords(heard);
+  // longest common subsequence of words
+  const L = tn.map(() => new Array(hn.length + 1).fill(0));
+  const at = (i, j) => (i < 0 ? 0 : L[i][j]);
+  for (let i = 0; i < tn.length; i++)
+    for (let j = 1; j <= hn.length; j++)
+      L[i][j] = tn[i] && tn[i] === hn[j - 1] ? at(i - 1, j - 1) + 1 : Math.max(at(i - 1, j), L[i][j - 1]);
+  const ok = new Array(tn.length).fill(false);
+  for (let i = tn.length - 1, j = hn.length; i >= 0 && j > 0; ) {
+    if (tn[i] && tn[i] === hn[j - 1]) {
+      ok[i] = true;
+      i--;
+      j--;
+    } else if (at(i - 1, j) >= L[i][j - 1]) i--;
+    else j--;
+  }
+  const n = tn.filter(Boolean).length;
+  return {
+    score: n ? Math.round((ok.filter((x, i) => x && tn[i]).length / n) * 100) : 0,
+    marks: tw.map((w, i) => [w, tn[i] ? ok[i] : null])
+  };
+}
+let SR = { on: false, rec: null };
+function prStart(mod) {
+  const R0 = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const r = R[mod];
+  if (!R0 || !r || SR.on) return;
+  const q = r.qs[r.i],
+    ja = mod === 'jsh';
+  recRelease();
+  try {
+    speechSynthesis.cancel();
+  } catch (e) {}
+  try {
+    const rec = new R0();
+    rec.lang = ja ? 'ja-JP' : 'en-US';
+    rec.interimResults = false;
+    rec.maxAlternatives = 5;
+    SR = { on: true, rec };
+    rec.onresult = e => {
+      let best = null;
+      for (const alt of e.results[0]) {
+        const sc = pronScore(ja, q, alt.transcript);
+        if (!best || sc.score > best.score) best = { ...sc, heard: alt.transcript };
+      }
+      r.pron = best;
+      const k = q.key;
+      if (best && k) {
+        S.pron = S.pron || {};
+        S.pron[k] = Math.max(S.pron[k] || 0, best.score);
+        save();
+      }
+    };
+    rec.onerror = ev => {
+      r.pron = {
+        err:
+          ev && ev.error === 'not-allowed'
+            ? '마이크 권한이 없어요. 설정에서 마이크와 음성 인식을 허용해 주세요.'
+            : '잘 들리지 않았어요. 조용한 곳에서 다시 해 보세요.'
+      };
+    };
+    rec.onend = () => {
+      SR.on = false;
+      if (!r.pron) r.pron = { err: '잘 들리지 않았어요. 버튼을 누르고 바로 말해 보세요.' };
+      refreshShadow();
+    };
+    r.pron = null;
+    rec.start();
+  } catch (e) {
+    SR.on = false;
+    r.pron = { err: '이 기기에서는 음성 인식을 쓸 수 없어요.' };
+  }
+  refreshShadow();
+}
+function prBox(r, ja) {
+  if (SR.on) return '<div class="pron listening"><span class="pron-dot"></span>듣고 있어요… 문장을 소리 내어 말해 보세요</div>';
+  const p = r.pron;
+  if (!p) return '';
+  if (p.err) return `<div class="pron"><p class="note" style="margin:0;color:var(--ng)">${esc(p.err)}</p></div>`;
+  const msg =
+    p.score >= 90
+      ? '완벽해요! 원어민이 알아들어요'
+      : p.score >= 70
+        ? '좋아요! 빨간 부분만 다시 들어 보세요'
+        : p.score >= 40
+          ? '절반은 전해졌어요. 천천히 또박또박 해 봐요'
+          : '아직 잘 안 들려요. 듣기 버튼으로 한 번 더 들어 보세요';
+  return `<div class="pron"><div class="pron-h"><b class="num pron-sc ${p.score >= 70 ? 'ok' : p.score >= 40 ? 'mid' : 'ng'}">${p.score}<small>%</small></b><span>${msg}</span></div>
+    <p class="pron-t ${ja ? 'jp' : 'en'}" lang="${ja ? 'ja' : 'en'}">${p.marks.map(([t, ok]) => `<span class="${ok === false ? 'miss' : ok ? 'hit' : ''}">${esc(t)}</span>`).join(ja ? '' : ' ')}</p>
+    <p class="note" style="margin:0">들린 말: <span lang="${ja ? 'ja' : 'en'}">${esc(p.heard || '')}</span></p></div>`;
+}
+
 function shadowZone(r) {
+  const ja = activeMod() === 'jsh';
+  const sr = canSR
+    ? `<div class="row"><button type="button" class="btn ${SR.on ? 'rec-on' : 'primary'}" data-act="prstart" ${SR.on ? 'disabled' : ''}>🎤 말하고 발음 점수 받기</button></div>${prBox(r, ja)}`
+    : '';
   const rec = canRec
     ? `<div class="row">${REC.on ? `<button type="button" class="btn rec-on" data-act="recstop">■ 녹음 멈추기</button>` : `<button type="button" class="btn" data-act="recstart">● 내 목소리 녹음</button>`}<button type="button" class="btn" data-act="recplay" ${REC.url && !REC.on ? '' : 'disabled'}>▶ 내 녹음 듣기</button></div>`
     : `<p class="note">이 화면에서는 녹음을 쓸 수 없어요. 원어민 발음을 듣고 소리 내어 따라 해 보세요.</p>`;
-  return `<div class="shadow"><ol class="steps"><li>재생 버튼으로 원어민 발음을 들어요.</li><li>소리 내어 따라 말해요.${canRec ? ' 녹음해서 원어민 발음과 번갈아 들어 보세요.' : ''}</li><li>스스로 평가하고 다음 문장으로 넘어가요.</li></ol>${rec}${REC.err ? `<p class="note" style="color:var(--ng)">${esc(REC.err)}</p>` : ''}
+  return `<div class="shadow"><ol class="steps"><li>재생 버튼으로 원어민 발음을 들어요.</li><li>소리 내어 따라 말해요.${canSR ? ' 🎤를 누르고 말하면 몇 % 알아듣는지 점수를 줘요.' : canRec ? ' 녹음해서 원어민 발음과 번갈아 들어 보세요.' : ''}</li><li>스스로 평가하고 다음 문장으로 넘어가요.</li></ol>${sr}${rec}${REC.err ? `<p class="note" style="color:var(--ng)">${esc(REC.err)}</p>` : ''}
     ${r.answered ? '' : `<div class="row"><button type="button" class="btn" data-act="shno">한 번 더 연습할래요</button><button type="button" class="btn primary" data-act="shok">잘 따라 했어요</button></div>`}</div>`;
 }
 function refreshShadow() {
@@ -4484,6 +4766,7 @@ function showShadow(mod, q, card, zone, r) {
   const fresh = !r.started;
   r.started = true;
   if (fresh) {
+    r.pron = null;
     if (REC.url) {
       URL.revokeObjectURL(REC.url);
       REC.url = null;
@@ -4698,7 +4981,8 @@ function renderGNote() {
   const list = GRAM.filter(g => String(g.lvl) === GN_LVL);
   vb.innerHTML = `<div class="chart"><div class="seg" role="group" aria-label="급수">${[
     ['5', 'N5'],
-    ['4', 'N4']
+    ['4', 'N4'],
+    ['3', 'N3']
   ]
     .map(
       ([v, l]) =>
@@ -4862,7 +5146,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020105027';
+const APP_VERSION = '20261020112855';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -6518,7 +6802,8 @@ const COURSE = {
 const COURSE_STAGES = {
   ja: [
     [0, '기초 30일'],
-    [30, 'N4 30일']
+    [30, 'N4 30일'],
+    [60, 'N3 30일']
   ],
   en: [
     [0, '기초 30일'],
@@ -6610,6 +6895,37 @@ const N4_WORDS_ORDER = BASE_JP.filter(w => w.lvl === 4).sort((a, b) => N4_CAT_OR
     k.push(third[i]);
     const title = gs.length ? gs[0].name.replace(/\s*\(.*?\)/g, '') : i < 29 ? 'N4 실력 다지기' : 'N4 마무리';
     COURSE.ja.push({ t: title, d: gs.length ? gs.map(g => g.p.replace(/\s*\(.*?\)/g, '')).join(' · ') : '배운 것 섞어서 복습', k });
+  }
+})();
+/* ---------- third stage (Japanese): N3, days 61–90 — one grammar pattern, ~16 words and kanji a day ---------- */
+const N3_WORDS_ORDER = BASE_JP.filter(w => w.lvl === 3).sort((a, b) => N4_CAT_ORDER.indexOf(a.cats[0]) - N4_CAT_ORDER.indexOf(b.cats[0]));
+(function buildN3Days() {
+  const G3 = GRAM.filter(g => g.lvl === 3);
+  const K3 = KANJI.filter(k => k.lvl === 3);
+  if (!G3.length || !N3_WORDS_ORDER.length) return;
+  const per = Math.ceil(N3_WORDS_ORDER.length / 30),
+    kper = Math.ceil(K3.length / 25);
+  const extra = [
+    { m: 'jdlg', dl: ['social', 2] },
+    { m: 'jl', l: '문장 듣기: 일상', f: cSN('jl', 'daily', 0, 8) },
+    { m: 'jdlg', dl: ['phone', 2] },
+    { m: 'jsh', l: '따라 말하기: 일상', f: cSN('jsh', 'daily', 0, 5) },
+    { m: 'wspeed', l: '60초 단어 도전' }
+  ];
+  for (let i = 0; i < 30; i++) {
+    const g = G3[i];
+    const k = [];
+    if (g) k.push({ m: 'gram', l: '문법: ' + g.p.replace(/\s*\(.*?\)/g, ''), f: cGL(g.id) });
+    else k.push({ m: 'gram', l: 'N3 문법 복습', f: () => GRAM_ITEMS.filter(x => x.g.lvl === 3) });
+    const a = i * per;
+    if (a < N3_WORDS_ORDER.length)
+      k.push({ m: 'word', l: `N3 단어 ${a + 1}~${Math.min(N3_WORDS_ORDER.length, a + per)}`, f: () => N3_WORDS_ORDER.slice(a, a + per) });
+    if (i < 25 && i * kper < K3.length) {
+      const b = i * kper;
+      k.push({ m: 'kanji', l: `N3 한자 ${b + 1}~${Math.min(K3.length, b + kper)}`, f: () => K3.slice(b, b + kper) });
+    } else k.push(extra[i - 25] || extra[0]);
+    const title = g ? g.name.replace(/\s*\(.*?\)/g, '') : 'N3 마무리';
+    COURSE.ja.push({ t: title, d: g ? g.p.replace(/\s*\(.*?\)/g, '') : '배운 것 섞어서 복습', k });
   }
 })();
 (function buildEnPart2() {
@@ -6789,7 +7105,7 @@ function renderCourse() {
   const lang = S.lang;
   const cd = curDay(lang);
   if (courseOpen === null || courseOpen >= COURSE[lang].length) courseOpen = Math.min(cd, COURSE[lang].length - 1);
-  vb.innerHTML = `<div class="chart"><div class="lt-cta"><div><b>어디부터 시작할지 모르겠다면</b><span class="note">20문제 레벨 테스트로 시작할 날을 추천받아요.</span></div><button class="btn" data-ltest>레벨 테스트</button></div><p class="note">하루 2~3개 과제로 ${lang === 'ja' ? '글자부터 대화, N4까지' : '단어부터 대화, 문법까지'} 순서대로 익혀요. 과제를 끝까지 풀면 체크돼요. 날짜에 매이지 않고 내 속도로 해도 괜찮아요. (${daysDone(lang)} / ${COURSE[lang].length}일 완료)</p>
+  vb.innerHTML = `<div class="chart"><div class="lt-cta"><div><b>어디부터 시작할지 모르겠다면</b><span class="note">20문제 레벨 테스트로 시작할 날을 추천받아요.</span></div><button class="btn" data-ltest>레벨 테스트</button></div><p class="note">하루 2~3개 과제로 ${lang === 'ja' ? '글자부터 대화, N4·N3까지' : '단어부터 대화, 문법까지'} 순서대로 익혀요. 과제를 끝까지 풀면 체크돼요. 날짜에 매이지 않고 내 속도로 해도 괜찮아요. (${daysDone(lang)} / ${COURSE[lang].length}일 완료)</p>
     <div class="cdays">${COURSE[lang]
       .map((d, di) => {
         const stage = COURSE_STAGES[lang].find(x => x[0] === di);
@@ -6832,6 +7148,12 @@ BADGES.push(
     name: '코스 마스터',
     desc: '60일 코스(기초 + N4·실전) 모두 끝내기',
     p: () => [Math.min(60, Math.max(daysDone('ja'), daysDone('en'))), 60]
+  },
+  {
+    id: 'course90',
+    name: '코스 정복',
+    desc: '일본어 90일 코스(기초 + N4 + N3) 모두 끝내기',
+    p: () => [Math.min(COURSE.ja.length, daysDone('ja')), COURSE.ja.length]
   }
 );
 
@@ -7043,7 +7365,7 @@ function drawShareCard() {
     fin = daysDone(S.lang);
   font(600, 36);
   x.fillStyle = C.ai;
-  x.fillText(fin >= cn ? '60일 코스 완주!' : `${stageOf(S.lang, Math.min(cd, cn - 1))} · ${cd + 1}일차 도전 중`, 140, 640 + o);
+  x.fillText(fin >= cn ? `${cn}일 코스 완주!` : `${stageOf(S.lang, Math.min(cd, cn - 1))} · ${cd + 1}일차 도전 중`, 140, 640 + o);
   if (d.n > 0) {
     mark(700, 250 + o, 9, 15);
   } else {
@@ -7193,6 +7515,9 @@ const MODE_HELP = {
   mycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   emycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   reader: '아이폰 텍스트 인식으로 복사한 일본어를 붙여넣으면 후리가나·단어 뜻·한국음을 달아 줘요.',
+  photo:
+    '메뉴판·간판을 찍으면 AI가 메뉴 이름, 읽는 법, 뜻, 가격을 정리해 줘요. ‘이거 주세요’를 누르면 점원에게 보여 줄 카드가 떠요. 하루 3장까지.',
+  ephoto: '영어 메뉴판·간판을 찍으면 AI가 뜻과 가격을 정리해 줘요. ‘이거 주세요’를 누르면 점원에게 보여 줄 카드가 떠요. 하루 3장까지.',
   diary: '주제를 보고 일본어로 한 문장을 써요. AI가 틀린 곳을 고치고, 더 자연스러운 표현과 이유를 한국어로 알려 줘요. 하루 3번까지.',
   ediary: '주제를 보고 영어로 한 문장을 써요. AI가 틀린 곳을 고치고, 더 자연스러운 표현과 이유를 한국어로 알려 줘요. 하루 3번까지.',
   aichat: 'AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.',
@@ -7324,7 +7649,7 @@ function helpHTML() {
   ${sec('solve', '문제 푸는 법', `<ul class="h-list"><li><b>?</b> 버튼: 읽는 법이나 힌트를 보여 줘요. 처음엔 숨겨져 있어요.</li><li><b>모르겠어요</b>: 정답을 바로 보여 주고, 그 문제는 나중에 다시 나와요.</li><li><b>맞은 걸로 처리</b>: 직접 쓴 답이 사실상 맞는데 오답 처리됐을 때 눌러요.</li><li><b>문제가 이상해요</b>: 신고 내용이 복사돼요. 카톡으로 앱 만든 사람에게 보내 주세요.</li><li>일본어 입력 문제에는 <b>앱 키패드</b>가 나와요. ゛는 탁점(か→が), ゜는 반탁점(は→ぱ), 小는 작은 글자(つ→っ, や→ゃ)예요.</li><li>맞히면 자동으로 다음 문제로 넘어가요. 홈의 설정에서 끌 수 있어요.</li></ul>`)}
   ${sec('modes', '연습 방식 한눈에 보기', modeList)}
   ${sec('review', '복습은 이렇게 돌아가요', `<p>틀린 문제는 바로 다시 나오고, 맞힌 문제는 <b>1일 → 3일 → 7일 → 14일 → 30일</b> 뒤에 다시 나와요. 잊어버릴 때쯤 다시 보는 방식이에요.</p><p>홈의 <b>오늘의 복습</b>에 오늘 다시 볼 문제 수가 나와요. 각 연습의 설정에서 '틀린 것만', '오늘 복습'을 고를 수도 있어요.</p><p>두 번 연속 맞히면 '익힘'으로 세요. 자료 탭의 <b>오늘 요약</b>에서 오늘 틀린 문제만 모아 다시 풀 수 있어요.</p>`)}
-  ${sec('course', '학습 코스 · 레벨 테스트', `<p>${S.lang === 'ja' ? '기초 30일(히라가나 → 가타카나 → 단어·문법 → 상황별 대화)과 N4 30일(N4 문법·단어·한자, 가능형·의지형)' : '기초 30일(단어 → 문장 → 불규칙 동사 → 상황별 대화)과 실전 30일(전치사·시제·구동사와 대화)'}, 모두 60일 코스예요. 하루 2~3개 과제로 이어져요. 과제를 끝까지 풀면 체크되고, 하루치를 다 끝내면 다음 날 과제가 홈에 나와요.</p><p>날짜를 놓쳐도 괜찮아요. 하루에 여러 날치를 해도 되고, 끝낸 과제를 다시 해도 돼요. 일본어와 영어 코스는 따로 진행돼요.</p><p><b>레벨 테스트</b>는 코스 화면이나 설정에서 할 수 있어요. 추천받은 날부터 시작하면 그 앞의 과제는 끝낸 것으로 표시돼요.</p>`)}
+  ${sec('course', '학습 코스 · 레벨 테스트', `<p>${S.lang === 'ja' ? '기초 30일(히라가나 → 가타카나 → 단어·문법 → 상황별 대화), N4 30일(N4 문법·단어·한자, 가능형·의지형), N3 30일(N3 문법·단어·한자)까지 모두 90일 코스예요.' : '기초 30일(단어 → 문장 → 불규칙 동사 → 상황별 대화)과 실전 30일(전치사·시제·구동사와 대화), 모두 60일 코스예요.'} 하루 2~3개 과제로 이어져요. 과제를 끝까지 풀면 체크되고, 하루치를 다 끝내면 다음 날 과제가 홈에 나와요.</p><p>날짜를 놓쳐도 괜찮아요. 하루에 여러 날치를 해도 되고, 끝낸 과제를 다시 해도 돼요. 일본어와 영어 코스는 따로 진행돼요.</p><p><b>레벨 테스트</b>는 코스 화면이나 설정에서 할 수 있어요. 추천받은 날부터 시작하면 그 앞의 과제는 끝낸 것으로 표시돼요.</p>`)}
   ${sec('today', '오늘 할 일 · 미션 · 오답 노트', `<p>홈의 <b>오늘 할 일</b>에 코스 과제, 복습할 문제, 오늘의 미션 3개가 모여 있어요. 미션을 하나 끝낼 때마다 경험치 30, 3개를 모두 끝내면 카드 뽑기권을 받아요.</p><p><b>오답 노트</b>(자료 탭)에는 최근 7일·30일 동안 틀린 문제가 많이 틀린 순서로 모여요. 종류별로 바로 다시 풀 수 있어요.</p><p>월요일부터 수요일까지는 홈에 <b>지난주 리포트</b>가 떠요. 지지난주와 비교한 문제 수, 정답률, 많이 공부한 것을 보여 주고 이미지로 공유할 수 있어요.</p><p>설날·벚꽃·여름 축제·할로윈·가을·크리스마스 기간에는 <b>시즌 이벤트</b>가 열려서 한정 카드와 특별 운세가 나와요.</p>`)}
   ${sec('sound', '소리가 안 나거나 녹음이 안 될 때', `<ul class="h-list"><li>아이폰 옆의 <b>무음 스위치</b>가 켜져 있으면 소리가 나지 않아요.</li><li>발음은 아이폰에 들어 있는 음성을 써요. 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 일본어(Kyoko 등)를 받아 두면 더 자연스러워요.</li><li>너무 빠르면 홈의 설정에서 <b>천천히 발음</b>을 켜세요.</li><li>따라 말하기 녹음은 Safari나 홈 화면 앱에서 마이크 권한을 허용해야 해요. 녹음은 기기에 저장되지 않아요.</li></ul>`)}
   ${sec('backup', '기록 저장과 백업', `<p>학습 기록은 <b>이 기기의 이 브라우저</b>에만 저장돼요. 다른 사람과 섞이지 않고, 서버로 보내지 않아요.</p><p>휴대폰을 바꾸거나 Safari 데이터를 지우기 전에, 홈 맨 아래 <b>백업 코드 복사</b>를 눌러 메모 앱이나 '카톡 나에게 보내기'에 보관하세요. 새 기기에서 <b>코드로 복원</b>에 붙여 넣으면 돼요.</p><p>Safari로 연 것과 홈 화면 앱은 저장 공간이 따로일 수 있어요. 홈 화면 앱으로 옮길 때도 백업 코드를 쓰면 돼요.</p>`)}
@@ -8417,7 +8742,7 @@ function matchPairs(ty) {
       .map(x => [x.h, toKata(x.h), 'jp', 'jp']);
   }
   if (ty === 'kj') {
-    return shuffle(KANJI)
+    return shuffle(KANJI.filter(k => k.lvl !== 3))
       .slice(0, 6)
       .map(k => [k.k, k.hun, 'jp', '']);
   }
@@ -9955,6 +10280,7 @@ function settingsHTML() {
       ${hasTTS ? sw('autoSpeak', '답 확인 후 자동 발음', '아이폰 무음 모드에서는 소리가 나지 않아요') + sw('slow', '천천히 발음', '') : ''}
       ${sw('sfx', '효과음', '정답·콤보·레벨 업 소리')}
     </div></section>
+    ${pushHTML()}
     ${hasTTS ? voiceHTML() : ''}
     <section><h2 class="sec-title">화면</h2><div class="panel">
       ${segRow('테마', '', 'theme', [
@@ -9986,6 +10312,7 @@ function settingsHTML() {
         : `<section id="set-install"><h2 class="sec-title">아이폰 홈 화면에 추가</h2><div class="panel" style="padding:14px">
       <ol class="steps"><li>Safari에서 이 앱 주소를 엽니다.</li><li>아래쪽 공유 버튼(네모에 위쪽 화살표)을 누릅니다.</li><li>'홈 화면에 추가'를 누르면 앱 아이콘이 생깁니다.</li></ol></div></section>`
     }
+    ${statsSetHTML()}
     <div id="set-donate">${donateHTML()}</div>
     <section><h2 class="sec-title">도움말</h2><div class="row"><button class="btn" data-set-remind>매일 알림 만들기</button><button class="btn" data-set-help>사용 안내</button><button class="btn" data-set-tour>튜토리얼 다시 보기</button></div></section>
     <section class="danger">${confirmReset ? `<span class="note">학습 기록을 모두 지울까요?</span><button class="btn" data-reset="yes" style="color:var(--ng)">지우기</button><button class="btn quiet" data-reset="no">취소</button>` : `<button class="btn quiet" data-reset="ask">학습 기록 초기화</button>`}</section>
@@ -9995,6 +10322,7 @@ function settingsHTML() {
 
 function openSettings(section) {
   const el = openSheet(settingsHTML(), 'help settings');
+  if (!PUSH.checked && pushBase()) pushKey().then(pushRedraw);
   const rerender = () => {
     el.innerHTML = settingsHTML();
     if (curTab() === 'home') renderHome();
@@ -11528,7 +11856,7 @@ async function aiCall(task, payload) {
   let res;
   try {
     const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    const t = ctl ? setTimeout(() => ctl.abort(), 30000) : null;
+    const t = ctl ? setTimeout(() => ctl.abort(), task === 'photo' ? 60000 : 30000) : null;
     res = await fetch(aiCfg().endpoint.replace(/\/$/, '') + '/ai', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -12043,6 +12371,458 @@ async function dySend(lang) {
 CUSTOM.diary = renderDiary;
 CUSTOM.ediary = renderDiary;
 
+// ---- features/push.js ----
+'use strict';
+/* ================= 매일 공부 알림 (Web Push): 정한 시각까지 오늘 공부를 안 했으면 알림 한 번 =================
+   서버(Worker)에 D1이 연결돼 있어야 켜져요. 아이폰은 홈 화면에 추가한 앱(iOS 16.4+)에서만 돼요. */
+const PUSH = { key: null, checked: false, busy: false, msg: '' };
+if (!S.push || typeof S.push !== 'object') S.push = { on: false, hour: 21 };
+const pushBase = () => (aiOn() ? aiCfg().endpoint.replace(/\/$/, '') : '');
+const pushSupported = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+function b64uBytes(s) {
+  s = s.replace(/-/g, '+').replace(/_/g, '/');
+  const bin = atob(s + '==='.slice((s.length + 3) % 4));
+  return Uint8Array.from(bin, c => c.charCodeAt(0));
+}
+async function pushKey() {
+  if (PUSH.checked) return PUSH.key;
+  PUSH.checked = true;
+  if (!pushBase()) return null;
+  try {
+    const r = await fetch(pushBase() + '/push/key');
+    const j = r.ok ? await r.json() : null;
+    PUSH.key = (j && j.key) || null;
+  } catch (e) {
+    PUSH.checked = false;
+  }
+  return PUSH.key;
+}
+async function pushPost(path, body) {
+  const r = await fetch(pushBase() + path, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(body) });
+  let j = {};
+  try {
+    j = await r.json();
+  } catch (e) {}
+  if (!r.ok) throw new Error(j.error || '알림 서버에 연결하지 못했어요.');
+  return j;
+}
+const studiedToday = () => !!(S.days[today()] && S.days[today()].n > 0);
+async function pushSubscribe() {
+  const key = await pushKey();
+  if (!key) throw new Error('알림 서버가 아직 준비되지 않았어요.');
+  const perm = await Notification.requestPermission();
+  if (perm !== 'granted') throw new Error('알림이 허용되지 않았어요. 설정 → 알림에서 하나마루를 허용해 주세요.');
+  const reg = await navigator.serviceWorker.ready;
+  let sub = await reg.pushManager.getSubscription();
+  if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64uBytes(key) });
+  await pushPost('/push/sub', {
+    sub: sub.toJSON(),
+    hour: S.push.hour,
+    lang: S.lang,
+    streak: streak(),
+    day: studiedToday() ? today() : null
+  });
+  S.push = { ...S.push, on: true, ep: sub.endpoint, doneDay: studiedToday() ? today() : '' };
+  save();
+}
+async function pushUnsubscribe() {
+  try {
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.getSubscription();
+    if (sub) {
+      await pushPost('/push/unsub', { endpoint: sub.endpoint }).catch(() => {});
+      await sub.unsubscribe();
+    }
+  } catch (e) {}
+  S.push = { ...S.push, on: false, ep: '' };
+  save();
+}
+// tell the server "studied today" once a day, so tonight's reminder is skipped
+async function pushDone() {
+  if (!S.push.on || !S.push.ep || !studiedToday() || S.push.doneDay === today() || !pushBase()) return;
+  S.push.doneDay = today();
+  save();
+  try {
+    await pushPost('/push/done', { endpoint: S.push.ep, day: today(), streak: streak(), lang: S.lang });
+  } catch (e) {
+    S.push.doneDay = '';
+    save();
+  }
+}
+setInterval(pushDone, 20000);
+document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && pushDone());
+
+function pushHTML() {
+  if (!aiOn()) return '';
+  const hours = [18, 19, 20, 21, 22, 23];
+  let body;
+  if (!pushSupported() || (isIOS() && !isStandalone()))
+    body = isIOS()
+      ? `<p class="note" style="margin:0">아이폰은 <b>홈 화면에 추가한 하나마루 아이콘</b>으로 열었을 때 알림을 켤 수 있어요 (iOS 16.4 이상). Safari 공유 버튼 → 홈 화면에 추가 → 그 아이콘으로 열고 여기서 켜 주세요.</p>`
+      : `<p class="note" style="margin:0">이 브라우저는 알림을 지원하지 않아요. Chrome이나 Safari(홈 화면 앱)에서 켤 수 있어요.</p>`;
+  else if (PUSH.checked && !PUSH.key && !S.push.on)
+    body = `<p class="note" style="margin:0">알림 서버가 아직 준비되지 않았어요. 조금 뒤에 다시 와 주세요.</p>`;
+  else
+    body = `<div class="set-row"><div><b>매일 공부 알림</b><small>정한 시각까지 오늘 공부를 안 했으면 한 번 알려 줘요</small></div><button class="switch" role="switch" data-push="toggle" aria-checked="${!!S.push.on}" aria-label="매일 공부 알림" ${PUSH.busy ? 'disabled' : ''}></button></div>
+      <div class="set-row push-hours"><div><b>알림 시각</b><small>저녁, 이 시각까지 공부를 안 했으면 알려 줘요</small></div><div class="seg" role="group" aria-label="알림 시각">${hours.map(h => `<button data-push-hour="${h}" aria-pressed="${S.push.hour === h}">${h - 12}시</button>`).join('')}</div></div>
+      ${S.push.on ? `<div class="row" style="padding:0 14px 12px"><button class="btn" data-push="test" ${PUSH.busy ? 'disabled' : ''}>테스트 알림 보내기</button></div>` : ''}`;
+  return `<section id="set-push"><h2 class="sec-title">공부 알림</h2><div class="panel">${body}${PUSH.msg ? `<p class="note" style="padding:0 14px 12px;margin:0;color:var(--ink)">${esc(PUSH.msg)}</p>` : ''}</div></section>`;
+}
+function pushRedraw() {
+  const el = document.getElementById('set-push');
+  if (el) el.outerHTML = pushHTML();
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest('[data-push],[data-push-hour]');
+  if (!b || PUSH.busy) return;
+  PUSH.msg = '';
+  if (b.dataset.pushHour) {
+    S.push.hour = +b.dataset.pushHour;
+    save();
+    pushRedraw();
+    if (S.push.on)
+      try {
+        await pushSubscribe();
+        PUSH.msg = `매일 저녁 ${S.push.hour - 12}시에 알려 드릴게요 (그날 공부했으면 안 와요).`;
+      } catch (er) {
+        PUSH.msg = er.message;
+      }
+    pushRedraw();
+    return;
+  }
+  PUSH.busy = true;
+  pushRedraw();
+  try {
+    if (b.dataset.push === 'toggle') {
+      if (S.push.on) {
+        await pushUnsubscribe();
+        PUSH.msg = '알림을 껐어요.';
+        statEv('p:off');
+      } else {
+        await pushSubscribe();
+        PUSH.msg = `켰어요! 저녁 ${S.push.hour - 12}시까지 공부를 안 했으면 알려 드릴게요.`;
+        statEv('p:on');
+      }
+    } else if (b.dataset.push === 'test') {
+      await pushPost('/push/test', { endpoint: S.push.ep });
+      PUSH.msg = '테스트 알림을 보냈어요. 몇 초 안에 와요. (앱을 열어 둔 상태면 안 보일 수도 있어요)';
+    }
+  } catch (er) {
+    PUSH.msg = er.message || '잘 안 됐어요. 다시 해 보세요.';
+  }
+  PUSH.busy = false;
+  pushRedraw();
+});
+
+// ---- features/photo.js ----
+'use strict';
+/* ================= 메뉴판 사진 읽기: photo → AI reads every item (reading, Korean, price) → "이거 주세요" card ================= */
+let PH = { busy: false, err: '', res: null, img: '' };
+const PHOTO_LIMIT = 3;
+function photoUsed() {
+  if (!S.photoUse || S.photoUse.d !== today()) S.photoUse = { d: today(), n: 0 };
+  return S.photoUse.n;
+}
+function renderPhoto(mod) {
+  const lang = mod === 'photo' ? 'ja' : 'en';
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart ph" id="phBody"></div></section>`;
+  phDraw(lang);
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes')) return;
+    const i = +b.dataset.phi;
+    const x = PH.res && PH.res.items[i];
+    if (b.dataset.ph === 'say' && x) speak(lang === 'ja' ? x.r || x.t : x.t, lang);
+    else if (b.dataset.ph === 'order' && x) {
+      const ja = lang === 'ja';
+      openTravelShow(
+        lang,
+        [
+          {
+            t: ja ? `${x.t}をください` : `I’d like the ${x.t}, please.`,
+            r: ja ? `${x.r || x.t}をください` : '',
+            ko: `${x.ko || x.t} 주세요`,
+            key: 'ph:' + x.t
+          }
+        ],
+        0
+      );
+    } else if (b.dataset.ph === 'again') {
+      PH = { busy: false, err: '', res: null, img: '' };
+      phDraw(lang);
+    } else if (b.dataset.ph === 'reader') startMod('reader');
+  };
+  view.onchange = e => {
+    const f = e.target.files && e.target.files[0];
+    e.target.value = '';
+    if (f) phSend(lang, f);
+  };
+}
+function phDraw(lang) {
+  const box = document.getElementById('phBody');
+  if (!box) return;
+  const ja = lang === 'ja';
+  if (!aiOn()) {
+    box.innerHTML = '<div class="empty"><p style="margin:0;font-weight:600">사진 읽기는 아직 준비 중이에요</p></div>';
+    return;
+  }
+  const left = Math.max(0, PHOTO_LIMIT - photoUsed());
+  const pick = left
+    ? `<div class="ph-pick"><label class="btn primary ph-cam">📷 사진 찍기<input type="file" accept="image/*" capture="environment" hidden></label><label class="btn">🖼 앨범에서 고르기<input type="file" accept="image/*" hidden></label></div>`
+    : `<p class="note" style="color:var(--ink)">오늘 사진 ${PHOTO_LIMIT}장을 다 썼어요. 내일 다시 만나요!${ja ? ' 급하면 아이폰 카메라로 글자를 복사해서 <button type="button" class="link" data-ph="reader">붙여넣기 해석기</button>에 넣어 보세요.' : ''}</p>`;
+  let body = '';
+  if (PH.busy)
+    body = `<div class="ph-wait">${PH.img ? `<img src="${PH.img}" alt="">` : ''}<p><span class="pron-dot"></span> AI가 읽는 중이에요… 10~20초 걸려요</p></div>`;
+  else if (PH.res) {
+    const r = PH.res;
+    body = `<div class="ph-res">${PH.img ? `<img class="ph-thumb" src="${PH.img}" alt="찍은 사진">` : ''}<p class="ph-sum">${esc(r.summary || '')}</p>
+      ${
+        r.items.length
+          ? `<div class="ph-list">${r.items
+              .map(
+                (
+                  x,
+                  i
+                ) => `<div class="ph-i"><div class="ph-t"><b class="${ja ? 'jp' : 'en'}" lang="${lang}">${esc(x.t)}</b>${x.p ? `<span class="ph-p num">${esc(x.p)}</span>` : ''}</div>
+          ${ja && x.r && x.r !== x.t ? `<p class="ph-r jp" lang="ja">${esc(x.r)}</p>` : ''}<p class="ph-ko">${esc(x.ko || '')}${x.n ? ` <small>· ${esc(x.n)}</small>` : ''}</p>
+          <div class="row"><button type="button" class="spk" data-ph="say" data-phi="${i}">${SPK_ICON} 듣기</button><button type="button" class="btn" data-ph="order" data-phi="${i}">이거 주세요</button></div></div>`
+              )
+              .join('')}</div>`
+          : ''
+      }
+      <div class="row"><button type="button" class="btn" data-ph="again">다른 사진</button></div></div>`;
+  }
+  box.innerHTML = `<p class="note">메뉴판·간판·안내문을 찍으면 AI가 ${ja ? '읽는 법과 ' : ''}뜻, 가격을 정리해 줘요. ‘이거 주세요’를 누르면 점원에게 보여 줄 카드가 떠요. 오늘 남은 사진 <b class="num">${left}</b>장.</p>
+    ${PH.busy || PH.res ? '' : pick}
+    ${PH.err ? `<p class="note" style="color:var(--ng)">${esc(PH.err)}</p>` : ''}
+    ${body}
+    <p class="note">AI가 잘못 읽을 수도 있어요. 알레르기·가격처럼 중요한 건 꼭 점원에게 확인하세요. 사진은 읽기 위해서만 AI 서버로 보내지고 저장되지 않아요.</p>`;
+}
+// shrink the photo so it uploads fast (long side 1280px, JPEG)
+function phShrink(file) {
+  return new Promise((ok, no) => {
+    const url = URL.createObjectURL(file);
+    const im = new Image();
+    im.onload = () => {
+      const k = Math.min(1, 1280 / Math.max(im.naturalWidth, im.naturalHeight));
+      const cv = document.createElement('canvas');
+      cv.width = Math.round(im.naturalWidth * k);
+      cv.height = Math.round(im.naturalHeight * k);
+      cv.getContext('2d').drawImage(im, 0, 0, cv.width, cv.height);
+      URL.revokeObjectURL(url);
+      ok(cv.toDataURL('image/jpeg', 0.82));
+    };
+    im.onerror = () => {
+      URL.revokeObjectURL(url);
+      no(new Error('사진을 열 수 없어요. 다른 사진으로 해 보세요.'));
+    };
+    im.src = url;
+  });
+}
+async function phSend(lang, file) {
+  if (PH.busy) return;
+  if (photoUsed() >= PHOTO_LIMIT) return phDraw(lang);
+  PH = { busy: true, err: '', res: null, img: '' };
+  phDraw(lang);
+  try {
+    PH.img = await phShrink(file);
+    phDraw(lang);
+    S.photoUse.n++;
+    save();
+    const j = aiJSON(await aiCall('photo', { lang, image: PH.img }));
+    if (!j || !Array.isArray(j.items)) throw new Error('사진을 읽지 못했어요. 더 가까이, 밝게 찍어 보세요.');
+    PH.res = {
+      summary: String(j.summary || ''),
+      items: j.items
+        .filter(x => x && x.t)
+        .slice(0, 12)
+        .map(x => ({
+          t: String(x.t).slice(0, 40),
+          r: String(x.r || '')
+            .replace(/[^ぁ-ゖァ-ヺー・\s]/g, '')
+            .slice(0, 60),
+          ko: String(x.ko || '').slice(0, 60),
+          p: String(x.p || '').slice(0, 20),
+          n: String(x.n || '').slice(0, 40)
+        }))
+    };
+    statDone(lang === 'ja' ? 'photo' : 'ephoto');
+  } catch (e) {
+    PH.err = e.message;
+    PH.img = '';
+  }
+  PH.busy = false;
+  phDraw(lang);
+}
+CUSTOM.photo = renderPhoto;
+CUSTOM.ephoto = renderPhoto;
+
+// ---- features/trial.js ----
+'use strict';
+/* ================= 첫 3분 체험: right after the welcome screen, 5 questions that show what makes this app different ================= */
+const TRIAL = {
+  ja: [
+    {
+      q: '「ありがとう」는 무슨 뜻일까요?',
+      big: 'ありがとう',
+      say: 'ありがとう',
+      o: ['고마워요', '안녕하세요', '미안해요'],
+      ex: '아리가토-. 가장 많이 쓰는 감사 인사예요. 더 정중하게는 ありがとうございます.'
+    },
+    {
+      q: '学校 — 한국어로 읽으면 ‘학교’. 일본어로는 어떻게 읽을까요?',
+      big: '学校',
+      say: 'がっこう',
+      o: ['がっこう', 'かっこう', 'はっこう'],
+      ex: '학(學) → がく, 교(校) → こう. 둘이 붙으면 がっこう. 한국 한자음만 알아도 일본어 한자어 절반은 짐작할 수 있어요!'
+    },
+    {
+      q: '라멘집에서 메뉴를 가리키며 “이거 주세요”',
+      big: '🍜 ?',
+      say: 'これください',
+      o: ['これください', 'これどうぞ', 'これですか'],
+      ex: 'これ(이거) + ください(주세요). 여행에서 제일 많이 쓰는 한마디예요.'
+    },
+    {
+      q: '카타카나로 쓴 이 말은 뭘까요?',
+      big: 'コーヒー',
+      say: 'コーヒー',
+      o: ['커피', '콜라', '쿠키'],
+      ex: '코-히-. 외래어는 카타카나로 써요. ー는 앞 소리를 길게 늘려요.'
+    },
+    {
+      q: '“친구를 만나요” — 빈칸에 들어갈 조사는?',
+      big: '友達（　）会います',
+      say: '友達に会います',
+      o: ['に', 'を', 'が'],
+      ex: '한국어는 친구‘를’ 만나지만 일본어는 友達に会う. 한국인이 제일 많이 틀리는 곳이라 하나마루가 따로 모아 뒀어요.'
+    }
+  ],
+  en: [
+    {
+      q: '“핸드폰”은 영어로?',
+      big: '📱',
+      say: 'cell phone',
+      o: ['cell phone', 'hand phone', 'smart hand'],
+      ex: '핸드폰은 콩글리시예요! 미국에선 cell phone, 영국에선 mobile phone, 그냥 phone이라고 해도 돼요.'
+    },
+    {
+      q: '“배 안 고파요?”에 안 고프면?',
+      big: 'Aren’t you hungry? — ___, I’m not.',
+      say: 'No, I’m not.',
+      o: ['No', 'Yes', 'Okay'],
+      ex: '영어는 뒤에 오는 내용(not)에 맞춰요. 안 고프면 No, I’m not. 한국어 ‘네’를 그대로 옮기면 반대 뜻이 돼요.'
+    },
+    {
+      q: '카페에서 메뉴를 가리키며 “이걸로 할게요”',
+      big: '☕ ?',
+      say: 'I’ll have this one.',
+      o: ['I’ll have this one.', 'I’ll eat this one.', 'Give me this.'],
+      ex: 'I’ll have ~ 가 주문할 때 가장 자연스럽고 공손해요. Give me는 조금 퉁명스럽게 들려요.'
+    },
+    {
+      q: '“나 지루해”는?',
+      big: '😑',
+      say: 'I’m bored.',
+      o: ['I’m bored.', 'I’m boring.', 'I’m bore.'],
+      ex: 'I’m boring은 ‘나는 지루한 사람이야’라는 뜻! 내가 지루함을 느끼면 bored.'
+    },
+    {
+      q: '“내일 시험 봐요”의 ‘보다’는?',
+      big: 'I’m going to ___ a test.',
+      say: 'I’m going to take a test.',
+      o: ['take', 'see', 'watch'],
+      ex: '시험은 take a test. ‘보다’라고 see를 쓰면 시험지를 눈으로 본다는 뜻이 돼요.'
+    }
+  ]
+};
+let TR = null;
+function openTrial(lang) {
+  const items = TRIAL[lang === 'en' ? 'en' : 'ja'];
+  TR = {
+    lang: lang === 'en' ? 'en' : 'ja',
+    i: 0,
+    ok: 0,
+    picked: null,
+    order: items.map(x => shuffle(x.o.map((t, j) => ({ t, ok: j === 0 }))))
+  };
+  statEv('t:start');
+  const el = openSheet('<div class="tr" id="trBody"></div>', 'help trial');
+  trDraw();
+  el.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    const items = TRIAL[TR.lang];
+    if (b.dataset.tro !== undefined && TR.picked === null) {
+      TR.picked = +b.dataset.tro;
+      const good = TR.order[TR.i][TR.picked].ok;
+      if (good) TR.ok++;
+      sfx(good ? 'ok' : 'ng');
+      speak(items[TR.i].say, TR.lang);
+      trDraw();
+    } else if (b.dataset.tr === 'next') {
+      TR.i++;
+      TR.picked = null;
+      if (TR.i >= items.length) trEnd();
+      trDraw();
+    } else if (b.dataset.tr === 'say') speak(items[TR.i].say, TR.lang);
+    else if (b.dataset.tr === 'daily') {
+      closeSheet();
+      startDaily();
+    } else if (b.dataset.tr === 'home') {
+      closeSheet();
+      go('home');
+    } else if (b.dataset.tr === 'skip') {
+      closeSheet();
+      go('home');
+    }
+  });
+}
+function trEnd() {
+  const n = TRIAL[TR.lang].length;
+  const d = S.days[today()] || (S.days[today()] = { n: 0, c: 0 });
+  d.n += n;
+  d.c += TR.ok;
+  save();
+  gainXP(TR.ok * 2 + 5, TR.lang);
+  statEv('t:done');
+  statFlush();
+  if (!CUR_MOD && curTab() === 'home') renderHome();
+}
+function trDraw() {
+  const box = document.getElementById('trBody');
+  if (!box || !TR) return;
+  const items = TRIAL[TR.lang],
+    n = items.length,
+    ja = TR.lang === 'ja';
+  if (TR.i >= n) {
+    box.innerHTML = `<div class="tr-end"><div class="tr-score"><b class="num">${TR.ok}</b><span class="num">/ ${n}</span></div>
+      <h2>첫 공부 끝! 오늘 ${n}문제 했어요 🎉</h2>
+      <p>${TR.ok >= 4 ? '감이 좋아요! ' : ''}이렇게 하루 10분이면 충분해요. 매일 하면 <b>연속 학습</b> 불꽃이 커져요.</p>
+      <div class="tr-go"><button type="button" class="btn primary" data-tr="daily">이어서 공부하기</button><button type="button" class="btn" data-tr="home">둘러보기</button></div>
+      ${installHint()}</div>`;
+    return;
+  }
+  const x = items[TR.i],
+    order = TR.order[TR.i],
+    done = TR.picked !== null;
+  const big = esc(x.big).replace(/___|（　）/, m => `<span class="blank">${done ? esc(x.o[0]) : m === '___' ? '？' : '（？）'}</span>`);
+  box.innerHTML = `<div class="tr-top"><div class="tr-dots">${items.map((_, j) => `<i class="${j < TR.i ? 'on' : j === TR.i ? 'cur' : ''}"></i>`).join('')}</div><button type="button" class="link" data-tr="skip">건너뛰기</button></div>
+    <p class="tr-q">${esc(x.q)}</p>
+    <div class="tr-big ${ja ? 'jp' : 'en'}" lang="${TR.lang}">${big}</div>
+    <div class="opts">${order
+      .map((o, j) => {
+        const st = done ? (o.ok ? 'ok' : j === TR.picked ? 'ng' : 'dim') : '';
+        return `<button type="button" class="opt" data-tro="${j}" ${st ? `data-state="${st}"` : ''} ${done ? 'aria-disabled="true"' : ''}><span class="n">${j + 1}</span><span class="${/^[가-힣]/.test(o.t) ? '' : ja ? 'jp' : 'en'}">${esc(o.t)}</span></button>`;
+      })
+      .join('')}</div>
+    ${
+      done
+        ? `<div class="tr-ex ${order[TR.picked].ok ? 'ok' : 'ng'}"><b>${order[TR.picked].ok ? '정답!' : '아쉬워요!'}</b><p>${esc(x.ex)}</p><div class="row"><button type="button" class="spk" data-tr="say">${SPK_ICON} 다시 듣기</button><button type="button" class="btn primary" data-tr="next">${TR.i + 1 < n ? '다음' : '결과 보기'}</button></div></div>`
+        : `<p class="note" style="text-align:center">${TR.i + 1} / ${n} · 하나마루 맛보기</p>`
+    }`;
+}
+
 // ---- features/mycard.js ----
 'use strict';
 /* ================= 나만의 여행 카드: fill-in-the-blank cards to show a taxi driver, a waiter, a front desk ================= */
@@ -12528,7 +13308,7 @@ function openWelcome() {
       welcomeDone(a);
       closeSheet();
       go('home');
-      toast(a === 'ja' ? '반가워요! 오늘 공부 시작을 눌러 보세요' : 'Welcome! 오늘 공부 시작을 눌러 보세요');
+      setTimeout(() => openTrial(a), 350);
     } else if (a === 'tour') {
       welcomeDone(S.lang);
       closeSheet();
@@ -12554,7 +13334,9 @@ function privacyHTML() {
     <h3>보내지는 정보</h3>
     <ul>
       <li><b>방문 통계</b> · 하루 몇 명이 오는지만 세요(Cloudflare Web Analytics). 쿠키를 쓰지 않고, 이름·기록·위치는 보내지 않아요.</li>
-      <li><b>AI 회화 · 한 줄 일기 · AI 번역</b> · 이 기능을 쓸 때만, 입력한 글과 대화 내용이 답을 만들기 위해 AI 서버(Cloudflare Workers AI)로 보내져요. 앱이 저장하지는 않아요. 이름·연락처 같은 개인정보는 쓰지 마세요.</li>
+      <li><b>AI 회화 · 한 줄 일기 · AI 번역 · 메뉴판 사진</b> · 이 기능을 쓸 때만, 입력한 글·대화·사진이 답을 만들기 위해 AI 서버(Cloudflare Workers AI)로 보내져요. 앱이 저장하지는 않아요. 이름·연락처나 얼굴이 나온 사진은 보내지 마세요.</li>
+      <li><b>공부 알림</b> · 알림을 켠 경우에만, 알림을 받을 주소(기기의 알림 서비스가 만든 값)와 알림 시각, 연속 학습 일수, 오늘 공부했는지가 서버(Cloudflare D1)에 저장돼요. 알림을 끄면 바로 지워져요.</li>
+      <li><b>익명 사용 통계</b> · 어떤 연습을 열고 끝냈는지, 👍/👎를 날짜별 숫자로만 세요. 누가 했는지는 남지 않아요. 설정 → 개인정보에서 끌 수 있어요.</li>
       <li><b>오류 알림</b> · 앱이 고장 나면 오류 내용(어느 화면에서, 어떤 오류인지)과 기기 종류만 보내요. 공부 기록이나 입력한 글은 보내지 않아요.</li>
       <li><b>문제 신고</b> · '문제가 이상해요'를 누르면 그 문제 내용이 구글 폼으로 가요. 직접 보내기를 눌러야 전송돼요.</li>
     </ul>
@@ -12592,7 +13374,7 @@ function searchGroups(raw) {
     if (items.length) G.push({ title, n: items.length, html: items.slice(0, 6).map(row).join('') });
   };
   const modes = Object.keys(MENU_DESC).filter(
-    m => modTab(m) && (!/aichat$|diary$/.test(m) || aiOn()) && sHit(q, modeLabel(m), MENU_DESC[m])
+    m => modTab(m) && (!/aichat$|diary$|photo$/.test(m) || aiOn()) && sHit(q, modeLabel(m), MENU_DESC[m])
   );
   add(
     '연습',
@@ -12706,6 +13488,24 @@ document.getElementById('searchBtn').addEventListener('click', openSearch);
 // v: the version that added the item; people only see items newer than the last list they saw
 const WHATS_NEW = [
   {
+    v: 17,
+    t: '매일 공부 알림',
+    d: '설정 → 공부 알림. 정한 저녁 시각까지 공부를 안 했으면 한 번 알려 줘요. 아이폰은 홈 화면에 추가한 앱에서 켤 수 있어요.'
+  },
+  {
+    v: 17,
+    ai: true,
+    t: '메뉴판 사진 읽기',
+    d: '회화·여행 탭. 메뉴판·간판을 찍으면 AI가 읽는 법·뜻·가격을 정리하고 ‘이거 주세요’ 카드를 만들어 줘요.'
+  },
+  { v: 17, t: '발음 점수', d: '회화·여행 탭 · 따라 말하기. 🎤를 누르고 말하면 몇 % 알아듣는지, 어디가 안 들렸는지 보여 줘요.' },
+  {
+    v: 17,
+    ja: true,
+    t: 'JLPT N3',
+    d: 'N3 단어 467개, 문법 30개, 한자 100자. 코스 61~90일차와 단어·문법·한자 연습에서 N3를 고를 수 있어요.'
+  },
+  {
     v: 16,
     ai: true,
     t: 'AI 한 줄 일기',
@@ -12778,7 +13578,7 @@ const WHATS_NEW = [
   { v: 10, t: '플래시카드', d: '배우기 탭. 넘기면서 알아요 / 몰라요만 눌러요.' },
   { v: 10, t: '단어장 공유', d: '자료 탭 → 단어장에서 링크로 친구에게 보내요.' }
 ];
-const WN_LATEST = 16;
+const WN_LATEST = 17;
 
 function whatsNew10(since) {
   const ja = S.lang === 'ja';
@@ -12881,6 +13681,13 @@ if (WL_IN) {
 if (VS_IN) startMod('vs');
 else go(curTab());
 checkUpdate();
+statVisit();
+if (/[?&]from=push/.test(location.search)) {
+  statEv('x:pushopen');
+  try {
+    history.replaceState(null, '', location.pathname + location.hash);
+  } catch (e) {}
+}
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {
   if (!S.seen.tour) setTimeout(openWelcome, 300);
