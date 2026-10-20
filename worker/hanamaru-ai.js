@@ -519,8 +519,8 @@ async function ttsBytes(out) {
   if (out instanceof ArrayBuffer) return new Uint8Array(out);
   if (out instanceof Uint8Array) return out;
   if (typeof ReadableStream !== "undefined" && out instanceof ReadableStream) return new Uint8Array(await new Response(out).arrayBuffer());
-  const b64 = out.audio || out.result && out.result.audio;
-  if (typeof b64 === "string") return Uint8Array.from(atob(b64), (ch) => ch.charCodeAt(0));
+  const b642 = out.audio || out.result && out.result.audio;
+  if (typeof b642 === "string") return Uint8Array.from(atob(b642), (ch) => ch.charCodeAt(0));
   return null;
 }
 async function handleTTS(req, env, url, c, ip, ctx) {
@@ -560,18 +560,61 @@ async function handleTTS(req, env, url, c, ip, ctx) {
   else await save;
   return res;
 }
+const STT_MAX_BYTES = 52e4;
+const STT_JUNK = /^(ご視聴ありがとうございました|ご覧いただきありがとうございます|チャンネル登録|お疲れ様でした|thank you for watching|thanks for watching|you)[。.!！\s]*$/i;
+function b64(bytes) {
+  let s = "";
+  for (let i = 0; i < bytes.length; i += 32768) s += String.fromCharCode.apply(null, bytes.subarray(i, i + 32768));
+  return btoa(s);
+}
+async function handleSTT(req, env, url, c, ip) {
+  if (!c.ok) return reply({ error: "forbidden" }, 403, c.headers);
+  if (!env.AI || String(env.AI_OFF || "") === "1" || String(env.STT_OFF || "") === "1")
+    return reply({ error: "서버 음성 인식은 잠시 쉬는 중이에요. ⌨️ 글자로 해 주세요." }, 503, c.headers);
+  if (+(req.headers.get("Content-Length") || 0) > STT_MAX_BYTES)
+    return reply({ error: "녹음이 너무 길어요. 짧게 나눠서 말해 주세요." }, 413, c.headers);
+  const lang = url.searchParams.get("l") === "en" ? "en" : "ja";
+  const bytes = new Uint8Array(await req.arrayBuffer());
+  if (bytes.length < 3200 || bytes.length > STT_MAX_BYTES || bytes[0] !== 82 || bytes[1] !== 73 || bytes[8] !== 87 || bytes[9] !== 65)
+    return reply({ error: "녹음을 읽을 수 없어요. 다시 해 보세요." }, 400, c.headers);
+  const day = kstDay();
+  if (!(await bump(`stt:${day}:${ip}`, Math.max(1, parseInt(env.STT_DAILY_LIMIT, 10) || 80))).ok)
+    return reply({ error: "오늘 서버 음성 인식 횟수를 다 썼어요. ⌨️ 글자로 해 주세요. 내일 다시 돼요!" }, 429, c.headers);
+  if (!(await bump(`sttall:${day}`, Math.max(1, parseInt(env.STT_CAP, 10) || 600))).ok)
+    return reply({ error: "오늘은 음성 인식을 쓰는 사람이 많아서 무료 사용량이 다 찼어요. ⌨️ 글자로 해 주세요." }, 429, c.headers);
+  const tries = [
+    ["@cf/openai/whisper-large-v3-turbo", { audio: b64(bytes), language: lang, task: "transcribe", vad_filter: true }],
+    ["@cf/openai/whisper", { audio: Array.from(bytes) }]
+  ];
+  let lastErr = "";
+  for (const [model, input] of tries) {
+    try {
+      const out = await env.AI.run(model, input);
+      const r = out && out.result || out || {};
+      let text = String(r.text || (Array.isArray(r.segments) ? r.segments.map((s) => s.text).join("") : "") || "").replace(/\s+/g, " ").trim();
+      if (STT_JUNK.test(text)) text = "";
+      return reply({ text: clip(text, 300), model }, 200, c.headers);
+    } catch (e) {
+      lastErr = String(e && e.message || e);
+      console.log("[stt]", model, lastErr.slice(0, 160));
+      if (/neurons|quota|daily|4006/i.test(lastErr))
+        return reply({ error: "오늘 AI 무료 사용량이 다 찼어요. 내일(오전 9시 이후) 다시 해 보세요." }, 429, c.headers);
+    }
+  }
+  return reply({ error: "알아듣지 못했어요. 잠시 뒤 다시 해 보세요.", detail: lastErr.slice(0, 200) }, 502, c.headers);
+}
 async function runVision(env, system, image) {
   const models = env.VISION_MODEL ? [env.VISION_MODEL, ...VISION_MODELS] : VISION_MODELS;
   let lastErr = "";
   for (const model of models) {
-    const b64 = image.split(",")[1];
+    const b642 = image.split(",")[1];
     const tries = /llama-3\.2-11b-vision/.test(model) ? [
       {
         messages: [
           { role: "system", content: system },
           { role: "user", content: "Read the text in this photo." }
         ],
-        image: b64,
+        image: b642,
         max_tokens: 900,
         temperature: 0.1
       }
@@ -626,6 +669,7 @@ export default {
     if (url.pathname === "/stats" && req.method === "GET") return statsPage(env, url);
     if (url.pathname === "/tts" && req.method === "GET") return handleTTS(req, env, url, c, ip, ctx);
     if (url.pathname === "/stat" && req.method === "POST") return handleStat(req, env, c, ip);
+    if (url.pathname === "/stt" && req.method === "POST") return handleSTT(req, env, url, c, ip);
     if (req.method === "GET") return reply({ ok: true, name: "hanamaru-ai", ai: !!env.AI, db: !!env.DB }, 200, c.headers);
     if (req.method === "POST" && url.pathname === "/log") {
       if (!c.ok) return new Response(null, { status: 403, headers: c.headers });

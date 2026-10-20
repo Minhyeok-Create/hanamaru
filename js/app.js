@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [52, "core/stats.js"], [133, "core/more.js"], [169, "lib/conjugate.js"], [374, "lib/numbers.js"], [535, "lib/dictation.js"], [606, "content/kana.js"], [653, "content/items.js"], [698, "lib/romaji.js"], [777, "lib/kanaime.js"], [930, "content/items-extra.js"], [974, "core/storage.js"], [1147, "core/srs.js"], [1310, "core/badges.js"], [1393, "core/backup.js"], [1481, "core/speech.js"], [1607, "core/hqvoice.js"], [1694, "core/listen.js"], [1911, "ui/shell.js"], [2383, "ui/menu.js"], [2579, "ui/home.js"], [2746, "quiz/engine.js"], [3229, "quiz/input.js"], [3339, "quiz/kana.js"], [3426, "quiz/words.js"], [3590, "quiz/loan-conj.js"], [3656, "quiz/sentences.js"], [3799, "quiz/dictation-numbers.js"], [3911, "quiz/flow.js"], [4189, "quiz/speed.js"], [4341, "views/reference.js"], [4415, "views/wordlist.js"], [4583, "views/stats.js"], [4687, "quiz/modes-extra.js"], [4784, "features/shadowing.js"], [5008, "features/dialogue.js"], [5173, "views/grammar-notes.js"], [5222, "views/today.js"], [5322, "core/update.js"], [5374, "quiz/counters.js"], [5719, "quiz/polite.js"], [5766, "quiz/jp-pairs.js"], [5817, "quiz/english-grammar.js"], [5898, "quiz/made-english.js"], [5937, "quiz/hanja.js"], [6165, "quiz/ko-traps.js"], [6271, "quiz/en-traps.js"], [6330, "quiz/kansai.js"], [6367, "features/course.js"], [7271, "ui/sheet.js"], [7301, "features/share-card.js"], [7606, "ui/help.js"], [7938, "play/setup.js"], [7965, "features/sound.js"], [8024, "features/levels.js"], [8145, "play/cards.js"], [8280, "play/stamps.js"], [8460, "play/omikuji.js"], [8589, "play/rain.js"], [8798, "play/match.js"], [8919, "play/vs.js"], [9150, "play/play.js"], [9275, "features/missions.js"], [9358, "features/seasons.js"], [9404, "features/weekly.js"], [9745, "features/level-test.js"], [9976, "features/autoplay.js"], [10161, "views/wrong-notes.js"], [10222, "features/support.js"], [10306, "ui/settings.js"], [10539, "features/travel.js"], [10662, "features/writing.js"], [10822, "features/flashcards.js"], [10947, "features/share-words.js"], [11068, "views/hanja-rules.js"], [11165, "features/signs.js"], [11232, "features/trip.js"], [11373, "features/daily.js"], [11477, "features/share-more.js"], [11628, "views/weak.js"], [11729, "features/ai.js"], [11783, "features/aichat.js"], [12106, "features/diary.js"], [12234, "features/push.js"], [12373, "features/photo.js"], [12501, "features/trial.js"], [12656, "features/gcomp.js"], [12750, "features/yomu.js"], [12901, "features/call.js"], [13275, "features/sync.js"], [13425, "features/league.js"], [13577, "features/habit.js"], [13706, "features/jlpt.js"], [14049, "features/offpack.js"], [14160, "features/phonecheck.js"], [14529, "play/shiritori.js"], [14665, "quiz/anime.js"], [14725, "features/mycard.js"], [14956, "features/reader.js"], [15109, "ui/welcome.js"], [15200, "features/install.js"], [15322, "ui/search.js"], [15434, "ui/whats-new.js"], [15606, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [52, "core/stats.js"], [133, "core/more.js"], [169, "lib/conjugate.js"], [374, "lib/numbers.js"], [535, "lib/dictation.js"], [606, "content/kana.js"], [653, "content/items.js"], [698, "lib/romaji.js"], [777, "lib/kanaime.js"], [930, "content/items-extra.js"], [974, "core/storage.js"], [1147, "core/srs.js"], [1310, "core/badges.js"], [1393, "core/backup.js"], [1481, "core/speech.js"], [1607, "core/hqvoice.js"], [1694, "core/listen.js"], [1930, "core/stt.js"], [2115, "ui/shell.js"], [2591, "ui/menu.js"], [2789, "ui/home.js"], [2956, "quiz/engine.js"], [3439, "quiz/input.js"], [3549, "quiz/kana.js"], [3636, "quiz/words.js"], [3800, "quiz/loan-conj.js"], [3866, "quiz/sentences.js"], [4009, "quiz/dictation-numbers.js"], [4121, "quiz/flow.js"], [4399, "quiz/speed.js"], [4551, "views/reference.js"], [4627, "views/wordlist.js"], [4795, "views/stats.js"], [4899, "quiz/modes-extra.js"], [4996, "features/shadowing.js"], [5220, "features/dialogue.js"], [5385, "views/grammar-notes.js"], [5434, "views/today.js"], [5534, "core/update.js"], [5586, "quiz/counters.js"], [5931, "quiz/polite.js"], [5978, "quiz/jp-pairs.js"], [6029, "quiz/english-grammar.js"], [6110, "quiz/made-english.js"], [6149, "quiz/hanja.js"], [6377, "quiz/ko-traps.js"], [6483, "quiz/en-traps.js"], [6542, "quiz/kansai.js"], [6579, "features/course.js"], [7483, "ui/sheet.js"], [7513, "features/share-card.js"], [7818, "ui/help.js"], [8151, "play/setup.js"], [8178, "features/sound.js"], [8237, "features/levels.js"], [8358, "play/cards.js"], [8493, "play/stamps.js"], [8673, "play/omikuji.js"], [8802, "play/rain.js"], [9011, "play/match.js"], [9132, "play/vs.js"], [9363, "play/play.js"], [9488, "features/missions.js"], [9571, "features/seasons.js"], [9617, "features/weekly.js"], [9958, "features/level-test.js"], [10189, "features/autoplay.js"], [10374, "views/wrong-notes.js"], [10435, "features/support.js"], [10519, "ui/settings.js"], [10752, "features/travel.js"], [10877, "features/writing.js"], [11037, "features/flashcards.js"], [11162, "features/share-words.js"], [11283, "views/hanja-rules.js"], [11380, "features/signs.js"], [11447, "features/trip.js"], [11588, "features/daily.js"], [11692, "features/share-more.js"], [11843, "views/weak.js"], [11944, "features/ai.js"], [11998, "features/aichat.js"], [12321, "features/diary.js"], [12449, "features/push.js"], [12588, "features/photo.js"], [12716, "features/trial.js"], [12871, "features/gcomp.js"], [12965, "features/yomu.js"], [13116, "features/call.js"], [13490, "features/sync.js"], [13640, "features/league.js"], [13792, "features/habit.js"], [13921, "features/jlpt.js"], [14264, "features/offpack.js"], [14375, "features/phonecheck.js"], [14774, "play/shiritori.js"], [14910, "quiz/anime.js"], [14970, "quiz/clerk.js"], [15032, "features/mycard.js"], [15263, "features/reader.js"], [15416, "ui/welcome.js"], [15508, "features/install.js"], [15630, "features/kanamem.js"], [15732, "ui/search.js"], [15844, "ui/whats-new.js"], [16040, "boot.js"]];
 "use strict";
 const ERRLOG = { sent: new Set(), n: 0 };
 function reportError(msg, src, stack) {
@@ -1698,14 +1698,20 @@ const lsContinuous = () => S.set.srMode ? S.set.srMode === "c" : !/Android/i.tes
 let MIC_LOG = "";
 const lsLog = (ls, ev) => {
   ls.log.push(ev + "@" + (Date.now() - ls.t0));
-  MIC_LOG = (ls.cont0 ? "c" : "s") + " " + ls.log.join(" ");
+  MIC_LOG = (ls.srv ? "srv" : ls.cont0 ? "c" : "s") + " " + ls.log.join(" ");
 };
 const lsOn = () => !!(MIC && !MIC.done);
+const sttOK = () => typeof aiOn === "function" && aiOn() && typeof navigator !== "undefined" && !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) && !!(window.AudioContext || window.webkitAudioContext);
+const srEng = () => S.set.srEng || "";
+const lsServer = () => sttOK() && (srEng() === "srv" || srEng() !== "dev" && (!srAPI() || !!S.set.srFb));
+const canListen = () => !!(srAPI() || sttOK());
 function lsMsg(code) {
   const ios = typeof isIOS === "function" && isIOS();
   const home = ios && typeof isStandalone === "function" && isStandalone();
   if (code === "not-allowed" || code === "service-not-allowed")
     return ios ? `음성 인식이 막혀 있어요. 아이폰 설정 → 일반 → 키보드 → '받아쓰기 활성화'를 켜고, Safari 마이크 권한을 허용해 주세요.${home ? " 홈 화면 앱에서 계속 안 되면 Safari에서 열어 보세요." : ""} 안 되면 ⌨️ 글자로 할 수 있어요.` : "마이크 권한이 꺼져 있어요. 주소창 옆 자물쇠(사이트 설정) → 마이크 → 허용으로 바꾸고 다시 눌러 주세요.";
+  if (code === "mic-denied")
+    return ios ? '마이크 권한이 막혀 있어요. 주소창 왼쪽 "가가"(aA) → 웹 사이트 설정 → 마이크 → 허용으로 바꿔 주세요. 홈 화면 앱이면 설정 → Safari → 마이크 → 허용이에요.' : "마이크 권한이 꺼져 있어요. 주소창 옆 자물쇠(사이트 설정) → 마이크 → 허용으로 바꾸고 다시 눌러 주세요.";
   if (code === "no-speech") return '아무 말도 들리지 않았어요. 🎤를 누르고 "지금 말하세요"가 뜬 뒤 또박또박 말해 보세요.';
   if (code === "audio-capture") return "마이크를 쓸 수 없어요. 통화·녹음 중인 다른 앱이 있으면 닫고 다시 해 보세요.";
   if (code === "network") return "음성 인식은 인터넷이 필요해요. 연결을 확인하고 다시 해 보세요.";
@@ -1727,7 +1733,8 @@ function lsAlts(ls) {
 }
 function listenStart(lang, o) {
   const R0 = srAPI();
-  if (!R0) {
+  const srv = lsServer();
+  if (!R0 && !srv) {
     o.onFail && o.onFail(lsMsg("unsupported"), "unsupported");
     return false;
   }
@@ -1749,11 +1756,13 @@ function listenStart(lang, o) {
     err: "",
     tries: 0,
     log: [],
-    cont: lsContinuous()
+    cont: lsContinuous(),
+    srv
   };
   ls.cont0 = ls.cont;
   MIC = ls;
-  lsBegin(ls, R0);
+  if (srv) srvBegin(ls);
+  else lsBegin(ls, R0);
   return true;
 }
 function lsBegin(ls, R0) {
@@ -1825,6 +1834,7 @@ function lsBegin(ls, R0) {
 }
 function lsTick(ls) {
   if (ls.done) return clearInterval(ls.tick);
+  if (ls.srv) return srvTick(ls);
   const now = Date.now(), has = !!lsText(ls);
   if (ls.phase === "stop") {
     if (now - ls.stopAt > 1500) lsFinish(ls);
@@ -1858,23 +1868,29 @@ function lsFinish(ls, code) {
     ls.rec && ls.rec.abort();
   } catch (e) {
   }
+  srvRelease(ls);
   const text = lsText(ls);
   lsLog(ls, text ? "done" : "fail");
-  if (text && S.set.srMode !== (ls.cont ? "c" : "s")) {
+  if (text && !ls.srv && S.set.srMode !== (ls.cont ? "c" : "s")) {
     S.set.srMode = ls.cont ? "c" : "s";
     save();
   }
-  if (text) ls.o.onDone && ls.o.onDone(text, lsAlts(ls));
-  else {
-    const c = code || (ls.err && ls.err !== "unknown" ? ls.err : ls.audio ? "no-speech" : "other");
-    ls.o.onFail && ls.o.onFail(lsMsg(c), c);
+  if (text) return ls.o.onDone && ls.o.onDone(text, lsAlts(ls));
+  const c = code || (ls.err && ls.err !== "unknown" ? ls.err : ls.audio ? "no-speech" : "other");
+  let msg = ls.srvMsg || lsMsg(c);
+  if (!ls.srv && srEng() === "" && sttOK() && !S.set.srFb) {
+    S.set.srFb = 1;
+    save();
+    msg = "폰의 음성 인식이 잘 안 돼서, 하나마루 서버가 알아듣게 바꿨어요. 🎤를 한 번 더 눌러 말해 주세요.";
   }
+  ls.o.onFail && ls.o.onFail(msg, c);
 }
 function listenStop() {
   const ls = MIC;
   if (!ls || ls.done || ls.phase === "stop") return;
   ls.phase = "stop";
   ls.stopAt = Date.now();
+  if (ls.srv) return srvSend(ls);
   try {
     ls.rec.stop();
   } catch (e) {
@@ -1892,13 +1908,16 @@ function listenCancel() {
     ls.rec && ls.rec.abort();
   } catch (e) {
   }
+  srvRelease(ls);
+  if (ls.ctl) ls.ctl.abort();
 }
 function lsLiveHTML(ls) {
   ls = ls || MIC;
   if (!ls) return "";
   const t = lsText(ls);
   const st = ls.phase === "stop" ? "알아듣는 중…" : t ? "듣는 중 · 다 말했으면 버튼을 누르세요 (잠깐 멈추면 자동으로 끝나요)" : ls.phase === "sound" ? "소리가 들려요… 계속 말하세요" : ls.phase === "ready" ? "🎙️ 지금 말하세요" : "마이크 켜는 중…";
-  return `<div class="ls-st"><span class="ls-wave ${ls.phase === "sound" || t ? "on" : ""}"><i></i><i></i><i></i><i></i></span>${st}</div>${t ? `<p class="ls-txt" lang="${ls.lang}">${esc(t)}</p>` : ""}`;
+  const st2 = ls.srv ? ls.phase === "stop" ? "서버에서 알아듣는 중…" : ls.phase === "sound" ? "듣는 중 · 다 말했으면 버튼을 누르세요 (잠깐 멈추면 자동으로 끝나요)" : st : st;
+  return `<div class="ls-st"><span class="ls-wave ${ls.phase === "sound" || t ? "on" : ""}"><i></i><i></i><i></i><i></i></span>${st2}</div>${t ? `<p class="ls-txt" lang="${ls.lang}">${esc(t)}</p>` : ""}`;
 }
 function lsShow(ls) {
   if (ls.o.onState) ls.o.onState(ls);
@@ -1906,6 +1925,191 @@ function lsShow(ls) {
   if (el) el.innerHTML = lsLiveHTML(ls);
 }
 const lsBy = (who) => !!(MIC && !MIC.done && MIC.o.who === who);
+
+"use strict";
+const SRV_SILENCE = 1300, SRV_MAX = 15e3, SRV_RATE = 16e3;
+async function srvBegin(ls) {
+  lsLog(ls, "srv");
+  clearInterval(ls.tick);
+  ls.tick = setInterval(() => lsTick(ls), 200);
+  lsShow(ls);
+  const AC = window.AudioContext || window.webkitAudioContext;
+  let ac;
+  try {
+    ac = new AC();
+  } catch (e) {
+    return lsFinish(ls, "unsupported");
+  }
+  ls.ac = ac;
+  let stream;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+    });
+  } catch (e) {
+    const n = e && e.name || "";
+    lsLog(ls, "gum:" + n);
+    return lsFinish(ls, n === "NotAllowedError" || n === "SecurityError" ? "mic-denied" : "audio-capture");
+  }
+  ls.stream = stream;
+  if (ls.done) return srvRelease(ls);
+  try {
+    if (ac.state === "suspended") await ac.resume();
+  } catch (e) {
+  }
+  ls.rate = ac.sampleRate || 48e3;
+  ls.pcm = [];
+  ls.voiced = 0;
+  ls.floor = 0;
+  ls.first = -1;
+  const src = ac.createMediaStreamSource(stream);
+  const proc = ac.createScriptProcessor(4096, 1, 1);
+  const mute = ac.createGain();
+  mute.gain.value = 0;
+  proc.onaudioprocess = (e) => {
+    if (ls.done || ls.phase === "stop") return;
+    const d = e.inputBuffer.getChannelData(0);
+    ls.pcm.push(new Float32Array(d));
+    let sum = 0;
+    for (let i = 0; i < d.length; i++) sum += d[i] * d[i];
+    const rms = Math.sqrt(sum / d.length), ms = d.length / ls.rate * 1e3;
+    ls.lvl = rms;
+    if (!ls.aAt) {
+      ls.aAt = Date.now();
+      ls.phase = "ready";
+      lsLog(ls, "audio");
+      lsShow(ls);
+    }
+    if (rms > Math.max(0.012, ls.floor * 3)) {
+      ls.voiced += ms;
+      ls.last = Date.now();
+      if (ls.first < 0) ls.first = ls.pcm.length - 1;
+      if (ls.voiced > 200 && ls.phase !== "sound") {
+        ls.phase = "sound";
+        ls.audio = true;
+        lsLog(ls, "voice");
+        lsShow(ls);
+      }
+    } else ls.floor = ls.floor ? ls.floor * 0.9 + rms * 0.1 : rms;
+  };
+  src.connect(proc);
+  proc.connect(mute);
+  mute.connect(ac.destination);
+  ls.proc = proc;
+  ls.src = src;
+}
+function srvTick(ls) {
+  if (ls.phase === "stop") return;
+  const now = Date.now();
+  if (!ls.aAt) {
+    if (now - ls.t0 > 2e4) lsFinish(ls, "audio-capture");
+    return;
+  }
+  ls.auto = true;
+  if (ls.voiced > 300 && ls.last && now - ls.last > SRV_SILENCE) listenStop();
+  else if (ls.voiced <= 300 && now - ls.aAt > LS_NOSOUND) {
+    ls.err = "no-speech";
+    listenStop();
+  } else if (now - ls.aAt > SRV_MAX) listenStop();
+  ls.auto = false;
+}
+function srvRelease(ls) {
+  try {
+    ls.proc && (ls.proc.onaudioprocess = null);
+    ls.src && ls.src.disconnect();
+    ls.proc && ls.proc.disconnect();
+  } catch (e) {
+  }
+  if (ls.stream) ls.stream.getTracks().forEach((t) => t.stop());
+  ls.stream = null;
+  try {
+    ls.ac && ls.ac.state !== "closed" && ls.ac.close();
+  } catch (e) {
+  }
+  ls.ac = null;
+}
+function srvWav(chunks, rate) {
+  let n = 0;
+  for (const c of chunks) n += c.length;
+  const all = new Float32Array(n);
+  let o = 0;
+  for (const c of chunks) {
+    all.set(c, o);
+    o += c.length;
+  }
+  const ratio = rate / SRV_RATE, len = Math.max(0, Math.floor(n / ratio));
+  const out = new Int16Array(len);
+  let peak = 0;
+  for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(all[i]));
+  const gain = peak > 1e-3 && peak < 0.5 ? 0.9 / peak : 1;
+  for (let i = 0; i < len; i++) {
+    const a = Math.floor(i * ratio), b = Math.min(n, Math.max(a + 1, Math.floor((i + 1) * ratio)));
+    let s = 0;
+    for (let j = a; j < b; j++) s += all[j];
+    const v = Math.max(-1, Math.min(1, s / (b - a) * gain));
+    out[i] = v < 0 ? v * 32768 : v * 32767;
+  }
+  const buf = new ArrayBuffer(44 + out.length * 2), dv = new DataView(buf);
+  const str = (p, t) => {
+    for (let i = 0; i < t.length; i++) dv.setUint8(p + i, t.charCodeAt(i));
+  };
+  str(0, "RIFF");
+  dv.setUint32(4, 36 + out.length * 2, true);
+  str(8, "WAVE");
+  str(12, "fmt ");
+  dv.setUint32(16, 16, true);
+  dv.setUint16(20, 1, true);
+  dv.setUint16(22, 1, true);
+  dv.setUint32(24, SRV_RATE, true);
+  dv.setUint32(28, SRV_RATE * 2, true);
+  dv.setUint16(32, 2, true);
+  dv.setUint16(34, 16, true);
+  str(36, "data");
+  dv.setUint32(40, out.length * 2, true);
+  new Int16Array(buf, 44).set(out);
+  return new Uint8Array(buf);
+}
+const srvClean = (t, lang) => lang === "ja" ? String(t || "").replace(/\s+/g, " ").replace(/([^\x00-\x7f]) (?=[^\x00-\x7f])/g, "$1").trim() : String(t || "").trim();
+async function srvSend(ls) {
+  lsShow(ls);
+  const pcm = ls.pcm || [];
+  const from = ls.first > 0 ? Math.max(0, ls.first - 1) : 0;
+  srvRelease(ls);
+  if (ls.voiced <= (ls.auto ? 300 : 120) || !pcm.length) return lsFinish(ls, ls.aAt ? "no-speech" : "audio-capture");
+  const wav = srvWav(pcm.slice(from), ls.rate);
+  ls.pcm = null;
+  lsLog(ls, "send:" + Math.round(wav.length / 1e3) + "k");
+  const ctl = ls.ctl = typeof AbortController !== "undefined" ? new AbortController() : null;
+  const to = setTimeout(() => ctl && ctl.abort(), 2e4);
+  try {
+    const r = await fetch(aiCfg().endpoint.replace(/\/$/, "") + "/stt?l=" + (ls.lang === "en" ? "en" : "ja"), {
+      method: "POST",
+      headers: { "Content-Type": "audio/wav" },
+      body: wav,
+      signal: ctl ? ctl.signal : void 0
+    });
+    const j = await r.json().catch(() => ({}));
+    clearTimeout(to);
+    if (ls.done) return;
+    lsLog(ls, "srv:" + r.status);
+    if (!r.ok) {
+      ls.srvMsg = j.error || "서버에서 알아듣지 못했어요. 잠시 뒤 다시 해 보세요.";
+      if ((r.status === 429 || r.status === 503) && srEng() === "" && srAPI() && S.set.srFb) {
+        S.set.srFb = 0;
+        save();
+      }
+      return lsFinish(ls, "server");
+    }
+    const t = srvClean(j.text, ls.lang);
+    if (t) ls.final = [[t]];
+    lsFinish(ls, t ? "" : "no-speech");
+  } catch (e) {
+    clearTimeout(to);
+    if (ls.done) return;
+    lsLog(ls, "srv:net");
+    lsFinish(ls, "network");
+  }
+}
 
 "use strict";
 const view = document.getElementById("view");
@@ -1962,7 +2166,7 @@ const MENU = {
     ["시험·도전", ["jlpt", "kspeed", "wspeed"]]
   ],
   talk: [
-    ["여행", ["jtrav", "mycard", "trip", "offpack", "sign", "photo", "reader", "koexp", "kansai"]],
+    ["여행", ["jtrav", "clerk", "mycard", "trip", "offpack", "sign", "photo", "reader", "koexp", "kansai"]],
     ["대화·듣기", ["aichat", "call", "diary", "jdlg", "anime", "jl", "jd", "jsh", "jn"]],
     ["발음", ["jlen", "jauto"]]
   ],
@@ -2019,6 +2223,7 @@ const MODE_LABEL = {
   ediary: "AI 한 줄 일기",
   kansai: "간사이벤",
   anime: "애니·드라마 표현",
+  clerk: "점원 말 알아듣기",
   weak: "약점 리포트",
   kpart: "조사 함정",
   koexp: "한국어 표현",
@@ -2083,6 +2288,7 @@ const MODE_LABEL = {
   elist: "단어장"
 };
 const DUE_LABEL = {
+  clerk: "점원 말 알아듣기",
   kansai: "간사이벤",
   anime: "애니·드라마 표현",
   kpart: "조사 함정",
@@ -2117,7 +2323,7 @@ const DUE_LABEL = {
   el: "문장 듣기",
   ed: "받아쓰기"
 };
-const NEEDS_TTS = new Set(["jl", "jd", "jn", "el", "ed", "enn", "jsh", "esh", "mp", "jlen", "jauto", "eauto"]);
+const NEEDS_TTS = new Set(["clerk", "jl", "jd", "jn", "el", "ed", "enn", "jsh", "esh", "mp", "jlen", "jauto", "eauto"]);
 const VIEWS = new Set(["chart", "jlist", "elist", "stats", "badges", "today", "gnote", "course", "wrongs"]);
 const DLGM = new Set(["jdlg", "edlg"]);
 const SPEED = new Set(["kspeed", "wspeed", "espeed"]);
@@ -2127,6 +2333,7 @@ const LISTEN = new Set(["jl", "el"]);
 const DICT = new Set(["jd", "ed"]);
 const NUMS = new Set(["jn", "enn"]);
 const JA_MODS = new Set([
+  "clerk",
   "anime",
   "jlpt",
   "shiri",
@@ -2179,6 +2386,7 @@ const JA_MODS = new Set([
 const modLang = (m) => JA_MODS.has(m) ? "ja" : ["stats", "badges", "today", "course", "wrongs", "weak", "omikuji", "cards", "stamps", "rain", "match", "vs", "league"].includes(m) ? S.lang : "en";
 const SRS_MODS = {
   ja: [
+    "clerk",
     "kansai",
     "anime",
     "kana",
@@ -2427,6 +2635,7 @@ const MENU_DESC = {
   ediary: "하루 한 문장 쓰면 AI가 고쳐 줘요",
   kansai: "오사카 사투리 おおきに·なんでやねん",
   anime: "やばい·マジで·推し 진짜 들리는 말",
+  clerk: "袋はご利用ですか? 계산대에서 듣는 말",
   jdlg: "상황별 대화를 직접 주고받기",
   jl: "듣고 맞는 문장 고르기",
   jd: "듣고 그대로 받아쓰기",
@@ -2472,6 +2681,7 @@ const MENU_DESC = {
   elist: "단어 찾기·내 단어 추가·공유"
 };
 const NEW_MODS = new Set([
+  "clerk",
   "anime",
   "jlpt",
   "shiri",
@@ -3389,7 +3599,7 @@ function checkKana(val, skip) {
   }
   const other = q.sc === "h" ? toKata(q.h) : q.h;
   const ans = k2r ? `<span class="mono">${q.alts.join(" / ")}</span>` : `<span class="jp" lang="ja">${q.ch}</span>`;
-  const extra = `<div class="fb-line"><span class="jp" lang="ja">${q.ch}</span><span class="mono">${q.alts[0]}</span><span class="fb-sub">${q.sc === "h" ? "가타카나" : "히라가나"} <span class="jp" lang="ja">${other}</span></span>${spkBtn(q.ch)}</div>`;
+  const extra = `<div class="fb-line"><span class="jp" lang="ja">${q.ch}</span><span class="mono">${q.alts[0]}</span><span class="fb-sub">${q.sc === "h" ? "가타카나" : "히라가나"} <span class="jp" lang="ja">${other}</span></span>${spkBtn(q.ch)}</div>${kmemLine(q.ch)}`;
   const body = ok ? `<div class="fb-head"><span class="badge">〇</span>정답</div>${extra}${!k2r && given !== q.ch ? `<p class="fb-sub">같은 소리 글자 ${esc(given)}도 정답으로 처리했어요.</p>` : ""}` : `<div class="fb-head"><span class="badge">×</span>${skip ? "정답 확인" : "오답"} · 정답은 ${ans}</div>${given && !skip ? `<p class="fb-sub given">입력: <s>${esc(given)}</s></p>` : ""}${hint ? `<p class="fb-sub">${hint}</p>` : ""}${extra}`;
   finish("kana", q, ok, given, body);
   const inp = document.getElementById("ans");
@@ -4390,7 +4600,8 @@ function renderChart() {
     ["k", "カタカナ"]
   ].map(([v, l]) => `<button data-sc="${v}" aria-pressed="${chartSc === v}">${l}</button>`).join("")}</div>${LEGEND}
     </div>
-    <p class="note">${hasTTS ? "글자를 누르면 발음을 들을 수 있어요." : "글자별 학습 상태를 색 점으로 보여 줘요."}</p>
+    <p class="note">${hasTTS ? "글자를 누르면 발음과 외우는 힌트가 나와요." : "글자를 누르면 외우는 힌트가 나와요. 색 점은 학습 상태예요."}</p>
+    ${typeof KANA_MEM !== "undefined" && Object.keys(KANA_MEM).length ? `<button type="button" class="btn kmem-open" data-kmemopen="${chartSc}">🧠 연상 카드로 외우기 <small>한자에서 온 모양 힌트</small></button>` : ""}
     <section><h2 class="sec-title">청음 · 기본</h2><div class="gojuon">${grid(rows)}</div></section>
     <section><h2 class="sec-title">탁음 · 반탁음</h2><div class="gojuon">${grid(drows)}</div></section>
     <section><h2 class="sec-title">요음</h2><div class="gojuon y">${KANA.filter((x) => x.set === "yoon").map((x) => cell(x.h)).join("")}</div></section>
@@ -4405,6 +4616,7 @@ function renderChart() {
     const c = e.target.closest(".cell[data-ch]");
     if (c) {
       speak(c.dataset.ch);
+      kmemPop(c.dataset.ch);
       vb.querySelectorAll(".cell.hit").forEach((x) => x.classList.remove("hit"));
       c.classList.add("hit");
     }
@@ -4845,7 +5057,7 @@ function recPlay() {
     }
   }
 }
-const canSR = !!(typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition));
+const canSRf = () => canListen();
 const PR_PUNCT = /[\s、。！？!?「」『』…・,.〜~ー－-]/g;
 const PR_VARIANTS = [
   ["下さい", "ください"],
@@ -4962,9 +5174,9 @@ function prBox(r, ja) {
 }
 function shadowZone(r) {
   const ja = activeMod() === "jsh";
-  const sr = canSR ? `<div class="row"><button type="button" class="btn ${lsBy("pr") ? "rec-on" : "primary"}" data-act="prstart">${lsBy("pr") ? "■ 다 말했어요" : "🎤 말하고 발음 점수 받기"}</button>${lsBy("pr") ? "" : betaTag()}</div>${prBox(r, ja)}` : "";
+  const sr = canSRf() ? `<div class="row"><button type="button" class="btn ${lsBy("pr") ? "rec-on" : "primary"}" data-act="prstart">${lsBy("pr") ? "■ 다 말했어요" : "🎤 말하고 발음 점수 받기"}</button>${lsBy("pr") ? "" : betaTag()}</div>${prBox(r, ja)}` : "";
   const rec = canRec ? `<div class="row">${REC.on ? `<button type="button" class="btn rec-on" data-act="recstop">■ 녹음 멈추기</button>` : `<button type="button" class="btn" data-act="recstart">● 내 목소리 녹음</button>`}<button type="button" class="btn" data-act="recplay" ${REC.url && !REC.on ? "" : "disabled"}>▶ 내 녹음 듣기</button></div>` : `<p class="note">이 화면에서는 녹음을 쓸 수 없어요. 원어민 발음을 듣고 소리 내어 따라 해 보세요.</p>`;
-  return `<div class="shadow"><ol class="steps"><li>재생 버튼으로 원어민 발음을 들어요.</li><li>소리 내어 따라 말해요.${canSR ? " 🎤를 누르고 말한 뒤 한 번 더 누르면(잠깐 멈춰도 돼요) 몇 % 알아듣는지 점수를 줘요." : canRec ? " 녹음해서 원어민 발음과 번갈아 들어 보세요." : ""}</li><li>스스로 평가하고 다음 문장으로 넘어가요.</li></ol>${sr}${rec}${REC.err ? `<p class="note" style="color:var(--ng)">${esc(REC.err)}</p>` : ""}
+  return `<div class="shadow"><ol class="steps"><li>재생 버튼으로 원어민 발음을 들어요.</li><li>소리 내어 따라 말해요.${canSRf() ? " 🎤를 누르고 말한 뒤 한 번 더 누르면(잠깐 멈춰도 돼요) 몇 % 알아듣는지 점수를 줘요." : canRec ? " 녹음해서 원어민 발음과 번갈아 들어 보세요." : ""}</li><li>스스로 평가하고 다음 문장으로 넘어가요.</li></ol>${sr}${rec}${REC.err ? `<p class="note" style="color:var(--ng)">${esc(REC.err)}</p>` : ""}
     ${r.answered ? "" : `<div class="row"><button type="button" class="btn" data-act="shno">한 번 더 연습할래요</button><button type="button" class="btn primary" data-act="shok">잘 따라 했어요</button></div>`}</div>`;
 }
 function refreshShadow() {
@@ -5319,7 +5531,7 @@ function renderToday() {
 }
 
 "use strict";
-const APP_VERSION = "20261021080421";
+const APP_VERSION = "20261021083554";
 function checkUpdate() {
   if (APP_VERSION.startsWith("__")) return;
   try {
@@ -7624,6 +7836,7 @@ const MODE_HELP = {
   aichat: "AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.",
   eaichat: "AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.",
   kansai: "오사카·교토에서 자주 듣는 사투리(간사이벤)의 뜻을 맞히고 표준어와 비교해요.",
+  clerk: "편의점 계산대·식당·숙소에서 점원이 하는 말(袋はご利用ですか, 温めますか…)을 듣고 뜻을 골라요. 맞히면 뭐라고 대답하면 되는지도 알려 줘요.",
   anime: "やばい·マジで·推し처럼 애니·드라마에서 자주 듣는 말의 뜻을 맞혀요. 누구에게 써도 되는지(친구끼리·듣기만 하세요)도 같이 알려 줘요.",
   weak: "연습별·세부 영역별 정답률을 보여 주고, 약한 곳만 골라 바로 연습할 수 있어요.",
   kpart: "'친구를 만나다'는 友達に会う처럼, 한국어 조사를 그대로 옮기면 틀리는 곳만 모았어요.",
@@ -7670,7 +7883,7 @@ const MODE_HELP = {
   eprep: "in/on/at처럼 헷갈리는 전치사를 문장 속 빈칸에서 골라요.",
   etense: "시간 표현을 보고 알맞은 시제와 동사 형태를 골라요.",
   ephr: "pick up, find out 같은 구동사를 문장 속 빈칸에서 골라요.",
-  chart: "50음도 표예요. 글자를 누르면 발음을 듣고, 익힌 정도를 색으로 볼 수 있어요.",
+  chart: "50음도 표예요. 글자를 누르면 발음과 함께 그 글자가 어떤 한자에서 왔는지, 모양으로 외우는 힌트가 나와요. 익힌 정도는 색으로 보여요.",
   jlist: "전체 단어를 검색하고 즐겨찾기하거나 내 단어를 추가할 수 있어요.",
   elist: "전체 영단어를 검색하고 즐겨찾기하거나 내 단어를 추가할 수 있어요.",
   gnote: "N5 문법 32개의 만드는 법과 예문이에요. 그 문법 퀴즈를 바로 풀 수 있어요.",
@@ -7717,7 +7930,7 @@ function addTip(mod) {
 const TAB_HELP = {
   home: "'오늘 공부 시작' 버튼 하나로 복습 → 코스 → 단어 카드를 이어서 해요. 코스 진행, 고정한 연습도 여기 있어요.",
   learn: "문자·단어·문장 연습, 짧은 글 읽기, 한국음 한자·조사 함정 같은 한국인 맞춤 연습, JLPT 모의고사",
-  talk: "여행 카드·오프라인 팩·메뉴판 읽기, AI 회화·AI 전화·한 줄 일기, 애니·드라마 표현, 듣기·발음 연습",
+  talk: "여행 카드·점원 말 알아듣기·오프라인 팩·메뉴판 읽기, AI 회화·AI 전화·한 줄 일기, 애니·드라마 표현, 듣기·발음 연습",
   play: "친구 리그·친구 대결, しりとり·오미쿠지·카드 뽑기·스탬프 지도·게임",
   ref: "오답 노트·오늘 요약·코스·50음도·단어장·문법 노트·기록",
   elearn: "영단어·불규칙 동사·콩글리시, 문장·전치사·시제·구동사",
@@ -7746,8 +7959,8 @@ function helpHTML() {
   ${sec("course", "학습 코스 · 레벨 테스트", `<p>${S.lang === "ja" ? "기초 30일(히라가나 → 가타카나 → 단어·문법 → 상황별 대화), N4 30일(N4 문법·단어·한자, 가능형·의지형), N3 30일(N3 문법·단어·한자)까지 모두 90일 코스예요." : "기초 30일(단어 → 문장 → 불규칙 동사 → 상황별 대화)과 실전 30일(전치사·시제·구동사와 대화), 모두 60일 코스예요."} 하루 2~3개 과제로 이어져요. 과제를 끝까지 풀면 체크되고, 하루치를 다 끝내면 다음 날 과제가 홈에 나와요.</p><p>날짜를 놓쳐도 괜찮아요. 하루에 여러 날치를 해도 되고, 끝낸 과제를 다시 해도 돼요. 일본어와 영어 코스는 따로 진행돼요.</p><p><b>레벨 테스트</b>는 코스 화면이나 설정에서 할 수 있어요. 추천받은 날부터 시작하면 그 앞의 과제는 끝낸 것으로 표시돼요.</p>`)}
   ${sec("today", "오늘 할 일 · 미션 · 오답 노트", `<p>홈의 <b>오늘 할 일</b>에 코스 과제, 복습할 문제, 오늘의 미션 3개가 모여 있어요. 미션을 하나 끝낼 때마다 경험치 30, 3개를 모두 끝내면 카드 뽑기권을 받아요.</p><p><b>오답 노트</b>(자료 탭)에는 최근 7일·30일 동안 틀린 문제가 많이 틀린 순서로 모여요. 종류별로 바로 다시 풀 수 있어요.</p><p>월요일부터 수요일까지는 홈에 <b>지난주 리포트</b>가 떠요. 지지난주와 비교한 문제 수, 정답률, 많이 공부한 것을 보여 줘요.</p><p>홈의 연속 학습 칸에서 <b>📸 주간 카드</b>를 누르면 이번 주 공부한 날·푼 문제·익힌 단어·연속 기록이 담긴 세로 이미지(인스타 스토리 크기)가 만들어져요.</p><p>설날·벚꽃·여름 축제·할로윈·가을·크리스마스 기간에는 <b>시즌 이벤트</b>가 열려서 한정 카드와 특별 운세가 나와요.</p>`)}
   ${sec("goal", "목표 · 연속 학습 지키기", `<p>홈에서 <b>어떤 걸 위해 배우는지</b>(여행·JLPT·취미·일 등)를 고르면 그 목표에 맞는 연습을 홈에 골라 보여 줘요. 홈의 <b>바꾸기</b>로 언제든 바꿀 수 있어요.</p><p>하루라도 공부하면 <b>연속 학습</b>이 이어져요. 뽑기권 2장으로 <b>❄️ 스트릭 지킴이</b>를 사 두면(최대 2개) 하루 빠져도 기록이 끊기지 않아요.</p><p><b>주간 목표</b>(기본 주 5일, 설정에서 3·5·7일)를 채우면 뽑기권 1장과 경험치를 받아요.</p>`)}
-  ${sec("ai", "AI 회화 · AI 전화 · 말하기", `<ul class="h-list"><li><b>AI 회화</b>: 라멘집·편의점 같은 상황에서 AI 점원·친구와 글이나 말로 대화하고, 끝나면 첨삭을 받아요.</li><li><b>AI 전화</b>: 자막 없이 목소리로만 주고받는 전화 연습이에요. 하루 3통까지예요.</li><li><b>한 줄 일기</b>·<b>메뉴판 사진 읽기</b>도 AI가 도와줘요. AI 기능은 하루 사용 횟수가 정해져 있어요.</li><li><b>🎤 말하는 법</b>: 한 번 누르고 말한 뒤, 다 말했으면 한 번 더 누르세요(잠깐 멈추면 자동으로 끝나요). 들리는 말이 화면에 바로 떠요.</li><li>말이 안 들리면 <b>⌨️ 글자로</b>를 눌러 쓰면 돼요. 일본어 자판이 없으면 영어 자판으로 소리 나는 대로, 막히면 한국어로 써도 알아들어요.</li><li>쓴 말은 답을 만들기 위해 AI 서버(Cloudflare)로 보내져요. 이름·연락처 같은 개인 정보는 쓰지 마세요.</li></ul>`)}
-  ${sec("sound", "소리·마이크가 안 될 때 (내 폰 점검)", `<p>설정(톱니바퀴) 맨 아래 <b>📱 내 폰 점검</b>을 누르면 소리, 마이크·음성 인식, 녹음, 알림, 기록 저장이 이 폰에서 되는지 하나씩 확인하고 해결 방법을 알려 줘요. 문의할 때는 <b>결과 복사하기</b>로 복사해서 보내 주세요.</p><ul class="h-list"><li>아이폰 옆의 <b>무음 스위치</b>가 켜져 있으면 소리가 나지 않아요.</li><li>AI 서버가 연결된 앱에서는 <b>AI 고음질 발음</b>을 쓸 수 있어요(설정 → 발음 목소리). 인터넷이 느리면 폰 목소리로 바로 바꿔 읽어요.</li><li>폰 목소리는 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 일본어(Kyoko 등)를 받아 두면 더 자연스러워요. 너무 빠르면 설정에서 <b>천천히 발음</b>을 켜세요.</li><li>아이폰 음성 인식은 설정 → 일반 → 키보드 → <b>받아쓰기 활성화</b>가 켜져 있어야 해요. 홈 화면 앱에서 안 되면 Safari에서 열어 보세요.</li><li>카카오톡·인스타그램 안에서 열면 마이크와 알림이 막혀요. Safari나 Chrome으로 열어 주세요.</li></ul>`)}
+  ${sec("ai", "AI 회화 · AI 전화 · 말하기", `<ul class="h-list"><li><b>AI 회화</b>: 라멘집·편의점 같은 상황에서 AI 점원·친구와 글이나 말로 대화하고, 끝나면 첨삭을 받아요.</li><li><b>AI 전화</b>: 자막 없이 목소리로만 주고받는 전화 연습이에요. 하루 3통까지예요.</li><li><b>한 줄 일기</b>·<b>메뉴판 사진 읽기</b>도 AI가 도와줘요. AI 기능은 하루 사용 횟수가 정해져 있어요.</li><li><b>🎤 말하는 법</b>: 한 번 누르고 말한 뒤, 다 말했으면 한 번 더 누르세요(잠깐 멈추면 자동으로 끝나요). 들리는 말이 화면에 바로 떠요.</li><li>폰의 음성 인식이 안 되면 하나마루 서버가 대신 알아들어요(조금 느려요). 그래도 안 들리면 <b>⌨️ 글자로</b>를 눌러 쓰면 돼요. 일본어 자판이 없으면 영어 자판으로 소리 나는 대로, 막히면 한국어로 써도 알아들어요.</li><li>쓴 말은 답을 만들기 위해 AI 서버(Cloudflare)로 보내져요. 이름·연락처 같은 개인 정보는 쓰지 마세요.</li></ul>`)}
+  ${sec("sound", "소리·마이크가 안 될 때 (내 폰 점검)", `<p>설정(톱니바퀴) 맨 아래 <b>📱 내 폰 점검</b>을 누르면 소리, 마이크·음성 인식, 녹음, 알림, 기록 저장이 이 폰에서 되는지 하나씩 확인하고 해결 방법을 알려 줘요. 문의할 때는 <b>결과 복사하기</b>로 복사해서 보내 주세요.</p><ul class="h-list"><li>아이폰 옆의 <b>무음 스위치</b>가 켜져 있으면 소리가 나지 않아요.</li><li>AI 서버가 연결된 앱에서는 <b>AI 고음질 발음</b>을 쓸 수 있어요(설정 → 발음 목소리). 인터넷이 느리면 폰 목소리로 바로 바꿔 읽어요.</li><li>폰 목소리는 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 일본어(Kyoko 등)를 받아 두면 더 자연스러워요. 너무 빠르면 설정에서 <b>천천히 발음</b>을 켜세요.</li><li>폰의 음성 인식이 안 되면 자동으로 <b>하나마루 서버</b>가 대신 알아들어요. 말한 소리는 글자로 바꾸는 데만 쓰고 저장하지 않아요. 내 폰 점검의 '알아듣는 곳'에서 폰·서버를 직접 고를 수도 있어요.</li><li>아이폰에서 폰의 음성 인식을 쓰려면 설정 → 일반 → 키보드 → <b>받아쓰기 활성화</b>가 켜져 있어야 해요.</li><li>카카오톡·인스타그램 안에서 열면 마이크와 알림이 막혀요. Safari나 Chrome으로 열어 주세요.</li></ul>`)}
   ${sec("backup", "기록 저장과 백업", `<p>학습 기록은 <b>이 기기의 이 브라우저</b>에 저장돼요. 가입이 없어서 폰을 바꾸거나 Safari 데이터를 지우면 기록이 사라질 수 있어요.</p><p><b>자동 백업</b>: 설정 → 기록 백업에서 켜면 기록이 하루에 한 번씩 서버에 저장되고, <b>백업 코드</b>를 받아요. 새 폰에서 그 코드를 넣으면 그대로 돌아와요. 코드는 꼭 메모 앱이나 '카톡 나에게 보내기'에 보관하세요.</p><p><b>직접 백업</b>: 자동 백업을 안 쓰면 설정의 <b>백업 코드 복사</b>로 기록 전체를 복사해 보관하고, 새 기기에서 <b>코드로 복원</b>에 붙여 넣으면 돼요.</p><p>Safari로 연 것과 홈 화면 앱은 저장 공간이 따로일 수 있어요. 옮길 때도 백업 코드를 쓰면 돼요.</p>`)}
   ${sec("install", "설치·업데이트", `<ol class="steps"><li>Safari에서 앱 주소를 열어요.</li><li>아래쪽 공유 버튼(네모에 위쪽 화살표)을 눌러요.</li><li>'홈 화면에 추가'를 누르면 앱 아이콘이 생겨요.</li></ol><p>안드로이드는 Chrome 메뉴 → <b>홈 화면에 추가</b>(또는 앱 설치)예요. 홈 화면 아이콘을 <b>길게 누르면</b> 오늘 복습·여행 카드·AI 전화·단어 퀴즈로 바로 들어갈 수 있어요.</p><p>여행 가기 전에는 회화·여행 탭의 <b>여행 오프라인 팩</b>을 와이파이에서 저장해 두면 비행기 모드에서도 여행 카드와 발음을 쓸 수 있어요.</p><p>새 버전이 나오면 화면 아래에 <b>"새 버전이 나왔어요 · 업데이트"</b>가 떠요. 눌러도 기록은 그대로예요.</p>`)}
   ${sec("play", "레벨·놀이 탭", `<p>문제를 맞히면 <b>경험치 10</b>, 틀려도 3이 쌓여요. 대화를 끝내거나 코스 과제를 마치면 더 받아요. 레벨이 오르면 칭호가 바뀌고 카드 뽑기권을 받아요. 레벨은 일본어·영어 따로 쌓여요.</p><p>연속으로 맞히면 <b>콤보</b>가 쌓이고, 10콤보마다 보너스 경험치를 받아요. 효과음은 홈의 설정에서 끌 수 있어요.</p><ul class="h-list"><li><b>${S.lang === "ja" ? "오미쿠지" : "포춘 쿠키"}</b>: 하루 한 번 운세를 뽑고 운세 문장 뜻을 맞혀요.</li><li><b>단어 카드</b>: 뽑기권으로 재미있는 표현 카드를 뽑아 도감을 채워요. 뽑기권은 하루 목표·레벨 업·코스 하루치 완료로 받아요.</li><li><b>여행 도장</b>: 대화 연습을 끝까지 하면 그 도시에 도장이 찍혀요.</li><li><b>${S.lang === "ja" ? "가나 비" : "단어 비"} · 짝 맞추기</b>: 짧게 즐기는 미니게임이에요.</li><li><b>친구 대결</b>: 같은 10문제를 링크로 보내 친구와 점수를 겨뤄요.</li><li><b>친구 리그</b>: 친구끼리 그룹을 만들어 이번 주 경험치 순위를 겨뤄요. 매주 월요일에 새로 시작해요.</li>${S.lang === "ja" ? "<li><b>しりとり</b>: 컴퓨터와 일본어 끝말잇기. ん으로 끝나는 단어를 고르면 져요.</li>" : ""}</ul>`)}
@@ -9418,7 +9631,7 @@ const KEY_GROUPS = [
   [/^pl:/, "반말·존댓말"],
   [/^(ep|et|eph|xt):/, "영문법"],
   [/^ir:/, "불규칙 동사"],
-  [/^(jl|el|jd|ed|sh|esh|jm|mp):/, "듣기·발음"],
+  [/^(jl|el|jd|ed|sh|esh|jm|mp|ck):/, "듣기·발음"],
   [/^dl:/, "대화"]
 ];
 function keyGroup(k) {
@@ -10539,10 +10752,12 @@ document.getElementById("setBtn").addEventListener("click", () => openSettings()
 const TRAVEL_CATS = {
   fav: "★ 즐겨찾기",
   basic: "기본·인사",
+  air: "공항·입국",
   food: "식당·카페",
   shop: "쇼핑·결제",
   move: "교통·길",
   stay: "숙소",
+  onsen: "온천·료칸",
   sight: "관광",
   trouble: "곤란할 때",
   health: "병원·약국"
@@ -10565,7 +10780,7 @@ function renderTravel(mod) {
   const favN = TRAVEL[lang].filter((x) => S.travFav[x.key]).length;
   view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart">
     <p class="note">여행 중에 바로 꺼내 쓰는 문장이에요. <b>보여주기</b>를 누르면 화면 가득 크게 띄우고 읽어 줘요. 점원에게 화면을 보여 주기만 해도 돼요.</p>
-    <div class="chips">${Object.entries(TRAVEL_CATS).map(
+    <div class="chips">${Object.entries(TRAVEL_CATS).filter(([k]) => k === "fav" || TRAVEL[lang].some((x) => x.c === k)).map(
     ([k, l]) => `<button class="chip" data-tvc="${k}" aria-pressed="${TV_CAT[lang] === k}">${l}${k === "fav" ? " " + favN : " " + TRAVEL[lang].filter((x) => x.c === k).length}</button>`
   ).join("")}</div>
     ${list.length ? `<div class="tv-list">${list.map(
@@ -11229,7 +11444,7 @@ function openSignList() {
 }
 
 "use strict";
-const TRIP_ORDER = ["basic", "food", "move", "shop", "stay", "trouble", "sight", "health"];
+const TRIP_ORDER = ["basic", "air", "food", "move", "shop", "stay", "onsen", "trouble", "sight", "health"];
 const SIGN_ORDER = ["menu", "station", "shop", "sign", "stay"];
 const tripOf = (lang) => S.trip && S.trip.lang === lang ? S.trip : null;
 const dateIdx = (s) => {
@@ -12072,7 +12287,7 @@ function aicReviewHTML(lang) {
   ).join("") : '<p class="aic-good">고칠 곳이 없어요. 훌륭해요!</p>'}
     ${r.tip ? `<p class="aic-tip">💡 ${esc(r.tip)}</p>` : ""}<p class="note">AI 첨삭은 틀릴 수도 있어요. 이상하면 참고만 하세요.</p></div>`;
 }
-const hasRec = () => typeof window !== "undefined" && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+const hasRec = () => canListen();
 function aicMic(lang) {
   if (!AIC || AIC.busy) return;
   if (lsBy("aic")) return listenStop();
@@ -13109,7 +13324,7 @@ function callDraw(lang) {
       }
     };
 }
-const hasSR = () => !!(typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition));
+const hasSR = () => canListen();
 let CALL_TICK = null;
 function callStart(lang, id) {
   if (callUsed() >= CALL_DAILY) return;
@@ -14209,7 +14424,10 @@ function pcAuto() {
     msg: "이 브라우저는 마이크를 쓸 수 없어요",
     tip: e.app ? `${e.app} 말고 ${isIOS() ? "Safari" : "Chrome"}로 열어 주세요.` : `${isIOS() ? "Safari" : "Chrome"}로 열어 주세요.`
   };
-  R.sr = srAPI() ? { st: "", msg: "마이크가 되면, 말이 글자로 바뀌는지 확인해요" } : { st: "fail", msg: lsMsg("unsupported"), tip: "AI 전화·회화는 ⌨️ 글자로 할 수 있어요." };
+  R.sr = canListen() ? {
+    st: "",
+    msg: `마이크가 되면, 말이 글자로 바뀌는지 확인해요 · 지금: ${lsServer() ? "하나마루 서버가 알아들어요" : "폰의 음성 인식"}`
+  } : { st: "fail", msg: lsMsg("unsupported"), tip: "AI 전화·회화는 ⌨️ 글자로 할 수 있어요." };
   const perm = typeof Notification !== "undefined" ? Notification.permission : "";
   R.push = !pushSupported() ? {
     st: "warn",
@@ -14250,7 +14468,13 @@ function openPhoneCheck(focus) {
     else if (a === "recplay") pcRecPlay();
     else if (a === "sr") pcSr();
     else if (a === "srstop") listenStop();
-    else if (a === "push") pcPush();
+    else if (a && a.startsWith("eng-")) {
+      S.set.srEng = a.slice(4) === "auto" ? "" : a.slice(4);
+      S.set.srFb = 0;
+      save();
+      PC.r.sr = pcAuto().sr;
+      pcDraw();
+    } else if (a === "push") pcPush();
     else if (a === "copy") copyText(pcReport(), "점검 결과를 복사했어요. 문의할 때 붙여 넣어 주세요.");
   });
 }
@@ -14271,7 +14495,7 @@ function pcDraw() {
     sound: hasTTS ? `${btn("sound", "▶ 소리 내기")}${r.sound.ask ? `<span class="pc-ask">들렸나요? <button type="button" class="chip" data-pc="heard">들렸어요</button><button type="button" class="chip" data-pc="notheard">안 들렸어요</button></span>` : ""}` : "",
     hq: aiOn() ? btn("hq", "▶ 받아서 듣기") : "",
     mic: navigator.mediaDevices && navigator.mediaDevices.getUserMedia ? `${PC.micOn ? "" : btn("mic", r.mic.st ? "● 다시 테스트" : "● 5초 마이크 테스트")}${PC.recUrl && !PC.micOn ? btn("recplay", "▶ 녹음된 내 목소리") : ""}${PC.micOn ? `<div class="pc-meter" role="meter" aria-label="마이크 소리 크기" aria-valuemin="0" aria-valuemax="100"><i id="pcLvl"></i></div><small class="pc-say" id="pcLeft">말해 보세요… 5</small>` : ""}` : "",
-    sr: srAPI() ? lsBy("pc") ? `<button type="button" class="btn rec-on" data-pc="srstop">■ 다 말했어요</button><div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>` : `${btn("sr", "🎤 말해 보기")}<small class="pc-say">「<span lang="${S.lang}">${S.lang === "ja" ? "こんにちは" : "Hello, how are you?"}</span>」라고 말해 보세요</small>` : "",
+    sr: canListen() ? lsBy("pc") ? `<button type="button" class="btn rec-on" data-pc="srstop">■ 다 말했어요</button><div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>` : `${btn("sr", "🎤 말해 보기")}<small class="pc-say">「<span lang="${S.lang}">${S.lang === "ja" ? "こんにちは" : "Hello, how are you?"}</span>」라고 말해 보세요</small>${pcEngHTML()}` : "",
     push: pushSupported() && r.push.st !== "fail" ? btn("push", "🔔 알림 띄워 보기") : ""
   };
   box.innerHTML = `<div class="sheet-h"><b>📱 내 폰 점검</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div>
@@ -14293,6 +14517,12 @@ function pcDraw() {
     if (f && f.scrollIntoView) f.scrollIntoView({ block: "center" });
     PC.focus = null;
   }
+}
+function pcEngHTML() {
+  if (!sttOK() || !srAPI()) return "";
+  const e = srEng() || "auto";
+  const c = (id, t) => `<button type="button" class="chip" data-pc="eng-${id}" aria-pressed="${e === id}">${t}</button>`;
+  return `<div class="pc-eng"><small>알아듣는 곳</small>${c("auto", "자동")}${c("dev", "폰")}${c("srv", "하나마루 서버")}</div>`;
 }
 function pcSound() {
   deviceSpeak(S.lang === "ja" ? "こんにちは。音は聞こえますか。" : "Hello! Can you hear me?", S.lang);
@@ -14320,12 +14550,27 @@ async function pcHQ() {
   }
 }
 function pcSr() {
-  pcSet("sr", "run", "듣는 중…");
+  const srvUsed = lsServer();
+  pcSet("sr", "run", srvUsed ? "듣는 중… (하나마루 서버)" : "듣는 중…");
   listenStart(S.lang, {
     who: "pc",
-    onDone: (t) => pcSet("sr", "ok", `잘 돼요 · 들린 말: ${t}`),
+    onDone: (t) => pcSet("sr", "ok", `잘 돼요 (${srvUsed ? "하나마루 서버" : "폰의 음성 인식"}) · 들린 말: ${t}`),
     onFail: (m, code) => {
       const mic = PC && PC.r.mic.st;
+      if (!srvUsed && lsServer())
+        return pcSet(
+          "sr",
+          "warn",
+          "폰의 음성 인식은 안 됐어요",
+          "그래서 하나마루 서버가 알아듣게 바꿨어요. 🎤 말해 보기를 한 번 더 눌러 보세요."
+        );
+      if (srvUsed)
+        return pcSet(
+          "sr",
+          "fail",
+          "서버에서도 말이 글자로 안 바뀌었어요",
+          m + (mic === "ok" ? "" : " 위의 마이크 테스트로 소리가 들어오는지 먼저 확인해 주세요.")
+        );
       pcSet(
         "sr",
         "fail",
@@ -14719,6 +14964,68 @@ document.addEventListener("click", (e) => {
     }).join("")}</div>`,
     "help"
   );
+});
+
+"use strict";
+const CK_SCENES = { conv: "편의점·계산", food: "식당", shop: "쇼핑", stay: "숙소", move: "교통" };
+const ckMake = () => (typeof CLERK_RAW !== "undefined" ? CLERK_RAW : []).map((o) => ({
+  ...o,
+  key: "ck:" + o.s,
+  a: [o.r.replace(/\s/g, ""), o.r],
+  a2: o.a
+}));
+let CK_ITEMS = ckMake();
+if (!Array.isArray(S.ckc)) S.ckc = [];
+POOLS.clerk = (full) => full || !S.ckc.length ? CK_ITEMS : CK_ITEMS.filter((x) => S.ckc.includes(x.sc));
+SETUPS.clerk = () => {
+  const all = !S.ckc.length;
+  return [
+    `점원이 하는 말 ${POOLS.clerk().length}개 · ${all ? "전체" : S.ckc.map((c) => CK_SCENES[c]).join("·")}`,
+    `<div class="setup-row"><label>장소</label><div class="chips"><button class="chip" data-ckc="" aria-pressed="${all}">전체</button>${Object.entries(
+      CK_SCENES
+    ).map(
+      ([c, l]) => `<button class="chip" data-ckc="${c}" aria-pressed="${!all && S.ckc.includes(c)}">${l} ${CK_ITEMS.filter((x) => x.sc === c).length}</button>`
+    ).join("")}</div></div>
+    <p class="note">「袋はご利用ですか」「温めますか」처럼 계산대·식당에서 점원이 하는 말을 듣고 뜻을 골라요. 맞히면 뭐라고 대답하면 되는지도 알려 줘요. 처음엔 소리만 나오고, 어려우면 <b>글자 보기</b>를 누르세요.</p>`
+  ];
+};
+LABELS.clerk = (q) => [q.s, q.k];
+SPEAKQ.clerk = (q) => [q.a[0], "ja"];
+AUTO.clerk = 0;
+CHECK.clerk = (v, s) => genericChoice("clerk", -1, s);
+SHOWS.clerk = (mod, q, card, zone, r) => {
+  const fresh = !r.order;
+  if (fresh) r.order = shuffle([q.k, ...q.o].map((t) => ({ t, ok: t === q.k, cls: "", lang: "ko" })));
+  const open = r.answered || r.ckText === r.i + 1;
+  card.innerHTML = `<span class="cat">점원 말 · ${esc(CK_SCENES[q.sc] || "")}</span>${playBox(
+    open ? `<p class="ko ck-s" lang="ja">${esc(q.s)}</p><p class="ck-r" lang="ja">${esc(q.r)}</p>` : `<button type="button" class="link ck-show" data-cktext>글자 보기</button>`
+  )}<p class="cap">점원이 뭐라고 했을까요?</p>${MARKS}`;
+  zone.dataset.type = "clerk";
+  zone.innerHTML = optsHTML(r);
+  if (fresh && !r.answered) speak(q.a[0], "ja");
+};
+INFO.clerk = (q) => `<p class="fb-big"><span class="jp" lang="ja">${esc(q.s)}</span></p>
+   <p class="fb-sub" style="color:var(--ink)"><b>${esc(q.k)}</b></p>
+   <div class="ck-reply"><small>이렇게 대답해요</small><p class="jp" lang="ja">${esc(q.a2)}</p><p class="ck-r" lang="ja">${esc(q.ar)}</p><p class="fb-sub">${esc(q.ak)}</p>${spkBtn(q.ar.replace(/\s/g, ""), "대답 듣기")}</div>
+   ${q.n ? `<p class="fb-sub">💡 ${esc(q.n)}</p>` : ""}
+   <div class="row">${spkBtn(q.a[0], "점원 말 다시 듣기")}</div>`;
+document.addEventListener("click", (e) => {
+  if (e.target.closest("[data-cktext]")) {
+    const r = R.clerk;
+    if (!r) return;
+    r.ckText = r.i + 1;
+    statEv("x:ck-text");
+    showQ("clerk", false);
+    return;
+  }
+  const c = e.target.closest("[data-ckc]");
+  if (!c) return;
+  const v = c.dataset.ckc;
+  S.ckc = !v ? [] : S.ckc.includes(v) ? S.ckc.filter((x) => x !== v) : [...S.ckc, v];
+  if (S.ckc.length === Object.keys(CK_SCENES).length) S.ckc = [];
+  R.clerk = null;
+  save();
+  if (activeMod() === "clerk") renderMod("clerk");
 });
 
 "use strict";
@@ -15177,6 +15484,7 @@ function privacyHTML() {
     <ul>
       <li><b>방문 통계</b> · 하루 몇 명이 오는지만 세요(Cloudflare Web Analytics). 쿠키를 쓰지 않고, 이름·기록·위치는 보내지 않아요.</li>
       <li><b>AI 회화 · 한 줄 일기 · AI 번역 · 메뉴판 사진</b> · 이 기능을 쓸 때만, 입력한 글·대화·사진이 답을 만들기 위해 AI 서버(Cloudflare Workers AI)로 보내져요. 앱이 저장하지는 않아요. 이름·연락처나 얼굴이 나온 사진은 보내지 마세요.</li>
+      <li><b>말하기 인식</b> · 🎤로 말하면 폰의 음성 인식(애플·구글)이 글자로 바꿔요. 폰에서 안 될 때는 말한 소리를 하나마루 서버(Cloudflare Workers AI)로 보내 글자로 바꿔요. 녹음은 글자로 바꾸는 데만 쓰고 어디에도 저장하지 않아요.</li>
       <li><b>AI 고음질 목소리</b> · 켜 두면 읽어 줄 문장(앱에 있는 일본어·영어 문장)만 음성을 만들기 위해 서버로 보내져요. 만든 음성은 내 폰과 서버 캐시에 저장돼요.</li>
       <li><b>기록 자동 백업</b> · 직접 켠 경우에만, 공부 기록 전체가 서버(Cloudflare D1)에 저장돼요. 서버에는 백업 코드 대신 그 암호값만 남고, 코드를 가진 사람만 불러올 수 있어요. 끄면 서버의 백업도 지워져요.</li>
       <li><b>친구 리그</b> · 그룹에 들어간 경우에만, 닉네임과 이번 주 점수(XP)가 서버에 저장돼요. 그룹을 나가면 지워져요.</li>
@@ -15319,6 +15627,108 @@ document.addEventListener("click", async (e) => {
 });
 
 "use strict";
+const kmemBase = (ch) => {
+  const d = String(ch || "").normalize("NFD");
+  return { base: d[0], mark: d.includes("゙") ? "゛" : d.includes("゚") ? "゜" : "" };
+};
+function kanaMem(ch) {
+  if (typeof KANA_MEM === "undefined" || !ch || [...ch].length !== 1) return null;
+  const { base, mark } = kmemBase(ch);
+  const m = KANA_MEM[base];
+  return m ? { ...m, base, mark } : null;
+}
+function kmemLine(ch) {
+  const m = kanaMem(ch);
+  if (!m) return "";
+  return `<p class="kmem-line"><span class="kmem-src" lang="ja">${esc(m.src)}</span><span>${esc(m.m)}${m.mark ? ` <small>(${esc(m.base)}에 ${m.mark === "゛" ? "탁점 ゛" : "반탁점 ゜"})</small>` : ""}</span></p>`;
+}
+function kmemCard(ch) {
+  const m = kanaMem(ch);
+  const x = KANA.find((k) => k.h === toHira(ch));
+  if (!m || !x) return "";
+  const kata = ch !== toHira(ch);
+  return `<div class="kmem-card">
+    <div class="kmem-pair"><span class="kmem-from" lang="ja">${esc(m.src)}</span><span class="kmem-arrow" aria-hidden="true">→</span><span class="kmem-to" lang="ja">${esc(ch)}</span></div>
+    <div class="kmem-info"><b class="mono">${esc(x.alts[0])}</b><small>${kata ? "가타카나" : "히라가나"} · <span lang="ja">${esc(m.src)}</span>(${esc(m.srcKo)})에서 왔어요</small><p>${esc(m.m)}</p>${m.mark ? `<small>${esc(m.base)}에 ${m.mark === "゛" ? "탁점 ゛을 찍으면 탁한 소리" : "반탁점 ゜을 찍으면 ㅍ 소리"}</small>` : ""}</div>
+  </div>`;
+}
+function kmemPop(ch) {
+  let el = document.getElementById("kmemPop");
+  const card = kmemCard(ch);
+  if (!card) return el && el.remove();
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "kmemPop";
+    el.className = "kmem-pop";
+    el.setAttribute("role", "status");
+    document.body.appendChild(el);
+    el.addEventListener("click", (e) => {
+      if (e.target.closest("[data-kmx]")) el.remove();
+      else if (e.target.closest("[data-kmsay]")) speak(e.target.closest("[data-kmsay]").dataset.kmsay);
+    });
+  }
+  el.innerHTML = `${card}<div class="kmem-pop-act">${hasTTS ? `<button type="button" class="chip" data-kmsay="${esc(ch)}">🔊 듣기</button>` : ""}<button type="button" class="icon-btn" data-kmx aria-label="닫기">${XICON}</button></div>`;
+}
+const KMEM_ROWS = [
+  "あいうえお",
+  "かきくけこ",
+  "さしすせそ",
+  "たちつてと",
+  "なにぬねの",
+  "はひふへほ",
+  "まみむめも",
+  "やゆよ",
+  "らりるれろ",
+  "わをん"
+];
+let KMEM = { row: 0, sc: "h" };
+function openKanaMem(sc) {
+  if (sc) KMEM.sc = sc;
+  statEv("o:kmem");
+  const el = openSheet('<div id="kmemBody"></div>', "help kmem");
+  kmemDraw();
+  el.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-km]");
+    if (!b) return;
+    const a = b.dataset.km;
+    if (a === "prev") KMEM.row = (KMEM.row + KMEM_ROWS.length - 1) % KMEM_ROWS.length;
+    else if (a === "next") KMEM.row = (KMEM.row + 1) % KMEM_ROWS.length;
+    else if (a === "h" || a === "k") KMEM.sc = a;
+    else if (a.startsWith("r")) KMEM.row = +a.slice(1);
+    else if (a.startsWith("say:")) return speak(a.slice(4));
+    kmemDraw();
+  });
+}
+function kmemDraw() {
+  const box = document.getElementById("kmemBody");
+  if (!box) return;
+  const row = [...KMEM_ROWS[KMEM.row]].map((c) => KMEM.sc === "k" ? toKata(c) : c);
+  box.innerHTML = `<div class="sheet-h"><b>🧠 가나 연상 카드</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div>
+  <div class="h-scroll">
+    <p class="note" style="margin:0">가나는 한자를 흘려 쓰거나(히라가나) 한 부분을 떼어(가타카나) 만들었어요. 원래 한자와 모양 힌트로 외워 보세요.</p>
+    <div class="row" style="justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+      <div class="seg" role="group">${[
+    ["h", "ひらがな"],
+    ["k", "カタカナ"]
+  ].map(([v, l]) => `<button type="button" data-km="${v}" aria-pressed="${KMEM.sc === v}">${l}</button>`).join("")}</div>
+      <div class="kmem-rows">${KMEM_ROWS.map((r, i) => `<button type="button" class="chip" data-km="r${i}" aria-pressed="${KMEM.row === i}" lang="ja">${KMEM.sc === "k" ? toKata(r[0]) : r[0]}</button>`).join("")}</div>
+    </div>
+    <div class="kmem-list">${row.map((c) => `<div class="kmem-item">${kmemCard(c)}${hasTTS ? `<button type="button" class="chip" data-km="say:${esc(c)}">🔊</button>` : ""}</div>`).join("")}</div>
+    <div class="row"><button type="button" class="btn" data-km="prev" style="flex:1">← 앞 줄</button><button type="button" class="btn primary" data-km="next" style="flex:1">다음 줄 →</button></div>
+  </div>`;
+  const sc = box.querySelector(".h-scroll");
+  if (sc) sc.scrollTop = 0;
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest && e.target.closest("[data-kmemopen]");
+  if (b) openKanaMem(b.dataset.kmemopen || "");
+  setTimeout(() => {
+    const p = document.getElementById("kmemPop");
+    if (p && !document.querySelector(".chart .gojuon")) p.remove();
+  }, 0);
+});
+
+"use strict";
 let SQ = "";
 const kataToHira = (s) => s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 96));
 const sNorm = (s) => kataToHira(
@@ -15432,6 +15842,30 @@ document.getElementById("searchBtn").addEventListener("click", openSearch);
 
 "use strict";
 const WHATS_NEW = [
+  {
+    v: 21,
+    ja: true,
+    t: "점원 말 알아듣기",
+    d: "회화·여행 탭 · 여행. 袋はご利用ですか, 温めますか처럼 계산대·식당·숙소에서 점원이 하는 말 59개를 듣고 뜻과 대답을 익혀요."
+  },
+  {
+    v: 21,
+    ja: true,
+    t: "여행 문장 2배",
+    d: "여행 카드가 286개로 늘었어요. 공항·입국, 온천·료칸이 새로 생기고 주문·쇼핑·교통도 더 자세해졌어요."
+  },
+  {
+    v: 21,
+    ja: true,
+    t: "가나 연상 카드",
+    d: "50음도에서 글자를 누르면 그 글자가 어떤 한자에서 왔는지와 모양으로 외우는 힌트가 나와요. 퀴즈 해설에도 보여요."
+  },
+  {
+    v: 21,
+    ai: true,
+    t: "말하기 인식 안정화",
+    d: "폰의 음성 인식이 안 되면 하나마루 서버가 대신 알아들어요. 🎤가 안 되던 폰도 한 번 더 눌러 보세요. 설정 → 📱 내 폰 점검에서 고를 수도 있어요."
+  },
   {
     v: 20,
     ja: true,
@@ -15587,7 +16021,7 @@ const WHATS_NEW = [
   { v: 10, t: "플래시카드", d: "배우기 탭. 넘기면서 알아요 / 몰라요만 눌러요." },
   { v: 10, t: "단어장 공유", d: "자료 탭 → 단어장에서 링크로 친구에게 보내요." }
 ];
-const WN_LATEST = 20;
+const WN_LATEST = 21;
 function whatsNew10(since) {
   const ja = S.lang === "ja";
   const items = WHATS_NEW.filter((x) => x.v > (since || 9) && (x.ja === void 0 || x.ja === ja) && (!x.ai || aiOn()));
