@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "core/more.js"], [201, "lib/conjugate.js"], [413, "lib/numbers.js"], [578, "lib/dictation.js"], [668, "content/kana.js"], [721, "content/items.js"], [775, "lib/romaji.js"], [866, "lib/kanaime.js"], [1042, "content/items-extra.js"], [1089, "core/storage.js"], [1271, "core/srs.js"], [1432, "core/badges.js"], [1520, "core/backup.js"], [1611, "core/speech.js"], [1746, "core/hqvoice.js"], [1839, "core/listen.js"], [2087, "ui/shell.js"], [2587, "ui/menu.js"], [2796, "ui/home.js"], [2992, "quiz/engine.js"], [3565, "quiz/input.js"], [3688, "quiz/kana.js"], [3792, "quiz/words.js"], [3982, "quiz/loan-conj.js"], [4057, "quiz/sentences.js"], [4227, "quiz/dictation-numbers.js"], [4352, "quiz/flow.js"], [4653, "quiz/speed.js"], [4821, "views/reference.js"], [4908, "views/wordlist.js"], [5116, "views/stats.js"], [5240, "quiz/modes-extra.js"], [5359, "features/shadowing.js"], [5610, "features/dialogue.js"], [5790, "views/grammar-notes.js"], [5846, "views/today.js"], [5961, "core/update.js"], [6021, "quiz/counters.js"], [6372, "quiz/polite.js"], [6423, "quiz/jp-pairs.js"], [6479, "quiz/english-grammar.js"], [6566, "quiz/made-english.js"], [6614, "quiz/hanja.js"], [6871, "quiz/ko-traps.js"], [6987, "quiz/en-traps.js"], [7061, "quiz/kansai.js"], [7104, "features/course.js"], [8048, "ui/sheet.js"], [8081, "features/share-card.js"], [8400, "ui/help.js"], [8732, "play/setup.js"], [8761, "features/sound.js"], [8822, "features/levels.js"], [8947, "play/cards.js"], [9092, "play/stamps.js"], [9286, "play/omikuji.js"], [9424, "play/rain.js"], [9638, "play/match.js"], [9766, "play/vs.js"], [10008, "play/play.js"], [10141, "features/missions.js"], [10237, "features/seasons.js"], [10294, "features/weekly.js"], [10670, "features/level-test.js"], [10918, "features/autoplay.js"], [11116, "views/wrong-notes.js"], [11189, "features/support.js"], [11286, "ui/settings.js"], [11542, "features/travel.js"], [11684, "features/writing.js"], [11851, "features/flashcards.js"], [11993, "features/share-words.js"], [12129, "views/hanja-rules.js"], [12253, "features/signs.js"], [12336, "features/trip.js"], [12496, "features/daily.js"], [12617, "features/share-more.js"], [12783, "views/weak.js"], [12907, "features/ai.js"], [12968, "features/aichat.js"], [13323, "features/diary.js"], [13463, "features/push.js"], [13606, "features/photo.js"], [13753, "features/trial.js"], [13920, "features/gcomp.js"], [14037, "features/yomu.js"], [14218, "features/call.js"], [14624, "features/sync.js"], [14786, "features/league.js"], [14951, "features/habit.js"], [15099, "features/jlpt.js"], [15496, "features/offpack.js"], [15619, "features/phonecheck.js"], [16059, "play/shiritori.js"], [16205, "quiz/anime.js"], [16273, "features/mycard.js"], [16527, "features/reader.js"], [16699, "ui/welcome.js"], [16802, "ui/search.js"], [16933, "ui/whats-new.js"], [17110, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "core/more.js"], [201, "lib/conjugate.js"], [413, "lib/numbers.js"], [578, "lib/dictation.js"], [668, "content/kana.js"], [721, "content/items.js"], [775, "lib/romaji.js"], [866, "lib/kanaime.js"], [1042, "content/items-extra.js"], [1089, "core/storage.js"], [1271, "core/srs.js"], [1432, "core/badges.js"], [1520, "core/backup.js"], [1611, "core/speech.js"], [1746, "core/hqvoice.js"], [1839, "core/listen.js"], [2087, "ui/shell.js"], [2587, "ui/menu.js"], [2800, "ui/home.js"], [2997, "quiz/engine.js"], [3570, "quiz/input.js"], [3693, "quiz/kana.js"], [3797, "quiz/words.js"], [3987, "quiz/loan-conj.js"], [4062, "quiz/sentences.js"], [4232, "quiz/dictation-numbers.js"], [4357, "quiz/flow.js"], [4658, "quiz/speed.js"], [4826, "views/reference.js"], [4913, "views/wordlist.js"], [5121, "views/stats.js"], [5245, "quiz/modes-extra.js"], [5364, "features/shadowing.js"], [5615, "features/dialogue.js"], [5795, "views/grammar-notes.js"], [5851, "views/today.js"], [5966, "core/update.js"], [6026, "quiz/counters.js"], [6377, "quiz/polite.js"], [6428, "quiz/jp-pairs.js"], [6484, "quiz/english-grammar.js"], [6571, "quiz/made-english.js"], [6619, "quiz/hanja.js"], [6876, "quiz/ko-traps.js"], [6992, "quiz/en-traps.js"], [7066, "quiz/kansai.js"], [7109, "features/course.js"], [8053, "ui/sheet.js"], [8086, "features/share-card.js"], [8405, "ui/help.js"], [8751, "play/setup.js"], [8780, "features/sound.js"], [8841, "features/levels.js"], [8966, "play/cards.js"], [9111, "play/stamps.js"], [9305, "play/omikuji.js"], [9443, "play/rain.js"], [9657, "play/match.js"], [9785, "play/vs.js"], [10027, "play/play.js"], [10160, "features/missions.js"], [10256, "features/seasons.js"], [10313, "features/weekly.js"], [10689, "features/level-test.js"], [10937, "features/autoplay.js"], [11135, "views/wrong-notes.js"], [11208, "features/support.js"], [11305, "ui/settings.js"], [11561, "features/travel.js"], [11703, "features/writing.js"], [11870, "features/flashcards.js"], [12012, "features/share-words.js"], [12148, "views/hanja-rules.js"], [12272, "features/signs.js"], [12355, "features/trip.js"], [12515, "features/daily.js"], [12636, "features/share-more.js"], [12802, "views/weak.js"], [12926, "features/ai.js"], [12987, "features/aichat.js"], [13342, "features/diary.js"], [13482, "features/push.js"], [13625, "features/photo.js"], [13772, "features/trial.js"], [13939, "features/gcomp.js"], [14056, "features/yomu.js"], [14237, "features/call.js"], [14645, "features/sync.js"], [14807, "features/league.js"], [14972, "features/habit.js"], [15120, "features/jlpt.js"], [15517, "features/offpack.js"], [15640, "features/phonecheck.js"], [16080, "play/shiritori.js"], [16226, "quiz/anime.js"], [16294, "features/mycard.js"], [16548, "features/reader.js"], [16720, "ui/welcome.js"], [16822, "features/install.js"], [16948, "ui/search.js"], [17079, "ui/whats-new.js"], [17256, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -2502,7 +2502,7 @@ function renderMod(mod) {
 function modeSeg(mod) {
   const t = modTab(mod);
   const tl = (tabList().find(x => x[0] === t) || [, ''])[1];
-  return `<div class="mhead modes"><button type="button" class="mback" data-back aria-label="${tl} 메뉴로">${BACK_ICO}<span>${tl}</span></button><b class="mtitle">${esc(modeLabel(mod))}</b>${pinBtn(mod)}</div>`;
+  return `<div class="mhead modes"><button type="button" class="mback" data-back aria-label="${tl} 메뉴로">${BACK_ICO}<span>${tl}</span></button><b class="mtitle">${esc(modeLabel(mod))}${typeof BETA_MODS !== 'undefined' && BETA_MODS.has(mod) ? ' ' + betaTag() : ''}</b>${pinBtn(mod)}</div>`;
 }
 const BACK_ICO =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
@@ -2625,8 +2625,8 @@ const MENU_DESC = {
   shiri: '컴퓨터와 일본어 끝말잇기',
   offpack: '비행기 모드에서도 여행 카드 쓰기',
   eoffpack: '비행기 모드에서도 여행 카드 쓰기',
-  call: '말로만 하는 실전 전화 (식당 예약·택시)',
-  ecall: '말로만 하는 실전 전화 (예약·고객센터)',
+  call: '실전 전화 연습 (식당 예약·택시) · 글로도 OK',
+  ecall: '실전 전화 연습 (예약·고객센터) · 글로도 OK',
   league: '친구들과 이번 주 공부량 겨루기',
   gcomp: 'は vs が, に vs で 헷갈리는 짝 비교',
   egcomp: 'for vs since, make vs do 헷갈리는 짝 비교',
@@ -2730,9 +2730,13 @@ const TAB_LEAD = {
   eref: '복습과 정리 자료, 내 기록'
 };
 
+// speech-recognition features that still need work on some phones
+const BETA_MODS = new Set(['call', 'ecall']);
+const betaTag = () => '<i class="mc-beta">베타</i>';
 function menuCard(m) {
   let badge = '';
-  if (NEW_MODS.has(m) && !S.seenMod[m]) badge = '<i class="mc-new">새로</i>';
+  if (BETA_MODS.has(m)) badge = betaTag();
+  else if (NEW_MODS.has(m) && !S.seenMod[m]) badge = '<i class="mc-new">새로</i>';
   else if (srsMods().includes(m)) {
     const n = dueCount(m);
     if (n) badge = `<i class="mc-due num">복습 ${n > 99 ? '99+' : n}</i>`;
@@ -2942,6 +2946,7 @@ function renderHome() {
     ${todayBoxHTML()}
     ${heroHTML()}
     ${streakHomeHTML()}
+    ${installHomeHTML()}
     ${goalHomeHTML()}
     ${bk ? `<ul class="todo">${bk}</ul>` : ''}
     ${courseLineHTML()}
@@ -2953,7 +2958,7 @@ function renderHome() {
       <button class="btn" data-share>결과 카드</button><button class="btn" data-help>사용 안내</button>
     </section>
     ${donateHomeHTML()}
-    ${isStandalone() ? '' : `<button class="install-tip" data-settings="install"><b>아이폰 홈 화면에 추가하기</b><span>Safari 공유 버튼 → '홈 화면에 추가'. 앱처럼 바로 열려요 →</span></button>`}
+    ${isStandalone() ? '' : `<button class="install-tip" data-inst="${inAppBrowser() ? 'escape' : 'open'}"><b>📲 홈 화면에 추가하기</b><span>${inAppBrowser() ? `${inAppBrowser()} 밖(${isIOS() ? 'Safari' : 'Chrome'})에서 열면 추가할 수 있어요 →` : '앱처럼 바로 열리고 공부 알림도 받아요 →'}</span></button>`}
   </div>`;
   view.onclick = e => {
     const b = e.target.closest('button');
@@ -5560,7 +5565,7 @@ function prBox(r, ja) {
 function shadowZone(r) {
   const ja = activeMod() === 'jsh';
   const sr = canSR
-    ? `<div class="row"><button type="button" class="btn ${lsBy('pr') ? 'rec-on' : 'primary'}" data-act="prstart">${lsBy('pr') ? '■ 다 말했어요' : '🎤 말하고 발음 점수 받기'}</button></div>${prBox(r, ja)}`
+    ? `<div class="row"><button type="button" class="btn ${lsBy('pr') ? 'rec-on' : 'primary'}" data-act="prstart">${lsBy('pr') ? '■ 다 말했어요' : '🎤 말하고 발음 점수 받기'}</button>${lsBy('pr') ? '' : betaTag()}</div>${prBox(r, ja)}`
     : '';
   const rec = canRec
     ? `<div class="row">${REC.on ? `<button type="button" class="btn rec-on" data-act="recstop">■ 녹음 멈추기</button>` : `<button type="button" class="btn" data-act="recstart">● 내 목소리 녹음</button>`}<button type="button" class="btn" data-act="recplay" ${REC.url && !REC.on ? '' : 'disabled'}>▶ 내 녹음 듣기</button></div>`
@@ -5960,7 +5965,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020152119';
+const APP_VERSION = '20261020155652';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -8631,6 +8636,13 @@ const TOUR = [
     art: 'cal'
   },
   {
+    h: '홈 화면에 추가해 두세요',
+    p: '앱스토어 없이 <b>아이콘</b>이 생기고, 주소창 없이 앱처럼 열려요. <b>공부 알림</b>도 받을 수 있고, 기록도 더 안전하게 남아요.',
+    art: 'home',
+    btn: '추가하는 방법 보기',
+    cond: () => typeof canInstall === 'function' && canInstall()
+  },
+  {
     h: '말하고, 써 보세요',
     p: '🎤는 <b>한 번 누르고 말한 뒤 한 번 더</b> 누르면 돼요. 들리는 말이 바로 화면에 떠요. 일본어 자판이 없으면 영어 자판으로 <b>watashi</b>라고 쳐도 <b>わたし</b>로 바뀌어요. 소리나 마이크가 안 되면 설정의 <b>📱 내 폰 점검</b>을 눌러 보세요.',
     art: 'talk'
@@ -8647,6 +8659,7 @@ const TOUR_ART = {
   tabs: `<div class="t-tabs"><div class="t-top"><span>하나마루</span><span class="t-seg"><i>일본어</i><i>영어</i></span></div><div class="t-modes"><i class="on">단어 퀴즈 ☆</i><i>플래시카드 ☆</i><i>한국음 한자 ★</i></div><div class="t-bar">${['홈', '배우기', '회화·여행', '놀이', '자료'].map((l, i) => `<i class="${i === 1 ? 'on' : ''}">${l}</i>`).join('')}</div></div>`,
   card: `<div class="t-card"><span class="t-q">?</span><span class="jp" lang="ja">猫</span><div class="t-btns"><i>모르겠어요</i><i class="on">맞은 걸로 처리</i></div></div>`,
   cal: `<div class="t-cal">${[1, 3, 8, 21, 60].map(n => `<span><b class="num">${n}일</b>뒤</span>`).join('<i>→</i>')}</div>`,
+  home: `<div class="t-home"><span class="t-app"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5c7.6 0 12.6 5.3 12.3 12.6-.3 7-5.8 12.3-12.6 12.1C8.9 28 3.6 22.7 3.8 15.6 4 8.7 9.2 3.9 16.6 4.2" fill="none" stroke="var(--shu)" stroke-width="2.6" stroke-linecap="round"/></svg></span><small>하나마루</small></div>`,
   talk: `<div class="t-talk"><span class="t-mic">■ 다 말했어요</span><p class="jp" lang="ja">予約をお願いします</p><p class="t-ime"><span class="mono">watashi</span> → <span class="jp" lang="ja">わたし</span></p></div>`,
   course: `<div class="t-course">${[
     ['1', '히라가나 첫걸음'],
@@ -8656,16 +8669,18 @@ const TOUR_ART = {
     .map(([n, t], i) => `<p class="${i === 0 ? 'on' : ''}"><b class="num">${n}일차</b>${t}</p>`)
     .join('')}</div>`
 };
-let tourI = 0;
+let tourI = 0,
+  TOUR_NOW = TOUR;
 function openTour() {
   tourI = 0;
+  TOUR_NOW = TOUR.filter(s => !s.cond || s.cond());
   renderTour();
 }
 function renderTour() {
-  const s = TOUR[tourI];
+  const s = TOUR_NOW[tourI];
   const html = `<div class="tour-in"><button type="button" class="btn quiet t-skip" data-t="skip">${s.last ? '닫기' : '건너뛰기'}</button>
-    <div class="t-art">${TOUR_ART[s.art] || ''}</div><h2>${s.h}</h2><p>${s.p}</p>
-    <div class="t-dots">${TOUR.map((_, i) => `<i class="${i === tourI ? 'on' : ''}"></i>`).join('')}</div>
+    <div class="t-art">${TOUR_ART[s.art] || ''}</div><h2>${s.h}</h2><p>${s.p}</p>${s.btn ? `<button type="button" class="btn t-extra" data-t="inst">${s.btn}</button>` : ''}
+    <div class="t-dots">${TOUR_NOW.map((_, i) => `<i class="${i === tourI ? 'on' : ''}"></i>`).join('')}</div>
     <div class="row t-nav">${tourI > 0 ? `<button type="button" class="btn" data-t="prev">이전</button>` : ''}${s.last ? `<button type="button" class="btn" data-t="look">둘러볼게요</button><button type="button" class="btn primary" data-t="course">코스 시작</button>` : `<button type="button" class="btn primary" data-t="next">다음</button>`}</div>
     ${s.last ? `<button type="button" class="btn quiet" data-t="ltest">조금 알아요 · 레벨 테스트로 시작</button>` : ''}</div>`;
   const cur = document.querySelector('#sheet .sheet.tour');
@@ -8679,7 +8694,7 @@ function renderTour() {
     if (!b) return;
     const a = b.dataset.t;
     if (a === 'next') {
-      tourI = Math.min(TOUR.length - 1, tourI + 1);
+      tourI = Math.min(TOUR_NOW.length - 1, tourI + 1);
       renderTour();
     } else if (a === 'prev') {
       tourI = Math.max(0, tourI - 1);
@@ -8689,6 +8704,10 @@ function renderTour() {
       S.seen.v9 = 1;
       save();
       closeSheet();
+      if (a === 'inst') {
+        openInstall();
+        return;
+      }
       if (a === 'ltest') {
         startLevelTest();
         return;
@@ -11373,8 +11392,8 @@ function settingsHTML() {
     ${
       isStandalone()
         ? ''
-        : `<section id="set-install"><h2 class="sec-title">아이폰 홈 화면에 추가</h2><div class="panel" style="padding:14px">
-      <ol class="steps"><li>Safari에서 이 앱 주소를 엽니다.</li><li>아래쪽 공유 버튼(네모에 위쪽 화살표)을 누릅니다.</li><li>'홈 화면에 추가'를 누르면 앱 아이콘이 생깁니다.</li></ol></div></section>`
+        : `<section id="set-install"><h2 class="sec-title">홈 화면에 추가</h2><div class="panel" style="padding:14px;display:grid;gap:10px">
+      <p class="note" style="margin:0">앱처럼 아이콘으로 열고, 공부 알림도 받을 수 있어요. 이 폰에 맞는 방법을 보여 드릴게요.</p><button class="btn" data-inst="open">추가하는 방법 보기</button></div></section>`
     }
     ${statsSetHTML()}
     <div id="set-donate">${donateHTML()}</div>
@@ -13191,7 +13210,7 @@ function aicDraw(lang) {
       ${lsBy('aic') ? `<div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>` : ''}
       <textarea id="aiIn" rows="2" lang="${lang}" ${ja ? IME_ATTR : ''} placeholder="${ja ? '일본어로 대답해 보세요 (영어 자판 watashi → わたし, 한국어로 써도 알아들어요)' : '영어로 대답해 보세요'}" ${done || AIC.busy ? 'disabled' : ''}></textarea>
       ${ja ? imeBar('aiIn') : ''}
-      <div class="row">${hasRec() ? `<button class="btn ${lsBy('aic') ? 'rec-on' : ''}" data-ai="mic" ${AIC.busy ? 'disabled' : ''}>${lsBy('aic') ? '■ 다 말했어요' : '🎤 말하기'}</button>` : ''}<button class="btn" data-ai="hint" ${AIC.busy || done ? 'disabled' : ''}>힌트</button><button class="btn primary" data-ai="send" ${AIC.busy || done ? 'disabled' : ''}>보내기</button></div>
+      <div class="row">${hasRec() ? `<button class="btn ${lsBy('aic') ? 'rec-on' : ''}" data-ai="mic" ${AIC.busy ? 'disabled' : ''}>${lsBy('aic') ? '■ 다 말했어요' : '🎤 말하기 ' + betaTag()}</button>` : ''}<button class="btn" data-ai="hint" ${AIC.busy || done ? 'disabled' : ''}>힌트</button><button class="btn primary" data-ai="send" ${AIC.busy || done ? 'disabled' : ''}>보내기</button></div>
       <button class="btn aic-end" data-ai="review" ${AIC.busy || !turns ? 'disabled' : ''}>대화 끝내고 첨삭 받기</button>
     </div>`
     }`;
@@ -14394,7 +14413,7 @@ function callDraw(lang) {
   }
   if (!CALL) {
     const left = Math.max(0, CALL_DAILY - callUsed());
-    box.innerHTML = `<p class="note">진짜 전화처럼 말로만 주고받아요. 🎤를 한 번 누르고 말한 뒤, 다 말했으면 한 번 더 누르세요(잠깐 멈추면 자동으로 보내져요). 들리는 말이 화면에 바로 보여요. 자막은 꺼져 있어요(막히면 켜세요). 한 통에 내 말 ${CALL_TURNS}번까지, 오늘 남은 통화 <b class="num">${left}</b>번.</p>
+    box.innerHTML = `<p class="note beta-note">🧪 말하기 인식은 아직 다듬는 중(베타)이에요. 폰에 따라 잘 안 될 수 있어서, 글자로도 바로 쓸 수 있게 해 뒀어요.</p><p class="note">진짜 전화처럼 말로 주고받아요. 🎤를 한 번 누르고 말한 뒤, 다 말했으면 한 번 더 누르세요(잠깐 멈추면 자동으로 보내져요). 들리는 말이 화면에 바로 보여요. 자막은 꺼져 있어요(막히면 켜세요). 한 통에 내 말 ${CALL_TURNS}번까지, 오늘 남은 통화 <b class="num">${left}</b>번.</p>
       ${hasSR() ? '' : '<p class="note" style="color:var(--ng)">이 브라우저는 음성 인식이 안 돼서 글자로 입력해요. 아이폰은 Safari에서 열면 말로 할 수 있어요.</p>'}
       <div class="cl-list">${CALL_SCENES[lang]
         .map(
@@ -14469,7 +14488,9 @@ function callStart(lang, id) {
     ended: 0,
     review: '',
     err: '',
-    hint: ''
+    hint: '',
+    // speech recognition is still beta on some phones: the text box is there from the start
+    typing: true
   };
   statEv('o:call-' + id);
   callDraw(lang);
@@ -16714,16 +16735,14 @@ const inAppBrowser = () => {
 };
 const isIOS = () =>
   /iPhone|iPad|iPod/i.test(navigator.userAgent || '') || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+// a short "add to home screen" box for the welcome and first-study screens (buttons work anywhere: features/install.js)
 function installHint() {
   if (isStandalone()) return '';
   const inApp = inAppBrowser();
   if (inApp)
-    return `<div class="wc-warn"><b>${inApp} 안에서 열렸어요</b><p>여기서는 홈 화면에 추가할 수 없고, 공부 기록이 사라질 수 있어요. ${isIOS() ? '<b>Safari</b>' : '<b>Chrome</b>'}로 열어 주세요.</p>
-      ${inApp === '카카오톡' ? '<button type="button" class="btn primary" data-wl="ext">Safari·기본 브라우저로 열기</button>' : `<p class="note">오른쪽 위(또는 아래) <b>⋯</b> 메뉴 → <b>${isIOS() ? 'Safari로 열기' : '다른 브라우저로 열기'}</b></p>`}
-      <button type="button" class="link" data-wl="copy">주소 복사하기</button></div>`;
-  return isIOS()
-    ? `<div class="wc-inst"><b>📲 앱처럼 쓰려면</b><p>Safari 아래쪽 <b>공유 버튼(□↑)</b> → <b>홈 화면에 추가</b>. 앱스토어 없이 아이콘이 생겨요.</p></div>`
-    : `<div class="wc-inst"><b>📲 앱처럼 쓰려면</b><p>브라우저 메뉴 <b>⋮</b> → <b>홈 화면에 추가</b>(또는 '앱 설치').</p></div>`;
+    return `<div class="wc-warn"><b>${inApp} 안에서 열렸어요</b><p>여기서는 홈 화면에 추가할 수 없고, 마이크·알림이 안 되며 기록이 사라질 수 있어요. <b>${isIOS() ? 'Safari' : 'Chrome'}</b>에서 시작하세요.</p>
+      <button type="button" class="btn primary wc-esc" data-inst="escape">${isIOS() ? 'Safari로 열기' : 'Chrome으로 열기'}</button><button type="button" class="link" data-inst="open">버튼이 안 되면: 직접 여는 방법</button</div></div>`;
+  return `<div class="wc-inst"><b>📲 홈 화면에 추가하면 앱처럼</b><p>아이콘 하나로 바로 열고, 공부 알림도 받을 수 있어요.</p><button type="button" class="btn" data-inst="${typeof INST !== 'undefined' && INST.prompt ? 'prompt' : 'open'}">${typeof INST !== 'undefined' && INST.prompt ? '지금 설치하기' : '추가하는 방법 보기'}</button></div>`;
 }
 function openWelcome() {
   const ai = typeof aiOn === 'function' && aiOn();
@@ -16741,8 +16760,9 @@ function openWelcome() {
         }
       </div>
       <p class="wc-free">무료 · 가입 없음 · 기록은 내 폰에만 저장</p>
+      ${inAppBrowser() ? installHint() : ''}
       <div class="wc-go"><button type="button" class="btn primary" data-wl="ja">일본어로 시작</button><button type="button" class="btn" data-wl="en">영어로 시작</button></div>
-      ${installHint()}
+      ${inAppBrowser() ? '' : installHint()}
       <p class="wc-foot"><button type="button" class="link" data-wl="tour">사용법 30초 보기</button> · <button type="button" class="link" data-wl="privacy">개인정보 안내</button></p>
     </div>`,
     'help welcome'
@@ -16797,6 +16817,132 @@ function openPrivacy() {
     'help'
   );
 }
+
+// ---- features/install.js ----
+'use strict';
+/* ================= 홈 화면에 추가 유도
+   SNS(인스타·카톡) 링크로 들어오면 앱 안의 브라우저라 홈 화면 추가도, 마이크도, 알림도 안 되고 기록도 따로 저장돼요.
+   1) 앱 안 브라우저면 Safari/Chrome으로 바로 넘겨 주고  2) 진짜 브라우저면 폰에 맞는 추가 방법을 그림으로 보여 줘요. ================= */
+const INST = { prompt: null };
+// Android Chrome / Samsung Internet: the browser's own "install app" dialog, kept for our button
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  INST.prompt = e;
+  if (typeof CUR_MOD !== 'undefined' && !CUR_MOD && curTab() === 'home') renderHome();
+});
+window.addEventListener('appinstalled', () => {
+  INST.prompt = null;
+  S.installed = 1;
+  save();
+  statEv('x:installed');
+  toast('홈 화면에 하나마루가 생겼어요! 이제 아이콘으로 열어 주세요');
+});
+const isAndroid = () => /Android/i.test(navigator.userAgent || '');
+const isSamsungNet = () => /SamsungBrowser/i.test(navigator.userAgent || '');
+const iosChrome = () => /CriOS/i.test(navigator.userAgent || '');
+const canInstall = () => !isStandalone() && !S.installed;
+// leave the Instagram/Kakao in-app browser for the phone's real browser
+function escapeInApp() {
+  statEv('x:escape');
+  const url = siteUrl() || location.href.split('#')[0];
+  const app = inAppBrowser();
+  if (app === '카카오톡') {
+    location.href = 'kakaotalk://web/openExternal?url=' + encodeURIComponent(url);
+    return;
+  }
+  if (isAndroid()) {
+    const u = new URL(url);
+    location.href = `intent://${u.host}${u.pathname}${u.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(url)};end`;
+    return;
+  }
+  // iPhone (iOS 17+): this opens Safari straight away; older phones ignore it, so the guide shows after a moment
+  location.href = 'x-safari-' + url;
+  setTimeout(() => document.visibilityState === 'visible' && openInstall(true), 900);
+}
+// the step-by-step sheet for this phone
+function openInstall(inAppGuide) {
+  statEv('x:install-open');
+  const app = inAppBrowser();
+  const step = (n, t, d) =>
+    `<li class="in-step"><span class="in-n">${n}</span><div><b>${t}</b>${d ? `<small>${d}</small>` : ''}</div></li>`;
+  const icon = {
+    share:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10.5H5v10h14v-10h-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
+    add: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 8.5v7M8.5 12h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+  };
+  let body;
+  if (app || inAppGuide)
+    body = `<div class="in-arrow" aria-hidden="true">↗</div>
+      <p class="in-lead">지금은 <b>${esc(app || '앱')} 안의 브라우저</b>라 홈 화면에 추가할 수 없고, 마이크·알림도 막혀 있어요.</p>
+      <ol class="in-steps">${step(1, `오른쪽 위 <b>⋯</b> (또는 아래쪽 메뉴)를 누르세요`, '')}${step(2, isIOS() ? `<b>'Safari로 열기'</b> 또는 <b>'외부 브라우저에서 열기'</b>` : `<b>'다른 브라우저로 열기'</b> 또는 <b>'Chrome으로 열기'</b>`, '')}${step(3, `열린 ${isIOS() ? 'Safari' : 'Chrome'}에서 하나마루를 홈 화면에 추가해요`, '')}</ol>
+      <div class="row"><button type="button" class="btn primary" data-in="escape" style="flex:1">${isIOS() ? 'Safari로 열기' : 'Chrome으로 열기'}</button><button type="button" class="btn" data-in="copy">주소 복사</button></div>
+      <p class="note">버튼이 안 되면 주소를 복사해서 ${isIOS() ? 'Safari' : 'Chrome'} 주소창에 붙여 넣어도 돼요. 여기서 푼 기록은 그쪽으로 옮겨지지 않으니, 처음부터 그쪽에서 시작하는 게 좋아요.</p>`;
+  else if (INST.prompt)
+    body = `<p class="in-lead">버튼 한 번이면 앱처럼 설치돼요. 앱스토어도, 용량 걱정도 없어요.</p>
+      <button type="button" class="btn primary" data-in="prompt" style="width:100%">📲 하나마루 설치하기</button>`;
+  else if (isIOS())
+    body = `<ol class="in-steps">${step(1, `${iosChrome() ? '주소창 오른쪽' : '화면 아래쪽'} <b>공유 버튼</b> <span class="in-ico">${icon.share}</span> 누르기`, iosChrome() ? '' : '안 보이면 화면을 살짝 위로 올리거나, 주소창 옆 ⋯ 버튼 → 공유')}${step(2, `목록을 내려서 <b>'홈 화면에 추가'</b> <span class="in-ico">${icon.add}</span>`, '')}${step(3, `오른쪽 위 <b>'추가'</b>`, '홈 화면에 하나마루 아이콘이 생겨요. 이제부터는 그 아이콘으로 열어 주세요.')}</ol>`;
+  else if (isSamsungNet())
+    body = `<ol class="in-steps">${step(1, `아래쪽 <b>≡ 메뉴</b> 누르기`, '')}${step(2, `<b>'페이지 추가'</b> → <b>'홈 화면'</b>`, '')}${step(3, `<b>'추가'</b>`, '홈 화면에 하나마루 아이콘이 생겨요.')}</ol>`;
+  else
+    body = `<ol class="in-steps">${step(1, `오른쪽 위 <b>⋮ 메뉴</b> 누르기`, '')}${step(2, `<b>'홈 화면에 추가'</b> 또는 <b>'앱 설치'</b>`, '')}${step(3, `<b>'설치'</b>(또는 '추가')`, '홈 화면에 하나마루 아이콘이 생겨요.')}</ol>`;
+  const el = openSheet(
+    `<div class="sheet-h"><b>📲 홈 화면에 하나마루 추가</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div>
+    <div class="h-scroll">${body}
+      <ul class="in-why"><li><b>앱처럼</b> 주소창 없이 꽉 찬 화면으로 열려요</li><li><b>공부 알림</b>을 받을 수 있어요${isIOS() ? ' (아이폰은 홈 화면 앱에서만)' : ''}</li><li><b>기록이 안전해요</b> ${isIOS() ? 'Safari는 오래 안 쓰면 사이트 기록을 지울 수 있어요' : '브라우저 정리할 때 같이 지워지지 않게'}</li></ul>
+    </div>`,
+    'help install'
+  );
+  el.addEventListener('click', async e => {
+    const b = e.target.closest('[data-in]');
+    if (!b) return;
+    if (b.dataset.in === 'escape') escapeInApp();
+    else if (b.dataset.in === 'copy')
+      copyText(siteUrl() || location.href.split('#')[0], '주소를 복사했어요. Safari·Chrome 주소창에 붙여 넣어 주세요.', () =>
+        toast(siteUrl())
+      );
+    else if (b.dataset.in === 'prompt' && INST.prompt) {
+      const p = INST.prompt;
+      INST.prompt = null;
+      try {
+        await p.prompt();
+        const r = await p.userChoice;
+        statEv('x:install-' + (r && r.outcome));
+      } catch (x) {}
+      closeSheet();
+    }
+  });
+}
+// home card: after the person has studied at least once (not on the very first screen), until installed or put off
+function installHomeHTML() {
+  if (!canInstall()) return '';
+  const studied = Object.values(S.days).some(d => d && d.n > 0);
+  if (!studied || (S.instLater && dayIdx() - S.instLater < 3)) return '';
+  const app = inAppBrowser();
+  return `<section class="inst-card"><span class="in-ico big" aria-hidden="true">📲</span><div><b>${app ? `${esc(app)} 밖에서 열어 주세요` : '홈 화면에 추가하면 앱처럼 써요'}</b><small>${app ? '여기서는 기록이 사라질 수 있고 마이크·알림이 안 돼요' : '아이콘 하나로 바로 열고, 공부 알림도 받을 수 있어요'}</small></div>
+    <div class="inst-act"><button type="button" class="btn primary" data-inst="${app ? 'escape' : INST.prompt ? 'prompt' : 'open'}">${app ? (isIOS() ? 'Safari로' : 'Chrome으로') : INST.prompt ? '설치' : '방법 보기'}</button><button type="button" class="link" data-inst="later">나중에</button></div></section>`;
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest && e.target.closest('[data-inst]');
+  if (!b) return;
+  const a = b.dataset.inst;
+  if (a === 'escape') escapeInApp();
+  else if (a === 'open') openInstall();
+  else if (a === 'later') {
+    S.instLater = dayIdx();
+    save();
+    if (!CUR_MOD && curTab() === 'home') renderHome();
+  } else if (a === 'prompt' && INST.prompt) {
+    const p = INST.prompt;
+    INST.prompt = null;
+    try {
+      await p.prompt();
+      const r = await p.userChoice;
+      statEv('x:install-' + (r && r.outcome));
+    } catch (x) {}
+    if (!CUR_MOD && curTab() === 'home') renderHome();
+  }
+});
 
 // ---- ui/search.js ----
 'use strict';

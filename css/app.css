@@ -5410,6 +5410,7 @@ body.sheet-open {
   margin-right: 6px;
 }
 .mc-new,
+.mc-beta,
 .mc-due {
   font-style: normal;
   font-size: 11px;
@@ -5420,6 +5421,13 @@ body.sheet-open {
 .mc-new {
   background: var(--shu);
   color: #fff;
+}
+.mc-beta {
+  background: var(--sunk);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  vertical-align: middle;
+  margin-left: 4px;
 }
 .mc-due {
   background: var(--ai-soft);
@@ -8213,6 +8221,163 @@ body.has-daily .upd {
   border-radius: 999px;
   background: var(--ok);
   transition: width 0.08s linear;
+}
+/* 홈 화면에 추가 */
+.in-lead {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.in-arrow {
+  position: absolute;
+  right: 72px;
+  top: 10px;
+  font-size: 34px;
+  color: var(--shu);
+  animation: in-nudge 1.2s ease-in-out infinite;
+}
+.sheet.install {
+  position: relative;
+}
+@keyframes in-nudge {
+  50% {
+    transform: translate(4px, -4px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .in-arrow {
+    animation: none;
+  }
+}
+.in-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.in-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.in-step b {
+  font-weight: 500;
+}
+.in-step b b {
+  font-weight: 700;
+}
+.in-step small {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
+  font-size: 13px;
+}
+.in-n {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--ai);
+  color: var(--on-ai);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.in-ico {
+  display: inline-grid;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  color: var(--ai);
+}
+.in-ico svg {
+  width: 100%;
+  height: 100%;
+}
+.in-ico.big {
+  width: auto;
+  height: auto;
+  font-size: 28px;
+}
+.in-why {
+  margin: 4px 0 0;
+  padding: 12px 14px 12px 32px;
+  background: var(--sunk);
+  border-radius: 14px;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.in-why b {
+  color: var(--ink);
+}
+.inst-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--ai-soft);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+.inst-card > div:nth-child(2) {
+  flex: 1 1 180px;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.inst-card small {
+  color: var(--muted);
+  font-size: 13px;
+}
+.inst-act {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.t-home {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+}
+.t-app {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+.t-app svg {
+  width: 48px;
+  height: 48px;
+}
+.t-home small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.t-extra {
+  margin: 4px auto 0;
+}
+
+.wc-esc {
+  width: 100%;
+  margin: 8px 0 4px;
+}
+
+.beta-note {
+  background: var(--sunk);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 8px 12px;
 }
 
 /* ---- responsive.css ---- */
