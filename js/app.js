@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "core/more.js"], [201, "lib/conjugate.js"], [413, "lib/numbers.js"], [578, "lib/dictation.js"], [668, "content/kana.js"], [721, "content/items.js"], [775, "lib/romaji.js"], [866, "lib/kanaime.js"], [1042, "content/items-extra.js"], [1089, "core/storage.js"], [1271, "core/srs.js"], [1432, "core/badges.js"], [1520, "core/backup.js"], [1611, "core/speech.js"], [1746, "core/hqvoice.js"], [1839, "core/listen.js"], [2048, "ui/shell.js"], [2548, "ui/menu.js"], [2757, "ui/home.js"], [2953, "quiz/engine.js"], [3526, "quiz/input.js"], [3649, "quiz/kana.js"], [3753, "quiz/words.js"], [3943, "quiz/loan-conj.js"], [4018, "quiz/sentences.js"], [4188, "quiz/dictation-numbers.js"], [4313, "quiz/flow.js"], [4614, "quiz/speed.js"], [4782, "views/reference.js"], [4869, "views/wordlist.js"], [5077, "views/stats.js"], [5201, "quiz/modes-extra.js"], [5320, "features/shadowing.js"], [5571, "features/dialogue.js"], [5751, "views/grammar-notes.js"], [5807, "views/today.js"], [5922, "core/update.js"], [5982, "quiz/counters.js"], [6333, "quiz/polite.js"], [6384, "quiz/jp-pairs.js"], [6440, "quiz/english-grammar.js"], [6527, "quiz/made-english.js"], [6575, "quiz/hanja.js"], [6832, "quiz/ko-traps.js"], [6948, "quiz/en-traps.js"], [7022, "quiz/kansai.js"], [7065, "features/course.js"], [8009, "ui/sheet.js"], [8042, "features/share-card.js"], [8361, "ui/help.js"], [8693, "play/setup.js"], [8722, "features/sound.js"], [8783, "features/levels.js"], [8908, "play/cards.js"], [9053, "play/stamps.js"], [9247, "play/omikuji.js"], [9385, "play/rain.js"], [9599, "play/match.js"], [9727, "play/vs.js"], [9969, "play/play.js"], [10102, "features/missions.js"], [10198, "features/seasons.js"], [10255, "features/weekly.js"], [10631, "features/level-test.js"], [10879, "features/autoplay.js"], [11077, "views/wrong-notes.js"], [11150, "features/support.js"], [11247, "ui/settings.js"], [11503, "features/travel.js"], [11645, "features/writing.js"], [11812, "features/flashcards.js"], [11954, "features/share-words.js"], [12090, "views/hanja-rules.js"], [12214, "features/signs.js"], [12297, "features/trip.js"], [12457, "features/daily.js"], [12578, "features/share-more.js"], [12744, "views/weak.js"], [12868, "features/ai.js"], [12929, "features/aichat.js"], [13284, "features/diary.js"], [13424, "features/push.js"], [13567, "features/photo.js"], [13714, "features/trial.js"], [13881, "features/gcomp.js"], [13998, "features/yomu.js"], [14179, "features/call.js"], [14585, "features/sync.js"], [14747, "features/league.js"], [14912, "features/habit.js"], [15060, "features/jlpt.js"], [15457, "features/offpack.js"], [15580, "features/phonecheck.js"], [15892, "play/shiritori.js"], [16038, "quiz/anime.js"], [16106, "features/mycard.js"], [16360, "features/reader.js"], [16532, "ui/welcome.js"], [16635, "ui/search.js"], [16766, "ui/whats-new.js"], [16943, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "core/more.js"], [201, "lib/conjugate.js"], [413, "lib/numbers.js"], [578, "lib/dictation.js"], [668, "content/kana.js"], [721, "content/items.js"], [775, "lib/romaji.js"], [866, "lib/kanaime.js"], [1042, "content/items-extra.js"], [1089, "core/storage.js"], [1271, "core/srs.js"], [1432, "core/badges.js"], [1520, "core/backup.js"], [1611, "core/speech.js"], [1746, "core/hqvoice.js"], [1839, "core/listen.js"], [2087, "ui/shell.js"], [2587, "ui/menu.js"], [2796, "ui/home.js"], [2992, "quiz/engine.js"], [3565, "quiz/input.js"], [3688, "quiz/kana.js"], [3792, "quiz/words.js"], [3982, "quiz/loan-conj.js"], [4057, "quiz/sentences.js"], [4227, "quiz/dictation-numbers.js"], [4352, "quiz/flow.js"], [4653, "quiz/speed.js"], [4821, "views/reference.js"], [4908, "views/wordlist.js"], [5116, "views/stats.js"], [5240, "quiz/modes-extra.js"], [5359, "features/shadowing.js"], [5610, "features/dialogue.js"], [5790, "views/grammar-notes.js"], [5846, "views/today.js"], [5961, "core/update.js"], [6021, "quiz/counters.js"], [6372, "quiz/polite.js"], [6423, "quiz/jp-pairs.js"], [6479, "quiz/english-grammar.js"], [6566, "quiz/made-english.js"], [6614, "quiz/hanja.js"], [6871, "quiz/ko-traps.js"], [6987, "quiz/en-traps.js"], [7061, "quiz/kansai.js"], [7104, "features/course.js"], [8048, "ui/sheet.js"], [8081, "features/share-card.js"], [8400, "ui/help.js"], [8732, "play/setup.js"], [8761, "features/sound.js"], [8822, "features/levels.js"], [8947, "play/cards.js"], [9092, "play/stamps.js"], [9286, "play/omikuji.js"], [9424, "play/rain.js"], [9638, "play/match.js"], [9766, "play/vs.js"], [10008, "play/play.js"], [10141, "features/missions.js"], [10237, "features/seasons.js"], [10294, "features/weekly.js"], [10670, "features/level-test.js"], [10918, "features/autoplay.js"], [11116, "views/wrong-notes.js"], [11189, "features/support.js"], [11286, "ui/settings.js"], [11542, "features/travel.js"], [11684, "features/writing.js"], [11851, "features/flashcards.js"], [11993, "features/share-words.js"], [12129, "views/hanja-rules.js"], [12253, "features/signs.js"], [12336, "features/trip.js"], [12496, "features/daily.js"], [12617, "features/share-more.js"], [12783, "views/weak.js"], [12907, "features/ai.js"], [12968, "features/aichat.js"], [13323, "features/diary.js"], [13463, "features/push.js"], [13606, "features/photo.js"], [13753, "features/trial.js"], [13920, "features/gcomp.js"], [14037, "features/yomu.js"], [14218, "features/call.js"], [14624, "features/sync.js"], [14786, "features/league.js"], [14951, "features/habit.js"], [15099, "features/jlpt.js"], [15496, "features/offpack.js"], [15619, "features/phonecheck.js"], [16059, "play/shiritori.js"], [16205, "quiz/anime.js"], [16273, "features/mycard.js"], [16527, "features/reader.js"], [16699, "ui/welcome.js"], [16802, "ui/search.js"], [16933, "ui/whats-new.js"], [17110, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -1846,7 +1846,14 @@ const LS_SILENCE = 1600, // after you stop talking this long, it finishes by its
   LS_MAX = 25000;
 let MIC = null;
 // Android Chrome repeats words in continuous mode, so there it listens one phrase at a time
-const lsContinuous = () => !/Android/i.test(navigator.userAgent || '');
+// (a mode that worked on this phone before wins: some iPhones only answer in one of the two)
+const lsContinuous = () => (S.set.srMode ? S.set.srMode === 'c' : !/Android/i.test(navigator.userAgent || ''));
+// what happened in the last try, for 내 폰 점검's report: "start@0 audiostart@310 result@1200 end@2400"
+let MIC_LOG = '';
+const lsLog = (ls, ev) => {
+  ls.log.push(ev + '@' + (Date.now() - ls.t0));
+  MIC_LOG = (ls.cont0 ? 'c' : 's') + ' ' + ls.log.join(' ');
+};
 const lsOn = () => !!(MIC && !MIC.done);
 function lsMsg(code) {
   const ios = typeof isIOS === 'function' && isIOS();
@@ -1887,7 +1894,21 @@ function listenStart(lang, o) {
     speechSynthesis.cancel();
   } catch (e) {}
   if (typeof hqStop === 'function') hqStop();
-  const ls = { lang, o, final: [], interim: '', phase: 'start', t0: Date.now(), last: 0, done: false, err: '', tries: 0 };
+  const ls = {
+    lang,
+    o,
+    final: [],
+    interim: '',
+    phase: 'start',
+    t0: Date.now(),
+    last: 0,
+    done: false,
+    err: '',
+    tries: 0,
+    log: [],
+    cont: lsContinuous()
+  };
+  ls.cont0 = ls.cont;
   MIC = ls;
   lsBegin(ls, R0);
   return true;
@@ -1898,7 +1919,7 @@ function lsBegin(ls, R0) {
     rec = new R0();
     rec.lang = ls.lang === 'ja' ? 'ja-JP' : 'en-US';
     rec.interimResults = true;
-    rec.continuous = lsContinuous();
+    rec.continuous = ls.cont;
     rec.maxAlternatives = ls.o.alts || 1;
   } catch (e) {
     return lsFinish(ls, 'unsupported');
@@ -1907,11 +1928,15 @@ function lsBegin(ls, R0) {
   ls.started = Date.now();
   ls.audio = false;
   rec.onaudiostart = () => {
+    lsLog(ls, 'audio');
+    ls.aAt = ls.aAt || Date.now();
     ls.audio = true;
     if (ls.phase === 'start') ls.phase = 'ready';
     lsShow(ls);
   };
-  rec.onsoundstart = rec.onspeechstart = () => {
+  rec.onsoundstart = rec.onspeechstart = e => {
+    lsLog(ls, (e && e.type) || 'sound');
+    ls.aAt = ls.aAt || Date.now();
     ls.audio = true;
     if (ls.phase !== 'stop') ls.phase = 'sound';
     lsShow(ls);
@@ -1927,6 +1952,7 @@ function lsBegin(ls, R0) {
       if (r.isFinal) fin.push(Array.from(r, a => a.transcript));
       else interim += r[0].transcript;
     }
+    if (!ls.final.length && !ls.interim) lsLog(ls, 'result');
     // after a restart, keep what was heard before it
     ls.final = (ls.prevFinal || []).concat(fin);
     ls.interim = interim;
@@ -1937,17 +1963,21 @@ function lsBegin(ls, R0) {
   };
   rec.onerror = ev => {
     const c = (ev && ev.error) || 'unknown';
+    lsLog(ls, 'err:' + c);
     if (c === 'aborted') return;
     ls.err = c;
   };
   rec.onend = () => {
+    lsLog(ls, 'end');
     if (ls.rec === rec) lsEnded(ls);
   };
   clearInterval(ls.tick);
   ls.tick = setInterval(() => lsTick(ls), 200);
   try {
+    lsLog(ls, 'start' + (ls.cont ? 'C' : 'S'));
     rec.start();
   } catch (e) {
+    lsLog(ls, 'throw:' + ((e && e.name) || ''));
     lsFinish(ls, 'unsupported');
   }
   lsShow(ls);
@@ -1962,7 +1992,8 @@ function lsTick(ls) {
     return;
   }
   if (has && ls.last && now - ls.last > LS_SILENCE) listenStop();
-  else if (!has && now - ls.t0 > LS_NOSOUND) {
+  // nothing heard: count from when the mic actually opened (the first time, the phone may be asking for permission)
+  else if (!has && (ls.aAt ? now - ls.aAt > LS_NOSOUND : now - ls.t0 > 20000)) {
     ls.err = ls.err || 'no-speech';
     listenStop();
   } else if (now - ls.t0 > LS_MAX) listenStop();
@@ -1975,6 +2006,8 @@ function lsEnded(ls) {
     ls.tries++;
     ls.err = '';
     ls.prevFinal = ls.final;
+    // try the other listening mode: some phones end at once in one of them
+    if (!ls.audio) ls.cont = !ls.cont;
     setTimeout(() => !ls.done && MIC === ls && lsBegin(ls, srAPI()), 250);
     return;
   }
@@ -1989,6 +2022,12 @@ function lsFinish(ls, code) {
     ls.rec && ls.rec.abort();
   } catch (e) {}
   const text = lsText(ls);
+  lsLog(ls, text ? 'done' : 'fail');
+  // remember the mode that worked on this phone
+  if (text && S.set.srMode !== (ls.cont ? 'c' : 's')) {
+    S.set.srMode = ls.cont ? 'c' : 's';
+    save();
+  }
   if (text) ls.o.onDone && ls.o.onDone(text, lsAlts(ls));
   else {
     const c = code || (ls.err && ls.err !== 'unknown' ? ls.err : ls.audio ? 'no-speech' : 'other');
@@ -5921,7 +5960,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020144904';
+const APP_VERSION = '20261020150606';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -15583,12 +15622,12 @@ CUSTOM.eoffpack = renderOffpack;
 let PC = null;
 const PC_ITEMS = [
   ['env', '📱', '브라우저'],
-  ['store', '💾', '기록 저장'],
+  ['mic', '🎙️', '마이크 (소리가 들어오는지)'],
+  ['sr', '🗣️', '음성 인식 (말을 글자로)'],
   ['sound', '🔊', '발음 소리'],
   ['hq', '✨', 'AI 고음질 발음'],
-  ['mic', '🎤', '마이크·음성 인식'],
-  ['rec', '🎙️', '내 목소리 녹음'],
   ['push', '🔔', '알림'],
+  ['store', '💾', '기록 저장'],
   ['net', '🌐', 'AI 서버 연결']
 ];
 function pcEnv() {
@@ -15653,17 +15692,17 @@ function pcAuto() {
   R.hq = aiOn()
     ? { st: '', msg: hqOn() ? '켜져 있어요 · 눌러서 받아 봐요' : '꺼져 있어요 (설정 → 발음 목소리에서 켤 수 있어요)' }
     : { st: 'skip', msg: '이 앱에는 AI 서버가 연결되지 않았어요' };
-  R.mic = srAPI()
-    ? { st: '', msg: '눌러서 말해 보면 들린 말이 나와요' }
-    : { st: 'fail', msg: lsMsg('unsupported'), tip: 'AI 전화·회화는 ⌨️ 글자로 할 수 있어요.' };
-  R.rec =
-    navigator.mediaDevices && typeof MediaRecorder !== 'undefined'
-      ? { st: '', msg: '3초 녹음해서 들어 봐요' }
+  R.mic =
+    navigator.mediaDevices && navigator.mediaDevices.getUserMedia
+      ? { st: '', msg: '먼저 이걸로 마이크에 소리가 들어오는지 봐요. 누르고 5초 동안 아무 말이나 해 보세요.' }
       : {
-          st: 'warn',
-          msg: '이 브라우저는 녹음을 지원하지 않아요',
-          tip: '따라 말하기의 "내 목소리 녹음"만 안 돼요. 발음 점수(🎤)는 따로 확인해 보세요.'
+          st: 'fail',
+          msg: '이 브라우저는 마이크를 쓸 수 없어요',
+          tip: e.app ? `${e.app} 말고 ${isIOS() ? 'Safari' : 'Chrome'}로 열어 주세요.` : `${isIOS() ? 'Safari' : 'Chrome'}로 열어 주세요.`
         };
+  R.sr = srAPI()
+    ? { st: '', msg: '마이크가 되면, 말이 글자로 바뀌는지 확인해요' }
+    : { st: 'fail', msg: lsMsg('unsupported'), tip: 'AI 전화·회화는 ⌨️ 글자로 할 수 있어요.' };
   const perm = typeof Notification !== 'undefined' ? Notification.permission : '';
   R.push = !pushSupported()
     ? {
@@ -15708,10 +15747,10 @@ function openPhoneCheck(focus) {
           : '① 미디어 볼륨을 올려 주세요. ② 블루투스 연결을 확인해 주세요. ③ 설정 → 텍스트 음성 변환(TTS) → Google 엔진에서 일본어 음성 데이터를 받아 주세요.'
       );
     else if (a === 'hq') pcHQ();
-    else if (a === 'mic') pcMic();
-    else if (a === 'micstop') listenStop();
-    else if (a === 'rec') pcRec();
+    else if (a === 'mic') pcMicLevel();
     else if (a === 'recplay') pcRecPlay();
+    else if (a === 'sr') pcSr();
+    else if (a === 'srstop') listenStop();
     else if (a === 'push') pcPush();
     else if (a === 'copy') copyText(pcReport(), '점검 결과를 복사했어요. 문의할 때 붙여 넣어 주세요.');
   });
@@ -15725,23 +15764,26 @@ const PC_ICON = { ok: '✅', warn: '⚠️', fail: '❌', run: '⏳', skip: '➖
 function pcDraw() {
   const box = document.getElementById('pcBody');
   if (!box || !PC) return;
+  const old = box.querySelector('.h-scroll'),
+    keep = old ? old.scrollTop : 0;
   const r = PC.r;
   const n = st => Object.values(r).filter(x => x.st === st).length;
-  const btn = (id, label) => `<button type="button" class="btn" data-pc="${id}" ${r[id].st === 'run' ? 'disabled' : ''}>${label}</button>`;
+  const btn = (id, label) =>
+    `<button type="button" class="btn" data-pc="${id}" ${(r[id] || r.mic).st === 'run' ? 'disabled' : ''}>${label}</button>`;
   const act = {
     sound: hasTTS
       ? `${btn('sound', '▶ 소리 내기')}${r.sound.ask ? `<span class="pc-ask">들렸나요? <button type="button" class="chip" data-pc="heard">들렸어요</button><button type="button" class="chip" data-pc="notheard">안 들렸어요</button></span>` : ''}`
       : '',
     hq: aiOn() ? btn('hq', '▶ 받아서 듣기') : '',
-    mic: srAPI()
-      ? lsBy('pc')
-        ? `<button type="button" class="btn rec-on" data-pc="micstop">■ 다 말했어요</button><div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>`
-        : `${btn('mic', '🎤 말해 보기')}<small class="pc-say">「<span lang="${S.lang}">${S.lang === 'ja' ? 'こんにちは' : 'Hello, how are you?'}</span>」라고 말해 보세요</small>`
-      : '',
-    rec:
-      navigator.mediaDevices && typeof MediaRecorder !== 'undefined'
-        ? `${btn('rec', PC.recOn ? '녹음 중… (3초)' : '● 3초 녹음')}${PC.recUrl ? btn('recplay', '▶ 내 목소리 듣기') : ''}`
+    mic:
+      navigator.mediaDevices && navigator.mediaDevices.getUserMedia
+        ? `${PC.micOn ? '' : btn('mic', r.mic.st ? '● 다시 테스트' : '● 5초 마이크 테스트')}${PC.recUrl && !PC.micOn ? btn('recplay', '▶ 녹음된 내 목소리') : ''}${PC.micOn ? `<div class="pc-meter" role="meter" aria-label="마이크 소리 크기" aria-valuemin="0" aria-valuemax="100"><i id="pcLvl"></i></div><small class="pc-say" id="pcLeft">말해 보세요… 5</small>` : ''}`
         : '',
+    sr: srAPI()
+      ? lsBy('pc')
+        ? `<button type="button" class="btn rec-on" data-pc="srstop">■ 다 말했어요</button><div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>`
+        : `${btn('sr', '🎤 말해 보기')}<small class="pc-say">「<span lang="${S.lang}">${S.lang === 'ja' ? 'こんにちは' : 'Hello, how are you?'}</span>」라고 말해 보세요</small>`
+      : '',
     push: pushSupported() && r.push.st !== 'fail' ? btn('push', '🔔 알림 띄워 보기') : ''
   };
   box.innerHTML = `<div class="sheet-h"><b>📱 내 폰 점검</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div>
@@ -15756,6 +15798,8 @@ function pcDraw() {
     ).join('')}</ul>
     <button type="button" class="btn primary" data-pc="copy" style="width:100%">결과 복사하기 (문의할 때 붙여 넣기)</button>
   </div>`;
+  const sc = box.querySelector('.h-scroll');
+  if (sc && keep) sc.scrollTop = keep;
   if (PC.focus) {
     const f = document.getElementById('pc-' + PC.focus);
     if (f && f.scrollIntoView) f.scrollIntoView({ block: 'center' });
@@ -15787,50 +15831,172 @@ async function pcHQ() {
     pcSet('hq', 'warn', '받았지만 재생하지 못했어요', '화면을 한 번 누른 뒤 다시 해 보세요. 아이폰은 무음 스위치를 확인해 주세요.');
   }
 }
-function pcMic() {
-  pcSet('mic', 'run', '듣는 중…');
+// 🗣️ speech recognition: does what I say turn into text?
+function pcSr() {
+  pcSet('sr', 'run', '듣는 중…');
   listenStart(S.lang, {
     who: 'pc',
-    onDone: t => pcSet('mic', 'ok', `잘 들려요 · 들린 말: ${t}`),
-    onFail: (m, code) =>
-      pcSet('mic', 'fail', '음성 인식이 안 됐어요', m + (code === 'no-speech' ? ' 조용한 곳에서 폰을 입 가까이 대고 해 보세요.' : ''))
+    onDone: t => pcSet('sr', 'ok', `잘 돼요 · 들린 말: ${t}`),
+    onFail: (m, code) => {
+      const mic = PC && PC.r.mic.st;
+      pcSet(
+        'sr',
+        'fail',
+        '말이 글자로 안 바뀌었어요',
+        m +
+          (mic === 'ok'
+            ? ' 마이크는 정상이라, 폰의 음성 인식 기능 쪽 문제예요.' +
+              (isIOS()
+                ? ' 설정 → 일반 → 키보드 → 받아쓰기 활성화, 설정 → Siri가 켜져 있는지 확인해 주세요.'
+                : ' Google 앱이 꺼져 있거나 오래됐으면 업데이트해 주세요.')
+            : mic
+              ? ' 위의 마이크 테스트부터 해결해 주세요.'
+              : ' 위의 마이크 테스트도 해 보세요.')
+      );
+    }
   });
   pcDraw();
 }
-async function pcRec() {
-  if (PC.recOn) return;
+// 🎙️ raw microphone: is any sound coming in at all? (a level bar, 5 seconds, recorded so you can play it back)
+async function pcMicLevel() {
+  if (!PC || PC.micOn) return;
   listenCancel();
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    const mr = new MediaRecorder(stream),
-      chunks = [];
-    mr.ondataavailable = e => e.data && e.data.size && chunks.push(e.data);
-    mr.onstop = () => {
-      stream.getTracks().forEach(t => t.stop());
-      PC.recOn = false;
-      const blob = new Blob(chunks, { type: mr.mimeType || 'audio/mp4' });
-      if (PC.recUrl) URL.revokeObjectURL(PC.recUrl);
-      PC.recUrl = blob.size > 500 ? URL.createObjectURL(blob) : '';
-      if (PC.recUrl) pcSet('rec', 'ok', '녹음됐어요 · 눌러서 내 목소리를 들어 보세요');
-      else pcSet('rec', 'fail', '녹음은 됐는데 소리가 비어 있어요', '다른 앱(통화·녹음)이 마이크를 쓰고 있지 않은지 확인해 주세요.');
-    };
-    PC.recOn = true;
-    mr.start();
-    pcSet('rec', 'run', '녹음 중… 아무 말이나 해 보세요');
-    setTimeout(() => mr.state !== 'inactive' && mr.stop(), 3000);
+    speechSynthesis.cancel();
+  } catch (e) {}
+  if (typeof hqStop === 'function') hqStop();
+  // iPhone: the audio context must be made inside the tap
+  const AC = window.AudioContext || window.webkitAudioContext;
+  let ac = null;
+  try {
+    ac = AC ? new AC() : null;
+  } catch (e) {}
+  let stream;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      audio: { echoCancellation: true, noiseSuppression: false, autoGainControl: true }
+    });
   } catch (e) {
-    PC.recOn = false;
-    pcSet(
-      'rec',
+    try {
+      ac && ac.close();
+    } catch (x) {}
+    const n = (e && e.name) || '';
+    return pcSet(
+      'mic',
       'fail',
-      '마이크를 쓸 수 없어요',
-      e && e.name === 'NotAllowedError'
+      n === 'NotAllowedError' || n === 'SecurityError'
+        ? '마이크 권한이 막혀 있어요'
+        : n === 'NotFoundError'
+          ? '마이크를 찾을 수 없어요'
+          : '마이크를 열지 못했어요',
+      n === 'NotAllowedError' || n === 'SecurityError'
         ? isIOS()
-          ? '설정 → Safari → 마이크(또는 주소창 왼쪽 "가가" → 웹 사이트 설정)에서 허용해 주세요.'
-          : '주소창 자물쇠 → 사이트 설정 → 마이크를 허용해 주세요.'
-        : '다른 앱이 마이크를 쓰고 있지 않은지 확인해 주세요.'
+          ? '주소창 왼쪽 "가가"(또는 aA) → 웹 사이트 설정 → 마이크 → 허용. 홈 화면 앱이면 설정 → Safari → 마이크 → 허용으로 바꿔 주세요.'
+          : '주소창 자물쇠 → 권한(사이트 설정) → 마이크 → 허용. 폰 설정 → 애플리케이션 → Chrome → 권한 → 마이크도 확인해 주세요.'
+        : '통화·녹음 중인 다른 앱이나 연결된 블루투스 기기가 마이크를 쓰고 있지 않은지 확인해 주세요. (' + n + ')'
     );
   }
+  PC.micOn = true;
+  PC.r.mic = { st: 'run', msg: '듣는 중… 아무 말이나 해 보세요', tip: '' };
+  pcDraw();
+  let an = null,
+    buf = null;
+  try {
+    if (ac) {
+      if (ac.state === 'suspended') await ac.resume();
+      an = ac.createAnalyser();
+      an.fftSize = 1024;
+      ac.createMediaStreamSource(stream).connect(an);
+      buf = new Float32Array(an.fftSize);
+    }
+  } catch (e) {
+    an = null;
+  }
+  // record at the same time, so the person can hear what the phone heard
+  let mr = null;
+  const chunks = [];
+  try {
+    if (typeof MediaRecorder !== 'undefined') {
+      mr = new MediaRecorder(stream);
+      mr.ondataavailable = e => e.data && e.data.size && chunks.push(e.data);
+      mr.start();
+    }
+  } catch (e) {
+    mr = null;
+  }
+  let peak = 0,
+    loud = 0,
+    frames = 0;
+  const t0 = Date.now();
+  await new Promise(done => {
+    const tick = setInterval(() => {
+      if (!PC) {
+        clearInterval(tick);
+        return done();
+      }
+      let lv = 0;
+      if (an) {
+        an.getFloatTimeDomainData(buf);
+        let sum = 0;
+        for (let i = 0; i < buf.length; i++) sum += buf[i] * buf[i];
+        lv = Math.min(1, Math.sqrt(sum / buf.length) * 6);
+      }
+      frames++;
+      peak = Math.max(peak, lv);
+      if (lv > 0.12) loud++;
+      const bar = document.getElementById('pcLvl');
+      if (bar) {
+        bar.style.width = Math.round(lv * 100) + '%';
+        bar.parentElement.setAttribute('aria-valuenow', Math.round(lv * 100));
+      }
+      const left = document.getElementById('pcLeft');
+      if (left) left.textContent = '말해 보세요… ' + Math.max(0, 5 - Math.floor((Date.now() - t0) / 1000));
+      if (Date.now() - t0 >= 5000) {
+        clearInterval(tick);
+        done();
+      }
+    }, 80);
+  });
+  const blob = await new Promise(res => {
+    if (!mr || mr.state === 'inactive') return res(null);
+    mr.onstop = () => res(new Blob(chunks, { type: mr.mimeType || 'audio/mp4' }));
+    try {
+      mr.stop();
+    } catch (e) {
+      res(null);
+    }
+  });
+  stream.getTracks().forEach(t => t.stop());
+  try {
+    ac && ac.close();
+  } catch (e) {}
+  if (!PC) return;
+  PC.micOn = false;
+  if (PC.recUrl) URL.revokeObjectURL(PC.recUrl);
+  PC.recUrl = blob && blob.size > 500 ? URL.createObjectURL(blob) : '';
+  const pct = Math.round(peak * 100);
+  if (!an)
+    pcSet(
+      'mic',
+      PC.recUrl ? 'ok' : 'warn',
+      '마이크가 열렸어요 (이 브라우저는 소리 크기를 못 보여 줘요)',
+      PC.recUrl ? '녹음된 내 목소리를 눌러 들어 보세요. 들리면 정상이에요.' : ''
+    );
+  else if (loud >= 3) pcSet('mic', 'ok', `마이크 정상 · 소리가 잘 들어와요 (최고 ${pct}%)`, PC.recUrl ? '' : '');
+  else if (peak > 0.03)
+    pcSet(
+      'mic',
+      'warn',
+      `소리가 아주 작게 들어와요 (최고 ${pct}%)`,
+      '폰 아래쪽 마이크를 입 가까이 대고 또렷하게 말해 보세요. 케이스가 마이크 구멍을 막고 있지 않은지도 확인해 주세요.'
+    );
+  else
+    pcSet(
+      'mic',
+      'fail',
+      '마이크는 열렸는데 소리가 안 들어와요',
+      '블루투스 이어폰(에어팟 등)이 연결돼 있으면 그쪽 마이크를 쓰고 있을 수 있어요. 연결을 끊고 다시 해 보세요. 통화·녹음 앱이 켜져 있으면 닫아 주세요.'
+    );
 }
 function pcRecPlay() {
   if (PC.recUrl) new Audio(PC.recUrl).play().catch(() => {});
@@ -15878,6 +16044,7 @@ function pcReport() {
   return [
     `[하나마루 폰 점검] ${today()} · 버전 ${String(APP_VERSION).slice(0, 12)}`,
     ...PC_ITEMS.map(([id, , t]) => `${PC_ICON[r[id].st] || '⬜'} ${t}: ${r[id].msg || ''}`),
+    MIC_LOG ? `인식 기록: ${MIC_LOG}` : '',
     (navigator.userAgent || '').slice(0, 160)
   ].join('\n');
 }
