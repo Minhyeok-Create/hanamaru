@@ -19,5 +19,51 @@
    "type": "image/png",
    "purpose": "any maskable"
   }
+ ],
+ "shortcuts": [
+  {
+   "name": "오늘 복습",
+   "short_name": "복습",
+   "url": "./?go=review",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "여행 카드",
+   "short_name": "여행 카드",
+   "url": "./?go=trav",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "AI 전화 연습",
+   "short_name": "AI 전화",
+   "url": "./?go=call",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "단어 퀴즈",
+   "short_name": "단어",
+   "url": "./?go=word",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
  ]
 }

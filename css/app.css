@@ -8045,6 +8045,146 @@ body.has-daily .upd {
 .cl-type .ime-pv {
   color: #b9c6da;
 }
+.more-wait {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 48px 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+/* 내 폰 점검 */
+.pc-sum {
+  display: flex;
+  gap: 14px;
+  font-weight: 700;
+  margin: 6px 0 10px;
+}
+.pc-list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.pc-i {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  display: grid;
+  gap: 6px;
+}
+.pc-i.fail {
+  border-color: var(--ng);
+}
+.pc-i.ok {
+  border-color: var(--ok);
+}
+.pc-i.focus {
+  box-shadow: 0 0 0 3px var(--ai-soft);
+}
+.pc-h {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pc-h b {
+  flex: 1;
+}
+.pc-ico {
+  font-size: 18px;
+}
+.pc-msg,
+.pc-tip {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.pc-tip {
+  color: var(--ink);
+  background: var(--sunk);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.pc-act {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.pc-act .ls-live {
+  flex-basis: 100%;
+}
+.pc-ask,
+.pc-say {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.cl-chk {
+  color: #9fc3ff;
+}
+/* 애니·드라마 표현 */
+.an-tone {
+  display: inline-block;
+  font-family: var(--f-ui);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 1px 8px;
+  border-radius: 999px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.an-tone.ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.an-tone.mid {
+  background: var(--ai-soft);
+  color: var(--ai);
+}
+.an-tone.no {
+  background: var(--ng-soft);
+  color: var(--ng);
+}
+.jb-why {
+  color: var(--ink) !important;
+}
+.sb-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+/* 튜토리얼: 말하기·입력 */
+.t-talk {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+.t-mic {
+  background: #d24b3e;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 10px 22px;
+}
+.t-talk p {
+  margin: 0;
+  font-size: 18px;
+}
+.t-ime {
+  font-size: 15px !important;
+  color: var(--muted);
+}
 
 /* ---- responsive.css ---- */
 @media (prefers-reduced-motion: reduce) {

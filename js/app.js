@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "lib/conjugate.js"], [371, "lib/numbers.js"], [536, "lib/dictation.js"], [626, "content/kana.js"], [679, "content/items.js"], [733, "lib/romaji.js"], [823, "lib/kanaime.js"], [999, "content/items-extra.js"], [1046, "core/storage.js"], [1228, "core/srs.js"], [1389, "core/badges.js"], [1477, "core/backup.js"], [1568, "core/speech.js"], [1703, "core/hqvoice.js"], [1796, "core/listen.js"], [2005, "ui/shell.js"], [2484, "ui/menu.js"], [2691, "ui/home.js"], [2887, "quiz/engine.js"], [3445, "quiz/input.js"], [3565, "quiz/kana.js"], [3669, "quiz/words.js"], [3859, "quiz/loan-conj.js"], [3934, "quiz/sentences.js"], [4066, "quiz/dictation-numbers.js"], [4191, "quiz/flow.js"], [4492, "quiz/speed.js"], [4660, "views/reference.js"], [4747, "views/wordlist.js"], [4954, "views/stats.js"], [5078, "quiz/modes-extra.js"], [5197, "features/shadowing.js"], [5447, "features/dialogue.js"], [5627, "views/grammar-notes.js"], [5683, "views/today.js"], [5798, "core/update.js"], [5858, "quiz/counters.js"], [6209, "quiz/polite.js"], [6258, "quiz/jp-pairs.js"], [6308, "quiz/english-grammar.js"], [6385, "quiz/made-english.js"], [6429, "quiz/hanja.js"], [6677, "quiz/ko-traps.js"], [6787, "quiz/en-traps.js"], [6856, "quiz/kansai.js"], [6897, "features/course.js"], [7841, "ui/sheet.js"], [7873, "features/share-card.js"], [8192, "ui/help.js"], [8513, "play/setup.js"], [8542, "features/sound.js"], [8603, "features/levels.js"], [8728, "play/cards.js"], [8871, "play/stamps.js"], [9065, "play/omikuji.js"], [9201, "play/rain.js"], [9415, "play/match.js"], [9543, "play/vs.js"], [9785, "play/play.js"], [9918, "features/missions.js"], [10014, "features/seasons.js"], [10069, "features/weekly.js"], [10305, "features/level-test.js"], [10553, "features/autoplay.js"], [10751, "views/wrong-notes.js"], [10824, "features/support.js"], [10921, "ui/settings.js"], [11177, "features/travel.js"], [11319, "features/writing.js"], [11486, "features/flashcards.js"], [11628, "features/share-words.js"], [11764, "views/hanja-rules.js"], [11888, "features/signs.js"], [11969, "features/trip.js"], [12129, "features/daily.js"], [12250, "features/share-more.js"], [12416, "views/weak.js"], [12540, "features/ai.js"], [12601, "features/aichat.js"], [12956, "features/diary.js"], [13096, "features/push.js"], [13239, "features/photo.js"], [13386, "features/trial.js"], [13553, "features/gcomp.js"], [13668, "features/yomu.js"], [13848, "features/call.js"], [14254, "features/sync.js"], [14416, "features/league.js"], [14581, "features/habit.js"], [14729, "features/jlpt.js"], [15120, "features/offpack.js"], [15243, "play/shiritori.js"], [15389, "features/mycard.js"], [15643, "features/reader.js"], [15814, "ui/welcome.js"], [15917, "ui/search.js"], [16048, "ui/whats-new.js"], [16207, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [67, "core/stats.js"], [159, "core/more.js"], [201, "lib/conjugate.js"], [413, "lib/numbers.js"], [578, "lib/dictation.js"], [668, "content/kana.js"], [721, "content/items.js"], [775, "lib/romaji.js"], [866, "lib/kanaime.js"], [1042, "content/items-extra.js"], [1089, "core/storage.js"], [1271, "core/srs.js"], [1432, "core/badges.js"], [1520, "core/backup.js"], [1611, "core/speech.js"], [1746, "core/hqvoice.js"], [1839, "core/listen.js"], [2048, "ui/shell.js"], [2548, "ui/menu.js"], [2757, "ui/home.js"], [2953, "quiz/engine.js"], [3526, "quiz/input.js"], [3649, "quiz/kana.js"], [3753, "quiz/words.js"], [3943, "quiz/loan-conj.js"], [4018, "quiz/sentences.js"], [4188, "quiz/dictation-numbers.js"], [4313, "quiz/flow.js"], [4614, "quiz/speed.js"], [4782, "views/reference.js"], [4869, "views/wordlist.js"], [5077, "views/stats.js"], [5201, "quiz/modes-extra.js"], [5320, "features/shadowing.js"], [5571, "features/dialogue.js"], [5751, "views/grammar-notes.js"], [5807, "views/today.js"], [5922, "core/update.js"], [5982, "quiz/counters.js"], [6333, "quiz/polite.js"], [6384, "quiz/jp-pairs.js"], [6440, "quiz/english-grammar.js"], [6527, "quiz/made-english.js"], [6575, "quiz/hanja.js"], [6832, "quiz/ko-traps.js"], [6948, "quiz/en-traps.js"], [7022, "quiz/kansai.js"], [7065, "features/course.js"], [8009, "ui/sheet.js"], [8042, "features/share-card.js"], [8361, "ui/help.js"], [8693, "play/setup.js"], [8722, "features/sound.js"], [8783, "features/levels.js"], [8908, "play/cards.js"], [9053, "play/stamps.js"], [9247, "play/omikuji.js"], [9385, "play/rain.js"], [9599, "play/match.js"], [9727, "play/vs.js"], [9969, "play/play.js"], [10102, "features/missions.js"], [10198, "features/seasons.js"], [10255, "features/weekly.js"], [10631, "features/level-test.js"], [10879, "features/autoplay.js"], [11077, "views/wrong-notes.js"], [11150, "features/support.js"], [11247, "ui/settings.js"], [11503, "features/travel.js"], [11645, "features/writing.js"], [11812, "features/flashcards.js"], [11954, "features/share-words.js"], [12090, "views/hanja-rules.js"], [12214, "features/signs.js"], [12297, "features/trip.js"], [12457, "features/daily.js"], [12578, "features/share-more.js"], [12744, "views/weak.js"], [12868, "features/ai.js"], [12929, "features/aichat.js"], [13284, "features/diary.js"], [13424, "features/push.js"], [13567, "features/photo.js"], [13714, "features/trial.js"], [13881, "features/gcomp.js"], [13998, "features/yomu.js"], [14179, "features/call.js"], [14585, "features/sync.js"], [14747, "features/league.js"], [14912, "features/habit.js"], [15060, "features/jlpt.js"], [15457, "features/offpack.js"], [15580, "features/phonecheck.js"], [15892, "play/shiritori.js"], [16038, "quiz/anime.js"], [16106, "features/mycard.js"], [16360, "features/reader.js"], [16532, "ui/welcome.js"], [16635, "ui/search.js"], [16766, "ui/whats-new.js"], [16943, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -154,6 +154,48 @@ document.addEventListener('click', e => {
   save();
   b.setAttribute('aria-checked', String(!S.noStats));
 });
+
+// ---- core/more.js ----
+'use strict';
+/* ================= 나중에 받는 자료
+   첫 화면을 빨리 띄우려고, 특정 화면에서만 쓰는 큰 자료(읽기·한자·경어·간판·카드…)는 홈이 뜬 뒤에 따로 받아요.
+   자료가 도착하면 각 기능이 onMore로 등록해 둔 함수가 목록을 다시 만들어요. ================= */
+const MORE = { ready: typeof HM_PACK === 'undefined' || HM_PACK === 'all', hooks: [], wait: [], loading: false };
+const onMore = f => MORE.hooks.push(f);
+// called by data-xx-more.js when it has run
+function hmMoreReady() {
+  if (MORE.ready) return;
+  MORE.ready = true;
+  MORE.loading = false;
+  for (const f of MORE.hooks)
+    try {
+      f();
+    } catch (e) {
+      console.error(e);
+    }
+  for (const f of MORE.wait.splice(0)) f(true);
+  if (typeof renderHome === 'function' && typeof CUR_MOD !== 'undefined' && !CUR_MOD && curTab() === 'home') renderHome();
+}
+function hmLoadMore() {
+  if (MORE.ready || MORE.loading || typeof document === 'undefined') return;
+  MORE.loading = true;
+  const me = document.querySelector('script[src*="js/app.js"]');
+  const q = me && me.src.includes('?') ? '?' + me.src.split('?')[1] : '';
+  const x = document.createElement('script');
+  x.src = 'js/data-' + HM_PACK + '-more.js' + q;
+  x.onerror = () => {
+    MORE.loading = false;
+    x.remove();
+    for (const f of MORE.wait.splice(0)) f(false);
+  };
+  document.body.appendChild(x);
+}
+// run f once the rest of the data is here (f(false) if it could not be downloaded)
+function withMore(f) {
+  if (MORE.ready) return f(true);
+  MORE.wait.push(f);
+  hmLoadMore();
+}
 
 // ---- lib/conjugate.js ----
 'use strict';
@@ -818,6 +860,7 @@ function romaji(str) {
 const stripP = s => s.replace(/[。、？！?!.,…]+$/, '').replace(/^[「"]+|[」"]+$/g, '');
 const stripAll = s => s.replace(/[。、？！?!.,…・「」\s]/g, '');
 let IDX = null;
+onMore(() => (IDX = null));
 
 // ---- lib/kanaime.js ----
 'use strict';
@@ -2067,7 +2110,7 @@ const MENU = {
   ],
   talk: [
     ['여행', ['jtrav', 'mycard', 'trip', 'offpack', 'sign', 'photo', 'reader', 'koexp', 'kansai']],
-    ['대화·듣기', ['aichat', 'call', 'diary', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
+    ['대화·듣기', ['aichat', 'call', 'diary', 'jdlg', 'anime', 'jl', 'jd', 'jsh', 'jn']],
     ['발음', ['jlen', 'jauto']]
   ],
   play: [
@@ -2122,6 +2165,7 @@ const MODE_LABEL = {
   ephoto: '메뉴판 사진 읽기',
   ediary: 'AI 한 줄 일기',
   kansai: '간사이벤',
+  anime: '애니·드라마 표현',
   weak: '약점 리포트',
   kpart: '조사 함정',
   koexp: '한국어 표현',
@@ -2187,6 +2231,7 @@ const MODE_LABEL = {
 };
 const DUE_LABEL = {
   kansai: '간사이벤',
+  anime: '애니·드라마 표현',
   kpart: '조사 함정',
   sign: '메뉴판·간판',
   hj: '한국음 한자',
@@ -2229,6 +2274,7 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'anime',
   'jlpt',
   'shiri',
   'offpack',
@@ -2286,6 +2332,7 @@ const modLang = m =>
 const SRS_MODS = {
   ja: [
     'kansai',
+    'anime',
     'kana',
     'word',
     'kanji',
@@ -2370,6 +2417,23 @@ function go(tab) {
 function startMod(mod) {
   const t = modTab(mod);
   if (!t) return;
+  // the rest of the data is still downloading (only right after opening the app): wait for it
+  if (!MORE.ready) {
+    stopAll();
+    markTab(t);
+    CUR_MOD = mod;
+    view.onclick = null;
+    view.innerHTML =
+      '<section class="mod"><div class="more-wait" role="status"><span class="pron-dot"></span>자료를 받는 중이에요…</div></section>';
+    withMore(ok => {
+      if (CUR_MOD !== mod) return;
+      if (ok) return startMod(mod);
+      view.innerHTML =
+        '<section class="mod"><div class="empty"><p style="margin:0;font-weight:600">자료를 받지 못했어요</p><p class="note">인터넷 연결을 확인하고 다시 눌러 주세요.</p><button type="button" class="btn primary" data-moreretry>다시 시도</button></div></section>';
+      view.onclick = e => e.target.closest('[data-moreretry]') && startMod(mod);
+    });
+    return;
+  }
   stopAll();
   S.tabs[S.lang] = t;
   S.smode[S.lang][t] = mod;
@@ -2530,6 +2594,7 @@ const MENU_DESC = {
   ephoto: '찍으면 AI가 뜻·가격 정리',
   ediary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   kansai: '오사카 사투리 おおきに·なんでやねん',
+  anime: 'やばい·マジで·推し 진짜 들리는 말',
   jdlg: '상황별 대화를 직접 주고받기',
   jl: '듣고 맞는 문장 고르기',
   jd: '듣고 그대로 받아쓰기',
@@ -2576,6 +2641,7 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'anime',
   'jlpt',
   'shiri',
   'offpack',
@@ -3164,7 +3230,17 @@ function setupHTML(mod) {
       (lang === 'ja' && !LISTEN.has(mod) && !DICT.has(mod) && mod !== 'jsh'
         ? kanjiRow(BUILD.has(mod) ? '블록 표기' : mod === 'part' ? '문장 표기' : '보기 표기')
         : '') +
-      (mod === 'jd' ? inputRow() : '');
+      (mod === 'jd' ? inputRow() : '') +
+      (mod === 'jb'
+        ? `<div class="setup-row"><label>블록</label>${seg(
+            'set.jbm',
+            [
+              ['word', '낱말 + 조사 함정'],
+              ['chunk', '덩어리 (쉬움)']
+            ],
+            S.set.jbm || 'word'
+          )}</div>`
+        : '');
     if (mod === 'jsh' || mod === 'esh')
       body += `<p class="note">녹음은 아이폰 Safari나 홈 화면 앱에서 마이크 권한을 허용하면 쓸 수 있어요. 녹음은 저장되지 않아요.</p>`;
     if (mod === 'part')
@@ -3173,7 +3249,12 @@ function setupHTML(mod) {
       body += `<p class="note">문제가 나오면 문장이 바로 재생돼요. 안 들리면 재생 버튼을 누르세요. 무음 모드에서는 소리가 나지 않아요.</p>`;
     if (mod === 'jd') body += `<p class="note">가타카나 단어도 히라가나로 써도 정답이에요. 조사 は·へ·を는 わ·え·お로 써도 돼요.</p>`;
     if (mod === 'ed') body += `<p class="note">대소문자와 문장부호는 채점하지 않아요. I'm과 I am처럼 줄임말은 둘 다 정답이에요.</p>`;
-    if (BUILD.has(mod)) body += `<p class="note">필요 없는 블록이 하나 섞여 있어요. 놓은 블록을 누르면 다시 빠져요.</p>`;
+    if (mod === 'jb')
+      body +=
+        S.set.jbm === 'chunk'
+          ? `<p class="note">わたしは / コーヒーを / ください처럼 조사가 붙은 덩어리로 어순만 맞춰요. 처음엔 이걸로 시작해 보세요.</p>`
+          : `<p class="note">조사도 따로 놓아야 해요. に↔で, を↔に처럼 한국 사람이 헷갈리는 조사가 함정으로 섞일 때가 있어요. 놓은 블록을 누르면 다시 빠져요.</p>`;
+    else if (BUILD.has(mod)) body += `<p class="note">필요 없는 블록이 하나 섞여 있어요. 놓은 블록을 누르면 다시 빠져요.</p>`;
   }
   if (srsMods().includes(mod) || mod === 'kconf' || mod === 'jsh' || mod === 'esh') {
     const f = filt(mod);
@@ -3447,12 +3528,15 @@ function showQ(mod, focus) {
 function answerForm(zone, type, attrs, mod, cls) {
   if (zone.dataset.type === type) return;
   zone.dataset.type = type;
-  zone.innerHTML = `<form class="ans-form" id="ansForm" autocomplete="off"><input id="ans" type="text" ${cls ? `class="${cls}"` : ''} ${attrs} autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="답 입력"><button class="btn primary" type="submit" data-act="submit">확인</button></form>
+  // Japanese answers can be typed on an English keyboard (watashi → わたし); not in the kana quiz, where that would give the answer away
+  const ime = /lang="ja"/.test(attrs) && mod !== 'kana';
+  zone.innerHTML = `<form class="ans-form" id="ansForm" autocomplete="off"><input id="ans" type="text" ${cls ? `class="${cls}"` : ''} ${attrs} ${ime ? 'data-ime' : ''} autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="답 입력"><button class="btn primary" type="submit" data-act="submit">확인</button></form>${ime ? imeBar('ans') : ''}
     <div class="sub-actions"><button type="button" class="btn quiet" data-act="skip">모르겠어요</button></div>`;
   zone.querySelector('form').addEventListener('submit', e => {
     e.preventDefault();
     formEnter(mod);
   });
+  if (ime) imeInit();
 }
 function prepInput(zone, r, focus) {
   const inp = zone.querySelector('#ans');
@@ -4004,18 +4088,45 @@ function checkChoice(mod, i) {
 }
 
 /* ---------- sentence building ---------- */
+// particles and sentence-end words that stick to the word before them in "덩어리" mode (わたし は → わたしは)
+const JB_GLUE = new Set([...PARTICLES, 'か', 'ね', 'よ', 'の', 'には', 'では', 'とは', 'にも', 'でも', 'へは']);
+// the particle a Korean speaker is likely to put instead (the trap block)
+// the particle a Korean speaker is likely to put instead (the trap block). Only pairs that are clearly wrong when swapped:
+// 학교에서 → 学校に✗, 친구를 만나다 → 友達を会う✗, 커피를 마시다 → コーヒーに✗ (は/が, へ/に are left out: often both work)
+const JB_TRAP = { に: ['で', 'を'], で: ['に'], を: ['に'], から: ['まで'], まで: ['から'] };
+const jbChunk = () => S.set.jbm === 'chunk';
 function buildTokens(mod, s) {
   if (mod === 'jb') {
     const tk = s.t.split(' '),
       rk = s.a[1].split(' ');
-    return tk.map((k, i) => ({ k: stripP(k), r: stripP(rk[i] || k) })).filter(x => x.k);
+    const toks = tk.map((k, i) => ({ k: stripP(k), r: stripP(rk[i] || k) })).filter(x => x.k);
+    if (!jbChunk()) return toks;
+    const out = [];
+    for (const t of toks)
+      if (out.length && JB_GLUE.has(t.r)) {
+        out[out.length - 1].k += t.k;
+        out[out.length - 1].r += t.r;
+      } else out.push({ ...t });
+    return out;
   }
   return s.a
     .split(' ')
     .map(w => ({ k: stripP(w), r: stripP(w) }))
     .filter(x => x.k);
 }
+// 낱말 mode: a look-alike particle (に↔で, を↔に …) so the round practises particles, not only order
+function particleTrap(ans) {
+  const ps = ans.filter((x, i) => i > 0 && JB_TRAP[x.r]);
+  if (!ps.length) return null;
+  const p = ps[(Math.random() * ps.length) | 0];
+  const t = JB_TRAP[p.r][(Math.random() * JB_TRAP[p.r].length) | 0];
+  return ans.some(x => x.r === t) ? null : { k: t, r: t, trap: p.r };
+}
 function decoyFor(mod, q, ans) {
+  if (mod === 'jb' && !jbChunk()) {
+    const t = particleTrap(ans);
+    if (t) return t;
+  }
   const pool = mod === 'jb' ? SENTS : EN_SENTS;
   const used = new Set(ans.map(x => x.k.toLowerCase()));
   for (let tries = 0; tries < 40; tries++) {
@@ -4056,7 +4167,18 @@ function checkBuild(mod, skip) {
   const got = r.built.map(byId);
   const ok = !skip && got.length === r.ans.length && got.every((x, i) => x.k.toLowerCase() === r.ans[i].k.toLowerCase());
   const shown = got.map(x => (jp && !S.set.kanji ? x.r : x.k)).join(jp ? '' : ' ');
-  const body = `<div class="fb-head"><span class="badge">${ok ? '〇' : '×'}</span>${ok ? '정답' : skip ? '정답 확인' : '오답'}</div>${!ok && !skip ? `<p class="fb-sub given">만든 문장: <s>${esc(shown)}</s></p>` : ''}${sentFeedback(mod, q)}`;
+  // what went wrong: the trap particle, or just the order
+  let why = '';
+  if (!ok && !skip) {
+    const trap = got.find(x => x.trap);
+    if (trap)
+      why = `<p class="fb-sub jb-why">조사 함정! 이 문장에는 <b lang="ja">${esc(trap.trap)}</b>를 써요. (<span lang="ja">${esc(trap.trap)}</span>: ${esc(PART_EXP[trap.trap] || '')} · <span lang="ja">${esc(trap.k)}</span>: ${esc(PART_EXP[trap.k] || '')})</p>`;
+    else if (got.length === r.ans.length) {
+      const bad = got.findIndex((x, i) => x.k.toLowerCase() !== r.ans[i].k.toLowerCase());
+      why = `<p class="fb-sub jb-why">${bad + 1}번째 블록부터 순서가 달라요.${jp ? ' 일본어는 한국어와 어순이 거의 같아요. 한국어 문장 순서대로 놓아 보세요.' : ' 영어는 "누가 → 한다 → 무엇을" 순서예요.'}</p>`;
+    } else why = `<p class="fb-sub jb-why">블록 ${r.ans.length}개로 만드는 문장이에요.</p>`;
+  }
+  const body = `<div class="fb-head"><span class="badge">${ok ? '〇' : '×'}</span>${ok ? '정답' : skip ? '정답 확인' : '오답'}</div>${!ok && !skip ? `<p class="fb-sub given">만든 문장: <s>${esc(shown)}</s></p>${why}` : ''}${sentFeedback(mod, q)}`;
   finish(mod, q, ok, shown, body, !ok && !skip);
   showBuild(mod, q, document.getElementById('card'), document.getElementById('zone'), r);
   if (S.set.autoSpeak) speak(sentText(mod, q), modLang(mod));
@@ -4298,7 +4420,7 @@ function formEnter(mod) {
     next(mod);
     return;
   }
-  CHECK[mod](inp.value);
+  CHECK[mod](inp.hasAttribute('data-ime') ? imeFinal(inp.value) : inp.value);
 }
 function stageClick(mod, e) {
   const b = e.target.closest('button');
@@ -4780,7 +4902,7 @@ function renderWordList(lang) {
           ? `<form class="add-form" id="addForm" style="margin-top:8px" autocomplete="off">
         ${
           ja
-            ? `<input id="aw" type="text" lang="ja" placeholder="단어 (예: 猫, ねこ)" aria-label="단어"><input id="ar" type="text" lang="ja" placeholder="읽기 – 히라가나 (예: ねこ)" aria-label="읽기"><input id="am" type="text" lang="ko" placeholder="뜻 – 여러 개면 쉼표로 (예: 고양이)" aria-label="뜻">`
+            ? `<input id="aw" type="text" lang="ja" ${IME_ATTR} placeholder="단어 (예: 猫, ねこ / 영어 자판 neko)" aria-label="단어"><input id="ar" type="text" lang="ja" ${IME_ATTR} placeholder="읽기 – 히라가나 (영어 자판 neko → ねこ)" aria-label="읽기">${imeBar('ar')}<input id="am" type="text" lang="ko" placeholder="뜻 – 여러 개면 쉼표로 (예: 고양이)" aria-label="뜻">`
             : `<input id="aw" type="text" lang="en" inputmode="email" placeholder="영어 단어나 표현" aria-label="단어"><input id="am" type="text" lang="ko" placeholder="뜻 – 여러 개면 쉼표로" aria-label="뜻">`
         }
         <button class="btn primary" type="submit">추가하기</button>${ls.msg ? `<p class="note" style="color:var(--ink)">${esc(ls.msg)}</p>` : ''}</form>`
@@ -4834,10 +4956,11 @@ function renderWordList(lang) {
     draw();
   });
   const form = document.getElementById('addForm');
+  if (form && ja) imeInit();
   if (form)
     form.addEventListener('submit', e => {
       e.preventDefault();
-      const w = document.getElementById('aw').value.trim(),
+      const w = (ja ? imeFinal(document.getElementById('aw').value) : document.getElementById('aw').value).trim(),
         m = document
           .getElementById('am')
           .value.trim()
@@ -4846,7 +4969,7 @@ function renderWordList(lang) {
           .filter(Boolean)
           .join('/');
       if (ja) {
-        const r = toHira(document.getElementById('ar').value.trim().replace(/\s/g, ''));
+        const r = toHira(imeFinal(document.getElementById('ar').value).trim().replace(/\s/g, ''));
         const ww = w || r;
         if (!ww || !r || !m) {
           ls.msg = '단어, 읽기, 뜻을 모두 입력해 주세요.';
@@ -5380,7 +5503,8 @@ function prBox(r, ja) {
   if (lsBy('pr')) return `<div class="pron ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>`;
   const p = r.pron;
   if (!p) return '';
-  if (p.err) return `<div class="pron"><p class="note" style="margin:0;color:var(--ng)">${esc(p.err)}</p></div>`;
+  if (p.err)
+    return `<div class="pron"><p class="note" style="margin:0;color:var(--ng)">${esc(p.err)} <button type="button" class="link" data-phonecheck="mic">📱 내 폰 점검</button></p></div>`;
   const msg =
     p.score >= 90
       ? '완벽해요! 원어민이 알아들어요'
@@ -5797,7 +5921,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020141925';
+const APP_VERSION = '20261020144904';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -6208,7 +6332,9 @@ AUTO.cnt = 1700;
 // ---- quiz/polite.js ----
 'use strict';
 /* ---------- polite ↔ casual ---------- */
-const POL = (typeof POL_RAW !== 'undefined' ? POL_RAW : []).map(o => ({ ...o, key: 'pl:' + o.p }));
+const polMake = () => (typeof POL_RAW !== 'undefined' ? POL_RAW : []).map(o => ({ ...o, key: 'pl:' + o.p }));
+let POL = polMake();
+onMore(() => (POL = polMake()));
 const POL_TYPES = {
   'verb-present': '동사 현재',
   'verb-negative': '동사 부정',
@@ -6257,17 +6383,23 @@ AUTO.pol = 0;
 // ---- quiz/jp-pairs.js ----
 'use strict';
 /* ---------- japanese minimal pairs ---------- */
-const JMP = (typeof MPJ_RAW !== 'undefined' ? MPJ_RAW : []).map(([w1, r1, k1, w2, r2, k2, lb]) => ({
-  w1,
-  r1,
-  k1,
-  w2,
-  r2,
-  k2,
-  lb,
-  key: 'jm:' + r1 + '|' + r2
-}));
-const JM_LABELS = [...new Set(JMP.map(x => x.lb))];
+const jmMake = () =>
+  (typeof MPJ_RAW !== 'undefined' ? MPJ_RAW : []).map(([w1, r1, k1, w2, r2, k2, lb]) => ({
+    w1,
+    r1,
+    k1,
+    w2,
+    r2,
+    k2,
+    lb,
+    key: 'jm:' + r1 + '|' + r2
+  }));
+let JMP = jmMake();
+let JM_LABELS = [...new Set(JMP.map(x => x.lb))];
+onMore(() => {
+  JMP = jmMake();
+  JM_LABELS = [...new Set(JMP.map(x => x.lb))];
+});
 const JM_TIP = {
   장음: '모음을 한 박자 더 길게 끌어요. 일본어는 소리 길이가 다르면 다른 단어가 돼요.',
   촉음: 'っ 자리에서 한 박자 멈췄다가 다음 소리를 내요. 멈춤도 한 박자예요.',
@@ -6331,9 +6463,19 @@ const EG = {
     note: 'pick up, find out, get along with처럼 회화에서 자주 쓰는 구동사를 골라요.'
   }
 };
-for (const [mod, g] of Object.entries(EG)) {
+const EG_SRC = {
+  eprep: () => (typeof EN_PREP_RAW !== 'undefined' ? EN_PREP_RAW : []),
+  etense: () => (typeof EN_TENSE_RAW !== 'undefined' ? EN_TENSE_RAW : []),
+  ephr: () => (typeof EN_PHR_RAW !== 'undefined' ? EN_PHR_RAW : [])
+};
+const egMake = (mod, g) => {
+  g.raw = EG_SRC[mod]();
   g.items = g.raw.map(o => ({ ...o, key: g.key + o.s }));
-  const topics = [...new Set(g.items.map(x => x.t))];
+  g.topics = [...new Set(g.items.map(x => x.t))];
+};
+onMore(() => Object.entries(EG).forEach(([m, g]) => egMake(m, g)));
+for (const [mod, g] of Object.entries(EG)) {
+  egMake(mod, g);
   POOLS[mod] = full => (full || !S.eg[mod] || !S.eg[mod].length ? g.items : g.items.filter(x => S.eg[mod].includes(x.t)));
   SHOWS[mod] = showEG;
   SETUPS[mod] = () => {
@@ -6341,7 +6483,7 @@ for (const [mod, g] of Object.entries(EG)) {
     const all = !sel.length;
     return [
       `${g.label} ${g.items.length}문제 · ${all ? '전체' : sel.join('·')}`,
-      `<div class="setup-row"><label>주제</label><div class="chips"><button class="chip" data-egt="${mod}:" aria-pressed="${all}">전체</button>${topics.map(t => `<button class="chip" data-egt="${mod}:${esc(t)}" aria-pressed="${!all && sel.includes(t)}">${esc(t)} ${g.items.filter(x => x.t === t).length}</button>`).join('')}</div></div><p class="note">${g.note}</p>`
+      `<div class="setup-row"><label>주제</label><div class="chips"><button class="chip" data-egt="${mod}:" aria-pressed="${all}">전체</button>${g.topics.map(t => `<button class="chip" data-egt="${mod}:${esc(t)}" aria-pressed="${!all && sel.includes(t)}">${esc(t)} ${g.items.filter(x => x.t === t).length}</button>`).join('')}</div></div><p class="note">${g.note}</p>`
     ];
   };
   LABELS[mod] = q => [q.s.replace('___', q.a), q.a];
@@ -6397,6 +6539,10 @@ const ME = {
     note: 'サラリーマン, コンセント처럼 일본에서 만든 영어(和製英語)가 영어권에서는 뭐라고 하는지 맞혀요.'
   }
 };
+onMore(() => {
+  ME.kong.items = (typeof KONGLISH_RAW !== 'undefined' ? KONGLISH_RAW : []).map(o => ({ ...o, key: 'kg:' + o.ko }));
+  ME.wasei.items = (typeof WASEI_RAW !== 'undefined' ? WASEI_RAW : []).map(o => ({ ...o, key: 'wa:' + o.k }));
+});
 for (const [mod, g] of Object.entries(ME)) {
   POOLS[mod] = () => g.items;
   SETUPS[mod] = () => [`${g.label} ${g.items.length}문제`, `<p class="note">${g.note}</p>`];
@@ -6430,9 +6576,9 @@ function showME(mod, q, card, zone, r) {
 /* ================= 한국 한자음 → 일본 음독: guess the Japanese reading from the Korean one =================
    Data: KANJIDIC2 (© EDRDG, CC BY-SA 4.0) Korean + on'yomi readings, built by tools/build_data.py */
 
-const HJ_DATA = typeof HJ_KANJI !== 'undefined' ? HJ_KANJI : [];
-const HJ_WORD_LIST = typeof HJ_WORDS !== 'undefined' ? HJ_WORDS : [];
-const HJ_DIFF_LIST = typeof HJ_DIFF !== 'undefined' ? HJ_DIFF : [];
+let HJ_DATA = typeof HJ_KANJI !== 'undefined' ? HJ_KANJI : [];
+let HJ_WORD_LIST = typeof HJ_WORDS !== 'undefined' ? HJ_WORDS : [];
+let HJ_DIFF_LIST = typeof HJ_DIFF !== 'undefined' ? HJ_DIFF : [];
 if (!S.hj || typeof S.hj !== 'object') S.hj = { lv: '1', wlv: '1' };
 
 // ---- Hangul + kana helpers ----
@@ -6524,12 +6670,13 @@ const HJ_CHO_RULES = [
 ];
 
 // ---- kanji items ----
-const HJ_ITEMS = HJ_DATA.map(([k, hun, on, g, f]) => {
+const hjItem = ([k, hun, on, g, f]) => {
   const parts = hun.split(' ');
   const h = parts.length > 1 ? parts[parts.length - 1] : hun.split('/')[0];
   return { k, hun: parts.length > 1 ? hun : '', h, hs: parts.length > 1 ? [h] : hun.split('/'), on, o: on[0], g, f, key: 'hj:' + k };
-});
-const HJ_BY_K = new Map(HJ_ITEMS.map(x => [x.k, x]));
+};
+let HJ_ITEMS = HJ_DATA.map(hjItem);
+let HJ_BY_K = new Map(HJ_ITEMS.map(x => [x.k, x]));
 const HJ_LV = { 1: [2, '기초 (초1~2 한자)'], 2: [4, '중급 (초1~4)'], 3: [6, '교육한자 전체'] };
 
 // Wrong options that break the 받침 rule: same start, different ending (がく → がん / がつ / がう)
@@ -6571,7 +6718,15 @@ function hjKanjiOpts(q) {
 }
 
 // ---- word items ----
-const HJW_ITEMS = HJ_WORD_LIST.map(w => ({ ...w, key: 'hw:' + w.k }));
+let HJW_ITEMS = HJ_WORD_LIST.map(w => ({ ...w, key: 'hw:' + w.k }));
+onMore(() => {
+  HJ_DATA = typeof HJ_KANJI !== 'undefined' ? HJ_KANJI : [];
+  HJ_WORD_LIST = typeof HJ_WORDS !== 'undefined' ? HJ_WORDS : [];
+  HJ_DIFF_LIST = typeof HJ_DIFF !== 'undefined' ? HJ_DIFF : [];
+  HJ_ITEMS = HJ_DATA.map(hjItem);
+  HJ_BY_K = new Map(HJ_ITEMS.map(x => [x.k, x]));
+  HJW_ITEMS = HJ_WORD_LIST.map(w => ({ ...w, key: 'hw:' + w.k }));
+});
 function hjWordOpts(q) {
   const out = new Set();
   const plain = q.s.map(x => x[2]).join('');
@@ -6678,8 +6833,14 @@ document.addEventListener('click', e => {
 /* ================= 한국인이라서 틀리는 것: particle traps (kpart) and the Korean-expression dictionary (koexp) ================= */
 
 // ---- 조사 함정: 친구를 만나다 → 友達に会う ----
-const KP_ITEMS = (typeof KP_RAW !== 'undefined' ? KP_RAW : []).map(o => ({ ...o, key: 'kp:' + o.s }));
-const KP_PATTERNS = [...new Set(KP_ITEMS.map(x => x.g))];
+const kpMake = () => (typeof KP_RAW !== 'undefined' ? KP_RAW : []).map(o => ({ ...o, key: 'kp:' + o.s }));
+let KP_ITEMS = kpMake();
+let KP_PATTERNS = [...new Set(KP_ITEMS.map(x => x.g))];
+onMore(() => {
+  KP_ITEMS = kpMake();
+  KP_PATTERNS = [...new Set(KP_ITEMS.map(x => x.g))];
+  KX = typeof KOEXP_RAW !== 'undefined' ? KOEXP_RAW : [];
+});
 if (!Array.isArray(S.kp)) S.kp = [];
 
 POOLS.kpart = full => (full || !S.kp.length ? KP_ITEMS : KP_ITEMS.filter(x => S.kp.includes(x.g)));
@@ -6724,7 +6885,7 @@ document.addEventListener('click', e => {
 });
 
 // ---- 번역 안 되는 한국어 표현 사전 ----
-const KX = typeof KOEXP_RAW !== 'undefined' ? KOEXP_RAW : [];
+let KX = typeof KOEXP_RAW !== 'undefined' ? KOEXP_RAW : [];
 const KX_V = { 있음: ['ok', '비슷한 말 있음'], 상황따라: ['mid', '상황 따라 달라요'], 없음: ['no', '일본에선 잘 안 해요'] };
 let KX_CAT = '전체',
   KX_Q = '';
@@ -6786,8 +6947,13 @@ CUSTOM.koexp = renderKoExp;
 // ---- quiz/en-traps.js ----
 'use strict';
 /* ================= 한국인이 틀리는 영어 (etrap): Korean said word for word turns into wrong English ================= */
-const ET_ITEMS = (typeof ETRAP_RAW !== 'undefined' ? ETRAP_RAW : []).map(o => ({ ...o, key: 'xt:' + o.s + '|' + o.a }));
-const ET_GROUPS = [...new Set(ET_ITEMS.map(x => x.g))];
+const etMake = () => (typeof ETRAP_RAW !== 'undefined' ? ETRAP_RAW : []).map(o => ({ ...o, key: 'xt:' + o.s + '|' + o.a }));
+let ET_ITEMS = etMake();
+let ET_GROUPS = [...new Set(ET_ITEMS.map(x => x.g))];
+onMore(() => {
+  ET_ITEMS = etMake();
+  ET_GROUPS = [...new Set(ET_ITEMS.map(x => x.g))];
+});
 const ET_NONE = '(없음)';
 if (!Array.isArray(S.xt)) S.xt = [];
 
@@ -6856,7 +7022,9 @@ document.addEventListener('click', e => {
 'use strict';
 /* ================= 간사이벤 (오사카 사투리): hear it in Osaka, know what it means ================= */
 const KS_CATS = ['인사', '맞장구·리액션', '감정', '일상', '가게·여행', '문법(어미)'];
-const KS_ITEMS = (typeof KANSAI_RAW !== 'undefined' ? KANSAI_RAW : []).map(o => ({ ...o, key: 'ks:' + o.w }));
+const ksMake = () => (typeof KANSAI_RAW !== 'undefined' ? KANSAI_RAW : []).map(o => ({ ...o, key: 'ks:' + o.w }));
+let KS_ITEMS = ksMake();
+onMore(() => (KS_ITEMS = ksMake()));
 
 POOLS.kansai = () => KS_ITEMS;
 SETUPS.kansai = () => [
@@ -7855,6 +8023,7 @@ function openSheet(html, cls) {
   return bg.firstElementChild;
 }
 function closeSheet() {
+  if (typeof lsBy === 'function' && lsBy('pc')) listenCancel();
   const s = document.getElementById('sheet');
   if (s) s.remove();
   document.body.classList.remove('sheet-open');
@@ -8214,6 +8383,8 @@ const MODE_HELP = {
   aichat: 'AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.',
   eaichat: 'AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.',
   kansai: '오사카·교토에서 자주 듣는 사투리(간사이벤)의 뜻을 맞히고 표준어와 비교해요.',
+  anime:
+    'やばい·マジで·推し처럼 애니·드라마에서 자주 듣는 말의 뜻을 맞혀요. 누구에게 써도 되는지(친구끼리·듣기만 하세요)도 같이 알려 줘요.',
   weak: '연습별·세부 영역별 정답률을 보여 주고, 약한 곳만 골라 바로 연습할 수 있어요.',
   kpart: "'친구를 만나다'는 友達に会う처럼, 한국어 조사를 그대로 옮기면 틀리는 곳만 모았어요.",
   koexp: "'수고하세요', '화이팅'처럼 일본어로 딱 옮겨지지 않는 한국어 표현을 일본에서는 어떻게 말하는지 정리했어요.",
@@ -8241,13 +8412,13 @@ const MODE_HELP = {
   cnt: '本·枚·匹처럼 물건마다 달라지는 세는 말과 날짜·월·요일 읽기를 연습해요. 3本(さんぼん)처럼 소리가 바뀌는 곳이 핵심이에요.',
   wspeed: '60초 동안 일본어 단어 뜻을 최대한 많이 골라요.',
   sent: '한국어 문장을 보고 알맞은 일본어를 3개 중에서 골라요. ? 버튼으로 보기의 읽는 법을 볼 수 있어요.',
-  jb: '블록을 순서대로 눌러 일본어 문장을 만들어요. 필요 없는 블록이 하나 섞여 있어요.',
+  jb: '블록을 순서대로 눌러 일본어 문장을 만들어요. 처음엔 설정에서 "덩어리"로 어순부터, 익숙해지면 "낱말"로 조사까지 맞혀요. に↔で, を↔に처럼 헷갈리는 조사 함정이 섞일 때가 있어요.',
   part: '문장 속 빈칸에 들어갈 조사(は·が·を·に…)를 골라요.',
   gram: 'N5 핵심 문법을 쓴 문장을 골라요. 설명은 자료 탭의 문법 노트에 있어요.',
   pol: '존댓말(です·ます)을 친구에게 쓰는 반말로, 반말을 존댓말로 바꿔요. 설정에서 방향을 고를 수 있어요.',
   jdlg: '상황별 대화를 이어 가요. 상대의 말을 듣고, 내 차례에는 목표에 맞는 말을 3개 중에서 골라요.',
   jl: '일본어 문장을 듣고 뜻을 골라요. 아이폰 무음 모드에서는 소리가 나지 않아요.',
-  jd: '일본어 문장을 듣고 그대로 받아써요. 앱 키패드나 아이폰 일본어 키보드로 입력해요.',
+  jd: '일본어 문장을 듣고 그대로 받아써요. 앱 키패드, 일본어 키보드, 또는 영어 자판(kyou → きょう)으로 입력해요.',
   jsh: '문장을 듣고 소리 내어 따라 말해요. 녹음해서 원어민 발음과 번갈아 들어 볼 수 있어요.',
   jn: '가격·시간·숫자를 듣고 숫자로 써요. 문제가 계속 새로 만들어져요.',
   jlen: 'おばさん/おばあさん, きて/きって처럼 소리 길이·っ·탁음만 다른 단어를 듣고 구별해요. 이어폰을 쓰면 더 잘 들려요.',
@@ -8305,13 +8476,13 @@ function addTip(mod) {
 }
 const TAB_HELP = {
   home: "'오늘 공부 시작' 버튼 하나로 복습 → 코스 → 단어 카드를 이어서 해요. 코스 진행, 고정한 연습도 여기 있어요.",
-  learn: '문자·단어·문장 연습, 그리고 한국음 한자·조사 함정 같은 한국인 맞춤 연습',
-  talk: '여행 카드·여행 D-day·메뉴판 읽기·한국어 표현, 대화와 듣기·발음 연습',
-  play: '오미쿠지·카드 뽑기·스탬프 지도·게임·친구 대결',
+  learn: '문자·단어·문장 연습, 짧은 글 읽기, 한국음 한자·조사 함정 같은 한국인 맞춤 연습, JLPT 모의고사',
+  talk: '여행 카드·오프라인 팩·메뉴판 읽기, AI 회화·AI 전화·한 줄 일기, 애니·드라마 표현, 듣기·발음 연습',
+  play: '친구 리그·친구 대결, しりとり·오미쿠지·카드 뽑기·스탬프 지도·게임',
   ref: '오답 노트·오늘 요약·코스·50음도·단어장·문법 노트·기록',
   elearn: '영단어·불규칙 동사·콩글리시, 문장·전치사·시제·구동사',
-  etalk: '여행 카드·여행 D-day, 대화와 듣기·발음 연습',
-  eplay: '포춘 쿠키·카드 뽑기·스탬프 지도·게임·친구 대결',
+  etalk: '여행 카드·오프라인 팩, AI 회화·AI 전화·한 줄 일기, 대화와 듣기·발음 연습',
+  eplay: '친구 리그·친구 대결, 포춘 쿠키·카드 뽑기·스탬프 지도·게임',
   eref: '오답 노트·오늘 요약·코스·단어장·기록'
 };
 function helpHTML() {
@@ -8337,15 +8508,17 @@ function helpHTML() {
       .map(([t, l]) => `<p><span class="h-m">${l}</span>${esc(TAB_HELP[t] || '')}</p>`)
       .join('')}</div><p>문제 위의 회색 요약 줄을 누르면 범위·방향·표기(한자+가나 / 가나만) 같은 설정이 펼쳐져요.</p>`
   )}
-  ${sec('solve', '문제 푸는 법', `<ul class="h-list"><li><b>?</b> 버튼: 읽는 법이나 힌트를 보여 줘요. 처음엔 숨겨져 있어요.</li><li><b>모르겠어요</b>: 정답을 바로 보여 주고, 그 문제는 나중에 다시 나와요.</li><li><b>맞은 걸로 처리</b>: 직접 쓴 답이 사실상 맞는데 오답 처리됐을 때 눌러요.</li><li><b>문제가 이상해요</b>: 신고 내용이 복사돼요. 카톡으로 앱 만든 사람에게 보내 주세요.</li><li>일본어 입력 문제에는 <b>앱 키패드</b>가 나와요. ゛는 탁점(か→が), ゜는 반탁점(は→ぱ), 小는 작은 글자(つ→っ, や→ゃ)예요.</li><li>맞히면 자동으로 다음 문제로 넘어가요. 홈의 설정에서 끌 수 있어요.</li></ul>`)}
+  ${sec('solve', '문제 푸는 법', `<ul class="h-list"><li><b>?</b> 버튼: 읽는 법이나 힌트를 보여 줘요. 처음엔 숨겨져 있어요.</li><li><b>모르겠어요</b>: 정답을 바로 보여 주고, 그 문제는 나중에 다시 나와요.</li><li><b>맞은 걸로 처리</b>: 직접 쓴 답이 사실상 맞는데 오답 처리됐을 때 눌러요.</li><li><b>문제가 이상해요</b>: 신고 내용이 복사돼요. 카톡으로 앱 만든 사람에게 보내 주세요.</li><li>일본어 입력 문제에는 <b>앱 키패드</b>가 나와요. ゛는 탁점(か→が), ゜는 반탁점(は→ぱ), 小는 작은 글자(つ→っ, や→ゃ)예요.</li><li><b>일본어 자판이 없어도</b> 받아쓰기·AI 회화·AI 전화·일기·내 단어 추가에서 영어 자판으로 소리 나는 대로 치면 가나로 바뀌어요. watashi → わたし, 대문자는 가타카나(KO-HI- → コーヒー), ん은 nn. 입력칸 아래 <b>あ 로마자→가나</b> 버튼으로 끄고 켜요.</li><li>맞히면 자동으로 다음 문제로 넘어가요. 설정(톱니바퀴)에서 끌 수 있어요.</li></ul>`)}
   ${sec('modes', '연습 방식 한눈에 보기', modeList)}
-  ${sec('review', '복습은 이렇게 돌아가요', `<p>틀린 문제는 바로 다시 나오고, 맞힌 문제는 <b>1일 → 3일 → 7일 → 14일 → 30일</b> 뒤에 다시 나와요. 잊어버릴 때쯤 다시 보는 방식이에요.</p><p>홈의 <b>오늘의 복습</b>에 오늘 다시 볼 문제 수가 나와요. 각 연습의 설정에서 '틀린 것만', '오늘 복습'을 고를 수도 있어요.</p><p>두 번 연속 맞히면 '익힘'으로 세요. 자료 탭의 <b>오늘 요약</b>에서 오늘 틀린 문제만 모아 다시 풀 수 있어요.</p>`)}
+  ${sec('review', '복습은 이렇게 돌아가요', `<p>틀린 문제는 바로 다시 나오고, 맞힌 문제는 <b>잊어버릴 때쯤</b> 다시 나와요. 문제마다 얼마나 잘 기억하는지 따져서, 쉽게 맞히는 건 간격이 길게(며칠 → 몇 주 → 몇 달), 자주 틀리는 건 짧게 잡아요.</p><p>홈의 <b>오늘의 복습</b>에 오늘 다시 볼 문제 수가 나와요. 각 연습의 설정에서 '틀린 것만', '오늘 복습'을 고를 수도 있어요.</p><p>두 번 연속 맞히면 '익힘'으로 세요. 자료 탭의 <b>오늘 요약</b>에서 오늘 틀린 문제만 모아 다시 풀 수 있어요.</p>`)}
   ${sec('course', '학습 코스 · 레벨 테스트', `<p>${S.lang === 'ja' ? '기초 30일(히라가나 → 가타카나 → 단어·문법 → 상황별 대화), N4 30일(N4 문법·단어·한자, 가능형·의지형), N3 30일(N3 문법·단어·한자)까지 모두 90일 코스예요.' : '기초 30일(단어 → 문장 → 불규칙 동사 → 상황별 대화)과 실전 30일(전치사·시제·구동사와 대화), 모두 60일 코스예요.'} 하루 2~3개 과제로 이어져요. 과제를 끝까지 풀면 체크되고, 하루치를 다 끝내면 다음 날 과제가 홈에 나와요.</p><p>날짜를 놓쳐도 괜찮아요. 하루에 여러 날치를 해도 되고, 끝낸 과제를 다시 해도 돼요. 일본어와 영어 코스는 따로 진행돼요.</p><p><b>레벨 테스트</b>는 코스 화면이나 설정에서 할 수 있어요. 추천받은 날부터 시작하면 그 앞의 과제는 끝낸 것으로 표시돼요.</p>`)}
-  ${sec('today', '오늘 할 일 · 미션 · 오답 노트', `<p>홈의 <b>오늘 할 일</b>에 코스 과제, 복습할 문제, 오늘의 미션 3개가 모여 있어요. 미션을 하나 끝낼 때마다 경험치 30, 3개를 모두 끝내면 카드 뽑기권을 받아요.</p><p><b>오답 노트</b>(자료 탭)에는 최근 7일·30일 동안 틀린 문제가 많이 틀린 순서로 모여요. 종류별로 바로 다시 풀 수 있어요.</p><p>월요일부터 수요일까지는 홈에 <b>지난주 리포트</b>가 떠요. 지지난주와 비교한 문제 수, 정답률, 많이 공부한 것을 보여 주고 이미지로 공유할 수 있어요.</p><p>설날·벚꽃·여름 축제·할로윈·가을·크리스마스 기간에는 <b>시즌 이벤트</b>가 열려서 한정 카드와 특별 운세가 나와요.</p>`)}
-  ${sec('sound', '소리가 안 나거나 녹음이 안 될 때', `<ul class="h-list"><li>아이폰 옆의 <b>무음 스위치</b>가 켜져 있으면 소리가 나지 않아요.</li><li>발음은 아이폰에 들어 있는 음성을 써요. 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 일본어(Kyoko 등)를 받아 두면 더 자연스러워요.</li><li>너무 빠르면 홈의 설정에서 <b>천천히 발음</b>을 켜세요.</li><li>따라 말하기 녹음은 Safari나 홈 화면 앱에서 마이크 권한을 허용해야 해요. 녹음은 기기에 저장되지 않아요.</li></ul>`)}
-  ${sec('backup', '기록 저장과 백업', `<p>학습 기록은 <b>이 기기의 이 브라우저</b>에만 저장돼요. 다른 사람과 섞이지 않고, 서버로 보내지 않아요.</p><p>휴대폰을 바꾸거나 Safari 데이터를 지우기 전에, 홈 맨 아래 <b>백업 코드 복사</b>를 눌러 메모 앱이나 '카톡 나에게 보내기'에 보관하세요. 새 기기에서 <b>코드로 복원</b>에 붙여 넣으면 돼요.</p><p>Safari로 연 것과 홈 화면 앱은 저장 공간이 따로일 수 있어요. 홈 화면 앱으로 옮길 때도 백업 코드를 쓰면 돼요.</p>`)}
-  ${sec('install', '설치·업데이트', `<ol class="steps"><li>Safari에서 앱 주소를 열어요.</li><li>아래쪽 공유 버튼(네모에 위쪽 화살표)을 눌러요.</li><li>'홈 화면에 추가'를 누르면 앱 아이콘이 생겨요.</li></ol><p>새 버전이 나오면 화면 아래에 <b>"새 버전이 나왔어요 · 업데이트"</b>가 떠요. 눌러도 기록은 그대로예요.</p>`)}
-  ${sec('play', '레벨·놀이 탭', `<p>문제를 맞히면 <b>경험치 10</b>, 틀려도 3이 쌓여요. 대화를 끝내거나 코스 과제를 마치면 더 받아요. 레벨이 오르면 칭호가 바뀌고 카드 뽑기권을 받아요. 레벨은 일본어·영어 따로 쌓여요.</p><p>연속으로 맞히면 <b>콤보</b>가 쌓이고, 10콤보마다 보너스 경험치를 받아요. 효과음은 홈의 설정에서 끌 수 있어요.</p><ul class="h-list"><li><b>${S.lang === 'ja' ? '오미쿠지' : '포춘 쿠키'}</b>: 하루 한 번 운세를 뽑고 운세 문장 뜻을 맞혀요.</li><li><b>단어 카드</b>: 뽑기권으로 재미있는 표현 카드를 뽑아 도감을 채워요. 뽑기권은 하루 목표·레벨 업·코스 하루치 완료로 받아요.</li><li><b>여행 도장</b>: 대화 연습을 끝까지 하면 그 도시에 도장이 찍혀요.</li><li><b>${S.lang === 'ja' ? '가나 비' : '단어 비'} · 짝 맞추기</b>: 짧게 즐기는 미니게임이에요.</li><li><b>친구 대결</b>: 같은 10문제를 링크로 보내 친구와 점수를 겨뤄요.</li></ul>`)}
+  ${sec('today', '오늘 할 일 · 미션 · 오답 노트', `<p>홈의 <b>오늘 할 일</b>에 코스 과제, 복습할 문제, 오늘의 미션 3개가 모여 있어요. 미션을 하나 끝낼 때마다 경험치 30, 3개를 모두 끝내면 카드 뽑기권을 받아요.</p><p><b>오답 노트</b>(자료 탭)에는 최근 7일·30일 동안 틀린 문제가 많이 틀린 순서로 모여요. 종류별로 바로 다시 풀 수 있어요.</p><p>월요일부터 수요일까지는 홈에 <b>지난주 리포트</b>가 떠요. 지지난주와 비교한 문제 수, 정답률, 많이 공부한 것을 보여 줘요.</p><p>홈의 연속 학습 칸에서 <b>📸 주간 카드</b>를 누르면 이번 주 공부한 날·푼 문제·익힌 단어·연속 기록이 담긴 세로 이미지(인스타 스토리 크기)가 만들어져요.</p><p>설날·벚꽃·여름 축제·할로윈·가을·크리스마스 기간에는 <b>시즌 이벤트</b>가 열려서 한정 카드와 특별 운세가 나와요.</p>`)}
+  ${sec('goal', '목표 · 연속 학습 지키기', `<p>홈에서 <b>어떤 걸 위해 배우는지</b>(여행·JLPT·취미·일 등)를 고르면 그 목표에 맞는 연습을 홈에 골라 보여 줘요. 홈의 <b>바꾸기</b>로 언제든 바꿀 수 있어요.</p><p>하루라도 공부하면 <b>연속 학습</b>이 이어져요. 뽑기권 2장으로 <b>❄️ 스트릭 지킴이</b>를 사 두면(최대 2개) 하루 빠져도 기록이 끊기지 않아요.</p><p><b>주간 목표</b>(기본 주 5일, 설정에서 3·5·7일)를 채우면 뽑기권 1장과 경험치를 받아요.</p>`)}
+  ${sec('ai', 'AI 회화 · AI 전화 · 말하기', `<ul class="h-list"><li><b>AI 회화</b>: 라멘집·편의점 같은 상황에서 AI 점원·친구와 글이나 말로 대화하고, 끝나면 첨삭을 받아요.</li><li><b>AI 전화</b>: 자막 없이 목소리로만 주고받는 전화 연습이에요. 하루 3통까지예요.</li><li><b>한 줄 일기</b>·<b>메뉴판 사진 읽기</b>도 AI가 도와줘요. AI 기능은 하루 사용 횟수가 정해져 있어요.</li><li><b>🎤 말하는 법</b>: 한 번 누르고 말한 뒤, 다 말했으면 한 번 더 누르세요(잠깐 멈추면 자동으로 끝나요). 들리는 말이 화면에 바로 떠요.</li><li>말이 안 들리면 <b>⌨️ 글자로</b>를 눌러 쓰면 돼요. 일본어 자판이 없으면 영어 자판으로 소리 나는 대로, 막히면 한국어로 써도 알아들어요.</li><li>쓴 말은 답을 만들기 위해 AI 서버(Cloudflare)로 보내져요. 이름·연락처 같은 개인 정보는 쓰지 마세요.</li></ul>`)}
+  ${sec('sound', '소리·마이크가 안 될 때 (내 폰 점검)', `<p>설정(톱니바퀴) 맨 아래 <b>📱 내 폰 점검</b>을 누르면 소리, 마이크·음성 인식, 녹음, 알림, 기록 저장이 이 폰에서 되는지 하나씩 확인하고 해결 방법을 알려 줘요. 문의할 때는 <b>결과 복사하기</b>로 복사해서 보내 주세요.</p><ul class="h-list"><li>아이폰 옆의 <b>무음 스위치</b>가 켜져 있으면 소리가 나지 않아요.</li><li>AI 서버가 연결된 앱에서는 <b>AI 고음질 발음</b>을 쓸 수 있어요(설정 → 발음 목소리). 인터넷이 느리면 폰 목소리로 바로 바꿔 읽어요.</li><li>폰 목소리는 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 일본어(Kyoko 등)를 받아 두면 더 자연스러워요. 너무 빠르면 설정에서 <b>천천히 발음</b>을 켜세요.</li><li>아이폰 음성 인식은 설정 → 일반 → 키보드 → <b>받아쓰기 활성화</b>가 켜져 있어야 해요. 홈 화면 앱에서 안 되면 Safari에서 열어 보세요.</li><li>카카오톡·인스타그램 안에서 열면 마이크와 알림이 막혀요. Safari나 Chrome으로 열어 주세요.</li></ul>`)}
+  ${sec('backup', '기록 저장과 백업', `<p>학습 기록은 <b>이 기기의 이 브라우저</b>에 저장돼요. 가입이 없어서 폰을 바꾸거나 Safari 데이터를 지우면 기록이 사라질 수 있어요.</p><p><b>자동 백업</b>: 설정 → 기록 백업에서 켜면 기록이 하루에 한 번씩 서버에 저장되고, <b>백업 코드</b>를 받아요. 새 폰에서 그 코드를 넣으면 그대로 돌아와요. 코드는 꼭 메모 앱이나 '카톡 나에게 보내기'에 보관하세요.</p><p><b>직접 백업</b>: 자동 백업을 안 쓰면 설정의 <b>백업 코드 복사</b>로 기록 전체를 복사해 보관하고, 새 기기에서 <b>코드로 복원</b>에 붙여 넣으면 돼요.</p><p>Safari로 연 것과 홈 화면 앱은 저장 공간이 따로일 수 있어요. 옮길 때도 백업 코드를 쓰면 돼요.</p>`)}
+  ${sec('install', '설치·업데이트', `<ol class="steps"><li>Safari에서 앱 주소를 열어요.</li><li>아래쪽 공유 버튼(네모에 위쪽 화살표)을 눌러요.</li><li>'홈 화면에 추가'를 누르면 앱 아이콘이 생겨요.</li></ol><p>안드로이드는 Chrome 메뉴 → <b>홈 화면에 추가</b>(또는 앱 설치)예요. 홈 화면 아이콘을 <b>길게 누르면</b> 오늘 복습·여행 카드·AI 전화·단어 퀴즈로 바로 들어갈 수 있어요.</p><p>여행 가기 전에는 회화·여행 탭의 <b>여행 오프라인 팩</b>을 와이파이에서 저장해 두면 비행기 모드에서도 여행 카드와 발음을 쓸 수 있어요.</p><p>새 버전이 나오면 화면 아래에 <b>"새 버전이 나왔어요 · 업데이트"</b>가 떠요. 눌러도 기록은 그대로예요.</p>`)}
+  ${sec('play', '레벨·놀이 탭', `<p>문제를 맞히면 <b>경험치 10</b>, 틀려도 3이 쌓여요. 대화를 끝내거나 코스 과제를 마치면 더 받아요. 레벨이 오르면 칭호가 바뀌고 카드 뽑기권을 받아요. 레벨은 일본어·영어 따로 쌓여요.</p><p>연속으로 맞히면 <b>콤보</b>가 쌓이고, 10콤보마다 보너스 경험치를 받아요. 효과음은 홈의 설정에서 끌 수 있어요.</p><ul class="h-list"><li><b>${S.lang === 'ja' ? '오미쿠지' : '포춘 쿠키'}</b>: 하루 한 번 운세를 뽑고 운세 문장 뜻을 맞혀요.</li><li><b>단어 카드</b>: 뽑기권으로 재미있는 표현 카드를 뽑아 도감을 채워요. 뽑기권은 하루 목표·레벨 업·코스 하루치 완료로 받아요.</li><li><b>여행 도장</b>: 대화 연습을 끝까지 하면 그 도시에 도장이 찍혀요.</li><li><b>${S.lang === 'ja' ? '가나 비' : '단어 비'} · 짝 맞추기</b>: 짧게 즐기는 미니게임이에요.</li><li><b>친구 대결</b>: 같은 10문제를 링크로 보내 친구와 점수를 겨뤄요.</li><li><b>친구 리그</b>: 친구끼리 그룹을 만들어 이번 주 경험치 순위를 겨뤄요. 매주 월요일에 새로 시작해요.</li>${S.lang === 'ja' ? '<li><b>しりとり</b>: 컴퓨터와 일본어 끝말잇기. ん으로 끝나는 단어를 고르면 져요.</li>' : ''}</ul>`)}
   ${sec(
     'voice',
     '발음을 더 자연스럽게 (고음질 목소리 받기)',
@@ -8356,7 +8529,8 @@ function helpHTML() {
   ${sec(
     'remind',
     '매일 공부 알림 만들기 (아이폰)',
-    `<p>웹앱은 스스로 알림을 보낼 수 없어서, 아이폰 <b>단축어</b> 앱으로 매일 같은 시간에 알림이 뜨게 만들어요. 한 번만 설정하면 돼요.</p>
+    `<p><b>가장 쉬운 방법</b>: 설정 → <b>공부 알림</b>을 켜면, 정한 시각(저녁 6~11시)까지 그날 공부를 안 했을 때 한 번 알려 줘요. 아이폰은 <b>홈 화면에 추가한 아이콘</b>으로 열었을 때만 켤 수 있어요(iOS 16.4 이상). 잘 오는지는 설정의 <b>📱 내 폰 점검</b>에서 확인해요.</p>
+    <p>공부 알림을 쓸 수 없거나 정해진 시각에 꼭 받고 싶다면, 아이폰 <b>단축어</b> 앱으로 매일 같은 시간에 알림이 뜨게 만들 수도 있어요.</p>
     <div class="ios-steps">
       <div class="ios-step"><span class="n">1</span><div class="ios-mock"><div class="ios-bar">단축어</div><div class="ios-tabs"><i>단축어</i><i class="on">자동화</i><i>갤러리</i></div></div><p><b>단축어</b> 앱을 열고 아래쪽 <b>자동화</b> 탭을 눌러요.</p></div>
       <div class="ios-step"><span class="n">2</span><div class="ios-mock"><div class="ios-bar">새로운 자동화</div><div class="ios-row on">특정 시간</div><div class="ios-row">알람</div><div class="ios-row">수면</div></div><p><b>+</b>(새로운 자동화)를 누르고 <b>특정 시간</b>을 골라요.</p></div>
@@ -8367,7 +8541,7 @@ function helpHTML() {
     <p class="note">메뉴 이름은 iOS 버전에 따라 조금 다를 수 있어요. 알림을 누르면 단축어 앱이 열리니, 하나마루는 홈 화면 아이콘으로 열어 주세요. 더 간단하게는 <b>미리 알림</b> 앱에 '하나마루'를 매일 반복으로 등록해도 돼요.</p>`
   )}
   ${sec('privacy', '개인정보 · 앱 응원', `${privacyHTML()}${donateLinks().length ? `<p>앱이 도움이 됐다면 설정(톱니바퀴)의 <b>앱 응원하기</b>에서 후원할 수 있어요. 후원과 상관없이 모든 기능은 무료예요.</p>` : ''}`)}
-  ${sec('friends', '친구와 함께 쓰기', `<p>홈의 <b>결과 카드</b>를 누르면 오늘 푼 문제, 연속 학습, 최근 7일 기록이 담긴 이미지가 만들어져요. 길게 눌러 저장하거나 공유 버튼으로 카톡에 보내세요.</p><p>60초 도전 결과는 '결과 복사'로 글로 보낼 수 있어요.</p>`)}
+  ${sec('friends', '친구와 함께 쓰기 · 공유', `<p>홈의 <b>결과 카드</b>를 누르면 오늘 푼 문제, 연속 학습, 최근 7일 기록이 담긴 이미지가 만들어져요. 길게 눌러 저장하거나 공유 버튼으로 카톡에 보내세요.</p><p><b>📸 주간 카드</b>(홈의 연속 학습 칸)는 인스타 스토리에 맞는 세로 이미지예요. 카드 아래의 QR로 친구가 바로 앱을 열 수 있어요.</p><p>놀이 탭의 <b>친구 리그</b>로 초대 링크를 보내 함께 공부하고, <b>친구 대결</b>로 같은 문제를 겨뤄 보세요. 60초 도전 결과는 '결과 복사'로 글로 보낼 수 있어요.</p>`)}
   <p class="note" style="text-align:center;padding:8px 0 4px">하나마루 · 버전 ${esc(APP_VERSION.startsWith('__') ? '미리보기' : APP_VERSION.slice(0, 8))}</p>
   </div>`;
 }
@@ -8414,8 +8588,13 @@ const TOUR = [
   },
   {
     h: '복습은 앱이 챙겨요',
-    p: '틀린 문제는 바로 다시, 맞힌 문제는 1·3·7일 뒤에 다시 나와요. 홈의 <b>오늘 공부 시작</b> 버튼이 복습까지 알아서 챙겨 줘요. 기록은 이 기기에만 저장되니 가끔 <b>백업 코드</b>를 복사해 두세요.',
+    p: '틀린 문제는 바로 다시, 맞힌 문제는 잊어버릴 때쯤 다시 나와요. 홈의 <b>오늘 공부 시작</b> 버튼이 복습까지 알아서 챙겨 줘요. 기록은 이 폰에 저장되니 설정에서 <b>자동 백업</b>을 켜 두세요.',
     art: 'cal'
+  },
+  {
+    h: '말하고, 써 보세요',
+    p: '🎤는 <b>한 번 누르고 말한 뒤 한 번 더</b> 누르면 돼요. 들리는 말이 바로 화면에 떠요. 일본어 자판이 없으면 영어 자판으로 <b>watashi</b>라고 쳐도 <b>わたし</b>로 바뀌어요. 소리나 마이크가 안 되면 설정의 <b>📱 내 폰 점검</b>을 눌러 보세요.',
+    art: 'talk'
   },
   {
     h: '코스로 시작해 볼까요?',
@@ -8428,7 +8607,8 @@ const TOUR_ART = {
   mark: `<svg viewBox="0 0 120 120" class="t-mark" aria-hidden="true"><path d="M60 13c28 0 47 20 46 47-1 26-22 46-47 45C33 104 13 84 14 58 15 32 34 14 62 15M61.5 36c13.5.7 22.5 10.9 21.4 23.6-1.1 12.4-11.6 21.7-24 20.6-12-1.1-20.2-11.2-19.1-22.9 1.1-10.1 9.4-16.5 18.7-15.7 8.6.7 13.9 7.5 13.1 15.4-.7 6.4-6 10.9-12 10.1" fill="none" stroke="var(--shu)" stroke-width="5" stroke-linecap="round"/></svg>`,
   tabs: `<div class="t-tabs"><div class="t-top"><span>하나마루</span><span class="t-seg"><i>일본어</i><i>영어</i></span></div><div class="t-modes"><i class="on">단어 퀴즈 ☆</i><i>플래시카드 ☆</i><i>한국음 한자 ★</i></div><div class="t-bar">${['홈', '배우기', '회화·여행', '놀이', '자료'].map((l, i) => `<i class="${i === 1 ? 'on' : ''}">${l}</i>`).join('')}</div></div>`,
   card: `<div class="t-card"><span class="t-q">?</span><span class="jp" lang="ja">猫</span><div class="t-btns"><i>모르겠어요</i><i class="on">맞은 걸로 처리</i></div></div>`,
-  cal: `<div class="t-cal">${[1, 3, 7, 14, 30].map(n => `<span><b class="num">${n}일</b>뒤</span>`).join('<i>→</i>')}</div>`,
+  cal: `<div class="t-cal">${[1, 3, 8, 21, 60].map(n => `<span><b class="num">${n}일</b>뒤</span>`).join('<i>→</i>')}</div>`,
+  talk: `<div class="t-talk"><span class="t-mic">■ 다 말했어요</span><p class="jp" lang="ja">予約をお願いします</p><p class="t-ime"><span class="mono">watashi</span> → <span class="jp" lang="ja">わたし</span></p></div>`,
   course: `<div class="t-course">${[
     ['1', '히라가나 첫걸음'],
     ['2', '히라가나 た·な·は행'],
@@ -8730,7 +8910,9 @@ function onAnswer(ok) {
 const RARE = ['N', 'R', 'SR', 'SSR'];
 const RARE_W = { N: 55, R: 28, SR: 13, SSR: 4 };
 const RARE_KO = { N: '일반', R: '레어', SR: '슈퍼 레어', SSR: '전설' };
-const CARDS = { ja: typeof GACHA_JA !== 'undefined' ? GACHA_JA : [], en: typeof GACHA_EN !== 'undefined' ? GACHA_EN : [] };
+const cardsMake = () => ({ ja: typeof GACHA_JA !== 'undefined' ? GACHA_JA : [], en: typeof GACHA_EN !== 'undefined' ? GACHA_EN : [] });
+const CARDS = cardsMake();
+onMore(() => Object.assign(CARDS, cardsMake()));
 function grantTicket(lang, why) {
   S.tickets[lang] += 1;
   save();
@@ -9064,7 +9246,9 @@ function renderStamps() {
 // ---- play/omikuji.js ----
 'use strict';
 /* ---------- omikuji / fortune cookie ---------- */
-const OMI = { ja: typeof OMI_JA !== 'undefined' ? OMI_JA : [], en: typeof FORT_EN !== 'undefined' ? FORT_EN : [] };
+const omiMake = () => ({ ja: typeof OMI_JA !== 'undefined' ? OMI_JA : [], en: typeof FORT_EN !== 'undefined' ? FORT_EN : [] });
+const OMI = omiMake();
+onMore(() => Object.assign(OMI, omiMake()));
 const OMI_RANK = {
   ja: [
     ['大吉', 15, '대길', '최고의 운이에요!'],
@@ -10023,10 +10207,12 @@ const SEASONS = [
   { id: 'autumn', from: [11, 1], to: [11, 30], ja: '秋' },
   { id: 'christmas', from: [12, 10], to: [12, 31], ja: 'クリスマス' }
 ];
-const SEASON_CARDS = {
+const seasonMake = () => ({
   ja: typeof SEASON_CARDS_JA !== 'undefined' ? SEASON_CARDS_JA : [],
   en: typeof SEASON_CARDS_EN !== 'undefined' ? SEASON_CARDS_EN : []
-};
+});
+const SEASON_CARDS = seasonMake();
+onMore(() => Object.assign(SEASON_CARDS, seasonMake()));
 const SEASON_DRAW_CHANCE = 0.3;
 
 function activeSeason(d = new Date()) {
@@ -10197,9 +10383,7 @@ function openWeekly() {
     </div>`,
     'help'
   );
-  el.querySelector('[data-wk=share]').addEventListener('click', () =>
-    shareImage(drawWeekCard(w), `하나마루 주간 리포트 · ${cur.n}문제`, '주간 카드')
-  );
+  el.querySelector('[data-wk=share]').addEventListener('click', () => shareWeekStory(w, '지난주'));
   S.weekSeen = w.key;
   save();
 }
@@ -10300,6 +10484,148 @@ function drawWeekCard(w) {
   x.textAlign = 'left';
   return cv;
 }
+
+// ---- 주간 리포트 카드 (인스타 스토리 9:16): 공부한 날, 푼 문제, 익힌 단어, 연속 기록 ----
+const thisWeek = () => {
+  const start = weekStart(new Date());
+  const prev = new Date(start);
+  prev.setDate(prev.getDate() - 7);
+  return { start, cur: weekSum(start), prev: weekSum(prev), key: dayKey(start) };
+};
+const learnedWords = lang => Object.keys(S.stats).filter(k => (lang === 'ja' ? /^w:/ : /^ew:/).test(k) && isDone(k)).length;
+function drawWeekStory(w, label) {
+  const W = 1080,
+    H = 1920,
+    c = cardCanvas(W, H);
+  if (!c) return null;
+  const [cv, x] = c;
+  const C = SHARE_COLORS,
+    F = SHARE_FONT;
+  const font = (wt, sz) => (x.font = `${wt} ${sz}px ${F}`);
+  const rr = (X, Y, w2, h, r, fill, stroke) => roundRect(x, X, Y, w2, h, r, fill, stroke);
+  const { cur } = w;
+  const ja = S.lang === 'ja';
+  const end = new Date(w.start);
+  end.setDate(end.getDate() + 6);
+  x.textBaseline = 'alphabetic';
+  // top (kept below the story's own header area)
+  drawMark(x, 80, 190, 2.4, 6);
+  font(700, 52);
+  x.fillStyle = C.ink;
+  x.fillText('하나마루', 172, 248);
+  font(500, 34);
+  x.fillStyle = C.muted;
+  x.textAlign = 'right';
+  x.fillText(`${label} ${ja ? '일본어' : '영어'} · ${fmtMD(w.start)}–${fmtMD(end)}`, 1000, 246);
+  x.textAlign = 'left';
+  // hero: days studied + the week's dots
+  rr(80, 310, 920, 520, 44, C.surface, C.line);
+  font(600, 40);
+  x.fillStyle = C.muted;
+  x.fillText(`${label} 공부한 날`, 140, 400);
+  font(800, 230);
+  x.fillStyle = C.shu;
+  const dn = String(cur.days);
+  x.fillText(dn, 132, 610);
+  const dw = x.measureText(dn).width;
+  font(700, 76);
+  x.fillStyle = C.ink;
+  x.fillText(`/ 7일`, 160 + dw, 610);
+  const goal = typeof wgoal === 'function' ? wgoal() : 5;
+  font(600, 36);
+  x.fillStyle = cur.days >= goal ? C.ok : C.ai;
+  x.fillText(cur.days >= goal ? `주간 목표 ${goal}일 달성!` : `주간 목표 ${goal}일까지 ${goal - cur.days}일`, 140, 672);
+  const tk = today();
+  cur.byDay.forEach((v, i) => {
+    const d = new Date(w.start);
+    d.setDate(d.getDate() + i);
+    const k = dayKey(d),
+      cx = 152 + i * 129,
+      cy = 750;
+    const fz = S.frozen && S.frozen[k];
+    x.beginPath();
+    x.arc(cx, cy, 44, 0, Math.PI * 2);
+    x.fillStyle = v.n ? C.shu : fz ? C.ai : C.paper;
+    x.fill();
+    if (k === tk) {
+      x.lineWidth = 6;
+      x.strokeStyle = C.ink;
+      x.stroke();
+    }
+    x.textAlign = 'center';
+    font(700, 36);
+    x.fillStyle = v.n || fz ? '#fff' : C.muted;
+    x.fillText(v.n ? '✓' : fz ? '❄' : v.l, cx, cy + 13);
+    x.textAlign = 'left';
+  });
+  // four numbers
+  const tiles = [
+    [String(cur.n), '푼 문제'],
+    [cur.n ? Math.round((cur.c / cur.n) * 100) + '%' : '–', '정답률'],
+    [learnedWords(S.lang) + '개', '익힌 단어 (누적)'],
+    [streak() + '일', '연속 학습']
+  ];
+  tiles.forEach(([v, l], i) => {
+    const X = 80 + (i % 2) * 470,
+      Y = 870 + Math.floor(i / 2) * 230;
+    rr(X, Y, 450, 200, 32, C.surface, C.line);
+    font(800, 74);
+    x.fillStyle = C.ink;
+    fitText(x, v, 800, 74, F, 380);
+    x.fillText(v, X + 36, Y + 104);
+    font(500, 32);
+    x.fillStyle = C.muted;
+    x.fillText(l, X + 36, Y + 160);
+  });
+  // what I studied most
+  const groups = Object.entries(cur.m)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3);
+  rr(80, 1330, 920, 270, 32, C.surface, C.line);
+  font(600, 34);
+  x.fillStyle = C.muted;
+  x.fillText('많이 공부한 것', 130, 1394);
+  const lv = levelOf(S.xp[S.lang]);
+  x.textAlign = 'right';
+  x.fillText(`Lv.${lv.L} ${titleOf(S.lang, lv.L)}`, 950, 1394);
+  x.textAlign = 'left';
+  if (groups.length) {
+    const gm = Math.max(...groups.map(g => g[1]));
+    groups.forEach(([g, n], i) => {
+      const Y = 1440 + i * 52;
+      font(600, 32);
+      x.fillStyle = C.ink;
+      x.fillText(g, 130, Y + 26);
+      rr(400, Y, Math.max(16, Math.round((440 * n) / gm)), 34, 17, i ? C.ai : C.shu);
+      font(600, 28);
+      x.fillStyle = C.muted;
+      x.textAlign = 'right';
+      x.fillText(String(n), 950, Y + 26);
+      x.textAlign = 'left';
+    });
+  } else {
+    font(500, 32);
+    x.fillStyle = C.muted;
+    x.fillText('이번 주부터 시작해 봐요!', 130, 1500);
+  }
+  // footer with QR, above the story's reply bar
+  drawQRFooter(x, W, 1860, '한국인을 위한 일본어·영어 회화 앱');
+  return cv;
+}
+async function shareWeekStory(w, label) {
+  w = w || thisWeek();
+  label = label || '이번 주';
+  await Promise.all([loadCardFonts(), ensureQR()]);
+  statEv('x:weekcard');
+  shareImage(
+    drawWeekStory(w, label),
+    `하나마루 ${label} ${w.cur.days}일 공부 · ${w.cur.n}문제 · ${streak()}일 연속 🔥`,
+    '주간 리포트 카드'
+  );
+}
+document.addEventListener('click', e => {
+  if (e.target.closest && e.target.closest('[data-wkstory]')) shareWeekStory();
+});
 
 // ---- features/level-test.js ----
 'use strict';
@@ -11013,7 +11339,7 @@ function settingsHTML() {
     }
     ${statsSetHTML()}
     <div id="set-donate">${donateHTML()}</div>
-    <section><h2 class="sec-title">도움말</h2><div class="row"><button class="btn" data-set-remind>매일 알림 만들기</button><button class="btn" data-set-help>사용 안내</button><button class="btn" data-set-tour>튜토리얼 다시 보기</button></div></section>
+    <section><h2 class="sec-title">도움말</h2><div class="row"><button class="btn" data-phonecheck>📱 내 폰 점검</button><button class="btn" data-set-remind>매일 알림 만들기</button><button class="btn" data-set-help>사용 안내</button><button class="btn" data-set-tour>튜토리얼 다시 보기</button></div></section>
     <section class="danger">${confirmReset ? `<span class="note">학습 기록을 모두 지울까요?</span><button class="btn" data-reset="yes" style="color:var(--ng)">지우기</button><button class="btn quiet" data-reset="no">취소</button>` : `<button class="btn quiet" data-reset="ask">학습 기록 초기화</button>`}</section>
     <p class="note" style="text-align:center;padding:4px 0">하나마루 · 버전 ${esc(APP_VERSION.startsWith('__') ? '미리보기' : APP_VERSION.slice(0, 8))}</p>
   </div>`;
@@ -11889,7 +12215,9 @@ CUSTOM.hjr = renderHanjaRules;
 /* ================= 메뉴판·간판 읽기: words travelers see on menus, signs and stations ================= */
 
 const SIGN_CATS = { menu: '식당·메뉴', shop: '가게·편의점', station: '역·교통', sign: '안내·경고', stay: '숙소·온천' };
-const SIGN_ITEMS = (typeof SIGNS_RAW !== 'undefined' ? SIGNS_RAW : []).map(o => ({ ...o, key: 'sg:' + o.t }));
+const signMake = () => (typeof SIGNS_RAW !== 'undefined' ? SIGNS_RAW : []).map(o => ({ ...o, key: 'sg:' + o.t }));
+let SIGN_ITEMS = signMake();
+onMore(() => (SIGN_ITEMS = signMake()));
 if (!Array.isArray(S.sgc)) S.sgc = [];
 
 // Korean hanja reading of the kanji in a sign (営業中 → 영업중), when every kanji is known
@@ -12814,7 +13142,7 @@ function aicDraw(lang) {
           }</div>`
       )
       .join('')}${AIC.busy ? '<div class="aic-msg ai typing"><i></i><i></i><i></i></div>' : ''}</div>
-    ${AIC.err ? `<p class="note" style="color:var(--ng)">${esc(AIC.err)}</p>` : ''}
+    ${AIC.err ? `<p class="note" style="color:var(--ng)">${esc(AIC.err)} <button type="button" class="link" data-phonecheck="mic">📱 내 폰 점검</button></p>` : ''}
     ${AIC.hint ? `<div class="aic-hints"><p class="lbl">이렇게 말해 보세요 (눌러서 입력)</p>${AIC.hint.map((h, i) => `<button type="button" class="aic-hint" data-aiuse="${i}"><b class="${ja ? 'jp' : 'en'}" lang="${lang}">${esc(h.t)}</b><small>${esc(h.ko || '')}</small></button>`).join('')}</div>` : ''}
     ${AIC.review ? aicReviewHTML(lang) : ''}
     ${
@@ -13552,7 +13880,9 @@ function trDraw() {
 // ---- features/gcomp.js ----
 'use strict';
 /* ================= 문법 비교 노트: は vs が, for vs since … side by side, a table, a tip for Koreans, then a 6-question check ================= */
-const GC = { ja: typeof GCOMP_JA !== 'undefined' ? GCOMP_JA : [], en: typeof GCOMP_EN !== 'undefined' ? GCOMP_EN : [] };
+const gcMake = () => ({ ja: typeof GCOMP_JA !== 'undefined' ? GCOMP_JA : [], en: typeof GCOMP_EN !== 'undefined' ? GCOMP_EN : [] });
+const GC = gcMake();
+onMore(() => Object.assign(GC, gcMake()));
 let GCV = { id: null, q: null };
 if (!S.gc || typeof S.gc !== 'object') S.gc = {};
 const gcLvl = (lang, l) => (lang === 'ja' ? 'N' + l : l === 1 ? '기초' : '중급');
@@ -13667,7 +13997,8 @@ CUSTOM.egcomp = renderGComp;
 // ---- features/yomu.js ----
 'use strict';
 /* ================= 읽기 연습: short graded texts (N5–N3) with switchable furigana and translation, key words, 3 questions ================= */
-const YOMU = typeof YOMU_JA !== 'undefined' ? YOMU_JA : [];
+let YOMU = typeof YOMU_JA !== 'undefined' ? YOMU_JA : [];
+onMore(() => (YOMU = typeof YOMU_JA !== 'undefined' ? YOMU_JA : []));
 let YM = { id: null, lvl: 'all', open: {}, ans: {} };
 if (!S.yomu || typeof S.yomu !== 'object') S.yomu = {};
 if (S.set.furi === undefined) S.set.furi = true;
@@ -14060,7 +14391,7 @@ function callDraw(lang) {
         }
         <div class="cl-row"><button type="button" class="chip" data-cl="sub" aria-pressed="${!!c.sub}">자막</button><button type="button" class="chip" data-cl="again">다시 듣기</button><button type="button" class="chip" data-cl="hint" ${c.busy ? 'disabled' : ''}>💡 힌트</button>${hasSR() ? `<button type="button" class="chip" data-cl="type" aria-pressed="${!!c.typing}">⌨️ 글자로</button>` : ''}<button type="button" class="chip cl-hang" data-cl="end">📞 끊기</button></div>
         ${c.hint ? `<div class="cl-hint">${c.hint}</div>` : ''}
-        ${c.err ? `<p class="note" style="color:var(--ng);margin:0">${esc(c.err)}</p>` : ''}</div>`;
+        ${c.err ? `<p class="note" style="color:var(--ng);margin:0">${esc(c.err)} <button type="button" class="link cl-chk" data-phonecheck="mic">📱 내 폰 점검</button></p>` : ''}</div>`;
   box.innerHTML = `<div class="cl-phone">
     <div class="cl-top"><span class="cl-ico">${c.sc.ico}</span><div><b>${esc(c.sc.title)}</b><small class="num" id="clTime">${c.ended ? '통화 종료' : '통화 중 ' + String(Math.floor(sec / 60)).padStart(2, '0') + ':' + String(sec % 60).padStart(2, '0')}</small></div></div>
     <p class="cl-goal">할 일: ${esc(c.sc.goal.join(' · '))} <span class="num">(${mine}/${CALL_TURNS})</span></p>
@@ -14716,7 +15047,7 @@ function streakHomeHTML() {
   return `<section class="streak-box">
     <div class="sb-top"><b>🔥 ${st}일 연속</b><span class="sb-fz">❄️ 지킴이 ${S.freeze}/${FREEZE_MAX}${S.freeze < FREEZE_MAX ? ` <button type="button" class="link" data-buyfreeze>뽑기권 ${FREEZE_COST}장으로 사기</button>` : ''}</span></div>
     <div class="wk">${dots}</div>
-    <p class="note" style="margin:0">${reached ? `이번 주 목표 ${wgoal()}일 달성! 🎯` : `이번 주 목표 <b class="num">${n}/${wgoal()}</b>일 · 채우면 뽑기권 1장`}</p></section>`;
+    <div class="sb-foot"><p class="note" style="margin:0">${reached ? `이번 주 목표 ${wgoal()}일 달성! 🎯` : `이번 주 목표 <b class="num">${n}/${wgoal()}</b>일 · 채우면 뽑기권 1장`}</p>${n ? '<button type="button" class="link" data-wkstory>📸 주간 카드</button>' : ''}</div></section>`;
 }
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-buyfreeze]');
@@ -14763,7 +15094,13 @@ function jxWrongReadings(r, w) {
     suf = 0;
   if (w) {
     while (pre < w.length && pre < r.length && w[pre] === r[pre] && !jxKanji(w[pre])) pre++;
-    while (suf < w.length - pre && suf < r.length - pre && w[w.length - 1 - suf] === r[r.length - 1 - suf] && !jxKanji(w[w.length - 1 - suf])) suf++;
+    while (
+      suf < w.length - pre &&
+      suf < r.length - pre &&
+      w[w.length - 1 - suf] === r[r.length - 1 - suf] &&
+      !jxKanji(w[w.length - 1 - suf])
+    )
+      suf++;
   }
   const A = pre,
     B = r.length - suf; // editable range [A, B)
@@ -15239,6 +15576,318 @@ function opDraw(lang) {
 CUSTOM.offpack = renderOffpack;
 CUSTOM.eoffpack = renderOffpack;
 
+// ---- features/phonecheck.js ----
+'use strict';
+/* ================= 내 폰 점검: 소리·마이크·녹음·알림·저장이 이 폰에서 되는지 하나씩 눌러 확인 =================
+   "말하기가 안 돼요" 같은 문의를 받았을 때 결과를 복사해서 보내 달라고 하면 원인을 바로 알 수 있어요. */
+let PC = null;
+const PC_ITEMS = [
+  ['env', '📱', '브라우저'],
+  ['store', '💾', '기록 저장'],
+  ['sound', '🔊', '발음 소리'],
+  ['hq', '✨', 'AI 고음질 발음'],
+  ['mic', '🎤', '마이크·음성 인식'],
+  ['rec', '🎙️', '내 목소리 녹음'],
+  ['push', '🔔', '알림'],
+  ['net', '🌐', 'AI 서버 연결']
+];
+function pcEnv() {
+  const ua = navigator.userAgent || '';
+  const app = inAppBrowser();
+  const os = isIOS() ? '아이폰' : /Android/i.test(ua) ? '안드로이드' : /Mac/i.test(ua) ? 'Mac' : /Windows/i.test(ua) ? 'Windows' : '기타';
+  const br = app
+    ? app + ' 안 브라우저'
+    : /SamsungBrowser/i.test(ua)
+      ? '삼성 인터넷'
+      : /CriOS|Chrome/i.test(ua) && !/Edg/i.test(ua)
+        ? 'Chrome'
+        : /Edg/i.test(ua)
+          ? 'Edge'
+          : /Firefox|FxiOS/i.test(ua)
+            ? 'Firefox'
+            : /Safari/i.test(ua)
+              ? 'Safari'
+              : '알 수 없음';
+  const ios = (ua.match(/OS (\d+)_(\d+)/) || []).slice(1).join('.');
+  return { os, br, app, home: isStandalone(), ios };
+}
+function pcAuto() {
+  const R = {};
+  // browser
+  const e = pcEnv();
+  R.env = {
+    st: e.app ? 'fail' : 'ok',
+    msg: `${e.os}${e.ios ? ' (iOS ' + e.ios + ')' : ''} · ${e.br}${e.home ? ' · 홈 화면 앱' : ''}`,
+    tip: e.app
+      ? `${e.app} 안에서는 마이크·알림이 막히고 기록이 사라질 수 있어요. ⋯ 메뉴 → ${isIOS() ? 'Safari' : '다른 브라우저'}로 열어 주세요.`
+      : ''
+  };
+  // storage
+  let ls = false;
+  try {
+    localStorage.setItem('hm-pc', '1');
+    ls = localStorage.getItem('hm-pc') === '1';
+    localStorage.removeItem('hm-pc');
+  } catch (x) {}
+  const sync = S.sync && S.sync.code;
+  R.store = {
+    st: !ls ? 'fail' : sync ? 'ok' : 'warn',
+    msg: !ls ? '이 브라우저는 기록을 저장할 수 없어요 (개인정보 보호 모드?)' : `기록 저장 OK · 자동 백업 ${sync ? '켜짐' : '꺼짐'}`,
+    tip: !ls
+      ? '개인정보 보호(시크릿) 모드를 끄고 열어 주세요.'
+      : sync
+        ? ''
+        : isIOS() && !e.home
+          ? 'Safari는 오래 안 쓰면 기록을 지울 수 있어요. 홈 화면에 추가하거나 설정 → 기록 백업에서 자동 백업을 켜 두세요.'
+          : '폰을 바꾸거나 브라우저 데이터를 지우면 기록이 사라져요. 설정 → 기록 백업에서 자동 백업을 켜 두면 안전해요.'
+  };
+  // voices
+  const vj = hasTTS ? langVoices(S.lang).length : 0;
+  R.sound = R.sound || {
+    st: '',
+    msg: hasTTS
+      ? `${S.lang === 'ja' ? '일본어' : '영어'} 목소리 ${vj ? vj + '개 있음' : '아직 못 찾음'} · 눌러서 소리를 확인해요`
+      : '이 브라우저는 소리 내어 읽기를 지원하지 않아요'
+  };
+  if (!hasTTS) R.sound.st = 'fail';
+  R.hq = aiOn()
+    ? { st: '', msg: hqOn() ? '켜져 있어요 · 눌러서 받아 봐요' : '꺼져 있어요 (설정 → 발음 목소리에서 켤 수 있어요)' }
+    : { st: 'skip', msg: '이 앱에는 AI 서버가 연결되지 않았어요' };
+  R.mic = srAPI()
+    ? { st: '', msg: '눌러서 말해 보면 들린 말이 나와요' }
+    : { st: 'fail', msg: lsMsg('unsupported'), tip: 'AI 전화·회화는 ⌨️ 글자로 할 수 있어요.' };
+  R.rec =
+    navigator.mediaDevices && typeof MediaRecorder !== 'undefined'
+      ? { st: '', msg: '3초 녹음해서 들어 봐요' }
+      : {
+          st: 'warn',
+          msg: '이 브라우저는 녹음을 지원하지 않아요',
+          tip: '따라 말하기의 "내 목소리 녹음"만 안 돼요. 발음 점수(🎤)는 따로 확인해 보세요.'
+        };
+  const perm = typeof Notification !== 'undefined' ? Notification.permission : '';
+  R.push = !pushSupported()
+    ? {
+        st: 'warn',
+        msg: isIOS() && !e.home ? '아이폰은 홈 화면 앱에서만 알림을 받을 수 있어요' : '이 브라우저는 알림을 지원하지 않아요',
+        tip: isIOS() && !e.home ? 'Safari 공유 버튼 → 홈 화면에 추가 → 그 아이콘으로 열고 다시 점검해 보세요 (iOS 16.4 이상).' : ''
+      }
+    : perm === 'denied'
+      ? {
+          st: 'fail',
+          msg: '알림이 꺼져 있어요',
+          tip: `${isIOS() ? '설정 → 알림 → 하나마루' : '사이트 설정(주소창 자물쇠) → 알림'}에서 허용해 주세요.`
+        }
+      : {
+          st: '',
+          msg: `${perm === 'granted' ? '알림 허용됨' : '아직 묻지 않았어요'}${S.push && S.push.on ? ` · 매일 알림 켜짐 (밤 ${S.push.hour - 12}시)` : ''} · 눌러서 알림을 띄워 봐요`
+        };
+  R.net = aiOn()
+    ? { st: '', msg: navigator.onLine === false ? '인터넷 연결이 없어요' : '확인 중…' }
+    : { st: 'skip', msg: 'AI 서버가 연결되지 않은 앱이에요' };
+  if (navigator.onLine === false && aiOn()) R.net.st = 'fail';
+  return R;
+}
+function openPhoneCheck(focus) {
+  PC = { r: pcAuto(), focus, rec: null };
+  const el = openSheet('<div id="pcBody"></div>', 'help pc');
+  pcDraw();
+  if (aiOn() && navigator.onLine !== false) pcNet();
+  el.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    const a = b.dataset.pc;
+    if (a === 'sound') pcSound();
+    else if (a === 'heard') pcSet('sound', 'ok', '소리가 잘 나요');
+    else if (a === 'notheard')
+      pcSet(
+        'sound',
+        'fail',
+        '소리가 안 들렸어요',
+        isIOS()
+          ? '① 폰 옆의 무음 스위치를 꺼 주세요(주황색이 안 보이게). ② 볼륨을 올리고 블루투스 이어폰 연결을 확인해 주세요. ③ 설정 → 손쉬운 사용 → 말하기 콘텐츠 → 음성 → 일본어에서 목소리를 받아 두면 좋아요.'
+          : '① 미디어 볼륨을 올려 주세요. ② 블루투스 연결을 확인해 주세요. ③ 설정 → 텍스트 음성 변환(TTS) → Google 엔진에서 일본어 음성 데이터를 받아 주세요.'
+      );
+    else if (a === 'hq') pcHQ();
+    else if (a === 'mic') pcMic();
+    else if (a === 'micstop') listenStop();
+    else if (a === 'rec') pcRec();
+    else if (a === 'recplay') pcRecPlay();
+    else if (a === 'push') pcPush();
+    else if (a === 'copy') copyText(pcReport(), '점검 결과를 복사했어요. 문의할 때 붙여 넣어 주세요.');
+  });
+}
+function pcSet(id, st, msg, tip) {
+  if (!PC) return;
+  PC.r[id] = { ...PC.r[id], st, msg, tip: tip || '' };
+  pcDraw();
+}
+const PC_ICON = { ok: '✅', warn: '⚠️', fail: '❌', run: '⏳', skip: '➖', '': '⬜' };
+function pcDraw() {
+  const box = document.getElementById('pcBody');
+  if (!box || !PC) return;
+  const r = PC.r;
+  const n = st => Object.values(r).filter(x => x.st === st).length;
+  const btn = (id, label) => `<button type="button" class="btn" data-pc="${id}" ${r[id].st === 'run' ? 'disabled' : ''}>${label}</button>`;
+  const act = {
+    sound: hasTTS
+      ? `${btn('sound', '▶ 소리 내기')}${r.sound.ask ? `<span class="pc-ask">들렸나요? <button type="button" class="chip" data-pc="heard">들렸어요</button><button type="button" class="chip" data-pc="notheard">안 들렸어요</button></span>` : ''}`
+      : '',
+    hq: aiOn() ? btn('hq', '▶ 받아서 듣기') : '',
+    mic: srAPI()
+      ? lsBy('pc')
+        ? `<button type="button" class="btn rec-on" data-pc="micstop">■ 다 말했어요</button><div class="ls-live" id="lsLive" aria-live="polite">${lsLiveHTML()}</div>`
+        : `${btn('mic', '🎤 말해 보기')}<small class="pc-say">「<span lang="${S.lang}">${S.lang === 'ja' ? 'こんにちは' : 'Hello, how are you?'}</span>」라고 말해 보세요</small>`
+      : '',
+    rec:
+      navigator.mediaDevices && typeof MediaRecorder !== 'undefined'
+        ? `${btn('rec', PC.recOn ? '녹음 중… (3초)' : '● 3초 녹음')}${PC.recUrl ? btn('recplay', '▶ 내 목소리 듣기') : ''}`
+        : '',
+    push: pushSupported() && r.push.st !== 'fail' ? btn('push', '🔔 알림 띄워 보기') : ''
+  };
+  box.innerHTML = `<div class="sheet-h"><b>📱 내 폰 점검</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div>
+  <div class="h-scroll">
+    <p class="note" style="margin:0 0 4px">하나씩 눌러 보면 이 폰에서 무엇이 되고 안 되는지 알 수 있어요. 안 되는 게 있으면 바로 아래 해결 방법을 따라 해 보세요.</p>
+    <div class="pc-sum"><span>✅ ${n('ok')}</span><span>⚠️ ${n('warn')}</span><span>❌ ${n('fail')}</span></div>
+    <ul class="pc-list">${PC_ITEMS.map(
+      ([id, ico, t]) => `<li class="pc-i ${r[id].st} ${PC.focus === id ? 'focus' : ''}" id="pc-${id}">
+        <div class="pc-h"><span class="pc-ico" aria-hidden="true">${ico}</span><b>${t}</b><span class="pc-st" aria-label="${r[id].st || '확인 전'}">${PC_ICON[r[id].st] || '⬜'}</span></div>
+        <p class="pc-msg">${esc(r[id].msg || '')}</p>${r[id].tip ? `<p class="pc-tip">💡 ${esc(r[id].tip)}</p>` : ''}
+        ${act[id] ? `<div class="pc-act">${act[id]}</div>` : ''}</li>`
+    ).join('')}</ul>
+    <button type="button" class="btn primary" data-pc="copy" style="width:100%">결과 복사하기 (문의할 때 붙여 넣기)</button>
+  </div>`;
+  if (PC.focus) {
+    const f = document.getElementById('pc-' + PC.focus);
+    if (f && f.scrollIntoView) f.scrollIntoView({ block: 'center' });
+    PC.focus = null;
+  }
+}
+function pcSound() {
+  deviceSpeak(S.lang === 'ja' ? 'こんにちは。音は聞こえますか。' : 'Hello! Can you hear me?', S.lang);
+  PC.r.sound.ask = true;
+  pcDraw();
+}
+async function pcHQ() {
+  pcSet('hq', 'run', '받는 중…');
+  const t0 = Date.now();
+  const blob = await hqBlob(hqUrl(S.lang === 'ja' ? 'こんにちは。' : 'Hello!', S.lang));
+  const ms = Date.now() - t0;
+  if (!blob)
+    return pcSet(
+      'hq',
+      'warn',
+      '받지 못했어요 (느리거나 서버 문제)',
+      '괜찮아요. 이럴 땐 폰 기본 목소리로 읽어요. 와이파이에서 다시 해 보세요.'
+    );
+  try {
+    const a = new Audio(URL.createObjectURL(blob));
+    await a.play();
+    pcSet('hq', 'ok', `잘 받았어요 (${(ms / 1000).toFixed(1)}초)${hqOn() ? '' : ' · 지금은 꺼져 있어요'}`);
+  } catch (e) {
+    pcSet('hq', 'warn', '받았지만 재생하지 못했어요', '화면을 한 번 누른 뒤 다시 해 보세요. 아이폰은 무음 스위치를 확인해 주세요.');
+  }
+}
+function pcMic() {
+  pcSet('mic', 'run', '듣는 중…');
+  listenStart(S.lang, {
+    who: 'pc',
+    onDone: t => pcSet('mic', 'ok', `잘 들려요 · 들린 말: ${t}`),
+    onFail: (m, code) =>
+      pcSet('mic', 'fail', '음성 인식이 안 됐어요', m + (code === 'no-speech' ? ' 조용한 곳에서 폰을 입 가까이 대고 해 보세요.' : ''))
+  });
+  pcDraw();
+}
+async function pcRec() {
+  if (PC.recOn) return;
+  listenCancel();
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const mr = new MediaRecorder(stream),
+      chunks = [];
+    mr.ondataavailable = e => e.data && e.data.size && chunks.push(e.data);
+    mr.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      PC.recOn = false;
+      const blob = new Blob(chunks, { type: mr.mimeType || 'audio/mp4' });
+      if (PC.recUrl) URL.revokeObjectURL(PC.recUrl);
+      PC.recUrl = blob.size > 500 ? URL.createObjectURL(blob) : '';
+      if (PC.recUrl) pcSet('rec', 'ok', '녹음됐어요 · 눌러서 내 목소리를 들어 보세요');
+      else pcSet('rec', 'fail', '녹음은 됐는데 소리가 비어 있어요', '다른 앱(통화·녹음)이 마이크를 쓰고 있지 않은지 확인해 주세요.');
+    };
+    PC.recOn = true;
+    mr.start();
+    pcSet('rec', 'run', '녹음 중… 아무 말이나 해 보세요');
+    setTimeout(() => mr.state !== 'inactive' && mr.stop(), 3000);
+  } catch (e) {
+    PC.recOn = false;
+    pcSet(
+      'rec',
+      'fail',
+      '마이크를 쓸 수 없어요',
+      e && e.name === 'NotAllowedError'
+        ? isIOS()
+          ? '설정 → Safari → 마이크(또는 주소창 왼쪽 "가가" → 웹 사이트 설정)에서 허용해 주세요.'
+          : '주소창 자물쇠 → 사이트 설정 → 마이크를 허용해 주세요.'
+        : '다른 앱이 마이크를 쓰고 있지 않은지 확인해 주세요.'
+    );
+  }
+}
+function pcRecPlay() {
+  if (PC.recUrl) new Audio(PC.recUrl).play().catch(() => {});
+}
+async function pcPush() {
+  pcSet('push', 'run', '알림을 띄우는 중…');
+  try {
+    if (Notification.permission === 'default') await Notification.requestPermission();
+    if (Notification.permission !== 'granted')
+      return pcSet(
+        'push',
+        'fail',
+        '알림이 허용되지 않았어요',
+        `${isIOS() ? '설정 → 알림 → 하나마루' : '사이트 설정 → 알림'}에서 허용해 주세요.`
+      );
+    const reg = await Promise.race([navigator.serviceWorker.ready, new Promise((_, no) => setTimeout(() => no(new Error('sw')), 4000))]);
+    await reg.showNotification('하나마루 알림 점검 🔔', {
+      body: '이렇게 알림이 와요. 매일 공부 알림은 설정에서 켤 수 있어요.',
+      icon: 'icon-192.png',
+      tag: 'hm-check'
+    });
+    pcSet('push', 'ok', `알림을 띄웠어요${S.push && S.push.on ? ' · 매일 알림 켜짐' : ' · 매일 알림은 설정 → 공부 알림에서 켜요'}`);
+  } catch (e) {
+    pcSet('push', 'fail', '알림을 띄우지 못했어요', '앱을 한 번 닫았다가 다시 열고 해 보세요.');
+  }
+}
+async function pcNet() {
+  const t0 = Date.now();
+  try {
+    const ctl = new AbortController();
+    const to = setTimeout(() => ctl.abort(), 6000);
+    const j = await fetch(aiCfg().endpoint.replace(/\/$/, '') + '/', { signal: ctl.signal }).then(r => r.json());
+    clearTimeout(to);
+    pcSet(
+      'net',
+      j && j.ok !== false ? 'ok' : 'warn',
+      `연결됨 (${((Date.now() - t0) / 1000).toFixed(1)}초)${j && j.db === false ? ' · 백업 저장소 없음' : ''}`
+    );
+  } catch (e) {
+    pcSet('net', 'fail', 'AI 서버에 닿지 않아요', '인터넷 연결을 확인해 주세요. 회사·학교 와이파이는 막혀 있을 수 있어요.');
+  }
+}
+function pcReport() {
+  const r = PC.r;
+  return [
+    `[하나마루 폰 점검] ${today()} · 버전 ${String(APP_VERSION).slice(0, 12)}`,
+    ...PC_ITEMS.map(([id, , t]) => `${PC_ICON[r[id].st] || '⬜'} ${t}: ${r[id].msg || ''}`),
+    (navigator.userAgent || '').slice(0, 160)
+  ].join('\n');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest && e.target.closest('[data-phonecheck]');
+  if (!b) return;
+  if (typeof listenCancel === 'function') listenCancel();
+  openPhoneCheck(b.dataset.phonecheck || '');
+});
+
 // ---- play/shiritori.js ----
 'use strict';
 /* ================= しりとり (끝말잇기) with the computer, using the app's Japanese nouns. Pick the word that keeps the chain going ================= */
@@ -15384,6 +16033,74 @@ function srDraw() {
   if (c) c.scrollTop = c.scrollHeight;
 }
 CUSTOM.shiri = renderShiri;
+
+// ---- quiz/anime.js ----
+'use strict';
+/* ================= 애니·드라마 표현: 교과서엔 없지만 애니·드라마·일본 친구에게서 정말 많이 듣는 말 ================= */
+const AN_CATS = ['리액션', '감정', '칭찬·응원', '친구 말투', '애니 단골', '신조어·줄임말'];
+// who you can say it to
+const AN_TONE = { 누구에게나: ['ok', '누구에게나 OK'], 친구끼리: ['mid', '친구끼리'], 조심: ['no', '듣기만 하세요'] };
+const anMake = () => (typeof ANIME_RAW !== 'undefined' ? ANIME_RAW : []).map(o => ({ ...o, key: 'an:' + o.w }));
+let AN_ITEMS = anMake();
+onMore(() => (AN_ITEMS = anMake()));
+if (!Array.isArray(S.anc)) S.anc = [];
+const anTone = q => {
+  const t = AN_TONE[q.t] || AN_TONE['친구끼리'];
+  return `<span class="an-tone ${t[0]}">${t[1]}</span>`;
+};
+
+POOLS.anime = full => (full || !S.anc.length ? AN_ITEMS : AN_ITEMS.filter(x => S.anc.includes(x.c)));
+SETUPS.anime = () => {
+  const all = !S.anc.length;
+  return [
+    `애니·드라마 표현 ${POOLS.anime().length}개 · ${all ? '전체' : S.anc.join('·')}`,
+    `<div class="setup-row"><label>종류</label><div class="chips"><button class="chip" data-anc="" aria-pressed="${all}">전체</button>${AN_CATS.map(
+      c =>
+        `<button class="chip" data-anc="${esc(c)}" aria-pressed="${!all && S.anc.includes(c)}">${esc(c)} ${AN_ITEMS.filter(x => x.c === c).length}</button>`
+    ).join('')}</div></div>
+    <p class="note">やばい, マジで, 推し처럼 교과서엔 없지만 애니·드라마에서 정말 많이 듣는 말이에요. 뜻을 맞히고, 누구에게 써도 되는지(<span class="an-tone ok">누구에게나 OK</span> <span class="an-tone mid">친구끼리</span> <span class="an-tone no">듣기만 하세요</span>)도 같이 익혀요. <button type="button" class="link" data-anlist>전체 목록 보기</button></p>`
+  ];
+};
+LABELS.anime = q => [q.w, q.m];
+SPEAKQ.anime = q => [q.r, 'ja'];
+AUTO.anime = 0;
+CHECK.anime = (v, s) => genericChoice('anime', -1, s);
+SHOWS.anime = (mod, q, card, zone, r) => {
+  if (!r.order) r.order = shuffle([q.m, ...q.o].map(t => ({ t, ok: t === q.m, cls: '', lang: 'ko' })));
+  card.innerHTML = `<span class="cat">애니·드라마 · ${esc(q.c)}</span><div class="tz wide"><span class="word" lang="ja" style="font-size:${Math.min(56, wordSize(q.w))}px">${esc(q.w)}</span></div>
+    <p class="cap">${r.answered ? anTone(q) + ' · ' : ''}무슨 뜻일까요?</p>${MARKS}`;
+  zone.dataset.type = 'anime';
+  zone.innerHTML = optsHTML(r);
+};
+INFO.anime = q =>
+  `<p class="fb-big"><span class="jp" lang="ja">${esc(q.w)}</span> <span style="font-size:15px">${anTone(q)}</span></p>
+   <p class="fb-sub" style="color:var(--ink)"><b>${esc(q.m)}</b>${q.std && q.std !== q.w ? ` · 정중하게/표준: <span class="jp" lang="ja">${esc(q.std)}</span>` : ''}</p>
+   <p class="fb-sub">${esc(q.n || '')}</p>
+   ${q.ex ? `<p class="fb-sub jp" lang="ja" style="font-size:17px;color:var(--ink)">${esc(q.ex)}</p><p class="fb-sub">${esc(q.exko || '')}</p>` : ''}
+   <div class="row">${spkBtn(q.r, '듣기')}${q.ex ? spkBtn(q.exr.replace(/\s/g, ''), '예문 듣기') : ''}</div>`;
+document.addEventListener('click', e => {
+  const c = e.target.closest('[data-anc]');
+  if (c) {
+    const v = c.dataset.anc;
+    S.anc = !v ? [] : S.anc.includes(v) ? S.anc.filter(x => x !== v) : [...S.anc, v];
+    if (S.anc.length === AN_CATS.length) S.anc = [];
+    R.anime = null;
+    save();
+    if (activeMod() === 'anime') renderMod('anime');
+    return;
+  }
+  if (!e.target.closest('[data-anlist]')) return;
+  openSheet(
+    `<div class="sheet-h"><b>애니·드라마 표현 모아 보기</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div>
+    <div class="h-scroll"><p class="note">누르면 발음을 들려줘요.</p>${AN_CATS.map(c => {
+      const xs = AN_ITEMS.filter(x => x.c === c);
+      return xs.length
+        ? `<h3 class="hjr-h">${c}</h3><div class="sr-list">${xs.map(x => `<button type="button" class="sr-i" data-speak="${esc(x.r)}" data-lang="ja"><b class="jp" lang="ja">${esc(x.w)} ${anTone(x)}</b><small>${esc(x.m)} · ${esc(x.n || '')}</small><span class="sr-go">${SPK_ICON}</span></button>`).join('')}</div>`
+        : '';
+    }).join('')}</div>`,
+    'help'
+  );
+});
 
 // ---- features/mycard.js ----
 'use strict';
@@ -15686,6 +16403,7 @@ const RD_POS = {
 };
 const kata2hira = s => (s || '').replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 96));
 let RD_DICT = null;
+onMore(() => (RD_DICT = null));
 // everything the app knows, keyed by written form and by reading
 function rdDict() {
   if (RD_DICT) return RD_DICT;
@@ -16051,8 +16769,26 @@ document.getElementById('searchBtn').addEventListener('click', openSearch);
 const WHATS_NEW = [
   {
     v: 20,
-    t: '말하기 인식 개선',
-    d: 'AI 전화·AI 회화·발음 점수에서 🎤를 누르면 들리는 말이 바로 보여요. 다 말했으면 한 번 더 누르거나 잠깐 멈추면 돼요.'
+    ja: true,
+    t: '애니·드라마 표현',
+    d: '회화·여행 탭. やばい·マジで·推し처럼 진짜 많이 듣는 말 49개. 친구끼리만 쓰는 말인지도 알려 줘요.'
+  },
+  {
+    v: 20,
+    ja: true,
+    t: '문장 조립 업그레이드',
+    d: '덩어리(쉬움)로 어순부터, 낱말로는 に↔で 같은 조사 함정까지. 틀리면 왜 틀렸는지 알려 줘요.'
+  },
+  { v: 20, t: '📸 주간 카드', d: '홈의 연속 학습 칸에서. 이번 주 공부한 날·푼 문제·익힌 단어를 인스타 스토리 크기 이미지로 만들어요.' },
+  {
+    v: 20,
+    t: '더 빨라진 첫 화면',
+    d: '처음 열 때 받는 양을 줄였어요. 안드로이드는 홈 화면 아이콘을 길게 누르면 복습·여행 카드로 바로 가요.'
+  },
+  {
+    v: 20,
+    t: '말하기 인식 개선 · 내 폰 점검',
+    d: '🎤를 누르면 들리는 말이 바로 보여요. 다 말했으면 한 번 더 누르세요. 소리·마이크·알림이 안 되면 설정 → 📱 내 폰 점검.'
   },
   {
     v: 20,
@@ -16293,6 +17029,28 @@ if (GRP_IN) {
   } catch (e) {}
   LG.invite = GRP_IN.toUpperCase();
 }
+// home-screen icon shortcuts (long-press the app icon): ./?go=review | trav | call | word
+const GO_IN = (location.search.match(/[?&]go=(\w+)/) || [])[1];
+if (GO_IN)
+  try {
+    history.replaceState(null, '', location.pathname + location.hash);
+  } catch (e) {}
+function goShortcut(k) {
+  const ja = S.lang === 'ja';
+  statEv('x:short-' + k);
+  if (k === 'review')
+    return withMore(() => {
+      const dl = dueList().sort((a, b) => b[1] - a[1]);
+      if (dl.length) startDue(dl[0][0]);
+      else {
+        go('home');
+        toast('지금 복습할 문제가 없어요. 새로 배워 볼까요?');
+      }
+    });
+  const m = { trav: ja ? 'jtrav' : 'etrav', call: ja ? 'call' : 'ecall', word: ja ? 'word' : 'ew' }[k];
+  if (m && modTab(m) && !(k === 'call' && !aiOn())) startMod(m);
+  else go(curTab());
+}
 const WL_IN = parseWordShare(location.hash);
 if (WL_IN) {
   try {
@@ -16301,7 +17059,10 @@ if (WL_IN) {
 }
 if (VS_IN) startMod('vs');
 else if (GRP_IN && aiOn()) startMod('league');
+else if (GO_IN) goShortcut(GO_IN);
 else go(curTab());
+// the rest of the data (reading, hanja, cards …) downloads now that the first screen is up
+setTimeout(hmLoadMore, 60);
 checkUpdate();
 statVisit();
 // something to open after a language reload (first-visit trial, a shared word list)
@@ -16321,7 +17082,7 @@ if (/[?&]from=push/.test(location.search)) {
 }
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {
-  if (!S.seen.tour && !GRP_IN) setTimeout(openWelcome, 300);
+  if (!S.seen.tour && !GRP_IN && !GO_IN) setTimeout(openWelcome, 300);
   else if (!S.seen['v' + WN_LATEST]) {
     // the newest list this person has already seen (v8/v9 lists were before WHATS_NEW)
     let since = 9;
