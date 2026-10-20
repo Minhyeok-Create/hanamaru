@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [66, "core/stats.js"], [158, "lib/conjugate.js"], [370, "lib/numbers.js"], [535, "lib/dictation.js"], [625, "content/kana.js"], [678, "content/items.js"], [722, "lib/romaji.js"], [812, "content/items-extra.js"], [859, "core/storage.js"], [1021, "core/srs.js"], [1139, "core/badges.js"], [1227, "core/backup.js"], [1318, "core/speech.js"], [1439, "ui/shell.js"], [1875, "ui/menu.js"], [2062, "ui/home.js"], [2256, "quiz/engine.js"], [2787, "quiz/input.js"], [2907, "quiz/kana.js"], [3011, "quiz/words.js"], [3201, "quiz/loan-conj.js"], [3276, "quiz/sentences.js"], [3408, "quiz/dictation-numbers.js"], [3533, "quiz/flow.js"], [3832, "quiz/speed.js"], [4000, "views/reference.js"], [4087, "views/wordlist.js"], [4289, "views/stats.js"], [4413, "quiz/modes-extra.js"], [4532, "features/shadowing.js"], [4796, "features/dialogue.js"], [4976, "views/grammar-notes.js"], [5032, "views/today.js"], [5147, "core/update.js"], [5207, "quiz/counters.js"], [5558, "quiz/polite.js"], [5607, "quiz/jp-pairs.js"], [5657, "quiz/english-grammar.js"], [5734, "quiz/made-english.js"], [5778, "quiz/hanja.js"], [6026, "quiz/ko-traps.js"], [6136, "quiz/en-traps.js"], [6205, "quiz/kansai.js"], [6246, "features/course.js"], [7161, "ui/sheet.js"], [7193, "features/share-card.js"], [7512, "ui/help.js"], [7822, "play/setup.js"], [7851, "features/sound.js"], [7912, "features/levels.js"], [8037, "play/cards.js"], [8180, "play/stamps.js"], [8374, "play/omikuji.js"], [8510, "play/rain.js"], [8724, "play/match.js"], [8852, "play/vs.js"], [9094, "play/play.js"], [9227, "features/missions.js"], [9323, "features/seasons.js"], [9378, "features/weekly.js"], [9612, "features/level-test.js"], [9860, "features/autoplay.js"], [10058, "views/wrong-notes.js"], [10131, "features/support.js"], [10228, "ui/settings.js"], [10470, "features/travel.js"], [10612, "features/writing.js"], [10779, "features/flashcards.js"], [10921, "features/share-words.js"], [11061, "views/hanja-rules.js"], [11185, "features/signs.js"], [11266, "features/trip.js"], [11426, "features/daily.js"], [11547, "features/share-more.js"], [11713, "views/weak.js"], [11837, "features/ai.js"], [11898, "features/aichat.js"], [12236, "features/diary.js"], [12375, "features/push.js"], [12518, "features/photo.js"], [12661, "features/trial.js"], [12827, "features/mycard.js"], [13081, "features/reader.js"], [13252, "ui/welcome.js"], [13355, "ui/search.js"], [13486, "ui/whats-new.js"], [13599, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [66, "core/stats.js"], [158, "lib/conjugate.js"], [370, "lib/numbers.js"], [535, "lib/dictation.js"], [625, "content/kana.js"], [678, "content/items.js"], [732, "lib/romaji.js"], [822, "content/items-extra.js"], [869, "core/storage.js"], [1036, "core/srs.js"], [1196, "core/badges.js"], [1284, "core/backup.js"], [1375, "core/speech.js"], [1510, "core/hqvoice.js"], [1603, "ui/shell.js"], [2046, "ui/menu.js"], [2239, "ui/home.js"], [2433, "quiz/engine.js"], [2991, "quiz/input.js"], [3111, "quiz/kana.js"], [3215, "quiz/words.js"], [3405, "quiz/loan-conj.js"], [3480, "quiz/sentences.js"], [3612, "quiz/dictation-numbers.js"], [3737, "quiz/flow.js"], [4036, "quiz/speed.js"], [4204, "views/reference.js"], [4291, "views/wordlist.js"], [4498, "views/stats.js"], [4622, "quiz/modes-extra.js"], [4741, "features/shadowing.js"], [5005, "features/dialogue.js"], [5185, "views/grammar-notes.js"], [5241, "views/today.js"], [5356, "core/update.js"], [5416, "quiz/counters.js"], [5767, "quiz/polite.js"], [5816, "quiz/jp-pairs.js"], [5866, "quiz/english-grammar.js"], [5943, "quiz/made-english.js"], [5987, "quiz/hanja.js"], [6235, "quiz/ko-traps.js"], [6345, "quiz/en-traps.js"], [6414, "quiz/kansai.js"], [6455, "features/course.js"], [7399, "ui/sheet.js"], [7431, "features/share-card.js"], [7750, "ui/help.js"], [8063, "play/setup.js"], [8092, "features/sound.js"], [8153, "features/levels.js"], [8278, "play/cards.js"], [8421, "play/stamps.js"], [8615, "play/omikuji.js"], [8751, "play/rain.js"], [8965, "play/match.js"], [9093, "play/vs.js"], [9335, "play/play.js"], [9468, "features/missions.js"], [9564, "features/seasons.js"], [9619, "features/weekly.js"], [9855, "features/level-test.js"], [10103, "features/autoplay.js"], [10301, "views/wrong-notes.js"], [10374, "features/support.js"], [10471, "ui/settings.js"], [10713, "features/travel.js"], [10855, "features/writing.js"], [11022, "features/flashcards.js"], [11164, "features/share-words.js"], [11304, "views/hanja-rules.js"], [11428, "features/signs.js"], [11509, "features/trip.js"], [11669, "features/daily.js"], [11790, "features/share-more.js"], [11956, "views/weak.js"], [12080, "features/ai.js"], [12141, "features/aichat.js"], [12479, "features/diary.js"], [12618, "features/push.js"], [12761, "features/photo.js"], [12904, "features/trial.js"], [13070, "features/gcomp.js"], [13185, "features/yomu.js"], [13325, "features/mycard.js"], [13579, "features/reader.js"], [13750, "ui/welcome.js"], [13854, "ui/search.js"], [13985, "ui/whats-new.js"], [14114, "boot.js"]];
 // ---- core/errlog.js ----
 'use strict';
 /* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
@@ -690,20 +690,30 @@ const BASE_JP = [
   ...(typeof JP_WORDS_N3_RAW !== 'undefined' ? JP_WORDS_N3_RAW : []).map(jpWord(3))
 ];
 const BASE_JP_N5 = BASE_JP.filter(w => w.lvl === 5); // fixed set for friend-challenge links
-const BASE_EN = EN_WORDS_RAW.map(([w, m, alt, c, ex, exko]) => ({
-  w,
-  m: m.split('/'),
-  alt: alt ? alt.split('/') : [],
-  cats: c.split(','),
-  ex,
-  exko,
-  key: 'ew:' + w
-}));
+const enWord =
+  lvl =>
+  ([w, m, alt, c, ex, exko]) => ({
+    w,
+    m: m.split('/'),
+    alt: alt ? alt.split('/') : [],
+    cats: c.split(','),
+    ex,
+    exko,
+    lvl,
+    key: 'ew:' + w
+  });
+const BASE_EN = (() => {
+  const base = EN_WORDS_RAW.map(enWord(1));
+  const have = new Set(base.map(w => w.w.toLowerCase()));
+  // 중급 (B1) words for the third English stage; level 1 = 기초
+  const l2 = (typeof EN_WORDS_L2_RAW !== 'undefined' ? EN_WORDS_L2_RAW : []).map(enWord(2)).filter(w => !have.has(w.w.toLowerCase()));
+  return base.concat(l2);
+})();
 let WORDS = BASE_JP,
   EN_WORDS = BASE_EN,
   CONJ_ITEMS = [];
 const SENTS = SENTS_RAW.map(([sc, k, a, r, t, d]) => ({ sc, k, a: [a, r], t, d, key: 's:' + a }));
-const EN_SENTS = EN_SENTS_RAW.map(([sc, k, a, d]) => ({ sc, k, a, d, key: 'es:' + a }));
+const EN_SENTS = EN_SENTS_RAW.map(([sc, k, a, d, lv]) => ({ sc, k, a, d, lv: lv || 1, key: 'es:' + a }));
 const withKey = (arr, p, f) => arr.map(s => ({ ...s, key: p + f(s) }));
 const ITEMS = {
   sent: SENTS,
@@ -881,7 +891,7 @@ const DEF = {
   word: { cats: Object.keys(CATS), fav: false, lvl: 'all' },
   kjl: { lvl: 'all' },
   grl: { lvl: 'all' },
-  ew: { dir: 'e2k', cats: Object.keys(EN_CATS), fav: false },
+  ew: { dir: 'e2k', cats: Object.keys(EN_CATS), fav: false, lvl: '1', catsV: 2 },
   conj: { forms: ['masu', 'te', 'nai', 'ta'] },
   num: { ja: ['price', 'time', 'number'], en: ['price', 'time', 'number'] },
   kj: { mode: 'mix' },
@@ -951,6 +961,11 @@ function load() {
   } catch (e) {}
   m.word.cats = m.word.cats.filter(c => CATS[c]);
   if (!m.word.cats.length) m.word.cats = Object.keys(CATS);
+  if (m.ew.catsV !== 2) {
+    // categories added with the 중급 stage start switched on
+    m.ew.cats = [...new Set([...m.ew.cats, 'biz', 'call', 'feel', 'link', 's_trouble'])];
+    m.ew.catsV = 2;
+  }
   m.ew.cats = m.ew.cats.filter(c => EN_CATS[c]);
   if (!m.ew.cats.length) m.ew.cats = Object.keys(EN_CATS);
   return m;
@@ -1040,12 +1055,50 @@ function itemStatus(k) {
   if (isDone(k)) return 'done';
   return 'learn';
 }
+// ---- spaced repetition: a small FSRS-style memory model (stability st in days, difficulty df 1–10, last review lr) ----
+// Each item remembers how fast *this person* forgets it: easy items jump to weeks/months, items they keep missing come back sooner.
+// The next review is when the chance of still remembering drops to about 90%.
+const FSRS_W = [
+  0.4072, 1.1829, 3.1262, 15.4722, 7.2102, 0.5316, 1.0651, 0.0234, 1.616, 0.1544, 1.0824, 1.9813, 0.0953, 0.2975, 2.2042, 0.2407, 2.9466
+];
+const FSRS_F = 19 / 81;
+const clampN = (x, a, b) => Math.min(b, Math.max(a, x));
+const fsrsD0 = g => clampN(FSRS_W[4] - Math.exp(FSRS_W[5] * (g - 1)) + 1, 1, 10);
+// chance (0–1) that the item is still remembered `days` after the last review
+const recall = (days, st) => Math.pow(1 + (FSRS_F * Math.max(0, days)) / Math.max(0.1, st), -0.5);
+function srsInit(s, t) {
+  // items learned with the old fixed ladder: treat the old interval as today's memory strength
+  if (s.st === undefined && s.iv) {
+    s.st = Math.max(0.5, s.iv);
+    s.df = clampN(5 + (s.w || 0) * 0.8 - (s.c || 0) * 0.3, 1, 10);
+    s.lr = (s.d === undefined ? t : s.d) - s.iv;
+  }
+}
 function srs(s, ok) {
-  const t = dayIdx();
+  const t = dayIdx(),
+    W = FSRS_W,
+    g = ok ? 3 : 1;
+  srsInit(s, t);
+  if (s.st === undefined) {
+    s.st = ok ? W[2] : W[0];
+    s.df = fsrsD0(g);
+  } else {
+    const R = recall(t - (s.lr === undefined ? t : s.lr), s.st),
+      D = s.df || 5;
+    s.st = ok
+      ? s.st * (Math.exp(W[8]) * (11 - D) * Math.pow(s.st, -W[9]) * (Math.exp(W[10] * (1 - R)) - 1) + 1)
+      : Math.min(s.st, W[11] * Math.pow(D, -W[12]) * (Math.pow(s.st + 1, W[13]) - 1) * Math.exp(W[14] * (1 - R)));
+    s.st = clampN(s.st, 0.1, 3650);
+    s.df = clampN(W[7] * fsrsD0(4) + (1 - W[7]) * (D - W[6] * (g - 3)), 1, 10);
+  }
+  s.st = Math.round(s.st * 100) / 100;
+  s.df = Math.round(s.df * 100) / 100;
+  s.lr = t;
   if (ok) {
-    const nx = LADDER.find(x => x > (s.iv || 0)) || Math.round((s.iv || 60) * 1.5);
-    s.iv = nx;
-    s.d = t + nx;
+    let iv = Math.max(1, Math.round(s.st));
+    if (iv > 3) iv = Math.round(iv * (0.95 + Math.random() * 0.1)); // spread reviews so they don't pile up on one day
+    s.iv = Math.min(iv, 365);
+    s.d = t + s.iv;
   } else {
     s.iv = 0;
     s.d = t;
@@ -1104,8 +1157,12 @@ function weight(k) {
   if (!s) return 1.4;
   let w = 1 + Math.max(0, s.w * 2 - s.c) * 0.8;
   if (s.s === 0 && s.w > 0) w += 2.5;
-  if (s.s >= 3) w *= 0.5;
-  return Math.max(0.25, w);
+  if (s.st !== undefined) {
+    // likely forgotten by now → show more often; firmly remembered → rarely
+    const R = recall(dayIdx() - (s.lr === undefined ? dayIdx() : s.lr), s.st);
+    w *= 0.35 + (1 - R) * 3;
+  } else if (s.s >= 3) w *= 0.5;
+  return Math.max(0.2, w);
 }
 function pickN(pool, n) {
   const arr = pool.map(p => ({ p, w: weight(p.key) }));
@@ -1382,7 +1439,21 @@ function speakSeq(texts, lang) {
   } catch (e) {}
 }
 function speak(text, lang = 'ja', slow = false) {
+  if (!text) return;
+  if (typeof hqOn === 'function' && hqOn()) {
+    try {
+      if (hasTTS) speechSynthesis.cancel();
+    } catch (e) {}
+    hqPlay(text, lang, slow).then(ok => {
+      if (!ok) deviceSpeak(text, lang, slow);
+    });
+    return;
+  }
+  deviceSpeak(text, lang, slow);
+}
+function deviceSpeak(text, lang = 'ja', slow = false) {
   if (!hasTTS || !text) return;
+  if (typeof hqStop === 'function') hqStop();
   try {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -1434,6 +1505,99 @@ function applyLook() {
   }
   root.style.setProperty('--zoom', S.set.zoom);
 }
+
+// ---- core/hqvoice.js ----
+'use strict';
+/* ================= 고음질 AI 발음: natural voices made on the server (MeloTTS), saved on the phone after the first play =================
+   Falls back to the phone's own voice when offline, slow (>3s) or switched off. */
+const HQ = { broken: 0, audio: null, seq: 0, cache: 'hanamaru-voice-1' };
+const hqDefault = () => !(typeof isIOS === 'function' && isIOS()); // iPhone voices are already good; Android/PC voices often aren't
+const hqOn = () =>
+  typeof aiOn === 'function' &&
+  aiOn() &&
+  navigator.onLine !== false &&
+  HQ.broken < 3 &&
+  (S.set.hq === undefined ? hqDefault() : !!S.set.hq) &&
+  location.protocol.startsWith('http');
+const hqUrl = (text, lang) =>
+  aiCfg().endpoint.replace(/\/$/, '') + '/tts?l=' + (lang === 'en' ? 'en' : 'ja') + '&t=' + encodeURIComponent(String(text).slice(0, 140));
+function hqStop() {
+  HQ.seq++;
+  if (HQ.audio)
+    try {
+      HQ.audio.pause();
+    } catch (e) {}
+}
+async function hqBlob(url) {
+  let c = null;
+  try {
+    c = await caches.open(HQ.cache);
+    const hit = await c.match(url);
+    if (hit) return await hit.blob();
+  } catch (e) {}
+  const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+  const t = setTimeout(() => ctl && ctl.abort(), 3500);
+  try {
+    const res = await fetch(url, { mode: 'cors', signal: ctl ? ctl.signal : undefined });
+    clearTimeout(t);
+    if (!res.ok) {
+      if (res.status !== 429) HQ.broken++;
+      return null;
+    }
+    if (c) c.put(url, res.clone()).catch(() => {});
+    return await res.blob();
+  } catch (e) {
+    clearTimeout(t);
+    return null;
+  }
+}
+// play text with the AI voice; resolves false if the phone voice should be used instead
+async function hqPlay(text, lang, slow) {
+  const my = ++HQ.seq;
+  const blob = await hqBlob(hqUrl(text, lang));
+  if (!blob || my !== HQ.seq) return my === HQ.seq ? false : true;
+  try {
+    const a = HQ.audio || (HQ.audio = new Audio());
+    if (a._url) URL.revokeObjectURL(a._url);
+    a._url = URL.createObjectURL(blob);
+    a.src = a._url;
+    a.playbackRate = slow || S.set.slow ? 0.8 : 1;
+    try {
+      a.preservesPitch = true;
+    } catch (e) {}
+    await a.play();
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+// iPhone only lets an audio element play after a tap: unlock one on the first touch
+document.addEventListener(
+  'pointerdown',
+  () => {
+    if (HQ.audio || !hqOn()) return;
+    try {
+      HQ.audio = new Audio('data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=');
+      HQ.audio.play().catch(() => {});
+    } catch (e) {}
+  },
+  { once: false, passive: true }
+);
+function hqSetHTML() {
+  if (!(typeof aiOn === 'function' && aiOn())) return '';
+  const on = S.set.hq === undefined ? hqDefault() : !!S.set.hq;
+  return `<div class="set-row" style="padding:0"><div><b>AI 고음질 목소리</b><small>서버에서 만든 자연스러운 목소리로 읽어 줘요. 처음 듣는 문장은 1~2초 걸리고, 한 번 들은 건 폰에 저장돼요. 인터넷이 없으면 기기 목소리로 읽어요.</small></div><button class="switch" role="switch" data-hq aria-checked="${on}" aria-label="AI 고음질 목소리"></button></div>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-hq]');
+  if (!b) return;
+  const on = S.set.hq === undefined ? hqDefault() : !!S.set.hq;
+  S.set.hq = !on;
+  HQ.broken = 0;
+  save();
+  b.setAttribute('aria-checked', String(!on));
+  speak(VOICE_SAMPLE[S.lang] || VOICE_SAMPLE.ja, S.lang);
+});
 
 // ---- ui/shell.js ----
 'use strict';
@@ -1495,7 +1659,8 @@ const MENU = {
     ['문자', ['kana', 'kwrite', 'kconf', 'kanji']],
     ['단어', ['word', 'flash', 'conj', 'cnt', 'loan']],
     ['문장', ['sent', 'jb', 'part', 'gram', 'pol']],
-    ['한국인 맞춤', ['hj', 'hjw', 'hjr', 'kpart', 'wasei']],
+    ['읽기', ['yomu']],
+    ['한국인 맞춤', ['gcomp', 'hj', 'hjw', 'hjr', 'kpart', 'wasei']],
     ['도전', ['kspeed', 'wspeed']]
   ],
   talk: [
@@ -1511,7 +1676,7 @@ const MENU = {
   ],
   elearn: [
     ['단어', ['ew', 'eflash', 'irr']],
-    ['한국인 맞춤', ['etrap', 'kong']],
+    ['한국인 맞춤', ['egcomp', 'etrap', 'kong']],
     ['문장', ['es', 'eb', 'eprep', 'etense', 'ephr']],
     ['도전', ['espeed']]
   ],
@@ -1536,6 +1701,9 @@ const MODE_LABEL = {
   eaichat: 'AI 회화',
   diary: 'AI 한 줄 일기',
   photo: '메뉴판 사진 읽기',
+  yomu: '읽기 연습',
+  gcomp: '문법 비교 노트',
+  egcomp: '문법 비교 노트',
   ephoto: '메뉴판 사진 읽기',
   ediary: 'AI 한 줄 일기',
   kansai: '간사이벤',
@@ -1646,6 +1814,8 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'yomu',
+  'gcomp',
   'diary',
   'photo',
   'mycard',
@@ -1749,6 +1919,7 @@ function stopAll() {
   stopAutoplay();
   LT = null;
   if (typeof recRelease === 'function') recRelease();
+  if (typeof hqStop === 'function') hqStop();
   if (hasTTS) {
     try {
       speechSynthesis.cancel();
@@ -1908,6 +2079,9 @@ const MENU_DESC = {
   eaichat: 'AI 점원·친구와 자유롭게 대화하고 첨삭',
   diary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   photo: '찍으면 AI가 읽는 법·뜻·가격 정리',
+  yomu: '짧은 글 읽고 내용 확인 (N5~N3)',
+  gcomp: 'は vs が, に vs で 헷갈리는 짝 비교',
+  egcomp: 'for vs since, make vs do 헷갈리는 짝 비교',
   ephoto: '찍으면 AI가 뜻·가격 정리',
   ediary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   kansai: '오사카 사투리 おおきに·なんでやねん',
@@ -1957,6 +2131,9 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'yomu',
+  'gcomp',
+  'egcomp',
   'photo',
   'ephoto',
   'etrap',
@@ -1986,7 +2163,7 @@ const NEW_MODS = new Set([
   'etrip'
 ]);
 const TAB_LEAD = {
-  learn: '문자 · 단어 · 문장, 그리고 한국인에게 딱 맞춘 연습',
+  learn: '문자 · 단어 · 문장 · 읽기, 그리고 한국인에게 딱 맞춘 연습',
   talk: '여행에서 바로 쓰는 것과 듣기 · 말하기',
   play: '쉬어 가며 즐기는 놀이',
   ref: '복습과 정리 자료, 내 기록',
@@ -2479,11 +2656,21 @@ function setupHTML(mod) {
     body = `<p class="note">ship/sheep, light/right처럼 한국 사람이 헷갈리기 쉬운 발음을 듣고 구별해요. 이어폰을 쓰면 더 잘 들려요.</p>`;
   } else if (mod === 'ew') {
     sum = [
+      { 1: '기초', 2: '중급', all: '기초+중급' }[S.ew.lvl || '1'],
       S.ew.dir === 'e2k' ? '영어→뜻' : '뜻→영어',
       S.ew.fav ? '★ 즐겨찾기' : catSum(S.ew.cats, EN_CATS),
       S.set.wans === 'choice' ? '4지선다' : '직접 쓰기'
     ].join(' · ');
     body =
+      `<div class="setup-row"><label>단계</label>${seg(
+        'ew.lvl',
+        [
+          ['1', '기초'],
+          ['2', '중급'],
+          ['all', '전체']
+        ],
+        S.ew.lvl || '1'
+      )}</div>` +
       `<div class="setup-row"><label>문제 방향</label>${seg(
         'ew.dir',
         [
@@ -2510,6 +2697,16 @@ function setupHTML(mod) {
       (lang === 'ja' && !DICT.has(mod) && !LISTEN.has(mod) ? ' · ' + (S.set.kanji ? '한자+가나' : '가나만') : '');
     body =
       sceneChips(lang) +
+      (lang === 'en'
+        ? `<div class="setup-row"><label>단계</label>${seg(
+            'set.esl',
+            [
+              ['1', '기초'],
+              ['all', '기초+중급']
+            ],
+            S.set.esl || '1'
+          )}</div>`
+        : '') +
       (lang === 'ja' && !LISTEN.has(mod) && !DICT.has(mod) && mod !== 'jsh'
         ? kanjiRow(BUILD.has(mod) ? '블록 표기' : mod === 'part' ? '문장 표기' : '보기 표기')
         : '') +
@@ -2537,7 +2734,7 @@ function setupHTML(mod) {
 function basePool(mod, full) {
   if (POOLS[mod]) return POOLS[mod](full);
   const lang = modLang(mod);
-  const inScene = s => S.scenes[lang].includes(s.sc);
+  const inScene = s => S.scenes[lang].includes(s.sc) && (lang !== 'en' || s.lv !== 2 || S.set.esl === 'all');
   if (mod === 'kana') {
     if (full)
       return KANA.flatMap(x =>
@@ -2564,7 +2761,14 @@ function basePool(mod, full) {
             (S.word.fav ? S.fav[w.key] : w.cats.some(c => S.word.cats.includes(c))) &&
             (w.mine || (!S.word.lvl || S.word.lvl === 'all' ? w.lvl !== 3 : String(w.lvl) === S.word.lvl))
         );
-  if (mod === 'ew') return full ? EN_WORDS : EN_WORDS.filter(w => (S.ew.fav ? S.fav[w.key] : w.cats.some(c => S.ew.cats.includes(c))));
+  if (mod === 'ew')
+    return full
+      ? EN_WORDS
+      : EN_WORDS.filter(
+          w =>
+            (S.ew.fav ? S.fav[w.key] : w.cats.some(c => S.ew.cats.includes(c))) &&
+            (w.mine || (S.ew.lvl || '1') === 'all' || String(w.lvl) === (S.ew.lvl || '1'))
+        );
   if (mod === 'loan') return LOANS;
   if (mod === 'conj') return full ? CONJ_ITEMS : CONJ_ITEMS.filter(x => S.conj.forms.includes(x.form));
   if (mod === 'kanji') return full ? KANJI : byLvl(KANJI, S.kjl.lvl);
@@ -3857,7 +4061,7 @@ function speedQ(mod) {
       order: shuffle([{ t: x.alts[0], ok: true, cls: 'mono-opt' }, ...others.map(y => ({ t: y.alts[0], ok: false, cls: 'mono-opt' }))])
     };
   }
-  const all = mod === 'wspeed' ? WORDS : EN_WORDS;
+  const all = mod === 'wspeed' ? WORDS.filter(w => w.lvl !== 3) : EN_WORDS.filter(w => w.lvl !== 2);
   const q = all[(Math.random() * all.length) | 0];
   return {
     show: mod === 'wspeed' ? (S.set.kanji ? q.w : q.r) : q.w,
@@ -4101,7 +4305,10 @@ function renderWordList(lang) {
           ['n4', 'N4'],
           ['n3', 'N3']
         ]
-      : []),
+      : [
+          ['l1', '기초'],
+          ['l2', '중급']
+        ]),
     ...((ja ? S.custom.ja : S.custom.en).length ? [['mine', '내 단어']] : []),
     ...Object.entries(cats)
       .filter(([k]) => k !== 'mine')
@@ -4141,7 +4348,9 @@ function renderWordList(lang) {
               ? w.lvl === 4
               : ls.cat === 'n3'
                 ? w.lvl === 3
-                : w.cats.includes(ls.cat))
+                : ls.cat === 'l1' || ls.cat === 'l2'
+                  ? w.lvl === (ls.cat === 'l1' ? 1 : 2) && !w.mine
+                  : w.cats.includes(ls.cat))
     );
     if (qq)
       list = list.filter(
@@ -4156,7 +4365,7 @@ function renderWordList(lang) {
       .slice(0, 300)
       .map(
         w => `<div class="wl-i" data-key="${esc(w.key)}" data-st="${itemStatus(w.key)}">
-      <button class="wl-main" data-open><span class="w ${ja ? 'jp' : 'en'}" lang="${lang}">${esc(w.w)}</span>${ja && w.w !== w.r ? `<span class="s jp" lang="ja">${esc(w.r)}</span>` : ''}<span class="s">${esc(w.m.join(', '))}</span>${w.lvl === 4 || w.lvl === 3 ? `<span class="lv-tag">N${w.lvl}</span>` : ''}</button>
+      <button class="wl-main" data-open><span class="w ${ja ? 'jp' : 'en'}" lang="${lang}">${esc(w.w)}</span>${ja && w.w !== w.r ? `<span class="s jp" lang="ja">${esc(w.r)}</span>` : ''}<span class="s">${esc(w.m.join(', '))}</span>${ja && (w.lvl === 4 || w.lvl === 3) ? `<span class="lv-tag">N${w.lvl}</span>` : !ja && w.lvl === 2 ? '<span class="lv-tag">중급</span>' : ''}</button>
       <button class="star" data-star aria-pressed="${!!S.fav[w.key]}" aria-label="즐겨찾기">${S.fav[w.key] ? '★' : '☆'}</button>
       <div class="wl-ex" hidden>${ja ? `<span class="mono s">${romaji(w.r)}</span>` : ''}${w.ex ? (ja ? `<span class="ex-jp" lang="ja" style="font-size:16px">${markWord(w.ex, [w.w, w.r])}</span><span class="ex-rd" lang="ja">${esc(w.exr)}</span><span class="ex-ko">${esc(w.exko)}</span>` : `<span class="ex-en" lang="en" style="font-size:16px">${markWord(w.ex, [w.w, ...w.alt], true)}</span><span class="ex-ko">${esc(w.exko)}</span>`) : ''}
         <div class="row" style="margin-top:4px">${w.ex ? spkBtn(w.ex, '예문 듣기', lang) : ''}${w.mine ? `<button class="spk" data-del>삭제</button>` : ''}</div></div></div>`
@@ -4499,7 +4708,7 @@ function showIrr(mod, q, card, zone, r) {
     const wr = [];
     for (const c of cands) {
       if (wr.length >= 3) break;
-      if (!ok.includes(c) && c !== right && !wr.includes(c) && !right.split('/').includes(c)) wr.push(c);
+      if (c && c !== right && !wr.includes(c) && !c.split('/').some(x => ok.includes(x))) wr.push(c); // "got/gotten" must not be a wrong option when "got" is right
     }
     r.order = shuffle([{ t: right, ok: true, cls: 'en', lang: 'en' }, ...wr.map(t => ({ t, ok: false, cls: 'en', lang: 'en' }))]);
   }
@@ -5146,7 +5355,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020112855';
+const APP_VERSION = '20261020122019';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -6807,7 +7016,8 @@ const COURSE_STAGES = {
   ],
   en: [
     [0, '기초 30일'],
-    [30, '실전 30일']
+    [30, '실전 30일'],
+    [60, '중급 30일']
   ]
 };
 const stageOf = (lang, di) => {
@@ -6992,6 +7202,34 @@ const N3_WORDS_ORDER = BASE_JP.filter(w => w.lvl === 3).sort((a, b) => N4_CAT_OR
         third(i)
       ]
     });
+  }
+})();
+/* ---------- third English stage: 중급 30일 (B1 words, work & travel-trouble dialogues and sentences), days 61–90 ---------- */
+const EN_L2_ORDER = ['biz', 'call', 'verb', 'feel', 'link', 's_trouble'];
+(function buildEnPart3() {
+  const words = BASE_EN.filter(w => w.lvl === 2).sort((a, b) => EN_L2_ORDER.indexOf(a.cats[0]) - EN_L2_ORDER.indexOf(b.cats[0]));
+  const dl = (typeof DLG_EN !== 'undefined' ? DLG_EN : []).filter(d => /^b1-/.test(d.id));
+  if (!words.length || !dl.length) return;
+  const per = Math.ceil(words.length / 30);
+  const l2 = mod => () => (ITEMS[mod] || []).filter(x => x.lv === 2);
+  const chunk = (mod, i) => () => {
+    const all = l2(mod)();
+    const n = Math.max(1, Math.ceil(all.length / 10));
+    return all.slice((i % 10) * n, (i % 10) * n + n);
+  };
+  const kinds = [
+    ['es', '문장 고르기'],
+    ['el', '문장 듣기'],
+    ['eb', '문장 조립']
+  ];
+  for (let i = 0; i < 30; i++) {
+    const a = i * per;
+    const k = [{ m: 'ew', l: `중급 단어 ${a + 1}~${Math.min(words.length, a + per)}`, f: () => words.slice(a, a + per) }];
+    const d = dl[i];
+    if (d) k.push({ m: 'edlg', dl: [d.sc, DLG_EN.filter(x => x.sc === d.sc).indexOf(d)] });
+    const [m, name] = kinds[i % 3];
+    k.push({ m, l: `${name}: 중급 ${Math.floor(i / 3) + 1}`, f: chunk(m, Math.floor(i / 3)) });
+    COURSE.en.push({ t: d ? d.title : '중급 마무리', d: d ? SCENES[d.sc] + ' · 중급' : '배운 것 섞어서 복습', k });
   }
 })();
 
@@ -7515,6 +7753,9 @@ const MODE_HELP = {
   mycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   emycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   reader: '아이폰 텍스트 인식으로 복사한 일본어를 붙여넣으면 후리가나·단어 뜻·한국음을 달아 줘요.',
+  yomu: '짧은 글을 읽고 문제 3개로 이해했는지 확인해요. 후리가나는 켜고 끌 수 있고, 문장을 누르면 뜻이 나오고 읽어 줘요.',
+  gcomp: '한국인이 헷갈리는 문법 짝(は/が, に/で, から/ので…)을 나란히 비교하고, 6문제로 확인해요.',
+  egcomp: '한국인이 헷갈리는 영어 짝(for/since, say/tell, used to…)을 나란히 비교하고, 6문제로 확인해요.',
   photo:
     '메뉴판·간판을 찍으면 AI가 메뉴 이름, 읽는 법, 뜻, 가격을 정리해 줘요. ‘이거 주세요’를 누르면 점원에게 보여 줄 카드가 떠요. 하루 3장까지.',
   ephoto: '영어 메뉴판·간판을 찍으면 AI가 뜻과 가격을 정리해 줘요. ‘이거 주세요’를 누르면 점원에게 보여 줄 카드가 떠요. 하루 3장까지.',
@@ -9390,6 +9631,8 @@ const KEY_GROUPS = [
   [/^ct:/, '조수사·날짜'],
   [/^(s|es|jb|eb):/, '문장'],
   [/^(pt|kp):/, '조사'],
+  [/^gc:/, '문법'],
+  [/^yd:/, '읽기'],
   [/^gp:/, '문법'],
   [/^pl:/, '반말·존댓말'],
   [/^(ep|et|eph|xt):/, '영문법'],
@@ -10254,7 +10497,7 @@ function voiceHTML() {
         .join('')}</div>
       ${good ? '' : `<p class="note" style="margin:0">고음질 목소리를 받으면 훨씬 자연스러워요. <button type="button" class="link" data-vhelp>받는 방법</button></p>`}</div>`;
   };
-  return `<section id="set-voice"><h2 class="sec-title">발음 목소리</h2><div class="panel" style="padding:14px;display:grid;gap:14px">${langs.map(row).join('')}</div></section>`;
+  return `<section id="set-voice"><h2 class="sec-title">발음 목소리</h2><div class="panel" style="padding:14px;display:grid;gap:14px">${hqSetHTML()}${langs.map(row).join('')}</div></section>`;
 }
 function settingsHTML() {
   const segRow = (label, small, key, opts) =>
@@ -12823,6 +13066,261 @@ function trDraw() {
     }`;
 }
 
+// ---- features/gcomp.js ----
+'use strict';
+/* ================= 문법 비교 노트: は vs が, for vs since … side by side, a table, a tip for Koreans, then a 6-question check ================= */
+const GC = { ja: typeof GCOMP_JA !== 'undefined' ? GCOMP_JA : [], en: typeof GCOMP_EN !== 'undefined' ? GCOMP_EN : [] };
+let GCV = { id: null, q: null };
+if (!S.gc || typeof S.gc !== 'object') S.gc = {};
+const gcLvl = (lang, l) => (lang === 'ja' ? 'N' + l : l === 1 ? '기초' : '중급');
+
+function renderGComp(mod) {
+  const lang = mod === 'gcomp' ? 'ja' : 'en';
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart gc" id="gcBody"></div></section>`;
+  gcDraw(lang);
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes') || b.dataset.speak) return;
+    const d = b.dataset;
+    if (d.gcopen) {
+      GCV = { id: d.gcopen, q: null };
+      gcDraw(lang);
+      window.scrollTo(0, 0);
+    } else if (d.gc === 'list') {
+      GCV = { id: null, q: null };
+      gcDraw(lang);
+    } else if (d.gc === 'quiz') {
+      const g = GC[lang].find(x => x.id === GCV.id);
+      GCV.q = { i: 0, ok: 0, picked: null, order: g.q.map(q => shuffle([q.a, ...q.o])) };
+      gcDraw(lang);
+      document.getElementById('gcQ')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    } else if (d.gco !== undefined && GCV.q && GCV.q.picked === null) {
+      const g = GC[lang].find(x => x.id === GCV.id),
+        q = g.q[GCV.q.i],
+        pick = GCV.q.order[GCV.q.i][+d.gco];
+      GCV.q.picked = pick;
+      const ok = pick === q.a;
+      if (ok) GCV.q.ok++;
+      record(`gc:${g.id}:${GCV.q.i}`, ok);
+      sfx(ok ? 'ok' : 'ng');
+      speak(lang === 'ja' ? q.r.replace('___', q.ar || q.a).replace(/\s/g, '') : q.s.replace('___', q.a), lang);
+      gcDraw(lang);
+    } else if (d.gc === 'next') {
+      const g = GC[lang].find(x => x.id === GCV.id);
+      GCV.q.i++;
+      GCV.q.picked = null;
+      if (GCV.q.i >= g.q.length) {
+        S.gc[g.id] = Math.max(S.gc[g.id] || 0, Math.round((GCV.q.ok / g.q.length) * 100));
+        save();
+        statDone(mod);
+      }
+      gcDraw(lang);
+    }
+  };
+}
+function gcDraw(lang) {
+  const box = document.getElementById('gcBody');
+  if (!box) return;
+  const list = GC[lang],
+    ja = lang === 'ja',
+    cls = ja ? 'jp' : 'en';
+  if (!list.length) {
+    box.innerHTML = '<div class="empty"><p style="margin:0">비교 노트를 준비 중이에요.</p></div>';
+    return;
+  }
+  const g = GCV.id && list.find(x => x.id === GCV.id);
+  if (!g) {
+    box.innerHTML = `<p class="note">한국인이 특히 헷갈리는 짝을 나란히 놓고 비교해요. 읽고 나서 6문제로 확인해요.</p>
+      <div class="gc-list">${list
+        .map(x => {
+          const sc = S.gc[x.id];
+          return `<button type="button" class="gc-card" data-gcopen="${esc(x.id)}"><b class="${cls}" lang="${lang}">${esc(x.title)}</b><small>${esc(x.sub || '')}</small><span class="gc-meta"><i>${gcLvl(lang, x.lvl)}</i>${sc !== undefined ? `<i class="${sc >= 80 ? 'ok' : ''}">${sc}%</i>` : ''}</span></button>`;
+        })
+        .join('')}</div>`;
+    return;
+  }
+  const ex = e =>
+    ja
+      ? `<li><span class="jp" lang="ja">${esc(e[0])}</span>${spkBtn(e[0], '', 'ja')}<small>${esc(e[2])}</small></li>`
+      : `<li><span class="en" lang="en">${esc(e[0])}</span>${spkBtn(e[0], '', 'en')}<small>${esc(e[1])}</small></li>`;
+  let quiz = '';
+  if (GCV.q) {
+    const n = g.q.length;
+    if (GCV.q.i >= n) {
+      quiz = `<div class="gc-q" id="gcQ"><p class="gc-done"><b class="num">${GCV.q.ok} / ${n}</b> ${GCV.q.ok === n ? '완벽해요! 이제 안 헷갈리겠죠?' : GCV.q.ok >= n - 2 ? '거의 다 맞혔어요. 틀린 것만 위 설명을 다시 보세요.' : '위 비교표를 한 번 더 읽고 다시 풀어 봐요.'}</p>
+        <div class="row"><button type="button" class="btn" data-gc="quiz">다시 풀기</button><button type="button" class="btn primary" data-gc="list">다른 비교 보기</button></div>${fbHTML(ja ? 'gcomp' : 'egcomp')}</div>`;
+    } else {
+      const q = g.q[GCV.q.i],
+        done = GCV.q.picked !== null,
+        good = done && GCV.q.picked === q.a;
+      const sent = esc(q.s).replace('___', `<span class="blank">${done ? esc(q.a) : '？'}</span>`);
+      quiz = `<div class="gc-q" id="gcQ"><p class="gc-n num">${GCV.q.i + 1} / ${n}</p><p class="gc-k">${esc(q.k)}</p><p class="gc-s ${cls}" lang="${lang}">${sent}</p>
+        <div class="gc-opts">${GCV.q.order[GCV.q.i]
+          .map(
+            (o, j) =>
+              `<button type="button" class="btn gc-o ${cls} ${done ? (o === q.a ? 'is-ok' : o === GCV.q.picked ? 'is-ng' : '') : ''}" data-gco="${j}" lang="${lang}">${esc(o)}</button>`
+          )
+          .join('')}</div>
+        ${done ? `<div class="gc-why ${good ? 'ok' : 'ng'}"><b>${good ? '정답!' : '아쉬워요'}</b> ${esc(q.why || '')}</div><div class="row"><button type="button" class="btn primary" data-gc="next">${GCV.q.i + 1 < n ? '다음' : '결과 보기'}</button></div>` : ''}</div>`;
+    }
+  }
+  const table =
+    g.table && g.table.length > 1
+      ? `<div class="gc-tw"><table class="gc-t"><thead><tr>${g.table[0].map(c => `<th class="${cls}" lang="${lang}">${esc(c)}</th>`).join('')}</tr></thead><tbody>${g.table
+          .slice(1)
+          .map(r => `<tr>${r.map((c, i) => (i ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`)).join('')}</tr>`)
+          .join('')}</tbody></table></div>`
+      : '';
+  box.innerHTML = `<button type="button" class="link" data-gc="list">← 비교 목록</button>
+    <h2 class="gc-title ${cls}" lang="${lang}">${esc(g.title)}</h2><p class="note" style="margin-top:-6px">${esc(g.sub || '')} · ${gcLvl(lang, g.lvl)}</p>
+    <div class="gc-sides">${g.sides.map(s => `<div class="gc-side"><b class="gc-p ${cls}" lang="${lang}">${esc(s.p)}</b><p>${esc(s.use)}</p><ul>${s.ex.map(ex).join('')}</ul></div>`).join('')}</div>
+    ${table}
+    ${g.tip ? `<p class="gc-tip">💡 ${esc(g.tip)}</p>` : ''}
+    ${GCV.q ? quiz : `<button type="button" class="btn primary" data-gc="quiz" style="width:100%">확인 문제 ${g.q.length}개 풀기</button>`}`;
+}
+CUSTOM.gcomp = renderGComp;
+CUSTOM.egcomp = renderGComp;
+
+// ---- features/yomu.js ----
+'use strict';
+/* ================= 읽기 연습: short graded texts (N5–N3) with switchable furigana and translation, key words, 3 questions ================= */
+const YOMU = typeof YOMU_JA !== 'undefined' ? YOMU_JA : [];
+let YM = { id: null, lvl: 'all', open: {}, ans: {} };
+if (!S.yomu || typeof S.yomu !== 'object') S.yomu = {};
+if (S.set.furi === undefined) S.set.furi = true;
+
+const hasKanji = s => /[一-鿿々〆]/.test(s);
+// put the reading only over the kanji part: 食べました/たべました → 食<rt>た</rt>べました
+function rubyTok(t, r) {
+  if (!hasKanji(t) || !r) return esc(t);
+  let a = 0,
+    b = 0;
+  while (a < t.length && a < r.length && t[a] === r[a] && !hasKanji(t[a])) a++;
+  while (b < t.length - a && b < r.length - a && t[t.length - 1 - b] === r[r.length - 1 - b] && !hasKanji(t[t.length - 1 - b])) b++;
+  const core = t.slice(a, t.length - b),
+    rc = r.slice(a, r.length - b);
+  if (!core || !rc) return esc(t);
+  return `${esc(t.slice(0, a))}<ruby>${esc(core)}<rt>${esc(rc)}</rt></ruby>${esc(t.slice(t.length - b))}`;
+}
+const ymSent = s => s.t.split(' ').join('');
+const ymText = y => y.sents.map(ymSent).join('');
+
+function renderYomu(mod) {
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart ym" id="ymBody"></div></section>`;
+  ymDraw();
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes') || b.dataset.speak) return;
+    const d = b.dataset;
+    if (d.ymopen) {
+      YM.id = d.ymopen;
+      YM.open = {};
+      YM.ans = {};
+      ymDraw();
+      window.scrollTo(0, 0);
+    } else if (d.ym === 'list') {
+      YM.id = null;
+      ymDraw();
+    } else if (d.ymlvl) {
+      YM.lvl = d.ymlvl;
+      ymDraw();
+    } else if (d.ym === 'furi') {
+      S.set.furi = !S.set.furi;
+      save();
+      ymDraw();
+    } else if (d.ym === 'ko') {
+      const y = YOMU.find(x => x.id === YM.id);
+      const all = y.sents.every((_, i) => YM.open[i]);
+      y.sents.forEach((_, i) => (YM.open[i] = !all));
+      ymDraw();
+    } else if (d.ym === 'all') {
+      const y = YOMU.find(x => x.id === YM.id);
+      speak(ymText(y), 'ja');
+    } else if (d.yms !== undefined) {
+      const y = YOMU.find(x => x.id === YM.id),
+        i = +d.yms;
+      YM.open[i] = !YM.open[i];
+      speak(ymSent(y.sents[i]), 'ja');
+      ymDraw();
+    } else if (d.ymq !== undefined && YM.ans[d.ymq] === undefined) {
+      const y = YOMU.find(x => x.id === YM.id),
+        qi = +d.ymq,
+        pick = +d.ymo;
+      YM.ans[qi] = pick;
+      const ok = pick === y.q[qi].a;
+      record(`yd:${y.id}:${qi}`, ok);
+      sfx(ok ? 'ok' : 'ng');
+      if (Object.keys(YM.ans).length === y.q.length) {
+        const c = y.q.filter((q, j) => YM.ans[j] === q.a).length;
+        S.yomu[y.id] = Math.max(S.yomu[y.id] || 0, Math.round((c / y.q.length) * 100));
+        save();
+        statDone('yomu');
+      }
+      ymDraw();
+    }
+  };
+}
+function ymDraw() {
+  const box = document.getElementById('ymBody');
+  if (!box) return;
+  if (!YOMU.length) {
+    box.innerHTML = '<div class="empty"><p style="margin:0">읽기 글을 준비 중이에요.</p></div>';
+    return;
+  }
+  const y = YM.id && YOMU.find(x => x.id === YM.id);
+  if (!y) {
+    const lv = YM.lvl;
+    const list = YOMU.filter(x => lv === 'all' || String(x.lvl) === lv);
+    const done = YOMU.filter(x => S.yomu[x.id] !== undefined).length;
+    box.innerHTML = `<p class="note">짧은 글을 읽고 문제 3개로 이해했는지 확인해요. 모르는 한자는 후리가나를 켜고, 문장을 누르면 뜻과 발음이 나와요. (${done} / ${YOMU.length}편 읽음)</p>
+      <div class="seg" role="group" aria-label="급수">${[
+        ['all', '전체'],
+        ['5', 'N5'],
+        ['4', 'N4'],
+        ['3', 'N3']
+      ]
+        .map(([v, l]) => `<button data-ymlvl="${v}" aria-pressed="${lv === v}">${l}</button>`)
+        .join('')}</div>
+      <div class="ym-list">${list
+        .map(x => {
+          const sc = S.yomu[x.id];
+          return `<button type="button" class="ym-card" data-ymopen="${esc(x.id)}"><span class="ym-k">${esc(x.kind || '')} · N${x.lvl}</span><b class="jp" lang="ja">${esc(x.title)}</b><small>${esc(x.ko_title || '')}</small>${sc !== undefined ? `<i class="ym-sc ${sc === 100 ? 'ok' : ''}">${sc === 100 ? '✓ ' : ''}${sc}%</i>` : ''}</button>`;
+        })
+        .join('')}</div>`;
+    return;
+  }
+  const furi = S.set.furi;
+  const sents = y.sents
+    .map((s, i) => {
+      const t = s.t.split(' '),
+        r = s.r.split(' ');
+      const html = t.map((tk, j) => (furi ? rubyTok(tk, r[j]) : esc(tk))).join('');
+      return `<button type="button" class="ym-s ${YM.open[i] ? 'open' : ''}" data-yms="${i}">${s.sp ? `<span class="ym-sp">${esc(s.sp)}</span>` : ''}<span class="jp" lang="ja">${html}</span>${YM.open[i] ? `<small>${esc(s.ko)}</small>` : ''}</button>`;
+    })
+    .join('');
+  const answered = Object.keys(YM.ans).length;
+  const qs = y.q
+    .map((q, qi) => {
+      const a = YM.ans[qi];
+      return `<div class="ym-q"><p><b>Q${qi + 1}.</b> ${esc(q.q)}</p><div class="ym-opts">${q.o
+        .map(
+          (o, oi) =>
+            `<button type="button" class="btn ym-o ${a !== undefined ? (oi === q.a ? 'is-ok' : oi === a ? 'is-ng' : '') : ''}" data-ymq="${qi}" data-ymo="${oi}">${esc(o)}</button>`
+        )
+        .join('')}</div>${a !== undefined && q.why ? `<p class="ym-why">${esc(q.why)}</p>` : ''}</div>`;
+    })
+    .join('');
+  const c = y.q.filter((q, j) => YM.ans[j] === q.a).length;
+  box.innerHTML = `<button type="button" class="link" data-ym="list">← 글 목록</button>
+    <div class="ym-head"><span class="ym-k">${esc(y.kind || '')} · N${y.lvl}</span><h2 class="jp" lang="ja">${esc(y.title)}</h2><p>${esc(y.ko_title || '')}</p></div>
+    <div class="ym-tools"><button type="button" class="chip" data-ym="furi" aria-pressed="${furi}">후리가나</button><button type="button" class="chip" data-ym="ko" aria-pressed="${y.sents.every((_, i) => YM.open[i])}">번역 전부</button><button type="button" class="spk" data-ym="all">${SPK_ICON} 전체 듣기</button></div>
+    <div class="ym-text">${sents}</div>
+    ${y.words && y.words.length ? `<div class="ym-words"><b>낱말</b>${y.words.map(w => `<span><span class="jp" lang="ja">${esc(w[0])}</span> <small class="jp" lang="ja">${w[0] !== w[1] ? esc(w[1]) : ''}</small> ${esc(w[2])}</span>`).join('')}</div>` : ''}
+    <h3 class="hjr-h">내용 확인</h3>${qs}
+    ${answered === y.q.length ? `<p class="ym-done"><b class="num">${c} / ${y.q.length}</b> ${c === y.q.length ? '다 이해했어요! 하나마루' : '틀린 문제는 본문에서 근거를 다시 찾아보세요.'}</p>${fbHTML('yomu')}` : ''}`;
+}
+CUSTOM.yomu = renderYomu;
+
 // ---- features/mycard.js ----
 'use strict';
 /* ================= 나만의 여행 카드: fill-in-the-blank cards to show a taxi driver, a waiter, a front desk ================= */
@@ -13335,6 +13833,7 @@ function privacyHTML() {
     <ul>
       <li><b>방문 통계</b> · 하루 몇 명이 오는지만 세요(Cloudflare Web Analytics). 쿠키를 쓰지 않고, 이름·기록·위치는 보내지 않아요.</li>
       <li><b>AI 회화 · 한 줄 일기 · AI 번역 · 메뉴판 사진</b> · 이 기능을 쓸 때만, 입력한 글·대화·사진이 답을 만들기 위해 AI 서버(Cloudflare Workers AI)로 보내져요. 앱이 저장하지는 않아요. 이름·연락처나 얼굴이 나온 사진은 보내지 마세요.</li>
+      <li><b>AI 고음질 목소리</b> · 켜 두면 읽어 줄 문장(앱에 있는 일본어·영어 문장)만 음성을 만들기 위해 서버로 보내져요. 만든 음성은 내 폰과 서버 캐시에 저장돼요.</li>
       <li><b>공부 알림</b> · 알림을 켠 경우에만, 알림을 받을 주소(기기의 알림 서비스가 만든 값)와 알림 시각, 연속 학습 일수, 오늘 공부했는지가 서버(Cloudflare D1)에 저장돼요. 알림을 끄면 바로 지워져요.</li>
       <li><b>익명 사용 통계</b> · 어떤 연습을 열고 끝냈는지, 👍/👎를 날짜별 숫자로만 세요. 누가 했는지는 남지 않아요. 설정 → 개인정보에서 끌 수 있어요.</li>
       <li><b>오류 알림</b> · 앱이 고장 나면 오류 내용(어느 화면에서, 어떤 오류인지)과 기기 종류만 보내요. 공부 기록이나 입력한 글은 보내지 않아요.</li>
@@ -13488,6 +13987,22 @@ document.getElementById('searchBtn').addEventListener('click', openSearch);
 // v: the version that added the item; people only see items newer than the last list they saw
 const WHATS_NEW = [
   {
+    v: 18,
+    t: '전체 콘텐츠 검수',
+    d: '단어·예문·문법·대화 약 9천 개를 하나하나 다시 점검해서 어색한 문장, 정답이 둘인 문제, 어색한 번역 180여 곳을 고쳤어요.'
+  },
+  { v: 18, t: '똑똑해진 복습', d: '잘 아는 건 몇 주·몇 달 뒤에, 자주 틀리는 건 더 자주 나와요. 같은 시간에 더 많이 외워져요.' },
+  { v: 18, t: 'AI 고음질 목소리', d: '설정 → 발음 목소리. 서버에서 만든 자연스러운 목소리로 읽어 줘요. 한 번 들은 문장은 폰에 저장돼요.' },
+  { v: 18, ja: true, t: '읽기 연습', d: '배우기 탭 · 읽기. N5~N3 짧은 글 38편을 후리가나를 켜고 끄며 읽고, 내용 확인 문제를 풀어요.' },
+  { v: 18, t: '문법 비교 노트', d: '배우기 탭 · 한국인 맞춤. は vs が, for vs since처럼 헷갈리는 짝을 나란히 비교하고 문제로 확인해요.' },
+  {
+    v: 18,
+    ja: true,
+    t: '대화 30개 추가',
+    d: '신칸센 표 사기, 료칸, 수하물 분실, 치과, 119 신고까지 — 실전 상황 대화와 문장 80개가 늘었어요.'
+  },
+  { v: 18, ja: false, t: '영어 중급 30일', d: '회사·전화·이메일, 여행 중 문제 상황. 중급 단어 400개와 대화, 코스 61~90일차가 생겼어요.' },
+  {
     v: 17,
     t: '매일 공부 알림',
     d: '설정 → 공부 알림. 정한 저녁 시각까지 공부를 안 했으면 한 번 알려 줘요. 아이폰은 홈 화면에 추가한 앱에서 켤 수 있어요.'
@@ -13578,7 +14093,7 @@ const WHATS_NEW = [
   { v: 10, t: '플래시카드', d: '배우기 탭. 넘기면서 알아요 / 몰라요만 눌러요.' },
   { v: 10, t: '단어장 공유', d: '자료 탭 → 단어장에서 링크로 친구에게 보내요.' }
 ];
-const WN_LATEST = 17;
+const WN_LATEST = 18;
 
 function whatsNew10(since) {
   const ja = S.lang === 'ja';

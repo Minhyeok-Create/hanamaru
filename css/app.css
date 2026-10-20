@@ -6761,6 +6761,334 @@ body.has-daily .upd {
   padding-right: 0;
 }
 
+/* ================= v18: 문법 비교 노트, 읽기 연습 ================= */
+.gc,
+.ym {
+  display: grid;
+  gap: 12px;
+}
+.gc-list,
+.ym-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.gc-card,
+.ym-card {
+  text-align: left;
+  display: grid;
+  gap: 3px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  position: relative;
+}
+.gc-card b,
+.ym-card b {
+  font-size: 18px;
+}
+.gc-card small,
+.ym-card small {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.gc-meta {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+.gc-meta i,
+.ym-sc {
+  font-style: normal;
+  font-size: 12px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--sunk);
+  color: var(--muted);
+}
+.gc-meta i.ok,
+.ym-sc.ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.ym-sc {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.gc-title {
+  margin: 4px 0 0;
+  font-size: 28px;
+}
+.gc-sides {
+  display: grid;
+  gap: 8px;
+}
+.gc-side {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.gc-p {
+  font-size: 22px;
+  color: var(--shu);
+}
+.gc-side p {
+  margin: 6px 0 8px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.gc-side ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.gc-side li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 8px;
+  align-items: center;
+}
+.gc-side li > span {
+  font-size: 17px;
+}
+.gc-side li small {
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+.gc-side .spk {
+  padding: 4px 8px;
+}
+.gc-tw {
+  overflow-x: auto;
+}
+.gc-t {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.gc-t th,
+.gc-t td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.gc-t thead th {
+  background: var(--sunk);
+  font-size: 15px;
+}
+.gc-t tbody th {
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.gc-tip {
+  margin: 0;
+  background: var(--ai-soft);
+  border-radius: 14px;
+  padding: 12px 14px;
+  line-height: 1.6;
+}
+.gc-q {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  scroll-margin-top: 80px;
+}
+.gc-n {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.gc-k {
+  margin: 0;
+  font-weight: 600;
+}
+.gc-s {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.5;
+}
+.gc-opts,
+.ym-opts {
+  display: grid;
+  gap: 6px;
+}
+.gc-opts {
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+.gc-o {
+  font-size: 18px;
+}
+.is-ok {
+  background: var(--ok-soft) !important;
+  border-color: var(--ok) !important;
+  color: var(--ok) !important;
+}
+.is-ng {
+  background: var(--ng-soft) !important;
+  border-color: var(--ng) !important;
+  color: var(--ng) !important;
+}
+.gc-why {
+  border-radius: 12px;
+  padding: 10px 12px;
+  line-height: 1.55;
+  font-size: 15px;
+}
+.gc-why.ok {
+  background: var(--ok-soft);
+}
+.gc-why.ng {
+  background: var(--ng-soft);
+}
+.gc-done,
+.ym-done {
+  margin: 0;
+  font-size: 16px;
+}
+.gc-done b,
+.ym-done b {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+/* 읽기 */
+.ym-k {
+  font-size: 12px;
+  color: var(--muted);
+}
+.ym-head h2 {
+  margin: 2px 0;
+  font-size: 26px;
+}
+.ym-head p {
+  margin: 0;
+  color: var(--muted);
+}
+.ym-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.ym-text {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 8px;
+  display: grid;
+  gap: 2px;
+}
+.ym-s {
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  padding: 8px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: grid;
+  gap: 4px;
+}
+.ym-s.open {
+  background: var(--sunk);
+}
+.ym-s .jp {
+  font-size: 20px;
+  line-height: 2.1;
+}
+.ym-s rt {
+  font-size: 0.5em;
+  color: var(--muted);
+}
+.ym-s small {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ym-sp {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ai);
+}
+.ym-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 14px;
+}
+.ym-words b {
+  width: 100%;
+}
+.ym-words small {
+  color: var(--muted);
+}
+.ym-q {
+  display: grid;
+  gap: 6px;
+}
+.ym-q p {
+  margin: 0;
+  line-height: 1.5;
+}
+.ym-o {
+  text-align: left;
+  justify-content: flex-start;
+}
+.ym-why {
+  font-size: 14px;
+  color: var(--muted);
+}
+.ym-text,
+.gc-sides,
+.gc,
+.ym {
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+}
+.ym-s {
+  width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.ym-s ruby {
+  ruby-align: center;
+}
+.gc-side li > span,
+.gc-s,
+.ym-s .jp {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.gc-side li > span[lang='ko'],
+.gc-side li small {
+  word-break: keep-all;
+}
+
 /* ---- responsive.css ---- */
 @media (prefers-reduced-motion: reduce) {
   * {

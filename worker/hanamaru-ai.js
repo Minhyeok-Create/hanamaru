@@ -12,6 +12,7 @@
 //   - (선택) Variables → PHOTO_DAILY_LIMIT = 한 사람이 하루에 읽을 수 있는 사진 수 (기본 3)
 //   - (선택) Variables → PHOTO_CAP = 서버 전체 하루 사진 수 (기본 150)
 //   - (선택) Variables → STATS_KEY = 통계 화면 비밀번호 (/stats?k=비밀번호). 비우면 누구나 볼 수 있어요
+//   - (선택) Variables → TTS_OFF = 1 → 고음질 발음만 끄기 (기기 목소리로 돌아가요)
 //   - (선택) Variables → AI_OFF = 1  → AI를 잠시 끄기 (급할 때 비상 스위치)
 
 const MODELS = ['@cf/google/gemma-4-26b-a4b-it', '@cf/qwen/qwen3-30b-a3b-fp8', '@cf/meta/llama-3.1-8b-instruct-fp8'];
@@ -453,6 +454,55 @@ table{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;ove
 <div class="wrap"><table><tr><th>연습</th><th>열기</th><th>끝까지</th><th>비율</th><th>👍</th><th>👎</th><th>👎 이유</th></tr>${modRows || '<tr><td colspan="7">아직 기록이 없어요</td></tr>'}</table></div>`);
 }
 
+// ================= 고음질 발음 (MeloTTS). 같은 문장은 Cloudflare 캐시에 30일 보관해서 다시 만들지 않아요 =================
+async function ttsBytes(out) {
+  if (!out) return null;
+  if (out instanceof ArrayBuffer) return new Uint8Array(out);
+  if (out instanceof Uint8Array) return out;
+  if (typeof ReadableStream !== 'undefined' && out instanceof ReadableStream) return new Uint8Array(await new Response(out).arrayBuffer());
+  const b64 = out.audio || (out.result && out.result.audio);
+  if (typeof b64 === 'string') return Uint8Array.from(atob(b64), ch => ch.charCodeAt(0));
+  return null;
+}
+async function handleTTS(req, env, url, c, ip, ctx) {
+  const origin = req.headers.get('Origin') || '';
+  const audioHeaders = { ...c.headers, 'Content-Type': 'audio/mpeg', 'Cache-Control': 'public, max-age=2592000' };
+  if (!env.AI || String(env.AI_OFF || '') === '1' || String(env.TTS_OFF || '') === '1') return reply({ error: 'off' }, 503, c.headers);
+  if (!origin || !c.ok) return reply({ error: 'forbidden' }, 403, c.headers);
+  const lang = url.searchParams.get('l') === 'en' ? 'en' : 'ja';
+  const text = clip(url.searchParams.get('t'), 140).trim();
+  if (!text) return reply({ error: 'empty' }, 400, c.headers);
+  const key = `https://hanamaru-tts.cache/v1/${lang}/${encodeURIComponent(text)}`;
+  const cache = caches.default;
+  const hit = await cache.match(key);
+  if (hit) return new Response(hit.body, { status: 200, headers: audioHeaders });
+  const day = kstDay();
+  if (!(await bump(`tts:${day}:${ip}`, 400)).ok || !(await bump(`ttsall:${day}`, Math.max(1, parseInt(env.TTS_CAP, 10) || 20000))).ok)
+    return reply({ error: 'limit' }, 429, c.headers);
+  let bytes = null,
+    lastErr = '';
+  for (const l of lang === 'en' ? ['en'] : ['jp', 'ja']) {
+    try {
+      bytes = await ttsBytes(await env.AI.run('@cf/myshell-ai/melotts', { prompt: text, lang: l }));
+      if (bytes && bytes.length > 100) break;
+    } catch (e) {
+      lastErr = String((e && e.message) || e);
+    }
+  }
+  if (!bytes || bytes.length <= 100) {
+    console.log('[tts]', lang, lastErr.slice(0, 160));
+    return reply({ error: 'tts failed' }, 502, c.headers);
+  }
+  const res = new Response(bytes, { status: 200, headers: audioHeaders });
+  const save = cache.put(
+    key,
+    new Response(bytes, { headers: { 'Content-Type': 'audio/mpeg', 'Cache-Control': 'public, max-age=2592000' } })
+  );
+  if (ctx && ctx.waitUntil) ctx.waitUntil(save);
+  else await save;
+  return res;
+}
+
 // ================= 메뉴판·간판 사진 읽기 =================
 async function runVision(env, system, image) {
   const models = env.VISION_MODEL ? [env.VISION_MODEL, ...VISION_MODELS] : VISION_MODELS;
@@ -510,7 +560,7 @@ async function runVision(env, system, image) {
 }
 
 export default {
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
     const allowed = allowedList(env);
     const origin = req.headers.get('Origin') || '';
     const c = cors(origin, allowed);
@@ -519,6 +569,7 @@ export default {
     const ip = req.headers.get('CF-Connecting-IP') || 'unknown';
     if (url.pathname.startsWith('/push/')) return handlePush(req, env, url.pathname, c, ip);
     if (url.pathname === '/stats' && req.method === 'GET') return statsPage(env, url);
+    if (url.pathname === '/tts' && req.method === 'GET') return handleTTS(req, env, url, c, ip, ctx);
     if (url.pathname === '/stat' && req.method === 'POST') return handleStat(req, env, c, ip);
     if (req.method === 'GET') return reply({ ok: true, name: 'hanamaru-ai', ai: !!env.AI, db: !!env.DB }, 200, c.headers); // 연결 확인용
     // 앱 오류 알림: 내용만 Workers Logs에 남겨요 (AI 사용량과 무관)
