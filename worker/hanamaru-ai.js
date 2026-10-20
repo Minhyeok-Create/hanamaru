@@ -47,6 +47,10 @@ Output ONLY JSON: {"options": [{"reply": "<${L}>", "ko": "<Korean meaning>"}, ..
 Review ONLY the learner's lines (role "user") in the conversation. For each line that has a grammar mistake, wrong word, or sounds unnatural, give the corrected ${L} and a short reason in Korean. Skip lines that are fine, and skip lines written in Korean (instead show how to say them in ${L}, reason "이렇게 말해요").
 Then give one encouraging overall tip in Korean (1-2 sentences).
 Output ONLY JSON: {"items": [{"you": "<learner's original>", "fix": "<corrected ${L}>", "why": "<Korean reason>"}], "tip": "<Korean>"}`;
+  if (task === 'diary')
+    return `You are a kind ${L} teacher for Korean beginners. The learner wrote a one-line diary in ${L} (it may contain Korean words they did not know in ${L}).
+Correct it with minimal changes (keep their meaning), then give a more natural way a native speaker would say it (can be the same).
+Output ONLY JSON: {"fixed": "<corrected ${L}>", "natural": "<natural ${L}>", "ko": "<Korean translation>", "notes": ["<short Korean explanation of each fix>", ...max 3], "good": "<one short warm compliment in Korean>"}`;
   if (task === 'translate')
     return `Translate the following ${L} text into natural Korean. It may be a menu, sign or notice. Output only the Korean translation, no notes.`;
   return null;
@@ -78,6 +82,33 @@ export default {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: c.headers });
     const url = new URL(req.url);
     if (req.method === 'GET') return reply({ ok: true, name: 'hanamaru-ai' }, 200, c.headers); // 연결 확인용
+    // 앱 오류 알림: 내용만 Workers Logs에 남겨요 (AI 사용량과 무관)
+    if (req.method === 'POST' && url.pathname === '/log') {
+      if (!c.ok) return new Response(null, { status: 403, headers: c.headers });
+      const ip = req.headers.get('CF-Connecting-IP') || 'unknown';
+      const day = kstDay();
+      if (!(await bump(`log:${day}:${ip}`, 20)).ok || !(await bump(`logall:${day}`, 3000)).ok)
+        return new Response(null, { status: 204, headers: c.headers });
+      let e = {};
+      try {
+        e = JSON.parse((await req.text()).slice(0, 2000));
+      } catch (er) {}
+      const pick = k => clip(e[k], k === 'stack' ? 400 : 200);
+      console.log(
+        '[app-error]',
+        JSON.stringify({
+          msg: pick('msg'),
+          at: pick('at'),
+          stack: pick('stack'),
+          ver: pick('ver'),
+          mod: pick('mod'),
+          lang: pick('lang'),
+          dev: pick('dev'),
+          app: pick('app')
+        })
+      );
+      return new Response(null, { status: 204, headers: c.headers });
+    }
     if (req.method !== 'POST' || url.pathname !== '/ai') return reply({ error: 'not found' }, 404, c.headers);
     if (!c.ok) return reply({ error: '허용되지 않은 주소에서 온 요청이에요.' }, 403, c.headers);
     if (!env.AI) return reply({ error: 'Worker에 Workers AI(AI) 연결이 아직 없어요.' }, 500, c.headers);
@@ -103,7 +134,7 @@ export default {
     if (!all.ok) return reply({ error: '오늘은 AI를 찾는 사람이 많아서 무료 사용량이 다 찼어요. 내일 다시 해 보세요.' }, 429, c.headers);
 
     const messages = [{ role: 'system', content: system }];
-    if (task === 'translate') messages.push({ role: 'user', content: clip(body.text, 400) });
+    if (task === 'translate' || task === 'diary') messages.push({ role: 'user', content: clip(body.text, task === 'diary' ? 200 : 400) });
     else {
       const hist = (Array.isArray(body.messages) ? body.messages : []).slice(-MAX_MSGS).map(m => ({
         role: m.role === 'assistant' ? 'assistant' : 'user',
@@ -125,7 +156,7 @@ export default {
           content: 'Conversation:\n' + hist.map(m => `${m.role === 'assistant' ? 'partner' : 'learner'}: ${m.content}`).join('\n')
         });
     }
-    const maxTokens = task === 'review' ? 700 : task === 'translate' ? 400 : task === 'hint' ? 260 : 160;
+    const maxTokens = task === 'review' ? 700 : task === 'translate' ? 400 : task === 'diary' ? 450 : task === 'hint' ? 260 : 160;
     const models = env.MODEL ? [env.MODEL, ...MODELS] : MODELS;
     let lastErr = '';
     for (const model of models) {

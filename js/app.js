@@ -1,3 +1,67 @@
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [66, "lib/conjugate.js"], [278, "lib/numbers.js"], [443, "lib/dictation.js"], [533, "content/kana.js"], [586, "content/items.js"], [626, "lib/romaji.js"], [716, "content/items-extra.js"], [761, "core/storage.js"], [923, "core/srs.js"], [1041, "core/badges.js"], [1129, "core/backup.js"], [1220, "core/speech.js"], [1341, "ui/shell.js"], [1773, "ui/menu.js"], [1956, "ui/home.js"], [2150, "quiz/engine.js"], [2678, "quiz/input.js"], [2798, "quiz/kana.js"], [2902, "quiz/words.js"], [3092, "quiz/loan-conj.js"], [3167, "quiz/sentences.js"], [3299, "quiz/dictation-numbers.js"], [3424, "quiz/flow.js"], [3717, "quiz/speed.js"], [3885, "views/reference.js"], [3972, "views/wordlist.js"], [4165, "views/stats.js"], [4289, "quiz/modes-extra.js"], [4408, "features/shadowing.js"], [4513, "features/dialogue.js"], [4693, "views/grammar-notes.js"], [4748, "views/today.js"], [4863, "core/update.js"], [4923, "quiz/counters.js"], [5274, "quiz/polite.js"], [5323, "quiz/jp-pairs.js"], [5373, "quiz/english-grammar.js"], [5450, "quiz/made-english.js"], [5494, "quiz/hanja.js"], [5742, "quiz/ko-traps.js"], [5852, "quiz/en-traps.js"], [5921, "quiz/kansai.js"], [5962, "features/course.js"], [6839, "ui/sheet.js"], [6871, "features/share-card.js"], [7190, "ui/help.js"], [7497, "play/setup.js"], [7526, "features/sound.js"], [7587, "features/levels.js"], [7712, "play/cards.js"], [7855, "play/stamps.js"], [8049, "play/omikuji.js"], [8185, "play/rain.js"], [8399, "play/match.js"], [8527, "play/vs.js"], [8769, "play/play.js"], [8902, "features/missions.js"], [8998, "features/seasons.js"], [9053, "features/weekly.js"], [9287, "features/level-test.js"], [9535, "features/autoplay.js"], [9733, "views/wrong-notes.js"], [9806, "features/support.js"], [9903, "ui/settings.js"], [10142, "features/travel.js"], [10284, "features/writing.js"], [10451, "features/flashcards.js"], [10593, "features/share-words.js"], [10733, "views/hanja-rules.js"], [10857, "features/signs.js"], [10938, "features/trip.js"], [11098, "features/daily.js"], [11219, "features/share-more.js"], [11385, "views/weak.js"], [11509, "features/ai.js"], [11570, "features/aichat.js"], [11908, "features/diary.js"], [12047, "features/mycard.js"], [12301, "features/reader.js"], [12472, "ui/welcome.js"], [12573, "ui/search.js"], [12704, "ui/whats-new.js"], [12799, "boot.js"]];
+// ---- core/errlog.js ----
+'use strict';
+/* ================= 오류 알림: when the app breaks on someone's phone, send what broke (never their records or text) =================
+   Goes to the AI server's /log (only if js/config.js has an AI endpoint). Shows up in Cloudflare → Worker → Logs. */
+const ERRLOG = { sent: new Set(), n: 0 };
+function reportError(msg, src, stack) {
+  try {
+    const ep = (APP_CONFIG.ai || {}).endpoint || '';
+    if (!/^https:\/\//.test(ep) || !location.protocol.startsWith('http')) return;
+    msg = String(msg || '').slice(0, 200);
+    if (
+      !msg ||
+      /^Script error\.?$/i.test(msg.trim()) ||
+      /ResizeObserver loop|extension:\/\/|chrome-extension|safari-extension|moz-extension/i.test(msg + ' ' + src)
+    )
+      return;
+    const key = msg + '|' + src;
+    if (ERRLOG.sent.has(key) || ERRLOG.n >= 3) return; // at most 3 different errors per visit
+    ERRLOG.sent.add(key);
+    ERRLOG.n++;
+    // app.js is one bundle: turn "app.js:1234" back into the source file name
+    const at = String(src || '').replace(/^.*\/js\/app\.js[^:]*:(\d+):?(\d*)/, (m, l) => {
+      const ln = +l;
+      let f = 'app.js';
+      if (typeof BUNDLE_MAP !== 'undefined') for (const [start, name] of BUNDLE_MAP) if (ln >= start) f = `${name}:${ln - start + 1}`;
+      return f;
+    });
+    const ua = navigator.userAgent || '';
+    const dev =
+      (ua.match(/iPhone OS [\d_]+|iPad|Android [\d.]+|Windows NT [\d.]+|Mac OS X [\d_]+/) || ['기타'])[0] +
+      ' · ' +
+      (ua.match(/CriOS|FxiOS|EdgiOS|KAKAOTALK|Instagram|NAVER|Line|SamsungBrowser|Chrome|Safari/) || ['?'])[0];
+    const body = JSON.stringify({
+      msg,
+      at: at.slice(0, 160),
+      stack: String(stack || '')
+        .split('\n')
+        .slice(0, 4)
+        .join(' | ')
+        .slice(0, 400),
+      ver: typeof APP_VERSION !== 'undefined' ? APP_VERSION : '',
+      mod: typeof CUR_MOD !== 'undefined' ? CUR_MOD || 'menu' : '',
+      lang: typeof S !== 'undefined' ? S.lang : '',
+      dev,
+      app:
+        window.navigator.standalone === true || (window.matchMedia && matchMedia('(display-mode: standalone)').matches)
+          ? 'home-screen'
+          : 'browser'
+    });
+    const url = ep.replace(/\/$/, '') + '/log';
+    if (navigator.sendBeacon) navigator.sendBeacon(url, body);
+    else fetch(url, { method: 'POST', body, keepalive: true }).catch(() => {});
+  } catch (e) {}
+}
+window.addEventListener('error', e => {
+  if (e && e.message) reportError(e.message, `${e.filename || ''}:${e.lineno || ''}:${e.colno || ''}`, e.error && e.error.stack);
+});
+window.addEventListener('unhandledrejection', e => {
+  const r = e && e.reason;
+  if (r && (r.name === 'AbortError' || /fetch|network|load failed/i.test(String(r.message || r)))) return; // offline etc. is not a bug
+  reportError('promise: ' + String((r && r.message) || r), '', r && r.stack);
+});
+
 // ---- lib/conjugate.js ----
 'use strict';
 /* ================= pure logic: conjugation, numbers, dictation ================= */
@@ -1338,7 +1402,7 @@ const MENU = {
   ],
   talk: [
     ['여행', ['jtrav', 'mycard', 'trip', 'sign', 'reader', 'koexp', 'kansai']],
-    ['대화·듣기', ['aichat', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
+    ['대화·듣기', ['aichat', 'diary', 'jdlg', 'jl', 'jd', 'jsh', 'jn']],
     ['발음', ['jlen', 'jauto']]
   ],
   play: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
@@ -1348,13 +1412,14 @@ const MENU = {
     ['기록', ['stats', 'badges']]
   ],
   elearn: [
-    ['단어', ['ew', 'eflash', 'irr', 'kong']],
+    ['단어', ['ew', 'eflash', 'irr']],
+    ['한국인 맞춤', ['etrap', 'kong']],
     ['문장', ['es', 'eb', 'eprep', 'etense', 'ephr']],
     ['도전', ['espeed']]
   ],
   etalk: [
     ['여행', ['etrav', 'emycard', 'etrip']],
-    ['대화·듣기', ['eaichat', 'edlg', 'el', 'ed', 'esh', 'enn']],
+    ['대화·듣기', ['eaichat', 'ediary', 'edlg', 'el', 'ed', 'esh', 'enn']],
     ['발음', ['mp', 'eauto']]
   ],
   eplay: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
@@ -1371,6 +1436,8 @@ const MODE_LABEL = {
   reader: '붙여넣기 해석기',
   aichat: 'AI 회화',
   eaichat: 'AI 회화',
+  diary: 'AI 한 줄 일기',
+  ediary: 'AI 한 줄 일기',
   kansai: '간사이벤',
   weak: '약점 리포트',
   kpart: '조사 함정',
@@ -1386,6 +1453,7 @@ const MODE_LABEL = {
   eflash: '플래시카드',
   wasei: '일본식 영어',
   kong: '콩글리시',
+  etrap: '한국인이 틀리는 영어',
   jtrav: '여행 카드',
   etrav: '여행 카드',
   wrongs: '오답 노트',
@@ -1442,6 +1510,7 @@ const DUE_LABEL = {
   hjw: '한자어',
   wasei: '일본식 영어',
   kong: '콩글리시',
+  etrap: '한국인이 틀리는 영어',
   eprep: '전치사',
   etense: '시제',
   ephr: '구동사',
@@ -1477,6 +1546,7 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'diary',
   'mycard',
   'reader',
   'aichat',
@@ -1546,12 +1616,12 @@ const SRS_MODS = {
     'jd',
     'jlen'
   ],
-  en: ['ew', 'irr', 'kong', 'es', 'eb', 'eprep', 'etense', 'ephr', 'el', 'ed', 'mp']
+  en: ['ew', 'irr', 'etrap', 'kong', 'es', 'eb', 'eprep', 'etense', 'ephr', 'el', 'ed', 'mp']
 };
 const srsMods = () => SRS_MODS[S.lang].filter(m => hasTTS || !NEEDS_TTS.has(m));
 const tabModes = t => (TAB_MODES[OLD_TAB[t] || t] || []).filter(m => hasTTS || !NEEDS_TTS.has(m));
 // modes the person chose to hide (settings → 메뉴 편집) are left out of menus
-const menuModes = t => tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m) && (!/aichat$/.test(m) || aiOn()));
+const menuModes = t => tabModes(t).filter(m => !(S.hide[S.lang] || []).includes(m) && (!/aichat$|diary$/.test(m) || aiOn()));
 const tabList = () => TABS[S.lang].filter(([t]) => t === 'home' || tabModes(t).length);
 function curTab() {
   const t = OLD_TAB[S.tabs[S.lang]] || S.tabs[S.lang];
@@ -1734,6 +1804,8 @@ const MENU_DESC = {
   reader: '찍어서 복사한 일본어에 읽는 법·뜻 달기',
   aichat: 'AI 점원·친구와 자유롭게 대화하고 첨삭',
   eaichat: 'AI 점원·친구와 자유롭게 대화하고 첨삭',
+  diary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
+  ediary: '하루 한 문장 쓰면 AI가 고쳐 줘요',
   kansai: '오사카 사투리 おおきに·なんでやねん',
   jdlg: '상황별 대화를 직접 주고받기',
   jl: '듣고 맞는 문장 고르기',
@@ -1761,6 +1833,7 @@ const MENU_DESC = {
   eflash: '넘기면서 알아요 / 몰라요',
   irr: 'go-went-gone 불규칙 동사',
   kong: '핸드폰은 영어로?',
+  etrap: 'married with him? 한국어 직역 함정',
   es: '한국어 문장에 맞는 영어 고르기',
   eb: '단어 블록으로 문장 만들기',
   eprep: 'in·on·at 전치사',
@@ -1780,6 +1853,9 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'etrap',
+  'diary',
+  'ediary',
   'mycard',
   'emycard',
   'reader',
@@ -1808,7 +1884,7 @@ const TAB_LEAD = {
   talk: '여행에서 바로 쓰는 것과 듣기 · 말하기',
   play: '쉬어 가며 즐기는 놀이',
   ref: '복습과 정리 자료, 내 기록',
-  elearn: '단어와 문장 연습',
+  elearn: '단어와 문장, 그리고 한국인이 자주 틀리는 영어',
   etalk: '여행 영어와 듣기 · 말하기',
   eplay: '쉬어 가며 즐기는 놀이',
   eref: '복습과 정리 자료, 내 기록'
@@ -4786,7 +4862,7 @@ function renderToday() {
 // ---- core/update.js ----
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020101929';
+const APP_VERSION = '20261020105027';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {
@@ -5771,6 +5847,75 @@ function kxShare(x) {
   else copyText(txt, '복사했어요. 친구에게 붙여넣어 보내 주세요.', () => toast('복사하지 못했어요.'));
 }
 CUSTOM.koexp = renderKoExp;
+
+// ---- quiz/en-traps.js ----
+'use strict';
+/* ================= 한국인이 틀리는 영어 (etrap): Korean said word for word turns into wrong English ================= */
+const ET_ITEMS = (typeof ETRAP_RAW !== 'undefined' ? ETRAP_RAW : []).map(o => ({ ...o, key: 'xt:' + o.s + '|' + o.a }));
+const ET_GROUPS = [...new Set(ET_ITEMS.map(x => x.g))];
+const ET_NONE = '(없음)';
+if (!Array.isArray(S.xt)) S.xt = [];
+
+// the sentence with the blank filled in; "(없음)" means nothing goes there
+const etFill = (s, a) =>
+  a === ET_NONE
+    ? s
+        .replace(/\s*___\s*/, ' ')
+        .replace(/\s{2,}/g, ' ')
+        .replace(/ ([.,?!])/g, '$1')
+    : s.replace('___', a);
+const etSpeak = (s, a) =>
+  etFill(s, a)
+    .replace(/\s*\([^)]*[가-힣][^)]*\)\s*$/, '')
+    .replace(/\s*—\s*/g, ' ');
+
+POOLS.etrap = full => (full || !S.xt.length ? ET_ITEMS : ET_ITEMS.filter(x => S.xt.includes(x.g)));
+SETUPS.etrap = () => {
+  const all = !S.xt.length;
+  return [
+    `한국인이 틀리는 영어 ${POOLS.etrap().length}문제 · ${all ? '전체' : S.xt.join('·')}`,
+    `<div class="setup-row"><label>주제</label><div class="chips"><button class="chip" data-xtg="" aria-pressed="${all}">전체</button>${ET_GROUPS.map(
+      g => `<button class="chip" data-xtg="${esc(g)}" aria-pressed="${!all && S.xt.includes(g)}">${esc(g)}</button>`
+    ).join('')}</div></div>
+    <p class="note">한국어를 그대로 옮기면 틀리는 곳만 모았어요. '그와 결혼했어요'는 married <b>with</b> him이 아니라 married him, '배 안 고파요?'에 안 고프면 <b>No</b>.</p>`
+  ];
+};
+LABELS.etrap = q => [etFill(q.s, q.a), q.ko];
+SPEAKQ.etrap = q => [etSpeak(q.s, q.a), 'en'];
+AUTO.etrap = 0;
+CHECK.etrap = (v, s) => genericChoice('etrap', -1, s);
+SHOWS.etrap = (mod, q, card, zone, r) => {
+  if (!r.order)
+    r.order = shuffle(
+      [q.a, ...q.o].map(p => ({
+        t: p,
+        ok: p === q.a,
+        cls: p === ET_NONE ? '' : 'en',
+        lang: p === ET_NONE ? 'ko' : 'en',
+        sub: p === q.lit ? '한국어 그대로 옮기면' : ''
+      }))
+    );
+  const fill = r.answered ? (q.a === ET_NONE ? '<s>　</s>' : esc(q.a)) : '？';
+  const sent = esc(q.s).replace('___', `<span class="blank">${fill}</span>`);
+  card.innerHTML = `<span class="cat">한국인이 틀리는 영어 · ${esc(q.g)}</span><p class="ko" style="font-size:18px;margin-top:20px">${esc(q.ko)}</p>
+    <p class="psent en" lang="en">${sent}</p><p class="cap">빈칸에 들어갈 말은? 아무것도 안 들어가면 (없음)</p>${MARKS}`;
+  zone.dataset.type = 'etrap';
+  zone.innerHTML = optsHTML(r);
+};
+INFO.etrap = q =>
+  `<p class="fb-big en" lang="en">${q.a === ET_NONE ? esc(etFill(q.s, q.a)) : esc(q.s).replace('___', `<mark>${esc(q.a)}</mark>`)}</p>
+   <p class="fb-sub"><span class="kp-trap">한국어 직역 <b>${esc(q.lit)}</b> ✕</span> <span class="kp-ok">영어 <b>${esc(q.a)}</b></span></p>
+   <p class="fb-sub" style="color:var(--ink)">${esc(q.n)}</p><div>${spkBtn(etSpeak(q.s, q.a), '문장 듣기', 'en')}</div>`;
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-xtg]');
+  if (!b) return;
+  const g = b.dataset.xtg;
+  if (!g) S.xt = [];
+  else S.xt = S.xt.includes(g) ? S.xt.filter(x => x !== g) : [...S.xt, g];
+  save();
+  R.etrap = null;
+  renderModule('etrap');
+});
 
 // ---- quiz/kansai.js ----
 'use strict';
@@ -6824,7 +6969,7 @@ function shareImage(cv, text, title) {
 }
 function drawShareCard() {
   const W = 1080,
-    H = 1440;
+    H = 1640;
   let cv;
   try {
     cv = document.createElement('canvas');
@@ -6959,16 +7104,86 @@ function drawShareCard() {
     }
     x.textAlign = 'left';
   });
-  font(500, 30);
-  x.fillStyle = C.muted;
-  x.textAlign = 'center';
-  x.fillText('하나마루 · 일본어·영어 회화 기초', W / 2, 1400);
-  x.textAlign = 'left';
+  drawQRFooter(x, W, H, '한국인을 위한 일본어·영어 회화 앱');
   return cv;
 }
 async function shareCard() {
-  await loadCardFonts();
+  await Promise.all([loadCardFonts(), ensureQR()]);
   shareImage(drawShareCard(), `하나마루 · 오늘 ${(S.days[today()] || { n: 0 }).n}문제 · ${streak()}일 연속`, '결과 카드');
+}
+
+// ---- QR code on share cards (qrcode-generator by Kazuhiko Arase, MIT; loaded only when a card is made) ----
+const cardUrl = () =>
+  (typeof APP_CONFIG !== 'undefined' && APP_CONFIG.site) || (location.protocol.startsWith('http') ? location.href.split(/[?#]/)[0] : '');
+let QR_LOADING = null;
+function ensureQR() {
+  if (typeof qrcode === 'function') return Promise.resolve();
+  if (!QR_LOADING)
+    QR_LOADING = new Promise(ok => {
+      const sc = document.createElement('script');
+      sc.src = 'js/vendor/qrcode/qrcode.js';
+      sc.onload = sc.onerror = () => ok();
+      document.head.appendChild(sc);
+      setTimeout(ok, 4000);
+    });
+  return QR_LOADING;
+}
+function drawQR(x, X, Y, size, text) {
+  if (typeof qrcode !== 'function' || !text) return false;
+  try {
+    const q = qrcode(0, 'M');
+    q.addData(text);
+    q.make();
+    const n = q.getModuleCount(),
+      cell = Math.max(2, Math.floor((size * 0.88) / n)),
+      off = Math.round((size - cell * n) / 2);
+    roundRect(x, X, Y, size, size, 16, '#FFFFFF');
+    x.fillStyle = '#000000';
+    for (let r = 0; r < n; r++)
+      for (let c = 0; c < n; c++) if (q.isDark(r, c)) x.fillRect(X + off + c * cell, Y + off + r * cell, cell, cell);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+// bottom band: app name + address on the left, QR code on the right
+function drawQRFooter(x, W, H, line) {
+  const url = cardUrl(),
+    size = 150,
+    Y = H - size - 50;
+  x.strokeStyle = SHARE_COLORS.line;
+  x.lineWidth = 2;
+  x.beginPath();
+  x.moveTo(64, Y - 26);
+  x.lineTo(W - 64, Y - 26);
+  x.stroke();
+  const hasQR = drawQR(x, W - 64 - size, Y, size, url);
+  x.textAlign = 'left';
+  x.fillStyle = SHARE_COLORS.ink;
+  x.font = `700 40px ${SHARE_FONT}`;
+  x.fillText('하나마루', 64, Y + 48);
+  x.fillStyle = SHARE_COLORS.muted;
+  const maxW = W - 64 - size - 40 - 64;
+  let ls = 28;
+  x.font = `500 ${ls}px ${SHARE_FONT}`;
+  while (ls > 20 && x.measureText(line).width > maxW) x.font = `500 ${--ls}px ${SHARE_FONT}`;
+  while (line.length > 4 && x.measureText(line).width > maxW) line = line.slice(0, -2) + '…';
+  x.fillText(line, 64, Y + 92);
+  if (url) {
+    let fs = 28;
+    const u = url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+    x.font = `600 ${fs}px ${SHARE_FONT}`;
+    while (fs > 18 && x.measureText(u).width > maxW) x.font = `600 ${--fs}px ${SHARE_FONT}`;
+    x.fillStyle = SHARE_COLORS.ai;
+    x.fillText(u, 64, Y + 134);
+  }
+  if (hasQR) {
+    x.textAlign = 'right';
+    x.fillStyle = SHARE_COLORS.muted;
+    x.font = `500 20px ${SHARE_FONT}`;
+    x.fillText('카메라로 찍으면 열려요', W - 64, Y + size + 32);
+    x.textAlign = 'left';
+  }
 }
 
 // ---- ui/help.js ----
@@ -6978,6 +7193,8 @@ const MODE_HELP = {
   mycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   emycard: '택시 목적지·알레르기·예약 이름처럼 빈칸을 채워 나만의 카드를 만들고, 화면 가득 보여 줘요.',
   reader: '아이폰 텍스트 인식으로 복사한 일본어를 붙여넣으면 후리가나·단어 뜻·한국음을 달아 줘요.',
+  diary: '주제를 보고 일본어로 한 문장을 써요. AI가 틀린 곳을 고치고, 더 자연스러운 표현과 이유를 한국어로 알려 줘요. 하루 3번까지.',
+  ediary: '주제를 보고 영어로 한 문장을 써요. AI가 틀린 곳을 고치고, 더 자연스러운 표현과 이유를 한국어로 알려 줘요. 하루 3번까지.',
   aichat: 'AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.',
   eaichat: 'AI가 점원·친구 역할을 맡아 실제처럼 대화해요. 힌트와 대화 후 첨삭도 받을 수 있어요.',
   kansai: '오사카·교토에서 자주 듣는 사투리(간사이벤)의 뜻을 맞히고 표준어와 비교해요.',
@@ -6994,6 +7211,7 @@ const MODE_HELP = {
   flash: '단어 카드를 뒤집어 보고 알아요 / 몰라요만 눌러요. 몰라요는 복습에 다시 나와요.',
   eflash: '영단어 카드를 뒤집어 보고 알아요 / 몰라요만 눌러요. 몰라요는 복습에 다시 나와요.',
   wasei: 'サラリーマン처럼 일본에서 만든 영어가 영어권에서는 뭐라고 하는지 맞혀요.',
+  etrap: "'그와 결혼했어요'를 married with him으로, '배 안 고파요?'에 Yes라고 하기 쉬워요. 한국어를 그대로 옮기면 틀리는 곳만 모았어요.",
   kong: '핸드폰, 아이쇼핑처럼 한국에서 만든 영어를 원어민이 쓰는 말로 바꿔요.',
   jtrav: '여행에서 바로 쓰는 문장 카드예요. 보여주기를 누르면 화면 가득 띄우고 읽어 줘요.',
   etrav: '여행에서 바로 쓰는 영어 문장 카드예요. 보여주기를 누르면 화면 가득 띄우고 읽어 줘요.',
@@ -7132,7 +7350,7 @@ function helpHTML() {
     </div>
     <p class="note">메뉴 이름은 iOS 버전에 따라 조금 다를 수 있어요. 알림을 누르면 단축어 앱이 열리니, 하나마루는 홈 화면 아이콘으로 열어 주세요. 더 간단하게는 <b>미리 알림</b> 앱에 '하나마루'를 매일 반복으로 등록해도 돼요.</p>`
   )}
-  ${sec('privacy', '개인정보 · 앱 응원', `<p>학습 기록은 이 기기에만 저장되고 서버로 보내지 않아요. 로그인도 없어요.</p>${analyticsOn() ? '<p>하루에 몇 명이 앱을 쓰는지 알기 위해 <b>방문 수만</b> 세요. 쿠키를 쓰지 않고, 이름·기록 같은 개인정보는 보내지 않아요.</p>' : ''}${donateLinks().length ? `<p>앱이 도움이 됐다면 설정(톱니바퀴)의 <b>앱 응원하기</b>에서 후원할 수 있어요. 후원과 상관없이 모든 기능은 무료예요.</p>` : ''}`)}
+  ${sec('privacy', '개인정보 · 앱 응원', `${privacyHTML()}${donateLinks().length ? `<p>앱이 도움이 됐다면 설정(톱니바퀴)의 <b>앱 응원하기</b>에서 후원할 수 있어요. 후원과 상관없이 모든 기능은 무료예요.</p>` : ''}`)}
   ${sec('friends', '친구와 함께 쓰기', `<p>홈의 <b>결과 카드</b>를 누르면 오늘 푼 문제, 연속 학습, 최근 7일 기록이 담긴 이미지가 만들어져요. 길게 눌러 저장하거나 공유 버튼으로 카톡에 보내세요.</p><p>60초 도전 결과는 '결과 복사'로 글로 보낼 수 있어요.</p>`)}
   <p class="note" style="text-align:center;padding:8px 0 4px">하나마루 · 버전 ${esc(APP_VERSION.startsWith('__') ? '미리보기' : APP_VERSION.slice(0, 8))}</p>
   </div>`;
@@ -8849,7 +9067,7 @@ const KEY_GROUPS = [
   [/^(pt|kp):/, '조사'],
   [/^gp:/, '문법'],
   [/^pl:/, '반말·존댓말'],
-  [/^(ep|et|eph):/, '영문법'],
+  [/^(ep|et|eph|xt):/, '영문법'],
   [/^ir:/, '불규칙 동사'],
   [/^(jl|el|jd|ed|sh|esh|jm|mp):/, '듣기·발음'],
   [/^dl:/, '대화']
@@ -11029,17 +11247,7 @@ function cardHeader(x, W, sub) {
   x.textAlign = 'left';
 }
 function cardFooter(x, W, H, line) {
-  x.fillStyle = SHARE_COLORS.muted;
-  x.font = `500 28px ${SHARE_FONT}`;
-  x.textAlign = 'center';
-  x.fillText(line, W / 2, H - 92);
-  const u = appUrl();
-  if (u) {
-    x.fillStyle = SHARE_COLORS.ai;
-    x.font = `600 28px ${SHARE_FONT}`;
-    x.fillText(u, W / 2, H - 50);
-  }
-  x.textAlign = 'left';
+  drawQRFooter(x, W, H, line);
 }
 // shrink a font until the text fits the width
 function fitText(x, text, weight, size, family, maxW) {
@@ -11055,7 +11263,7 @@ function fitText(x, text, weight, size, family, maxW) {
 // ---- 여행 D-day ----
 function drawTripCard(t) {
   const W = 1080,
-    H = 1350,
+    H = 1520,
     c = cardCanvas(W, H);
   if (!c) return null;
   const [cv, x] = c;
@@ -11108,7 +11316,7 @@ function drawTripCard(t) {
 async function shareTripCard() {
   const t = tripOf(S.lang);
   if (!t) return;
-  await loadCardFonts();
+  await Promise.all([loadCardFonts(), ensureQR()]);
   const n = t.day - dayIdx();
   shareImage(drawTripCard(t), `${t.name || '여행'} ${n > 0 ? 'D-' + n : 'D-DAY'}! 하나마루로 여행 회화 준비 중`, '여행 D-day 카드');
 }
@@ -11116,7 +11324,7 @@ async function shareTripCard() {
 // ---- 한국음 발견 카드 ----
 function drawHanjaCard(w) {
   const W = 1080,
-    H = 1350,
+    H = 1600,
     c = cardCanvas(W, H);
   if (!c) return null;
   const [cv, x] = c;
@@ -11163,7 +11371,7 @@ function drawHanjaCard(w) {
 async function shareHanjaCard(k) {
   const w = HJW_ITEMS.find(x => x.k === k) || HJW_ITEMS[Math.floor(Math.random() * HJW_ITEMS.length)];
   if (!w) return;
-  await loadCardFonts();
+  await Promise.all([loadCardFonts(), ensureQR()]);
   shareImage(drawHanjaCard(w), `${w.ko} = ${w.k} = ${w.r}! 한국어를 알면 일본어가 보여요 · 하나마루`, '한국음 카드');
 }
 document.addEventListener('click', e => {
@@ -11181,6 +11389,7 @@ document.addEventListener('click', e => {
 const WEAK_SUB = {
   jlen: x => x.lb,
   kpart: x => x.g,
+  etrap: x => x.g,
   part: x => x.p,
   hj: x => (hjRuleOf(x.h) || {}).from,
   sign: x => SIGN_CATS[x.c],
@@ -11695,6 +11904,145 @@ function aicMic(lang) {
 CUSTOM.aichat = renderAIChat;
 CUSTOM.eaichat = renderAIChat;
 
+// ---- features/diary.js ----
+'use strict';
+/* ================= AI 한 줄 일기: write one sentence a day, the AI corrects it gently ================= */
+const DIARY_TOPICS = {
+  ja: [
+    '오늘 먹은 것',
+    '오늘 날씨',
+    '주말에 한 일',
+    '지금 기분',
+    '요즘 빠진 것',
+    '가 보고 싶은 곳',
+    '오늘 만난 사람',
+    '내일 할 일',
+    '좋아하는 음식',
+    '어제 본 것(영화·영상)',
+    '오늘 산 것',
+    '요즘 고민'
+  ],
+  en: [
+    'What I ate today',
+    'Today’s weather',
+    'My weekend',
+    'How I feel now',
+    'Something I like lately',
+    'A place I want to visit',
+    'Someone I met today',
+    'Plans for tomorrow',
+    'My favorite food',
+    'Something I watched',
+    'Something I bought',
+    'A small worry'
+  ]
+};
+const DIARY_EX = { ja: '例) 今日はラーメンを食べました。とてもおいしかったです。', en: 'e.g. I ate ramen today. It was really good.' };
+const DIARY_DAILY = 3; // corrections per day
+if (!S.diary || typeof S.diary !== 'object') S.diary = { ja: [], en: [] };
+let DY = { busy: false, err: '', last: null, topicShift: 0 };
+
+function renderDiary(mod) {
+  const lang = mod === 'diary' ? 'ja' : 'en';
+  if (!S.diary || typeof S.diary !== 'object') S.diary = { ja: [], en: [] };
+  if (!Array.isArray(S.diary[lang])) S.diary[lang] = [];
+  view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart dy" id="dyBody"></div></section>`;
+  dyDraw(lang);
+  view.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b || b.closest('.modes') || b.dataset.speak) return;
+    if (b.dataset.dy === 'go') dySend(lang);
+    else if (b.dataset.dy === 'topic') {
+      DY.topicShift++;
+      dyDraw(lang);
+    } else if (b.dataset.dyopen !== undefined) b.closest('.dy-h').classList.toggle('open');
+  };
+}
+const dyToday = lang => S.diary[lang].filter(x => x.d === today()).length;
+function dyDraw(lang) {
+  const box = document.getElementById('dyBody');
+  if (!box) return;
+  const ja = lang === 'ja';
+  if (!aiOn()) {
+    box.innerHTML = '<div class="empty"><p style="margin:0;font-weight:600">AI 일기는 아직 준비 중이에요</p></div>';
+    return;
+  }
+  const topics = DIARY_TOPICS[lang];
+  const topic = topics[(dayIdx() + DY.topicShift) % topics.length];
+  const left = Math.max(0, DIARY_DAILY - dyToday(lang));
+  const inp = document.getElementById('dyIn');
+  const draft = inp ? inp.value : '';
+  box.innerHTML = `<p class="note">하루 한 문장, ${ja ? '일본어' : '영어'}로 써 보세요. 모르는 단어는 한국어로 써도 AI가 고쳐 줘요. 오늘 남은 첨삭 <b class="num">${left}</b>번.</p>
+    <div class="dy-topic"><span>오늘의 주제</span><b>${esc(topic)}</b><button type="button" class="link" data-dy="topic">다른 주제</button></div>
+    <textarea id="dyIn" rows="3" lang="${lang}" maxlength="200" placeholder="${esc(DIARY_EX[lang])}" ${DY.busy ? 'disabled' : ''}>${esc(draft)}</textarea>
+    <div class="row"><button class="btn primary" data-dy="go" ${DY.busy || !left ? 'disabled' : ''}>${DY.busy ? '첨삭 중…' : left ? 'AI 첨삭 받기' : '내일 또 써요'}</button></div>
+    ${DY.err ? `<p class="note" style="color:var(--ng)">${esc(DY.err)}</p>` : ''}
+    ${DY.last ? dyCard(DY.last, lang, true) : ''}
+    ${
+      S.diary[lang].length
+        ? `<h3 class="hjr-h">내 일기 ${S.diary[lang].length}개</h3><div class="dy-list">${S.diary[lang]
+            .slice(0, 30)
+            .map(
+              x =>
+                `<div class="dy-h"><button type="button" class="dy-hd" data-dyopen><span class="num">${x.d.slice(5).replace('-', '.')}</span><b class="${ja ? 'jp' : 'en'}" lang="${lang}">${esc(x.natural || x.fixed || x.text)}</b></button>${dyCard(x, lang, false)}</div>`
+            )
+            .join('')}</div>`
+        : ''
+    }
+    <p class="note">AI 첨삭은 틀릴 수도 있어요. 쓴 문장은 첨삭을 위해 AI 서버로 보내지고, 일기는 내 폰에만 저장돼요.</p>`;
+}
+function dyCard(x, lang, fresh) {
+  const ja = lang === 'ja',
+    cls = ja ? 'jp' : 'en';
+  const same = (x.fixed || '').replace(/\s/g, '') === (x.text || '').replace(/\s/g, '');
+  return `<div class="dy-card ${fresh ? 'fresh' : ''}">
+    <p class="dy-row"><span>내가 쓴 글</span><span class="${cls}" lang="${lang}">${same ? esc(x.text) : `<s>${esc(x.text)}</s>`}</span></p>
+    ${same ? '<p class="dy-ok">틀린 곳이 없어요! 👏</p>' : `<p class="dy-row"><span>고친 문장</span><b class="${cls}" lang="${lang}">${esc(x.fixed)}</b></p>`}
+    ${x.natural && x.natural !== x.fixed ? `<p class="dy-row"><span>더 자연스럽게</span><b class="${cls}" lang="${lang}">${esc(x.natural)}</b></p>` : ''}
+    ${x.ko ? `<p class="dy-row"><span>뜻</span><span>${esc(x.ko)}</span></p>` : ''}
+    ${(x.notes || []).length ? `<ul class="dy-notes">${x.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
+    ${x.good ? `<p class="aic-tip">💡 ${esc(x.good)}</p>` : ''}
+    <div class="row">${spkBtn(x.natural || x.fixed || x.text, '듣기', lang)}</div></div>`;
+}
+async function dySend(lang) {
+  const inp = document.getElementById('dyIn');
+  const text = inp ? inp.value.trim().slice(0, 200) : '';
+  if (!text || DY.busy) return;
+  if (dyToday(lang) >= DIARY_DAILY) return;
+  DY.busy = true;
+  DY.err = '';
+  dyDraw(lang);
+  try {
+    const j = aiJSON(await aiCall('diary', { lang, text }));
+    if (!j || !(j.fixed || j.natural)) throw new Error('첨삭을 만들지 못했어요. 다시 해 보세요.');
+    const entry = {
+      d: today(),
+      text,
+      fixed: String(j.fixed || text),
+      natural: String(j.natural || ''),
+      ko: String(j.ko || ''),
+      notes: (Array.isArray(j.notes) ? j.notes : []).slice(0, 3).map(String),
+      good: String(j.good || '')
+    };
+    S.diary[lang].unshift(entry);
+    if (S.diary[lang].length > 100) S.diary[lang].length = 100;
+    save();
+    DY.last = entry;
+    if (inp) inp.value = '';
+    gainXP(10);
+  } catch (e) {
+    DY.err = e.message;
+  }
+  DY.busy = false;
+  dyDraw(lang);
+  if (!DY.err) {
+    const t = document.getElementById('dyIn');
+    if (t) t.value = '';
+  }
+}
+CUSTOM.diary = renderDiary;
+CUSTOM.ediary = renderDiary;
+
 // ---- features/mycard.js ----
 'use strict';
 /* ================= 나만의 여행 카드: fill-in-the-blank cards to show a taxi driver, a waiter, a front desk ================= */
@@ -12120,6 +12468,107 @@ function rdDraw() {
 }
 CUSTOM.reader = renderReader;
 
+// ---- ui/welcome.js ----
+'use strict';
+/* ================= first visit: what this app is in 3 seconds, pick a language, how to install ================= */
+
+const siteUrl = () => (APP_CONFIG && APP_CONFIG.site) || (location.protocol.startsWith('http') ? location.href.split(/[?#]/)[0] : '');
+// SNS links open inside an app's own browser, where "홈 화면에 추가" is missing and saved data can vanish
+const inAppBrowser = () => {
+  const ua = navigator.userAgent || '';
+  if (/KAKAOTALK/i.test(ua)) return '카카오톡';
+  if (/Instagram/i.test(ua)) return '인스타그램';
+  if (/FBAN|FBAV|FB_IAB/i.test(ua)) return '페이스북';
+  if (/Line\//i.test(ua)) return '라인';
+  if (/NAVER\(inapp/i.test(ua)) return '네이버';
+  if (/Twitter|X-Client/i.test(ua)) return 'X';
+  if (/ThreadsApp|Barcelona/i.test(ua)) return '스레드';
+  return '';
+};
+const isIOS = () =>
+  /iPhone|iPad|iPod/i.test(navigator.userAgent || '') || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+function installHint() {
+  if (isStandalone()) return '';
+  const inApp = inAppBrowser();
+  if (inApp)
+    return `<div class="wc-warn"><b>${inApp} 안에서 열렸어요</b><p>여기서는 홈 화면에 추가할 수 없고, 공부 기록이 사라질 수 있어요. ${isIOS() ? '<b>Safari</b>' : '<b>Chrome</b>'}로 열어 주세요.</p>
+      ${inApp === '카카오톡' ? '<button type="button" class="btn primary" data-wl="ext">Safari·기본 브라우저로 열기</button>' : `<p class="note">오른쪽 위(또는 아래) <b>⋯</b> 메뉴 → <b>${isIOS() ? 'Safari로 열기' : '다른 브라우저로 열기'}</b></p>`}
+      <button type="button" class="link" data-wl="copy">주소 복사하기</button></div>`;
+  return isIOS()
+    ? `<div class="wc-inst"><b>📲 앱처럼 쓰려면</b><p>Safari 아래쪽 <b>공유 버튼(□↑)</b> → <b>홈 화면에 추가</b>. 앱스토어 없이 아이콘이 생겨요.</p></div>`
+    : `<div class="wc-inst"><b>📲 앱처럼 쓰려면</b><p>브라우저 메뉴 <b>⋮</b> → <b>홈 화면에 추가</b>(또는 '앱 설치').</p></div>`;
+}
+function openWelcome() {
+  const ai = typeof aiOn === 'function' && aiOn();
+  const el = openSheet(
+    `<div class="wc">
+      <div class="wc-hero"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5c7.6 0 12.6 5.3 12.3 12.6-.3 7-5.8 12.3-12.6 12.1C8.9 28 3.6 22.7 3.8 15.6 4 8.7 9.2 3.9 16.6 4.2" fill="none" stroke="var(--shu)" stroke-width="2.4" stroke-linecap="round"/><path d="M16.4 9.6c3.6.2 6 2.9 5.7 6.3-.3 3.3-3.1 5.8-6.4 5.5-3.2-.3-5.4-3-5.1-6.1.3-2.7 2.5-4.4 5-4.2 2.3.2 3.7 2 3.5 4.1-.2 1.7-1.6 2.9-3.2 2.7" fill="none" stroke="var(--shu)" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h1>하나마루</h1><p>한국인을 위한 일본어·영어 회화 앱<br>여행 가기 전, 하루 10분</p></div>
+      <div class="wc-feats">
+        <div class="wc-f"><span>漢</span><div><b>한국음으로 한자 읽기</b><p>학교 = <span class="jp" lang="ja">学校</span> = <span class="jp" lang="ja" style="color:var(--shu)">がっこう</span>. 받침 규칙만 알면 절반은 읽혀요.</p></div></div>
+        <div class="wc-f"><span>🧳</span><div><b>여행 카드</b><p>점원에게 화면 가득 보여 주고 읽어 줘요. 호텔 주소·알레르기 카드도 만들어요.</p></div></div>
+        ${
+          ai
+            ? `<div class="wc-f"><span>💬</span><div><b>AI 회화</b><p>라멘집·편의점에서 AI 점원과 연습하고, 끝나면 틀린 표현을 고쳐 줘요.</p></div></div>`
+            : `<div class="wc-f"><span>📅</span><div><b>오늘 공부 시작</b><p>버튼 하나로 복습과 코스를 하루 10분씩 알아서 이어 줘요.</p></div></div>`
+        }
+      </div>
+      <p class="wc-free">무료 · 가입 없음 · 기록은 내 폰에만 저장</p>
+      <div class="wc-go"><button type="button" class="btn primary" data-wl="ja">일본어로 시작</button><button type="button" class="btn" data-wl="en">영어로 시작</button></div>
+      ${installHint()}
+      <p class="wc-foot"><button type="button" class="link" data-wl="tour">사용법 30초 보기</button> · <button type="button" class="link" data-wl="privacy">개인정보 안내</button></p>
+    </div>`,
+    'help welcome'
+  );
+  el.addEventListener('click', e => {
+    const b = e.target.closest('[data-wl]');
+    if (!b) return;
+    const a = b.dataset.wl;
+    if (a === 'ja' || a === 'en') {
+      welcomeDone(a);
+      closeSheet();
+      go('home');
+      toast(a === 'ja' ? '반가워요! 오늘 공부 시작을 눌러 보세요' : 'Welcome! 오늘 공부 시작을 눌러 보세요');
+    } else if (a === 'tour') {
+      welcomeDone(S.lang);
+      closeSheet();
+      openTour();
+    } else if (a === 'privacy') openPrivacy();
+    else if (a === 'ext') location.href = 'kakaotalk://web/openExternal?url=' + encodeURIComponent(siteUrl());
+    else if (a === 'copy') copyText(siteUrl(), '주소를 복사했어요. Safari·Chrome 주소창에 붙여넣어 주세요.', () => toast(siteUrl()));
+  });
+}
+function welcomeDone(lang) {
+  if (S.lang !== lang) {
+    S.lang = lang;
+    renderTabs();
+  }
+  S.seen.tour = 1;
+  for (let v = 8; v <= WN_LATEST; v++) S.seen['v' + v] = 1;
+  save();
+}
+// privacy notice: the same text as privacy.html, shown in the app
+function privacyHTML() {
+  return `<div class="pv">
+    <p><b>하나마루는 회원가입이 없고, 공부 기록은 내 기기(브라우저)에만 저장돼요.</b> 앱 주인을 포함해 누구도 내 기록을 볼 수 없어요.</p>
+    <h3>보내지는 정보</h3>
+    <ul>
+      <li><b>방문 통계</b> · 하루 몇 명이 오는지만 세요(Cloudflare Web Analytics). 쿠키를 쓰지 않고, 이름·기록·위치는 보내지 않아요.</li>
+      <li><b>AI 회화 · 한 줄 일기 · AI 번역</b> · 이 기능을 쓸 때만, 입력한 글과 대화 내용이 답을 만들기 위해 AI 서버(Cloudflare Workers AI)로 보내져요. 앱이 저장하지는 않아요. 이름·연락처 같은 개인정보는 쓰지 마세요.</li>
+      <li><b>오류 알림</b> · 앱이 고장 나면 오류 내용(어느 화면에서, 어떤 오류인지)과 기기 종류만 보내요. 공부 기록이나 입력한 글은 보내지 않아요.</li>
+      <li><b>문제 신고</b> · '문제가 이상해요'를 누르면 그 문제 내용이 구글 폼으로 가요. 직접 보내기를 눌러야 전송돼요.</li>
+    </ul>
+    <h3>기록 지우기·옮기기</h3>
+    <p>설정 → 기록 백업에서 코드로 옮길 수 있어요. 브라우저의 사이트 데이터를 지우면 기록도 지워져요.</p>
+    <p class="note">문의: 앱 안의 '문제가 이상해요' 신고 폼</p></div>`;
+}
+function openPrivacy() {
+  openSheet(
+    `<div class="sheet-h"><b>개인정보 안내</b><button type="button" class="icon-btn" data-close aria-label="닫기">${XICON}</button></div><div class="h-scroll">${privacyHTML()}</div>`,
+    'help'
+  );
+}
+
 // ---- ui/search.js ----
 'use strict';
 /* ================= 통합 검색 (header 🔍): practices, words, grammar, expressions, signs, kanji, travel phrases ================= */
@@ -12142,7 +12591,9 @@ function searchGroups(raw) {
   const add = (title, items, row) => {
     if (items.length) G.push({ title, n: items.length, html: items.slice(0, 6).map(row).join('') });
   };
-  const modes = Object.keys(MENU_DESC).filter(m => modTab(m) && (!/aichat$/.test(m) || aiOn()) && sHit(q, modeLabel(m), MENU_DESC[m]));
+  const modes = Object.keys(MENU_DESC).filter(
+    m => modTab(m) && (!/aichat$|diary$/.test(m) || aiOn()) && sHit(q, modeLabel(m), MENU_DESC[m])
+  );
   add(
     '연습',
     modes,
@@ -12255,6 +12706,20 @@ document.getElementById('searchBtn').addEventListener('click', openSearch);
 // v: the version that added the item; people only see items newer than the last list they saw
 const WHATS_NEW = [
   {
+    v: 16,
+    ai: true,
+    t: 'AI 한 줄 일기',
+    d: '회화·여행 탭 · 대화·듣기. 하루 한 문장 쓰면 AI가 틀린 곳과 더 자연스러운 표현을 한국어로 알려 줘요.'
+  },
+  {
+    v: 16,
+    ja: false,
+    t: '한국인이 틀리는 영어',
+    d: "배우기 탭 · 한국인 맞춤. married with him, '배 안 고파요?'에 Yes… 한국어를 그대로 옮기면 틀리는 곳만 134문제."
+  },
+  { v: 16, t: 'QR 공유 카드', d: '결과·D-day·한국음 카드 아래에 QR이 생겼어요. 친구가 카메라로 찍으면 바로 열려요.' },
+  { v: 16, t: '개인정보 안내', d: '도움말과 설정에서 어떤 정보가 어디로 가는지 확인할 수 있어요. 공부 기록은 내 폰에만 있어요.' },
+  {
     v: 15,
     t: '나만의 여행 카드',
     d: '회화·여행 탭. 호텔 주소·알레르기·예약 이름을 넣으면 택시 기사나 점원에게 화면 가득 보여 줄 카드가 돼요.'
@@ -12313,7 +12778,7 @@ const WHATS_NEW = [
   { v: 10, t: '플래시카드', d: '배우기 탭. 넘기면서 알아요 / 몰라요만 눌러요.' },
   { v: 10, t: '단어장 공유', d: '자료 탭 → 단어장에서 링크로 친구에게 보내요.' }
 ];
-const WN_LATEST = 15;
+const WN_LATEST = 16;
 
 function whatsNew10(since) {
   const ja = S.lang === 'ja';
@@ -12418,7 +12883,7 @@ else go(curTab());
 checkUpdate();
 if (WL_IN) setTimeout(() => offerWordShare(WL_IN), 400);
 else if (!VS_IN) {
-  if (!S.seen.tour) setTimeout(openTour, 400);
+  if (!S.seen.tour) setTimeout(openWelcome, 300);
   else if (!S.seen['v' + WN_LATEST]) {
     // the newest list this person has already seen (v8/v9 lists were before WHATS_NEW)
     let since = 9;

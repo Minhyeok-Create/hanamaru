@@ -6199,6 +6199,263 @@ body.has-daily .upd {
   }
 }
 
+/* ---- v16.css ---- */
+/* ================= v16: first-visit welcome, privacy notice, AI diary ================= */
+.sheet.welcome {
+  height: auto;
+}
+.wc {
+  overflow-y: auto;
+  display: grid;
+  gap: 14px;
+  padding: 6px 2px 4px;
+  -webkit-overflow-scrolling: touch;
+}
+.wc-hero {
+  text-align: center;
+  padding: 8px 0 2px;
+}
+.wc-hero svg {
+  width: 52px;
+  height: 52px;
+}
+.wc-hero h1 {
+  margin: 6px 0 4px;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+.wc-hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.wc-feats {
+  display: grid;
+  gap: 8px;
+}
+.wc-f {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.wc-f > span {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--sunk);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-family: var(--f-jp);
+  color: var(--shu);
+}
+.wc-f b {
+  font-size: 15px;
+}
+.wc-f p {
+  margin: 2px 0 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.wc-free {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ok);
+}
+.wc-go {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.wc-go .btn {
+  min-height: 52px;
+  font-size: 16px;
+}
+.wc-warn,
+.wc-inst {
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.55;
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+.wc-warn {
+  background: var(--ng-soft);
+  color: var(--ink);
+  border: 1px solid var(--ng);
+}
+.wc-warn b:first-child {
+  color: var(--ng);
+}
+.wc-inst {
+  background: var(--ai-soft);
+}
+.wc-warn p,
+.wc-inst p {
+  margin: 0;
+}
+.wc-warn .btn {
+  width: 100%;
+}
+.wc-foot {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* privacy notice */
+.pv {
+  font-size: 15px;
+  line-height: 1.65;
+  padding: 4px 2px 12px;
+}
+.pv h3 {
+  font-size: 16px;
+  margin: 18px 0 6px;
+}
+.pv ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+.pv p {
+  margin: 0 0 8px;
+}
+
+/* AI 한 줄 일기 */
+.dy {
+  display: grid;
+  gap: 12px;
+}
+.dy-topic {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.dy-topic span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.dy-topic b {
+  font-size: 18px;
+  flex: 1 1 auto;
+}
+.dy textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  resize: vertical;
+}
+.dy textarea:focus {
+  outline: 2px solid var(--ai);
+  outline-offset: 1px;
+}
+.dy-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+.dy-card.fresh {
+  border-color: var(--ok);
+  box-shadow: 0 0 0 1px var(--ok);
+}
+.dy-row {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.dy-row > span:first-child {
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 2px;
+}
+.dy-row b {
+  font-size: 17px;
+}
+.dy-row s {
+  color: var(--muted);
+}
+.dy-ok {
+  margin: 0;
+  color: var(--ok);
+  font-weight: 600;
+}
+.dy-notes {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.55;
+  display: grid;
+  gap: 4px;
+}
+.dy-list {
+  display: grid;
+  gap: 6px;
+}
+.dy-h > .dy-card {
+  display: none;
+  margin-top: 6px;
+}
+.dy-h.open > .dy-card {
+  display: grid;
+}
+.dy-hd {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 10px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.dy-hd .num {
+  color: var(--muted);
+  font-size: 13px;
+  padding-top: 2px;
+}
+.dy-hd b {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* ---- responsive.css ---- */
 @media (prefers-reduced-motion: reduce) {
   * {
