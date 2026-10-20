@@ -1,8 +1,6 @@
 'use strict';
 /* =====================================================================
-   앱 설정 — 후원 링크와 방문 통계는 이 파일만 고치면 돼요.
-   GitHub 저장소에서 js/config.js 를 열고 연필(✏️) 버튼으로 바로 수정할 수 있어요.
-   따옴표 '' 안에 값을 넣고 저장(Commit)하면, 몇 분 뒤 앱에 반영돼요.
+
    ===================================================================== */
 const APP_CONFIG = {
   // 후원 링크: 쓰는 것만 채우세요. 비워 두면 그 버튼은 보이지 않아요.
@@ -31,7 +29,7 @@ const APP_CONFIG = {
   // AI 회화 상대: Cloudflare Worker 주소를 넣으면 켜져요. (만드는 법: 저장소의 AI_SETUP.md)
   //   예) 'https://hanamaru-ai.내아이디.workers.dev'
   ai: {
-    endpoint: '',
+    endpoint: 'https://hanamaru-ai.drawingself7.workers.dev',
     dailyLimit: 60 // 한 사람(기기)이 하루에 AI에게 보낼 수 있는 횟수
   }
 };
