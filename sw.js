@@ -1,5 +1,5 @@
-const CACHE = "hanamaru-20261020160317";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png", "./css/app.css?v=20261020160317", "./js/data-common.js?v=20261020160317", "./js/data-ja.js?v=20261020160317", "./js/data-en.js?v=20261020160317", "./js/data-ja-more.js?v=20261020160317", "./js/data-en-more.js?v=20261020160317", "./js/config.js?v=20261020160317", "./js/app.js?v=20261020160317"];
+const CACHE = "hanamaru-20261021080421";
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png", "./css/app.css?v=20261021080421", "./js/data-common.js?v=20261021080421", "./js/data-ja.js?v=20261021080421", "./js/data-en.js?v=20261021080421", "./js/data-ja-more.js?v=20261021080421", "./js/data-en-more.js?v=20261021080421", "./js/config.js?v=20261021080421", "./js/app.js?v=20261021080421"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));
   self.skipWaiting();

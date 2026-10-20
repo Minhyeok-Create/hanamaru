@@ -1,4 +1,4 @@
-'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [52, "core/stats.js"], [133, "core/more.js"], [169, "lib/conjugate.js"], [374, "lib/numbers.js"], [535, "lib/dictation.js"], [606, "content/kana.js"], [653, "content/items.js"], [698, "lib/romaji.js"], [777, "lib/kanaime.js"], [930, "content/items-extra.js"], [974, "core/storage.js"], [1147, "core/srs.js"], [1310, "core/badges.js"], [1393, "core/backup.js"], [1481, "core/speech.js"], [1607, "core/hqvoice.js"], [1694, "core/listen.js"], [1911, "ui/shell.js"], [2383, "ui/menu.js"], [2579, "ui/home.js"], [2746, "quiz/engine.js"], [3229, "quiz/input.js"], [3339, "quiz/kana.js"], [3426, "quiz/words.js"], [3590, "quiz/loan-conj.js"], [3656, "quiz/sentences.js"], [3799, "quiz/dictation-numbers.js"], [3911, "quiz/flow.js"], [4189, "quiz/speed.js"], [4341, "views/reference.js"], [4415, "views/wordlist.js"], [4583, "views/stats.js"], [4687, "quiz/modes-extra.js"], [4784, "features/shadowing.js"], [5008, "features/dialogue.js"], [5173, "views/grammar-notes.js"], [5222, "views/today.js"], [5322, "core/update.js"], [5374, "quiz/counters.js"], [5719, "quiz/polite.js"], [5766, "quiz/jp-pairs.js"], [5817, "quiz/english-grammar.js"], [5898, "quiz/made-english.js"], [5937, "quiz/hanja.js"], [6165, "quiz/ko-traps.js"], [6271, "quiz/en-traps.js"], [6330, "quiz/kansai.js"], [6367, "features/course.js"], [7271, "ui/sheet.js"], [7301, "features/share-card.js"], [7606, "ui/help.js"], [7938, "play/setup.js"], [7965, "features/sound.js"], [8024, "features/levels.js"], [8145, "play/cards.js"], [8280, "play/stamps.js"], [8460, "play/omikuji.js"], [8589, "play/rain.js"], [8798, "play/match.js"], [8919, "play/vs.js"], [9150, "play/play.js"], [9275, "features/missions.js"], [9358, "features/seasons.js"], [9404, "features/weekly.js"], [9745, "features/level-test.js"], [9976, "features/autoplay.js"], [10161, "views/wrong-notes.js"], [10222, "features/support.js"], [10306, "ui/settings.js"], [10539, "features/travel.js"], [10662, "features/writing.js"], [10822, "features/flashcards.js"], [10947, "features/share-words.js"], [11068, "views/hanja-rules.js"], [11165, "features/signs.js"], [11232, "features/trip.js"], [11373, "features/daily.js"], [11477, "features/share-more.js"], [11628, "views/weak.js"], [11729, "features/ai.js"], [11783, "features/aichat.js"], [12106, "features/diary.js"], [12234, "features/push.js"], [12373, "features/photo.js"], [12501, "features/trial.js"], [12656, "features/gcomp.js"], [12750, "features/yomu.js"], [12901, "features/call.js"], [13275, "features/sync.js"], [13425, "features/league.js"], [13577, "features/habit.js"], [13706, "features/jlpt.js"], [14049, "features/offpack.js"], [14160, "features/phonecheck.js"], [14529, "play/shiritori.js"], [14665, "quiz/anime.js"], [14725, "features/mycard.js"], [14956, "features/reader.js"], [15109, "ui/welcome.js"], [15200, "features/install.js"], [15319, "ui/search.js"], [15431, "ui/whats-new.js"], [15603, "boot.js"]];
+'use strict'; var BUNDLE_MAP = [[3, "core/errlog.js"], [52, "core/stats.js"], [133, "core/more.js"], [169, "lib/conjugate.js"], [374, "lib/numbers.js"], [535, "lib/dictation.js"], [606, "content/kana.js"], [653, "content/items.js"], [698, "lib/romaji.js"], [777, "lib/kanaime.js"], [930, "content/items-extra.js"], [974, "core/storage.js"], [1147, "core/srs.js"], [1310, "core/badges.js"], [1393, "core/backup.js"], [1481, "core/speech.js"], [1607, "core/hqvoice.js"], [1694, "core/listen.js"], [1911, "ui/shell.js"], [2383, "ui/menu.js"], [2579, "ui/home.js"], [2746, "quiz/engine.js"], [3229, "quiz/input.js"], [3339, "quiz/kana.js"], [3426, "quiz/words.js"], [3590, "quiz/loan-conj.js"], [3656, "quiz/sentences.js"], [3799, "quiz/dictation-numbers.js"], [3911, "quiz/flow.js"], [4189, "quiz/speed.js"], [4341, "views/reference.js"], [4415, "views/wordlist.js"], [4583, "views/stats.js"], [4687, "quiz/modes-extra.js"], [4784, "features/shadowing.js"], [5008, "features/dialogue.js"], [5173, "views/grammar-notes.js"], [5222, "views/today.js"], [5322, "core/update.js"], [5374, "quiz/counters.js"], [5719, "quiz/polite.js"], [5766, "quiz/jp-pairs.js"], [5817, "quiz/english-grammar.js"], [5898, "quiz/made-english.js"], [5937, "quiz/hanja.js"], [6165, "quiz/ko-traps.js"], [6271, "quiz/en-traps.js"], [6330, "quiz/kansai.js"], [6367, "features/course.js"], [7271, "ui/sheet.js"], [7301, "features/share-card.js"], [7606, "ui/help.js"], [7938, "play/setup.js"], [7965, "features/sound.js"], [8024, "features/levels.js"], [8145, "play/cards.js"], [8280, "play/stamps.js"], [8460, "play/omikuji.js"], [8589, "play/rain.js"], [8798, "play/match.js"], [8919, "play/vs.js"], [9150, "play/play.js"], [9275, "features/missions.js"], [9358, "features/seasons.js"], [9404, "features/weekly.js"], [9745, "features/level-test.js"], [9976, "features/autoplay.js"], [10161, "views/wrong-notes.js"], [10222, "features/support.js"], [10306, "ui/settings.js"], [10539, "features/travel.js"], [10662, "features/writing.js"], [10822, "features/flashcards.js"], [10947, "features/share-words.js"], [11068, "views/hanja-rules.js"], [11165, "features/signs.js"], [11232, "features/trip.js"], [11373, "features/daily.js"], [11477, "features/share-more.js"], [11628, "views/weak.js"], [11729, "features/ai.js"], [11783, "features/aichat.js"], [12106, "features/diary.js"], [12234, "features/push.js"], [12373, "features/photo.js"], [12501, "features/trial.js"], [12656, "features/gcomp.js"], [12750, "features/yomu.js"], [12901, "features/call.js"], [13275, "features/sync.js"], [13425, "features/league.js"], [13577, "features/habit.js"], [13706, "features/jlpt.js"], [14049, "features/offpack.js"], [14160, "features/phonecheck.js"], [14529, "play/shiritori.js"], [14665, "quiz/anime.js"], [14725, "features/mycard.js"], [14956, "features/reader.js"], [15109, "ui/welcome.js"], [15200, "features/install.js"], [15322, "ui/search.js"], [15434, "ui/whats-new.js"], [15606, "boot.js"]];
 "use strict";
 const ERRLOG = { sent: new Set(), n: 0 };
 function reportError(msg, src, stack) {
@@ -5319,7 +5319,7 @@ function renderToday() {
 }
 
 "use strict";
-const APP_VERSION = "20261020160317";
+const APP_VERSION = "20261021080421";
 function checkUpdate() {
   if (APP_VERSION.startsWith("__")) return;
   try {
@@ -15110,12 +15110,12 @@ const siteUrl = () => APP_CONFIG && APP_CONFIG.site || (location.protocol.starts
 const inAppBrowser = () => {
   const ua = navigator.userAgent || "";
   if (/KAKAOTALK/i.test(ua)) return "카카오톡";
+  if (/ThreadsApp|Barcelona/i.test(ua)) return "스레드";
   if (/Instagram/i.test(ua)) return "인스타그램";
   if (/FBAN|FBAV|FB_IAB/i.test(ua)) return "페이스북";
   if (/Line\//i.test(ua)) return "라인";
   if (/NAVER\(inapp/i.test(ua)) return "네이버";
   if (/Twitter|X-Client/i.test(ua)) return "X";
-  if (/ThreadsApp|Barcelona/i.test(ua)) return "스레드";
   return "";
 };
 const isIOS = () => /iPhone|iPad|iPod/i.test(navigator.userAgent || "") || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
@@ -15124,7 +15124,7 @@ function installHint() {
   const inApp = inAppBrowser();
   if (inApp)
     return `<div class="wc-warn"><b>${inApp} 안에서 열렸어요</b><p>여기서는 홈 화면에 추가할 수 없고, 마이크·알림이 안 되며 기록이 사라질 수 있어요. <b>${isIOS() ? "Safari" : "Chrome"}</b>에서 시작하세요.</p>
-      <button type="button" class="btn primary wc-esc" data-inst="escape">${isIOS() ? "Safari로 열기" : "Chrome으로 열기"}</button><button type="button" class="link" data-inst="open">버튼이 안 되면: 직접 여는 방법</button</div></div>`;
+      <button type="button" class="btn primary wc-esc" data-inst="escape">${isIOS() ? "Safari로 열기" : "Chrome으로 열기"}</button>${inApp === "인스타그램" ? `<p class="note" style="margin:0 0 6px">인스타가 "외부 브라우저에서 열까요?" 하고 물어보면 <b>열기</b>를 눌러 주세요.</p>` : ""}<button type="button" class="link" data-inst="open">버튼이 안 되면: 직접 여는 방법</button</div></div>`;
   return `<div class="wc-inst"><b>📲 홈 화면에 추가하면 앱처럼</b><p>아이콘 하나로 바로 열고, 공부 알림도 받을 수 있어요.</p><button type="button" class="btn" data-inst="${typeof INST !== "undefined" && INST.prompt ? "prompt" : "open"}">${typeof INST !== "undefined" && INST.prompt ? "지금 설치하기" : "추가하는 방법 보기"}</button></div>`;
 }
 function openWelcome() {
@@ -15214,21 +15214,24 @@ const isAndroid = () => /Android/i.test(navigator.userAgent || "");
 const isSamsungNet = () => /SamsungBrowser/i.test(navigator.userAgent || "");
 const iosChrome = () => /CriOS/i.test(navigator.userAgent || "");
 const canInstall = () => !isStandalone() && !S.installed;
+let hmGo = (u) => location.href = u;
 function escapeInApp() {
   statEv("x:escape");
   const url = siteUrl() || location.href.split("#")[0];
+  const enc = encodeURIComponent(url);
   const app = inAppBrowser();
-  if (app === "카카오톡") {
-    location.href = "kakaotalk://web/openExternal?url=" + encodeURIComponent(url);
-    return;
-  }
-  if (isAndroid()) {
+  let left = false;
+  const gone = () => left = true;
+  window.addEventListener("pagehide", gone, { once: true });
+  document.addEventListener("visibilitychange", () => document.visibilityState === "hidden" && gone());
+  if (app === "카카오톡") hmGo("kakaotalk://web/openExternal?url=" + enc);
+  else if (app === "인스타그램" && !isAndroid()) hmGo("instagram://extbrowser/?url=" + enc);
+  else if (app === "스레드" && !isAndroid()) hmGo("barcelona://extbrowser/?url=" + enc);
+  else if (isAndroid()) {
     const u = new URL(url);
-    location.href = `intent://${u.host}${u.pathname}${u.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(url)};end`;
-    return;
-  }
-  location.href = "x-safari-" + url;
-  setTimeout(() => document.visibilityState === "visible" && openInstall(true), 900);
+    hmGo(`intent://${u.host}${u.pathname}${u.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${enc};end`);
+  } else hmGo("x-safari-" + url);
+  setTimeout(() => !left && document.visibilityState === "visible" && openInstall(true), 2500);
 }
 function openInstall(inAppGuide) {
   statEv("x:install-open");
@@ -15244,7 +15247,7 @@ function openInstall(inAppGuide) {
       <p class="in-lead">지금은 <b>${esc(app || "앱")} 안의 브라우저</b>라 홈 화면에 추가할 수 없고, 마이크·알림도 막혀 있어요.</p>
       <ol class="in-steps">${step(1, `오른쪽 위 <b>⋯</b> (또는 아래쪽 메뉴)를 누르세요`, "")}${step(2, isIOS() ? `<b>'Safari로 열기'</b> 또는 <b>'외부 브라우저에서 열기'</b>` : `<b>'다른 브라우저로 열기'</b> 또는 <b>'Chrome으로 열기'</b>`, "")}${step(3, `열린 ${isIOS() ? "Safari" : "Chrome"}에서 하나마루를 홈 화면에 추가해요`, "")}</ol>
       <div class="row"><button type="button" class="btn primary" data-in="escape" style="flex:1">${isIOS() ? "Safari로 열기" : "Chrome으로 열기"}</button><button type="button" class="btn" data-in="copy">주소 복사</button></div>
-      <p class="note">버튼이 안 되면 주소를 복사해서 ${isIOS() ? "Safari" : "Chrome"} 주소창에 붙여 넣어도 돼요. 여기서 푼 기록은 그쪽으로 옮겨지지 않으니, 처음부터 그쪽에서 시작하는 게 좋아요.</p>`;
+      ${app === "인스타그램" ? '<p class="note" style="margin:0">인스타가 "외부 브라우저에서 열까요?" 하고 물어보면 <b>열기</b>를 눌러 주세요.</p>' : ""}<p class="note">버튼이 안 되면 주소를 복사해서 ${isIOS() ? "Safari" : "Chrome"} 주소창에 붙여 넣어도 돼요. 여기서 푼 기록은 그쪽으로 옮겨지지 않으니, 처음부터 그쪽에서 시작하는 게 좋아요.</p>`;
   else if (INST.prompt)
     body = `<p class="in-lead">버튼 한 번이면 앱처럼 설치돼요. 앱스토어도, 용량 걱정도 없어요.</p>
       <button type="button" class="btn primary" data-in="prompt" style="width:100%">📲 하나마루 설치하기</button>`;
