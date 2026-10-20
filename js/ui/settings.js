@@ -4,6 +4,31 @@
 let confirmReset = false;
 let bk = { mode: null, msg: '', code: '', input: '' };
 
+const VOICE_SAMPLE = { ja: 'こんにちは。今日もいっしょに勉強しましょう。', en: "Hello! Let's study together today." };
+const voiceShort = v =>
+  v.name
+    .replace(/\s*\(.*?\)\s*/g, ' ')
+    .replace(/Microsoft|Google|Online|Natural/gi, m => (/google/i.test(m) ? 'Google' : ''))
+    .trim() || v.name;
+function voiceHTML() {
+  const langs = S.lang === 'ja' ? ['ja', 'en'] : ['en', 'ja'];
+  const row = l => {
+    const vs = langVoices(l).slice(0, 8);
+    if (!vs.length)
+      return `<div class="set-row"><div><b>${l === 'ja' ? '일본어' : '영어'} 목소리</b><small>목소리를 찾지 못했어요. 잠시 뒤 다시 열어 보거나 <button type="button" class="link" data-vhelp>목소리 받는 방법</button>을 확인하세요.</small></div></div>`;
+    const cur = (S.voice && S.voice[l]) || '';
+    const good = voiceScore(vs[0], l) >= 40;
+    return `<div class="voice-row"><div class="vr-h"><b>${l === 'ja' ? '일본어' : '영어'} 목소리</b><button type="button" class="btn" data-vtest="${l}">▶ 들어 보기</button></div>
+      <div class="chips"><button type="button" class="chip" data-voice="${l}" data-uri="" aria-pressed="${!cur}">자동 (가장 좋은 것)</button>${vs
+        .map(
+          v =>
+            `<button type="button" class="chip" data-voice="${l}" data-uri="${esc(v.voiceURI)}" aria-pressed="${cur === v.voiceURI}">${esc(voiceShort(v))}${voiceScore(v, l) >= 40 ? ' <i class="v-hq">고음질</i>' : ''}</button>`
+        )
+        .join('')}</div>
+      ${good ? '' : `<p class="note" style="margin:0">고음질 목소리를 받으면 훨씬 자연스러워요. <button type="button" class="link" data-vhelp>받는 방법</button></p>`}</div>`;
+  };
+  return `<section id="set-voice"><h2 class="sec-title">발음 목소리</h2><div class="panel" style="padding:14px;display:grid;gap:14px">${langs.map(row).join('')}</div></section>`;
+}
 function settingsHTML() {
   const segRow = (label, small, key, opts) =>
     `<div class="set-row"><div><b>${label}</b>${small ? `<small>${small}</small>` : ''}</div><div class="seg" role="group" aria-label="${label}">${opts.map(([v, l]) => `<button data-setk="${key}" data-v="${v}" aria-pressed="${String(S.set[key]) === String(v)}">${l}</button>`).join('')}</div></div>`;
@@ -28,6 +53,7 @@ function settingsHTML() {
       ${hasTTS ? sw('autoSpeak', '답 확인 후 자동 발음', '아이폰 무음 모드에서는 소리가 나지 않아요') + sw('slow', '천천히 발음', '') : ''}
       ${sw('sfx', '효과음', '정답·콤보·레벨 업 소리')}
     </div></section>
+    ${hasTTS ? voiceHTML() : ''}
     <section><h2 class="sec-title">화면</h2><div class="panel">
       ${segRow('테마', '', 'theme', [
         ['auto', '자동'],
@@ -77,6 +103,23 @@ function openSettings(section) {
   el.addEventListener('click', e => {
     const b = e.target.closest('button');
     if (!b) return;
+    if (b.dataset.voice) {
+      S.voice[b.dataset.voice] = b.dataset.uri;
+      save();
+      pickVoice();
+      speak(VOICE_SAMPLE[b.dataset.voice], b.dataset.voice);
+      rerender();
+      return;
+    }
+    if (b.dataset.vtest) {
+      speak(VOICE_SAMPLE[b.dataset.vtest], b.dataset.vtest);
+      return;
+    }
+    if ('vhelp' in b.dataset) {
+      closeSheet();
+      openHelp('voice');
+      return;
+    }
     if (b.dataset.setk) {
       const k = b.dataset.setk,
         v = b.dataset.v;

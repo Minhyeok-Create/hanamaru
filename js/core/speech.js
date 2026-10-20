@@ -2,15 +2,47 @@
 /* ================= speech, toast, clipboard ================= */
 const hasTTS = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
 const voices = { ja: null, en: null };
+// Rank voices so the most natural one wins: premium/enhanced (iPhone downloads), neural/natural (Edge), Google, then known names.
+function voiceScore(v, lang) {
+  const n = (v.name + ' ' + v.voiceURI).toLowerCase();
+  let s = 0;
+  if (/premium/.test(n)) s += 60;
+  if (/enhanced|natural|neural/.test(n)) s += 45;
+  if (/siri/.test(n)) s += 35;
+  if (/google/.test(n)) s += 25;
+  if (/online/.test(n)) s += 15;
+  if (
+    lang === 'ja'
+      ? /kyoko|o-ren|otoya|hattori|nanami|keita|haruka|ayumi/.test(n)
+      : /samantha|ava|allison|nicky|aaron|zoe|evan|jenny|aria|guy/.test(n)
+  )
+    s += 10;
+  if (lang === 'en' && /^en[-_]us/i.test(v.lang)) s += 5;
+  if (
+    /compact|eloquence|grandma|grandpa|bad news|bells|bubbles|jester|organ|superstar|trinoids|whisper|wobble|zarvox|albert|boing|cellos|fred|junior|ralph|rocko|shelley|sandy|flo|reed/.test(
+      n
+    )
+  )
+    s -= 40;
+  return s;
+}
+const langVoices = lang => {
+  try {
+    return speechSynthesis
+      .getVoices()
+      .filter(v => (lang === 'ja' ? /^ja/i.test(v.lang) : /^en/i.test(v.lang)))
+      .sort((a, b) => voiceScore(b, lang) - voiceScore(a, lang));
+  } catch (e) {
+    return [];
+  }
+};
 function pickVoice() {
   try {
-    const vs = speechSynthesis.getVoices();
-    voices.ja = vs.find(v => /^ja/i.test(v.lang) && /Kyoko|O-ren|Otoya|Hattori/i.test(v.name)) || vs.find(v => /^ja/i.test(v.lang)) || null;
-    voices.en =
-      vs.find(v => /^en[-_]US/i.test(v.lang) && /Samantha|Ava|Allison|Nicky|Aaron/i.test(v.name)) ||
-      vs.find(v => /^en[-_]US/i.test(v.lang)) ||
-      vs.find(v => /^en/i.test(v.lang)) ||
-      null;
+    for (const l of ['ja', 'en']) {
+      const vs = langVoices(l);
+      const want = S.voice && S.voice[l];
+      voices[l] = (want && vs.find(v => v.voiceURI === want)) || vs[0] || null;
+    }
   } catch (e) {}
 }
 if (hasTTS) {

@@ -11,6 +11,7 @@ const DEF = {
   lang: 'ja',
   tabs: { ja: 'home', en: 'home' },
   pins: { ja: [], en: [] },
+  voice: { ja: '', en: '' },
   hide: { ja: [], en: [] },
   seenMod: {},
   smode: DEF_SMODE,

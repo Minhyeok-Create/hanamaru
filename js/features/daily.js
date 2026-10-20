@@ -3,18 +3,24 @@
 
 let DAILY = null; // { lang, steps: [{ k, mod, label, di, ti }], i }
 
+// review → course → weak spot (→ more course / review), at most 3 steps (about 10 minutes)
 function dailyPlan(lang) {
   const steps = [];
   const dl = dueList();
-  for (const [m, n] of dl.slice(0, 2))
-    if (steps.length < 1 || n >= 5)
-      steps.push({ k: 'due', mod: m, label: `${DUE_LABEL[m] || modeLabel(m)} 복습 ${Math.min(n, S.set.round)}개` });
+  const due = ([m, n]) => ({ k: 'due', mod: m, label: `${DUE_LABEL[m] || modeLabel(m)} 복습 ${Math.min(n, S.set.round)}개` });
   const cd = curDay(lang);
-  if (cd < COURSE[lang].length)
-    for (const { t, ti } of dayTasks(lang, cd)
-      .filter(x => !cDone(lang, cd, x.ti))
-      .slice(0, 2))
-      if (steps.length < 3) steps.push({ k: 'task', mod: t.m, di: cd, ti, label: `${cd + 1}일차 · ${taskLabel(t)}` });
+  const tasks =
+    cd < COURSE[lang].length
+      ? dayTasks(lang, cd)
+          .filter(x => !cDone(lang, cd, x.ti))
+          .map(({ t, ti }) => ({ k: 'task', mod: t.m, di: cd, ti, label: `${cd + 1}일차 · ${taskLabel(t)}` }))
+      : [];
+  if (dl[0]) steps.push(due(dl[0]));
+  if (tasks[0]) steps.push(tasks[0]);
+  const wk = weakestArea(lang);
+  if (wk && !steps.some(s => s.mod === wk.mod)) steps.push({ k: 'weak', mod: wk.mod, label: wk.label });
+  if (steps.length < 3 && tasks[1]) steps.push(tasks[1]);
+  if (steps.length < 3 && dl[1] && dl[1][1] >= 5) steps.push(due(dl[1]));
   if (steps.length < 2) steps.push({ k: 'mod', mod: lang === 'ja' ? 'flash' : 'eflash', label: '단어 카드 넘기기' });
   return steps.slice(0, 3);
 }
@@ -28,7 +34,11 @@ function runDaily() {
   if (!s) return finishDaily();
   if (s.k === 'due') startDue(s.mod);
   else if (s.k === 'task') startTask(DAILY.lang, s.di, s.ti);
-  else {
+  else if (s.k === 'weak') {
+    S.filt[s.mod] = 'weak';
+    R[s.mod] = null;
+    startMod(s.mod);
+  } else {
     R[s.mod] = null;
     if (typeof FC !== 'undefined') FC = null;
     startMod(s.mod);

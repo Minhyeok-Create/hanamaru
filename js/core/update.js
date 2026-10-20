@@ -1,6 +1,6 @@
 'use strict';
 /* ---------- update banner ---------- */
-const APP_VERSION = '20261020083652';
+const APP_VERSION = '20261020090458';
 // Versions are build timestamps (YYYYMMDDhhmmss), so a plain string compare tells which is newer.
 // Only a NEWER server version shows the banner: a stale version.json left on the server must never nag forever.
 function checkUpdate() {

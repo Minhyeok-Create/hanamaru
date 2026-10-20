@@ -27,6 +27,7 @@ const MENU_DESC = {
   trip: '출발일까지 하루치씩 벼락치기',
   sign: '메뉴판·역·편의점 글자 읽기',
   koexp: "'수고하세요'는 일본어로?",
+  kansai: '오사카 사투리 おおきに·なんでやねん',
   jdlg: '상황별 대화를 직접 주고받기',
   jl: '듣고 맞는 문장 고르기',
   jd: '듣고 그대로 받아쓰기',
@@ -40,6 +41,7 @@ const MENU_DESC = {
   rain: '떨어지는 글자 맞히기 게임',
   match: '짝 맞추기 게임',
   vs: '친구와 같은 문제로 대결',
+  weak: '어디가 약한지 정답률로 짚어 줘요',
   wrongs: '틀린 문제만 모아서 다시',
   today: '오늘 공부한 내용 한눈에',
   course: '하루 15분 단계별 코스',
@@ -71,6 +73,8 @@ const MENU_DESC = {
 };
 // modes added recently get a "새로" badge until opened once
 const NEW_MODS = new Set([
+  'kansai',
+  'weak',
   'kwrite',
   'flash',
   'eflash',

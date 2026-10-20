@@ -238,7 +238,7 @@ INFO.hjw = q => {
     )
     .join('');
   return `<p class="fb-big"><span class="jp" lang="ja">${esc(q.k)}</span> <span class="jp" lang="ja">${esc(q.r)}</span></p>
-    <table class="hj-split">${rows}</table><div>${spkBtn(q.r, '듣기')}</div>`;
+    <table class="hj-split">${rows}</table><div class="row">${spkBtn(q.r, '듣기')}<button type="button" class="link" data-share-hj="${esc(q.k)}">친구에게 카드로 보내기</button></div>`;
 };
 
 document.addEventListener('click', e => {

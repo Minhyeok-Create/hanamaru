@@ -133,7 +133,7 @@ function tripPlanHTML(t) {
   const td = tripToday(t);
   const lang = t.lang,
     ja = lang === 'ja';
-  const head = `<div class="trip-head"><span class="trip-d big num">${dLabel(n)}</span><div><b>${esc(t.name || (ja ? '일본 여행' : '해외여행'))}</b><small>${idxDate(t.day).replace(/-/g, '.')} 출발</small></div><button class="link" data-tp="edit">날짜 바꾸기</button></div>${tripProgHTML(t)}`;
+  const head = `<div class="trip-head"><span class="trip-d big num">${dLabel(n)}</span><div><b>${esc(t.name || (ja ? '일본 여행' : '해외여행'))}</b><small>${idxDate(t.day).replace(/-/g, '.')} 출발</small></div><div class="trip-hl"><button class="link" data-tp="edit">날짜 바꾸기</button><button class="link" data-share-trip>공유 카드</button></div></div>${tripProgHTML(t)}`;
   if (n <= 0)
     return `${head}<p class="trip-lead">${n === 0 ? '오늘 출발이에요! 즐거운 여행 되세요.' : '여행 잘 하고 계신가요?'} 필요한 문장은 여행 카드에서 <b>보여주기</b>로 꺼내 쓰세요.</p>
       <div class="row"><button class="btn primary" data-tp="cards">여행 카드 열기</button><button class="btn" data-tp="end">D-day 끝내기</button></div>`;

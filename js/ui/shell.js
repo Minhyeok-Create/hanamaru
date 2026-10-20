@@ -61,13 +61,13 @@ const MENU = {
     ['도전', ['kspeed', 'wspeed']]
   ],
   talk: [
-    ['여행', ['jtrav', 'trip', 'sign', 'koexp']],
+    ['여행', ['jtrav', 'trip', 'sign', 'koexp', 'kansai']],
     ['대화·듣기', ['jdlg', 'jl', 'jd', 'jsh', 'jn']],
     ['발음', ['jlen', 'jauto']]
   ],
   play: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
   ref: [
-    ['복습', ['wrongs', 'today']],
+    ['복습', ['weak', 'wrongs', 'today']],
     ['자료', ['course', 'chart', 'jlist', 'gnote']],
     ['기록', ['stats', 'badges']]
   ],
@@ -83,13 +83,15 @@ const MENU = {
   ],
   eplay: [['놀이', ['omikuji', 'cards', 'stamps', 'rain', 'match', 'vs']]],
   eref: [
-    ['복습', ['wrongs', 'today']],
+    ['복습', ['weak', 'wrongs', 'today']],
     ['자료', ['course', 'elist']],
     ['기록', ['stats', 'badges']]
   ]
 };
 const TAB_MODES = Object.fromEntries(Object.entries(MENU).map(([t, gs]) => [t, gs.flatMap(g => g[1])]));
 const MODE_LABEL = {
+  kansai: '간사이벤',
+  weak: '약점 리포트',
   kpart: '조사 함정',
   koexp: '한국어 표현',
   sign: '메뉴판·간판',
@@ -152,6 +154,7 @@ const MODE_LABEL = {
   elist: '단어장'
 };
 const DUE_LABEL = {
+  kansai: '간사이벤',
   kpart: '조사 함정',
   sign: '메뉴판·간판',
   hj: '한국음 한자',
@@ -193,6 +196,7 @@ const LISTEN = new Set(['jl', 'el']);
 const DICT = new Set(['jd', 'ed']);
 const NUMS = new Set(['jn', 'enn']);
 const JA_MODS = new Set([
+  'kansai',
   'kpart',
   'koexp',
   'sign',
@@ -232,11 +236,12 @@ const JA_MODS = new Set([
 const modLang = m =>
   JA_MODS.has(m)
     ? 'ja'
-    : ['stats', 'badges', 'today', 'course', 'wrongs', 'omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'].includes(m)
+    : ['stats', 'badges', 'today', 'course', 'wrongs', 'weak', 'omikuji', 'cards', 'stamps', 'rain', 'match', 'vs'].includes(m)
       ? S.lang
       : 'en';
 const SRS_MODS = {
   ja: [
+    'kansai',
     'kana',
     'word',
     'kanji',

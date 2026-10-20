@@ -41,7 +41,7 @@ function renderHanjaRules(mod) {
       : '';
   view.innerHTML = `<section class="mod">${modeSeg(mod)}<div class="chart hjr">
     <p class="hjr-lead">한국어 한자음을 알면 일본어 음독이 보여요. <b>学校</b>는 <b>학교</b>, 일본어로 <b class="jp" lang="ja">がっこう</b>. 생각보다 규칙적이에요.</p>
-    <div class="row hjr-go"><button class="btn primary" data-hjgo="hj">한자 퀴즈</button><button class="btn" data-hjgo="hjw">한자어 퀴즈</button></div>
+    <div class="row hjr-go"><button class="btn primary" data-hjgo="hj">한자 퀴즈</button><button class="btn" data-hjgo="hjw">한자어 퀴즈</button><button class="btn" data-share-hj="">카드 만들기</button></div>
 
     <h3 class="hjr-h">① 받침이 끝소리를 정해요</h3>
     <p class="note">교육한자 ${HJ_ITEMS.length}자의 대표 음독으로 세어 본 비율이에요.</p>
@@ -103,7 +103,7 @@ function hjrLookup() {
   if (q.length > 1) {
     const w = HJW_ITEMS.find(x => x.ko === q) || HJ_DIFF_LIST.find(x => x.ko === q);
     if (w)
-      html += `<div class="hjr-hit"><b class="jp" lang="ja">${esc(w.k)}</b> <b class="jp" lang="ja">${esc(w.r)}</b>${spkBtn(w.r, '')}${w.ja ? `<p class="note">일본어 뜻은 '${esc(w.ja)}'이에요. ${esc(w.n || '')}</p>` : ''}</div>`;
+      html += `<div class="hjr-hit"><b class="jp" lang="ja">${esc(w.k)}</b> <b class="jp" lang="ja">${esc(w.r)}</b>${spkBtn(w.r, '')}${w.ja ? '' : `<button type="button" class="link" data-share-hj="${esc(w.k)}">카드로 보내기</button>`}${w.ja ? `<p class="note">일본어 뜻은 '${esc(w.ja)}'이에요. ${esc(w.n || '')}</p>` : ''}</div>`;
     else {
       const guess = [...q].map(h => bySound(h)[0]);
       if (guess.every(Boolean))
